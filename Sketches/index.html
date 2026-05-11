@@ -1,0 +1,121 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ron English Sketches: Animals</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #10120f;
+      --panel: rgba(255,255,255,0.06);
+      --line: rgba(255,255,255,0.16);
+      --text: #f5f2ea;
+      --muted: rgba(245,242,234,0.72);
+      --accent: #a7f3d0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at 22% 18%, rgba(167, 243, 208, 0.16), transparent 30rem),
+        radial-gradient(circle at 78% 75%, rgba(255, 255, 255, 0.08), transparent 28rem),
+        var(--bg);
+      color: var(--text);
+    }
+    main {
+      width: min(1180px, calc(100vw - 2rem));
+      margin: 0 auto;
+      padding: clamp(2rem, 5vw, 4rem) 0;
+    }
+    header {
+      padding: clamp(2rem, 5vw, 4rem);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background: var(--panel);
+      box-shadow: 0 24px 80px rgba(0,0,0,0.35);
+      text-align: center;
+    }
+    .eyebrow {
+      margin: 0 0 0.8rem;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-size: 0.78rem;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(2.4rem, 8vw, 5rem);
+      line-height: 0.95;
+    }
+    p {
+      max-width: 760px;
+      margin: 1.2rem auto 0;
+      color: var(--muted);
+      font-size: clamp(1rem, 2vw, 1.18rem);
+      line-height: 1.7;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 1rem;
+      margin-top: 1.2rem;
+    }
+    .card {
+      min-height: 112px;
+      display: grid;
+      place-items: center;
+      padding: 1.2rem;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: rgba(255,255,255,0.065);
+      color: var(--text);
+      text-decoration: none;
+      text-align: center;
+      transition: transform 160ms ease, background 160ms ease, border-color 160ms ease;
+    }
+    .card:hover {
+      transform: translateY(-2px);
+      background: rgba(255,255,255,0.1);
+      border-color: rgba(167, 243, 208, 0.5);
+    }
+    .card span {
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+    .toplink {
+      display: inline-flex;
+      margin-top: 1.2rem;
+      color: var(--accent);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">Sketches landing page</p>
+      <h1>Animals</h1>
+      <p>This split repository contains the animal-related sections of the Ron English sketches-and-drawings catalogue.</p>
+      <a class="toplink" href="../index.html">Repository home</a>
+    </header>
+
+    <section class="grid" aria-label="Animal sketch categories">
+      <a class="card" href="amphibians/index.html"><span>Amphibians</span></a>
+      <a class="card" href="aquatic-dwellers/index.html"><span>Aquatic Dwellers</span></a>
+      <a class="card" href="avians/index.html"><span>Avians</span></a>
+      <a class="card" href="bears/index.html"><span>Bears</span></a>
+      <a class="card" href="bigfoot/index.html"><span>Bigfoot</span></a>
+      <a class="card" href="canines-and-felines/index.html"><span>Canines and Felines</span></a>
+      <a class="card" href="insects/index.html"><span>Insects</span></a>
+      <a class="card" href="monkeys/index.html"><span>Monkeys</span></a>
+      <a class="card" href="reptiles/index.html"><span>Reptiles</span></a>
+      <a class="card" href="small-mammals/index.html"><span>Small Mammals</span></a>
+      <a class="card" href="snails/index.html"><span>Snails</span></a>
+      <a class="card" href="ungulates/index.html"><span>Ungulates</span></a>
+    </section>
+  </main>
+</body>
+</html>

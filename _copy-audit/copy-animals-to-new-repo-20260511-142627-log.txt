@@ -1,0 +1,157 @@
+[2026-05-11 14:26:27] Starting Animals copy into new repo.
+[2026-05-11 14:26:27] Source repo: D:\github\ron-english-sketches-and-drawings
+[2026-05-11 14:26:27] Destination repo: D:\github\ron-english-sketches-animals
+[2026-05-11 14:26:27] Creating destination backup at: D:\github-backups\ron-english-sketches-and-drawings\copy-animals-to-new-repo-20260511-142627
+[2026-05-11 14:26:27] Copying animal page folders.
+[2026-05-11 14:26:27] Copying page folder: Sketches\amphibians
+[2026-05-11 14:26:27] Copying files from: D:\github\ron-english-sketches-and-drawings\Sketches\amphibians
+[2026-05-11 14:26:27] Files found: 30
+[2026-05-11 14:26:27] Copying page folder: Sketches\aquatic-dwellers
+[2026-05-11 14:26:27] Copying files from: D:\github\ron-english-sketches-and-drawings\Sketches\aquatic-dwellers
+[2026-05-11 14:26:27] Files found: 70
+[2026-05-11 14:26:27] Copying page folder: Sketches\avians
+[2026-05-11 14:26:27] Copying files from: D:\github\ron-english-sketches-and-drawings\Sketches\avians
+[2026-05-11 14:26:27] Files found: 104
+[2026-05-11 14:26:27] Skipping backup-related file: buzzards\backup-buzzards-pages-20260506-140325\bird-brain.html
+[2026-05-11 14:26:27] Skipping backup-related file: buzzards\backup-buzzards-pages-20260506-140325\birdy-bob-buzzard.html
+[2026-05-11 14:26:27] Skipping backup-related file: buzzards\backup-buzzards-pages-20260506-140325\buzz-ard.html
+[2026-05-11 14:26:27] Skipping backup-related file: buzzards\backup-buzzards-pages-20260506-140325\buzz-egg.html
+[2026-05-11 14:26:27] Skipping backup-related file: buzzards\backup-buzzards-pages-20260506-140325\buzzard-boat.html
+[2026-05-11 14:26:27] Skipping backup-related file: buzzards\backup-buzzards-pages-20260506-140325\buzzard-family-icon.html
+[2026-05-11 14:26:27] Skipping backup-related file: buzzards\backup-buzzards-pages-20260506-140325\buzzard-flapping-wings.html
+[2026-05-11 14:26:27] Skipping backup-related file: buzzards\backup-buzzards-pages-20260506-140325\buzzard-house-towering-estates.html
+[2026-05-11 14:26:27] Skipping backup-related file: buzzards\backup-buzzards-pages-20260506-140325\buzzards-logo.html
+[2026-05-11 14:26:27] Skipping backup-related file: buzzards\backup-buzzards-pages-20260506-140325\cluckzilla.html
+[2026-05-11 14:26:27] Skipping backup-related file: buzzards\backup-buzzards-pages-20260506-140325\delusionville-pilots-buzzard.html
+[2026-05-11 14:26:27] Skipping backup-related file: buzzards\backup-buzzards-pages-20260506-140325\grousegoose-huffyplume.html
+[2026-05-11 14:26:27] Skipping backup-related file: buzzards\backup-buzzards-pages-20260506-140325\hatch-buzzard.html
+[2026-05-11 14:26:27] Skipping backup-related file: buzzards\backup-buzzards-pages-20260506-140325\index.html
+[2026-05-11 14:26:27] Skipping backup-related file: buzzards\backup-buzzards-pages-20260506-140325\lightning-bird.html
+[2026-05-11 14:26:27] Skipping backup-related file: buzzards\backup-buzzards-pages-20260506-140325\orange-nosed-buttbrain.html
+[2026-05-11 14:26:27] Skipping backup-related file: buzzards\backup-buzzards-pages-20260506-140325\scrap-ard.html
+[2026-05-11 14:26:27] Skipping backup-related file: buzzards\backup-buzzards-pages-20260506-140325\vull-ture.html
+[2026-05-11 14:26:27] Skipping backup-related file: buzzards\backup-individual-pages-20260506-135246\bird-brain.html
+[2026-05-11 14:26:27] Skipping backup-related file: buzzards\backup-individual-pages-20260506-135246\birdy-bob-buzzard.html
+[2026-05-11 14:26:27] Skipping backup-related file: buzzards\backup-individual-pages-20260506-135246\buzz-ard.html
+[2026-05-11 14:26:27] Skipping backup-related file: buzzards\backup-individual-pages-20260506-135246\buzz-egg.html
+[2026-05-11 14:26:27] Skipping backup-related file: buzzards\backup-individual-pages-20260506-135246\buzzard-boat.html
+[2026-05-11 14:26:27] Skipping backup-related file: buzzards\backup-individual-pages-20260506-135246\buzzard-family-icon.html
+[2026-05-11 14:26:27] Skipping backup-related file: ducks\backup-before-ducks-batch-1-20260506-165846\index.html
+[2026-05-11 14:26:27] Skipping backup-related file: ducks\backup-before-ducks-dynamic-v3-20260506-174814\allie-quack.html
+[2026-05-11 14:26:27] Skipping backup-related file: ducks\backup-before-ducks-dynamic-v3-20260506-174814\bub-quack.html
+[2026-05-11 14:26:27] Skipping backup-related file: ducks\backup-before-ducks-dynamic-v3-20260506-174814\dr-bub-quack.html
+[2026-05-11 14:26:27] Skipping backup-related file: ducks\backup-before-ducks-dynamic-v3-20260506-174814\duck-at-war.html
+[2026-05-11 14:26:27] Skipping backup-related file: ducks\backup-before-ducks-dynamic-v3-20260506-174814\duck-boat.html
+[2026-05-11 14:26:27] Skipping backup-related file: ducks\backup-before-ducks-dynamic-v3-20260506-174814\index.html
+[2026-05-11 14:26:27] Skipping backup-related file: ducks\backup-before-ducks-final-20260506-180727\index.html
+[2026-05-11 14:26:27] Skipping backup-related file: ducks\backup-before-ducks-v4-20260506-175353\index.html
+[2026-05-11 14:26:27] Skipping backup-related file: ducks\backup-before-ducks-v5-20260506-180136\index.html
+[2026-05-11 14:26:27] Skipping backup-related file: ducks\backup-before-full-ducks-20260506-170006\allie-quack.html
+[2026-05-11 14:26:27] Skipping backup-related file: ducks\backup-before-full-ducks-20260506-170006\bub-quack.html
+[2026-05-11 14:26:27] Skipping backup-related file: ducks\backup-before-full-ducks-20260506-170006\dr-bub-quack.html
+[2026-05-11 14:26:27] Skipping backup-related file: ducks\backup-before-full-ducks-20260506-170006\duck-at-war.html
+[2026-05-11 14:26:27] Skipping backup-related file: ducks\backup-before-full-ducks-20260506-170006\duck-boat.html
+[2026-05-11 14:26:27] Skipping backup-related file: ducks\backup-before-full-ducks-20260506-170006\index.html
+[2026-05-11 14:26:27] Skipping backup-related file: ducks\backup-before-full-ducks-update-20260506-174346\allie-quack.html
+[2026-05-11 14:26:27] Skipping backup-related file: ducks\backup-before-full-ducks-update-20260506-174346\bub-quack.html
+[2026-05-11 14:26:27] Skipping backup-related file: ducks\backup-before-full-ducks-update-20260506-174346\dr-bub-quack.html
+[2026-05-11 14:26:27] Skipping backup-related file: ducks\backup-before-full-ducks-update-20260506-174346\duck-at-war.html
+[2026-05-11 14:26:27] Skipping backup-related file: ducks\backup-before-full-ducks-update-20260506-174346\duck-boat.html
+[2026-05-11 14:26:27] Skipping backup-related file: ducks\backup-before-full-ducks-update-20260506-174346\index.html
+[2026-05-11 14:26:27] Skipping backup-related file: ducks\backup-before-full-ducks-update-20260506-174531\allie-quack.html
+[2026-05-11 14:26:27] Skipping backup-related file: ducks\backup-before-full-ducks-update-20260506-174531\bub-quack.html
+[2026-05-11 14:26:27] Skipping backup-related file: ducks\backup-before-full-ducks-update-20260506-174531\dr-bub-quack.html
+[2026-05-11 14:26:27] Skipping backup-related file: ducks\backup-before-full-ducks-update-20260506-174531\duck-at-war.html
+[2026-05-11 14:26:27] Skipping backup-related file: ducks\backup-before-full-ducks-update-20260506-174531\duck-boat.html
+[2026-05-11 14:26:27] Skipping backup-related file: ducks\backup-before-full-ducks-update-20260506-174531\index.html
+[2026-05-11 14:26:27] Copying page folder: Sketches\bears
+[2026-05-11 14:26:27] Copying files from: D:\github\ron-english-sketches-and-drawings\Sketches\bears
+[2026-05-11 14:26:27] Files found: 11
+[2026-05-11 14:26:28] Copying page folder: Sketches\bigfoot
+[2026-05-11 14:26:28] Copying files from: D:\github\ron-english-sketches-and-drawings\Sketches\bigfoot
+[2026-05-11 14:26:28] Files found: 18
+[2026-05-11 14:26:28] Copying page folder: Sketches\canines-and-felines
+[2026-05-11 14:26:28] Copying files from: D:\github\ron-english-sketches-and-drawings\Sketches\canines-and-felines
+[2026-05-11 14:26:28] Files found: 70
+[2026-05-11 14:26:28] Copying page folder: Sketches\insects
+[2026-05-11 14:26:28] Copying files from: D:\github\ron-english-sketches-and-drawings\Sketches\insects
+[2026-05-11 14:26:28] Files found: 3
+[2026-05-11 14:26:28] Copying page folder: Sketches\monkeys
+[2026-05-11 14:26:28] Copying files from: D:\github\ron-english-sketches-and-drawings\Sketches\monkeys
+[2026-05-11 14:26:28] Files found: 17
+[2026-05-11 14:26:28] Copying page folder: Sketches\reptiles
+[2026-05-11 14:26:28] Copying files from: D:\github\ron-english-sketches-and-drawings\Sketches\reptiles
+[2026-05-11 14:26:28] Files found: 41
+[2026-05-11 14:26:28] Copying page folder: Sketches\small-mammals
+[2026-05-11 14:26:28] Copying files from: D:\github\ron-english-sketches-and-drawings\Sketches\small-mammals
+[2026-05-11 14:26:28] Files found: 113
+[2026-05-11 14:26:28] Copying page folder: Sketches\snails
+[2026-05-11 14:26:28] Copying files from: D:\github\ron-english-sketches-and-drawings\Sketches\snails
+[2026-05-11 14:26:28] Files found: 8
+[2026-05-11 14:26:28] Copying page folder: Sketches\ungulates
+[2026-05-11 14:26:28] Copying files from: D:\github\ron-english-sketches-and-drawings\Sketches\ungulates
+[2026-05-11 14:26:28] Files found: 94
+[2026-05-11 14:26:29] Copying animal image folders.
+[2026-05-11 14:26:29] Copying image folder: images\Sketches\amphibians
+[2026-05-11 14:26:29] Copying files from: D:\github\ron-english-sketches-and-drawings\images\Sketches\amphibians
+[2026-05-11 14:26:29] Files found: 99
+[2026-05-11 14:26:29] Copying image folder: images\Sketches\aquatic-dwellers
+[2026-05-11 14:26:29] Copying files from: D:\github\ron-english-sketches-and-drawings\images\Sketches\aquatic-dwellers
+[2026-05-11 14:26:29] Files found: 214
+[2026-05-11 14:26:29] Copying image folder: images\Sketches\avians
+[2026-05-11 14:26:29] Copying files from: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians
+[2026-05-11 14:26:29] Files found: 219
+[2026-05-11 14:26:30] Copying image folder: images\Sketches\bears
+[2026-05-11 14:26:30] Copying files from: D:\github\ron-english-sketches-and-drawings\images\Sketches\bears
+[2026-05-11 14:26:30] Files found: 29
+[2026-05-11 14:26:30] Copying image folder: images\Sketches\bigfoot
+[2026-05-11 14:26:30] Copying files from: D:\github\ron-english-sketches-and-drawings\images\Sketches\bigfoot
+[2026-05-11 14:26:30] Files found: 81
+[2026-05-11 14:26:30] Copying image folder: images\Sketches\Canines and felines
+[2026-05-11 14:26:30] Copying files from: D:\github\ron-english-sketches-and-drawings\images\Sketches\Canines and felines
+[2026-05-11 14:26:30] Files found: 323
+[2026-05-11 14:26:31] Copying image folder: images\Sketches\Insects
+[2026-05-11 14:26:31] Copying files from: D:\github\ron-english-sketches-and-drawings\images\Sketches\Insects
+[2026-05-11 14:26:31] Files found: 7
+[2026-05-11 14:26:31] Copying image folder: images\Sketches\Monkeys
+[2026-05-11 14:26:31] Copying files from: D:\github\ron-english-sketches-and-drawings\images\Sketches\Monkeys
+[2026-05-11 14:26:31] Files found: 69
+[2026-05-11 14:26:31] Copying image folder: images\Sketches\Reptiles
+[2026-05-11 14:26:31] Copying files from: D:\github\ron-english-sketches-and-drawings\images\Sketches\Reptiles
+[2026-05-11 14:26:31] Files found: 146
+[2026-05-11 14:26:31] Copying image folder: images\Sketches\Small Mammals
+[2026-05-11 14:26:31] Copying files from: D:\github\ron-english-sketches-and-drawings\images\Sketches\Small Mammals
+[2026-05-11 14:26:31] Files found: 588
+[2026-05-11 14:26:32] Copying image folder: images\Sketches\Snails
+[2026-05-11 14:26:32] Copying files from: D:\github\ron-english-sketches-and-drawings\images\Sketches\Snails
+[2026-05-11 14:26:32] Files found: 22
+[2026-05-11 14:26:32] Copying image folder: images\Sketches\Ungulates
+[2026-05-11 14:26:32] Copying files from: D:\github\ron-english-sketches-and-drawings\images\Sketches\Ungulates
+[2026-05-11 14:26:32] Files found: 492
+[2026-05-11 14:26:33] Copying image folder: images\Sketches\sharks
+[2026-05-11 14:26:33] Copying files from: D:\github\ron-english-sketches-and-drawings\images\Sketches\sharks
+[2026-05-11 14:26:33] Files found: 39
+[2026-05-11 14:26:33] Copying shared CSS/JS folders if present.
+[2026-05-11 14:26:33] Copying files from: D:\github\ron-english-sketches-and-drawings\css
+[2026-05-11 14:26:33] Files found: 1
+[2026-05-11 14:26:33] Optional folder not found, skipping: D:\github\ron-english-sketches-and-drawings\js
+[2026-05-11 14:26:33] Creating root landing page.
+[2026-05-11 14:26:33] Wrote root landing page: D:\github\ron-english-sketches-animals\index.html
+[2026-05-11 14:26:33] Creating Sketches animals landing page.
+[2026-05-11 14:26:33] Wrote Sketches landing page: D:\github\ron-english-sketches-animals\Sketches\index.html
+[2026-05-11 14:26:33] Creating README.md.
+[2026-05-11 14:26:33] Updating navigation blocks.
+[2026-05-11 14:26:36] Updated nav in: Sketches\avians\other birds\bird-beak.html
+[2026-05-11 14:26:36] Updated nav in: Sketches\avians\other birds\bird.html
+[2026-05-11 14:26:36] Updated nav in: Sketches\avians\other birds\index.html
+[2026-05-11 14:26:36] Updated nav in: Sketches\avians\other birds\staples-pigeon.html
+[2026-05-11 14:26:42] HTML files scanned for nav updates: 527
+[2026-05-11 14:26:42] HTML files changed for nav updates: 4
+[2026-05-11 14:26:42] Nav anchors updated: 4
+[2026-05-11 14:26:42] Nav anchors removed: 0
+[2026-05-11 14:26:42] Checking image references.
+[2026-05-11 14:26:44] Possible missing image references found: 218
+[2026-05-11 14:26:44] Checking internal page links.
+[2026-05-11 14:26:45] Possible missing internal page links found: 17
+[2026-05-11 14:26:45] Writing verification summary.
+[2026-05-11 14:26:46] Done.

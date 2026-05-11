@@ -1,0 +1,11 @@
+[2026-05-11 14:32:57] Starting Animals missing-image repair.
+[2026-05-11 14:32:57] Source repo: D:\github\ron-english-sketches-and-drawings
+[2026-05-11 14:32:57] Destination repo: D:\github\ron-english-sketches-animals
+[2026-05-11 14:32:57] Backup folder: D:\github-backups\ron-english-sketches-and-drawings\repair-animals-missing-images-20260511-143257
+[2026-05-11 14:32:59] Missing image references before repair: 106
+[2026-05-11 14:32:59] Copied missing image: images\Sketches\frog-hero.jpg
+[2026-05-11 14:32:59] Copied missing image: images\Sketches\salamanders-hero.jpg
+[2026-05-11 14:32:59] Copied missing image: images\Sketches\buzzards-hero.jpg
+[2026-05-11 14:33:01] Images copied: 3
+[2026-05-11 14:33:01] Missing image references after repair: 103
+[2026-05-11 14:33:01] Done.

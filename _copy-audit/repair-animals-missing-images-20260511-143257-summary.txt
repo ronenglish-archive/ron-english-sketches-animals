@@ -1,0 +1,26 @@
+﻿Animals missing-image repair summary
+Generated: 2026-05-11 14:33:01
+
+Source repo:
+D:\github\ron-english-sketches-and-drawings
+
+Destination repo:
+D:\github\ron-english-sketches-animals
+
+Backup folder:
+D:\github-backups\ron-english-sketches-and-drawings\repair-animals-missing-images-20260511-143257
+
+Missing image references before repair: 106
+Images copied from source repo: 3
+Missing image references after repair: 103
+
+Copied images CSV:
+D:\github\ron-english-sketches-animals\_copy-audit\repair-animals-missing-images-20260511-143257-copied-images.csv
+
+Still missing images CSV:
+D:\github\ron-english-sketches-animals\_copy-audit\repair-animals-missing-images-20260511-143257-still-missing-images.csv
+
+Important:
+- Original source repo was not changed.
+- This script only copied missing image files into the Animals repo.
+- Exact relative paths and filenames were preserved.
