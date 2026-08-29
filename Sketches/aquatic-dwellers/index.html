@@ -539,12 +539,65 @@ flex:0 1 min(100%,320px)!important;max-width:320px!important}
 [data-role="original"] .gallery-item img{height:300px!important}}
 </style>
 <!-- SKETCH-V10-STYLE END -->
+<style id="aquatic-dwellers-index-normalization">
+.page-header,.hero,.hero-copy,.hero-content{text-align:center}
+.gallery-grid,.index-grid,.cards-grid,.card-grid{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:stretch;
+  gap:18px;
+  width:100%;
+  margin-left:auto;
+  margin-right:auto
+}
+.gallery-item,.index-card,.card-item{
+  display:flex;
+  flex-direction:column;
+  flex:0 1 260px;
+  max-width:280px;
+  width:100%;
+  border:1px solid #e5e7eb;
+  border-radius:16px;
+  overflow:hidden;
+  background:#fff;
+  text-decoration:none;
+  color:inherit;
+  text-align:center
+}
+.gallery-item img,.index-card img,.card-item img{
+  display:block;
+  width:100%;
+  height:260px;
+  object-fit:contain;
+  background:#f3f4f6;
+  padding:6px;
+  margin:0 auto
+}
+.gallery-item .entry-body,.index-card .entry-body,.card-item .entry-body,
+.gallery-item .card-body,.index-card .card-body,.card-item .card-body,
+.gallery-item .index-title,.index-card .index-title,.card-item .index-title{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:58px;
+  width:100%;
+  padding:12px;
+  text-align:center
+}
+.gallery-item .work-title,.index-card .work-title,.card-item .work-title,
+.gallery-item p,.index-card p,.card-item p{
+  width:100%;
+  margin:0;
+  text-align:center
+}
+</style>
 </head>
 
 <body>
   <main class="wrap">
 
-    <nav class="nav-pills"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="index.html">Aquatic Dwellers</a></nav><header class="page-header">
+    <nav class="nav-pills"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a></nav><header class="page-header">
       <h1 class="page-title">Aquatic Dwellers</h1>
     </header>
 
