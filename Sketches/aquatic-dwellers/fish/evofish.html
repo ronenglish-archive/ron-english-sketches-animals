@@ -16,44 +16,39 @@ body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Aria
 .page-header{text-align:center;margin:0 auto 18px}
 .page-title{margin:0;font-size:clamp(2rem,4vw,3rem);letter-spacing:-.02em;line-height:1.05;text-align:center}
 .catalogue-meta-block{width:100%;max-width:900px;margin:0 auto 28px;text-align:center}
-.work-meta{list-style:none;padding:0;margin:0 auto;line-height:1.7;text-align:center}
+.work-meta{list-style:none;padding:0;margin:0 auto;max-width:900px;line-height:1.7;text-align:center}
 .work-meta li{display:block;margin:2px auto;text-align:center}
+.relationship-note{max-width:860px;margin:0 auto 24px;padding:12px 14px;background:#f9fafb;border:1px solid var(--border);border-radius:14px;line-height:1.55;text-align:center}
+.relationship-note a{color:inherit}
 .section-card{background:#fff;border:1px solid var(--border);border-radius:18px;box-shadow:var(--shadow);padding:22px;margin-bottom:24px}
 .section-card h2{text-align:center;margin:0 0 14px;font-size:1.4rem}
-.gallery-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:18px}
-.gallery-item{display:block;flex:0 1 900px;max-width:900px;width:100%;border:1px solid var(--border);border-radius:18px;overflow:hidden;background:#fff;text-decoration:none;color:inherit}
-.gallery-item img{display:block;width:100%;height:440px;object-fit:contain;object-position:center center;background:var(--panel);padding:6px}
+.gallery-grid{display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch;gap:18px}
+.gallery-item{display:block;flex:0 1 300px;max-width:300px;width:100%;border:1px solid var(--border);border-radius:18px;overflow:hidden;background:#fff;text-decoration:none;color:inherit}
+.gallery-item img{display:block;width:100%;height:310px;object-fit:contain;object-position:center center;background:var(--panel);padding:6px}
+[data-role="original"] .gallery-item{flex:0 1 900px;max-width:900px}
+[data-role="original"] .gallery-item img{height:440px}
+.text-block{max-width:900px;margin:0 auto;line-height:1.65;text-align:center}
+.text-block p{margin:0;text-align:center}
 .sequence-nav{margin:28px 0 18px}
 footer{margin-top:30px;padding-top:16px;border-top:1px solid var(--border);color:var(--muted);font-size:14px;text-align:center}
-@media(max-width:700px){.gallery-item{max-width:320px}.gallery-item img{height:300px}}
+@media(max-width:700px){
+.gallery-item{flex-basis:320px;max-width:320px}
+.gallery-item img{height:300px}
+[data-role="original"] .gallery-item{max-width:320px}
+[data-role="original"] .gallery-item img{height:300px}
+}
 </style>
 </head>
 <body>
 <div class="wrap">
-<nav class="nav-pills">
-<a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
-<a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a>
-<a class="nav-pill" href="index.html">&larr; Return to Fish</a>
-</nav>
+<nav class="nav-pills"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="index.html">&larr; Return to Fish</a></nav>
 <header class="page-header"><h1 class="page-title">Evofish</h1></header>
-<div class="catalogue-meta-block">
-<ul class="work-meta">
-<li><strong>Title:</strong> Evofish</li>
-<li><strong>Medium:</strong> Ink and colored pencil on paper</li>
-<li><strong>Dimensions:</strong> Sheet: 14 &times; 17 in.; drawing: 8 &times; 9.5 in.</li>
-<li><strong>Work ID:</strong> RE-014872</li>
-<li><strong>Provenance:</strong> Artist&rsquo;s private collection</li>
-</ul>
-</div>
-<section class="section-card" data-role="original">
-<h2>Original Drawing</h2>
-<div class="gallery-grid">
-<a class="gallery-item" href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260206.jpg?v=20260614e" target="_blank" rel="noopener">
-<img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260206.jpg?v=20260614e" alt="Evofish">
-</a>
-</div>
-</section>
-<nav class="sequence-nav"><a class="sequence-pill" href="../fish/finflyer-finley.html">&larr; Previous: FinFlyer Finley</a><a class="sequence-pill" href="../fish/fish.html">Next: Fish &rarr;</a></nav>
+<div class="catalogue-meta-block"><ul class="work-meta"><li><strong>Title:</strong> Evofish</li><li><strong>Medium:</strong> Ink and colored pencil on paper</li><li><strong>Dimensions:</strong> Sheet: 14 &times; 17 in.; drawing: 8 &times; 9.5 in.</li><li><strong>Work ID:</strong> RE-014872</li><li><strong>Provenance:</strong> Artist&rsquo;s private collection</li></ul></div>
+
+<section class="section-card" data-role="original"><h2>Original Drawing</h2><div class="gallery-grid"><a class="gallery-item" href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260206.jpg?v=20260614e" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260206.jpg?v=20260614e" alt="Evofish original drawing" loading="lazy"></a></div></section>
+
+
+<nav class="sequence-nav"><a class="sequence-pill" href="dna-fish.html">&larr; Previous: DNA Fish</a><a class="sequence-pill" href="fat-goldfish.html">Next: Fat Goldfish &rarr;</a></nav>
 <footer>Published via GitHub Pages<br>for long-term public access.</footer>
 </div>
 </body>
