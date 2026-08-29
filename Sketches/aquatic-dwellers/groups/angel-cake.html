@@ -13,27 +13,55 @@ body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Aria
 .wrap{max-width:1120px;margin:0 auto;padding:28px 18px 56px}
 .nav-pills,.sequence-nav{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px;margin:20px 0;text-align:center}
 .nav-pill,.sequence-pill{display:inline-block;padding:8px 14px;border-radius:999px;border:1px solid var(--border);background:#fff;color:#111;text-decoration:none;font-size:14px}
-.page-header{text-align:center;margin:0 auto 26px}
+.page-header{text-align:center;margin:0 auto 18px}
 .page-title{margin:0;font-size:clamp(2rem,4vw,3rem);letter-spacing:-.02em;line-height:1.05;text-align:center}
+.catalogue-meta-block{width:100%;max-width:900px;margin:0 auto 20px;text-align:center}
+.work-meta{list-style:none;padding:0;margin:0 auto;max-width:900px;line-height:1.7;text-align:center}
+.work-meta li{display:block;margin:2px auto;text-align:center}
+.relationship-note{max-width:860px;margin:0 auto 24px;padding:12px 14px;background:#f9fafb;border:1px solid var(--border);border-radius:14px;line-height:1.55;text-align:center}
+.relationship-note a{color:inherit}
+.section-card{background:#fff;border:1px solid var(--border);border-radius:18px;box-shadow:var(--shadow);padding:22px;margin-bottom:24px}
+.section-card h2{text-align:center;margin:0 0 14px;font-size:1.4rem}
+.gallery-grid{display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch;gap:18px}
+.gallery-item{display:block;flex:0 1 300px;max-width:300px;width:100%;border:1px solid var(--border);border-radius:18px;overflow:hidden;background:#fff;text-decoration:none;color:inherit}
+.gallery-item img{display:block;width:100%;height:310px;object-fit:contain;background:var(--panel);padding:6px}
+[data-role="original"] .gallery-item{flex:0 1 900px;max-width:900px}
+[data-role="original"] .gallery-item img{height:440px}
+.text-block{max-width:900px;margin:0 auto;line-height:1.65;text-align:center}
+.text-block p{margin:8px 0}
 .index-grid{display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch;gap:18px}
-.index-card{display:block;flex:0 1 250px;max-width:270px;width:100%;border:1px solid var(--border);border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;background:#fff;box-shadow:var(--shadow);text-align:center}
-.index-card img{display:block;width:100%;height:250px;object-fit:contain;object-position:center center;background:var(--panel);padding:6px}
+.index-card{display:block;flex:0 1 250px;max-width:270px;width:100%;border:1px solid var(--border);border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;background:#fff}
+.index-card img{display:block;width:100%;height:250px;object-fit:contain;background:var(--panel);padding:6px}
 .index-title{padding:12px;text-align:center;font-weight:600;line-height:1.35}
 .sequence-nav{margin:28px 0 18px}
 footer{margin-top:30px;padding-top:16px;border-top:1px solid var(--border);color:var(--muted);font-size:14px;text-align:center}
-@media(max-width:560px){.index-card{flex-basis:320px;max-width:320px}.index-card img{height:280px}}
+@media(max-width:700px){
+.gallery-item{flex-basis:320px;max-width:320px}
+.gallery-item img{height:300px}
+[data-role="original"] .gallery-item{max-width:320px}
+[data-role="original"] .gallery-item img{height:300px}
+.index-card{flex-basis:320px;max-width:320px}
+.index-card img{height:280px}
+}
 </style>
 </head>
 <body>
 <div class="wrap">
+
 <nav class="nav-pills">
 <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
 <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a>
 <a class="nav-pill" href="../aqua-apes/index.html">&larr; Return to Aqua Apes</a>
 </nav>
+
 <header class="page-header"><h1 class="page-title">Angel Cake</h1></header>
-<main class="index-grid"><a class="index-card" href="../aqua-apes/angel-cake-1.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260614%20(71).jpg?v=20260614e" alt="Angel Cake 1" loading="lazy"><div class="index-title">Angel Cake 1</div></a><a class="index-card" href="../aqua-apes/angel-cake-2.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/Angel%20Cake%20COLOR%20digital.jpg" alt="Angel Cake 2" loading="lazy"><div class="index-title">Angel Cake 2</div></a></main>
+
+<main class="index-grid">
+<a class="index-card" href="../aqua-apes/angel-cake-1.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260614%20(71).jpg?v=20260614e" alt="Angel Cake 1" loading="lazy"><div class="index-title">Angel Cake 1</div></a><a class="index-card" href="../aqua-apes/angel-cake-2.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/Angel%20Cake%20COLOR%20digital.jpg" alt="Angel Cake 2" loading="lazy"><div class="index-title">Angel Cake 2</div></a>
+</main>
+
 <nav class="sequence-nav"><a class="sequence-pill" href="../aqua-apes/abe-waters.html">&larr; Previous: Abe Waters</a><a class="sequence-pill" href="../aqua-apes/angie-waters.html">Next: Angie Waters &rarr;</a></nav>
+
 <footer>Published via GitHub Pages<br>for long-term public access.</footer>
 </div>
 </body>
