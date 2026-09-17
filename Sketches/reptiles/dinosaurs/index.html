@@ -159,6 +159,33 @@
   .index-grid{display:flex !important;flex-wrap:wrap !important;justify-content:center !important;align-items:stretch;}
   .index-grid > .index-card,.index-grid > .group-card,.index-grid > .gallery-item{flex:0 1 300px !important;max-width:320px;width:100%;}
 </style>
+
+<style id="global-main-index-standard-size-v1">
+  .index-grid{
+    display:flex!important;
+    flex-wrap:wrap!important;
+    justify-content:center!important;
+    align-items:stretch!important;
+    gap:18px!important;
+  }
+  .index-grid > .index-card,
+  .index-grid > .gallery-item,
+  .index-grid > .group-card{
+    flex:0 1 300px!important;
+    width:100%!important;
+    max-width:320px!important;
+    min-width:0!important;
+  }
+  .index-grid > .index-card .index-image,
+  .index-grid > .gallery-item img,
+  .index-grid > .group-card img{
+    width:100%!important;
+    height:240px!important;
+    max-height:240px!important;
+    aspect-ratio:auto!important;
+    object-fit:contain!important;
+  }
+</style>
 </head>
 <body>
   <main class="wrap page-narrow">
