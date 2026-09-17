@@ -19,7 +19,42 @@
 .text-block{max-width:900px;margin:0 auto;line-height:1.65;text-align:center}.text-block p{margin:8px 0}
 .literature-entry{max-width:900px;margin:0 auto 28px;text-align:center}.literature-entry:last-child{margin-bottom:0}.literature-entry .gallery-grid{margin-top:12px}
 .sequence-nav{margin:28px 0 18px}footer{margin-top:30px;padding-top:16px;border-top:1px solid var(--border);color:var(--muted);font-size:14px;text-align:center}
-@media(max-width:700px){.gallery-item,.index-card{flex-basis:320px;max-width:320px}.gallery-item img,.index-card img{height:300px}[data-role="original"] .gallery-item{max-width:320px}[data-role="original"] .gallery-item img{height:300px}}</style></head><body><main class="wrap">
+@media(max-width:700px){.gallery-item,.index-card{flex-basis:320px;max-width:320px}.gallery-item img,.index-card img{height:300px}[data-role="original"] .gallery-item{max-width:320px}[data-role="original"] .gallery-item img{height:300px}}
+/* ron-four-across-v3 */
+.index-grid{
+  display:flex!important;
+  flex-wrap:wrap!important;
+  justify-content:center!important;
+  align-items:stretch!important;
+}
+.index-grid > .index-card{
+  box-sizing:border-box!important;
+  min-width:0!important;
+  flex:0 1 calc(25% - 28px)!important;
+  width:calc(25% - 28px)!important;
+  max-width:calc(25% - 28px)!important;
+}
+@media(max-width:900px){
+  .index-grid > .index-card{
+    flex-basis:calc(33.333% - 24px)!important;
+    width:calc(33.333% - 24px)!important;
+    max-width:calc(33.333% - 24px)!important;
+  }
+}
+@media(max-width:680px){
+  .index-grid > .index-card{
+    flex-basis:calc(50% - 18px)!important;
+    width:calc(50% - 18px)!important;
+    max-width:calc(50% - 18px)!important;
+  }
+}
+@media(max-width:440px){
+  .index-grid > .index-card{
+    flex-basis:100%!important;
+    width:100%!important;
+    max-width:100%!important;
+  }
+}</style></head><body><main class="wrap">
 <nav class="nav-pills"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a></nav>
 <header class="page-header"><h1 class="page-title">Squids</h1></header>
 <div class="index-grid"><a class="index-card" href="marilyn-mini-mollosk.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/Marilyn%20Mini%20Mollosk%20COLOR%20copy%20digital.jpg" alt="Marilyn Mini Mollusk" loading="lazy"><div class="index-body"><h2 class="index-title">Marilyn Mini Mollusk</h2></div></a><a class="index-card" href="susan-squid.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/Susan%20Squid%20COLOR%20digital.jpg" alt="Susan Squid" loading="lazy"><div class="index-body"><h2 class="index-title">Susan Squid</h2></div></a><a class="index-card" href="tittie-squid.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/Titty%20Squid%20COLOR%20digital.jpg" alt="Tittie Squid" loading="lazy"><div class="index-body"><h2 class="index-title">Tittie Squid</h2></div></a><a class="index-card" href="trippie-squid.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/Trippie%20Squid%20COLOR%20digital.jpg" alt="Trippie Squid" loading="lazy"><div class="index-body"><h2 class="index-title">Trippie Squid</h2></div></a></div>
