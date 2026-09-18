@@ -11,7 +11,47 @@
 .gallery-grid{display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch;gap:18px}.gallery-item{display:block;flex:0 1 300px;max-width:300px;width:100%;border:1px solid var(--border);border-radius:18px;overflow:hidden;background:#fff;text-decoration:none;color:inherit}.gallery-item img{display:block;width:100%;height:310px;object-fit:contain;object-position:center;background:var(--panel);padding:6px}
 [data-role="original"] .gallery-item{flex:0 1 900px;max-width:900px}[data-role="original"] .gallery-item img{height:440px}.relationship-note,.text-block{text-align:center;max-width:900px;margin:0 auto 24px;line-height:1.6}.section-card .text-block{margin:0 auto 18px}
 .sequence-nav{margin:28px 0 18px}footer{margin-top:30px;padding-top:16px;border-top:1px solid var(--border);color:var(--muted);font-size:14px;text-align:center}
-@media(max-width:700px){.gallery-item{flex-basis:320px;max-width:320px}.gallery-item img{height:300px}[data-role="original"] .gallery-item{max-width:320px}[data-role="original"] .gallery-item img{height:300px}}</style></head>
+@media(max-width:700px){.gallery-item{flex-basis:320px;max-width:320px}.gallery-item img{height:300px}[data-role="original"] .gallery-item{max-width:320px}[data-role="original"] .gallery-item img{height:300px}}
+/* RON CARD SIZING NORMALIZATION START */
+.gallery-item{
+  display:block;
+  flex:0 1 290px;
+  max-width:300px;
+  width:100%;
+}
+
+.gallery-item img{
+  display:block;
+  width:100%;
+  height:310px;
+  object-fit:contain;
+  background:#f3f4f6;
+  padding:6px;
+}
+
+[data-role="original"] .gallery-item{
+  flex:0 1 900px;
+  max-width:900px;
+}
+
+[data-role="original"] .gallery-item img{
+  height:460px;
+}
+
+@media(max-width:620px){
+  .wrap{padding:22px 14px 48px;}
+
+  .gallery-item{
+    flex-basis:min(100%,330px);
+    max-width:330px;
+  }
+
+  [data-role="original"] .gallery-item img{
+    height:340px;
+  }
+}
+/* RON CARD SIZING NORMALIZATION END */
+</style></head>
 <body><div class="wrap"><nav class="nav-pills"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="groups/shark-heads.html">&larr; Return to Shark Heads</a></nav>
 <header class="page-header"><h1 class="page-title">Shark Head 4</h1></header>
 <section class="section-card" data-role="original"><h2>Original Drawing</h2><div class="gallery-grid"><a class="gallery-item original-item" href="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/sharks/Shark%20Head%203%20ORIGINAL.jpg" target="_blank" rel="noopener"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/sharks/Shark%20Head%203%20ORIGINAL.jpg" alt="Shark Head 4 original drawing" loading="lazy"></a></div></section><div class="catalogue-meta-block"><ul class="work-meta">
