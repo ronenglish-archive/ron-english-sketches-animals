@@ -14,4 +14,44 @@ body{margin:0;background:#fff;color:#111;font-family:system-ui,-apple-system,"Se
 .gallery-item img,.member-card img{display:block;width:100%;height:auto;max-height:900px;object-fit:contain;background:#f3f4f6;padding:8px;margin:0 auto}
 .member-card .label{padding:12px;text-align:center;font-weight:600}
 footer{text-align:center;margin-top:30px;padding-top:16px;border-top:1px solid #e5e7eb;color:#6b7280;font-size:14px}
+
+/* RON CARD SIZING NORMALIZATION START */
+.gallery-item{
+  display:block;
+  flex:0 1 900px;
+  max-width:900px;
+  width:100%;
+  border:1px solid #e5e7eb;
+  border-radius:16px;
+  overflow:hidden;
+  background:#fff;
+  text-decoration:none;
+  color:inherit;
+  box-shadow:0 8px 26px rgba(0,0,0,.06);
+}
+
+.gallery-item img{
+  display:block;
+  width:100%;
+  height:460px;
+  object-fit:contain;
+  background:#f3f4f6;
+  padding:6px;
+}
+
+@media(max-width:620px){
+  .wrap{
+    padding:22px 14px 48px;
+  }
+
+  .gallery-item{
+    flex-basis:min(100%,900px);
+    max-width:900px;
+  }
+
+  .gallery-item img{
+    height:340px;
+  }
+}
+/* RON CARD SIZING NORMALIZATION END */
 </style></head><body><main class="wrap"><nav class="nav-pills"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="../index.html">Equines &amp; Unicorns</a><a class="nav-pill" href="../sets/forlorn-unicorn-in-bikini.html">&larr; Forlorn Unicorn in Bikini</a></nav><header class="page-header"><h1 class="page-title">Forlorn Unicorn in Bikini 2</h1></header><section class="section-card catalogue-meta-block"><ul class="work-meta"><li><strong>Title:</strong> Forlorn Unicorn in Bikini 2</li><li><strong>Medium:</strong> Unknown</li><li><strong>Dimensions:</strong> 6.625 &times; 10.25 in.</li><li><strong>Work ID:</strong> RE-017057</li></ul></section><section class="section-card"><h2>Original Drawing</h2><div class="gallery-grid"><a class="gallery-item" href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-4/main/sketches/Scan_20260907.jpg?v=20260915-2015" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-4/main/sketches/Scan_20260907.jpg?v=20260915-2015" alt="Forlorn Unicorn in Bikini 2 original drawing" loading="lazy"></a></div></section><footer>Published via GitHub Pages<br>for long-term public access.</footer></main></body></html>
