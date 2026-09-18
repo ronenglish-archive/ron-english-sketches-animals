@@ -411,6 +411,63 @@ color:#6b7280!important;font-size:14px!important;text-align:center!important}
 .gallery-grid>*,.index-grid>*,.category-grid>*,.subcategories-grid>*,.cards-grid>*{
 flex:0 1 min(100%,320px)!important;max-width:320px!important}
 [data-role="original"] .gallery-item img{height:300px!important}}
+
+/* RON CARD SIZING NORMALIZATION START */
+.gallery-grid > .gallery-item{
+  flex:0 1 290px !important;
+  max-width:300px !important;
+  width:100% !important;
+}
+
+.gallery-item{
+  display:block !important;
+  border:1px solid #e5e7eb !important;
+  border-radius:16px !important;
+  overflow:hidden !important;
+  background:#fff !important;
+  text-decoration:none !important;
+  color:inherit !important;
+  box-shadow:0 8px 26px rgba(0,0,0,.06) !important;
+}
+
+.gallery-item img{
+  display:block !important;
+  width:100% !important;
+  height:310px !important;
+  object-fit:contain !important;
+  background:#f3f4f6 !important;
+  padding:6px !important;
+}
+
+.originals-grid > .gallery-item{
+  flex:0 1 900px !important;
+  max-width:900px !important;
+}
+
+.originals-grid .gallery-item img{
+  height:460px !important;
+}
+
+@media(max-width:620px){
+  .wrap{
+    padding:22px 14px 48px !important;
+  }
+
+  .gallery-grid > .gallery-item{
+    flex-basis:min(100%,330px) !important;
+    max-width:330px !important;
+  }
+
+  .originals-grid > .gallery-item{
+    flex-basis:min(100%,900px) !important;
+    max-width:900px !important;
+  }
+
+  .originals-grid .gallery-item img{
+    height:340px !important;
+  }
+}
+/* RON CARD SIZING NORMALIZATION END */
 </style>
 <!-- SKETCH-V10-STYLE END -->
 </head>
