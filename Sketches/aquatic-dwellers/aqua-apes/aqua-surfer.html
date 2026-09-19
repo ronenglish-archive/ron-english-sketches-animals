@@ -31,7 +31,23 @@ body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Aria
 footer{margin-top:30px;padding-top:16px;border-top:1px solid var(--border);color:var(--muted);font-size:14px;text-align:center}
 @media(max-width:700px){.gallery-item,.index-card{flex-basis:320px;max-width:320px}.gallery-item img,.index-card img{height:280px}[data-role="original"] .gallery-item{max-width:320px}[data-role="original"] .gallery-item img{height:300px}}
 </style>
-</head>
+<style id="ron-bottom-prev-next-center-v1">
+/* Ron catalogue: center bottom Previous / Next navigation as a group. */
+nav.ron-bottom-prev-next-center{
+  display:flex!important;
+  flex-wrap:wrap!important;
+  justify-content:center!important;
+  align-items:center!important;
+  gap:12px!important;
+  text-align:center!important;
+}
+nav.ron-bottom-prev-next-center .sequence-spacer{
+  display:none!important;
+}
+nav.ron-bottom-prev-next-center > a{
+  flex:0 1 auto!important;
+}
+</style></head>
 <body data-page-kind="set-member">
 <!-- AQUA-APES-SPREADSHEET-20260912 -->
 <div class="wrap">
@@ -44,7 +60,7 @@ footer{margin-top:30px;padding-top:16px;border-top:1px solid var(--border);color
 </div>
 </section>
 <div class="catalogue-meta-block"><ul class="work-meta"><li><strong>Title:</strong> Aqua Surfer</li><li><strong>Medium:</strong> Ink on paper</li><li><strong>Dimensions:</strong> Unknown</li><li><strong>Work ID:</strong> RE-016884</li><li><strong>Signature:</strong> Signed English lower right</li></ul></div>
-<nav class="sequence-nav"><a class="sequence-pill" href="aqua-ape-surfer.html">&larr; Previous: Aqua Ape Surfer</a><a class="sequence-pill" href="aqua-apes-family-icon.html">Next: Aqua Apes Family Icon &rarr;</a></nav>
+<nav class="sequence-nav ron-bottom-prev-next-center"><a class="sequence-pill" href="aqua-ape-surfer.html">&larr; Previous: Aqua Ape Surfer</a><a class="sequence-pill" href="aqua-apes-family-icon.html">Next: Aqua Apes Family Icon &rarr;</a></nav>
 <footer>Published via GitHub Pages<br>for long-term public access.</footer>
 </div>
 </body>

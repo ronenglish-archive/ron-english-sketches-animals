@@ -110,7 +110,23 @@ font-size:14px!important
 }
 /* RON CARD SIZING NORMALIZATION END */
 </style>
-</head>
+<style id="ron-bottom-prev-next-center-v1">
+/* Ron catalogue: center bottom Previous / Next navigation as a group. */
+nav.ron-bottom-prev-next-center{
+  display:flex!important;
+  flex-wrap:wrap!important;
+  justify-content:center!important;
+  align-items:center!important;
+  gap:12px!important;
+  text-align:center!important;
+}
+nav.ron-bottom-prev-next-center .sequence-spacer{
+  display:none!important;
+}
+nav.ron-bottom-prev-next-center > a{
+  flex:0 1 auto!important;
+}
+</style></head>
 <body>
 <div class="wrap">
 <nav class="nav-pills" aria-label="Site navigation"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="index.html">&larr; Dolphins</a></nav>
@@ -157,7 +173,7 @@ font-size:14px!important
 </div>
 </section>
 
-<section class="section-card" data-role="notes"><h2>Notes</h2><div class="text-block"><p>Also known as Ona Porpoise.</p></div></section><nav class="sequence-nav"><a class="sequence-pill" href="dolphinheaded-mermaid-girls.html">&larr; Previous: Dolphinheaded Mermaid Girls</a></nav>
+<section class="section-card" data-role="notes"><h2>Notes</h2><div class="text-block"><p>Also known as Ona Porpoise.</p></div></section><nav class="sequence-nav ron-bottom-prev-next-center"><a class="sequence-pill" href="dolphinheaded-mermaid-girls.html">&larr; Previous: Dolphinheaded Mermaid Girls</a></nav>
 <footer>Published via GitHub Pages<br>for long-term public access.</footer>
 </div>
 </body>

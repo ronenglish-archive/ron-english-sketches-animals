@@ -31,14 +31,30 @@ body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Aria
 footer{margin-top:30px;padding-top:16px;border-top:1px solid var(--border);color:var(--muted);font-size:14px;text-align:center}
 @media(max-width:700px){.gallery-item,.index-card{flex-basis:320px;max-width:320px}.gallery-item img,.index-card img{height:280px}[data-role="original"] .gallery-item{max-width:320px}[data-role="original"] .gallery-item img{height:300px}}
 </style>
-</head>
+<style id="ron-bottom-prev-next-center-v1">
+/* Ron catalogue: center bottom Previous / Next navigation as a group. */
+nav.ron-bottom-prev-next-center{
+  display:flex!important;
+  flex-wrap:wrap!important;
+  justify-content:center!important;
+  align-items:center!important;
+  gap:12px!important;
+  text-align:center!important;
+}
+nav.ron-bottom-prev-next-center .sequence-spacer{
+  display:none!important;
+}
+nav.ron-bottom-prev-next-center > a{
+  flex:0 1 auto!important;
+}
+</style></head>
 <body data-page-kind="set-hub">
 <!-- AQUA-APES-SPREADSHEET-20260912 -->
 <div class="wrap">
 <nav class="nav-pills" aria-label="Site navigation"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="../index.html">&larr; Aqua Apes</a></nav>
 <header class="page-header"><h1 class="page-title">Snow Globe Aqua Ape</h1></header>
 <main class="index-grid"><a class="index-card" data-member-card href="../aqua-ape-for-snow-globe-1.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/Aqua%20Ape%20for%20Snow%20Globe%201%20B%26W%20digital.jpg" alt="Aqua Ape for Snow Globe 1" loading="lazy"><div class="index-title">Aqua Ape for Snow Globe 1</div></a><a class="index-card" data-member-card href="../aqua-ape-for-snow-globe-2.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/Aqua%20Ape%20for%20Snow%20Globe%202%20B%26W%20digital.jpg" alt="Aqua Ape for Snow Globe 2" loading="lazy"><div class="index-title">Aqua Ape for Snow Globe 2</div></a></main>
-<nav class="sequence-nav"><a class="sequence-pill" href="../shellsea-waters.html">&larr; Previous: Shellsea Waters</a><a class="sequence-pill" href="../swirly-angie-aqua-ape.html">Next: Swirly Angie Aqua Ape &rarr;</a></nav>
+<nav class="sequence-nav ron-bottom-prev-next-center"><a class="sequence-pill" href="../shellsea-waters.html">&larr; Previous: Shellsea Waters</a><a class="sequence-pill" href="../swirly-angie-aqua-ape.html">Next: Swirly Angie Aqua Ape &rarr;</a></nav>
 <footer>Published via GitHub Pages<br>for long-term public access.</footer>
 </div>
 </body>

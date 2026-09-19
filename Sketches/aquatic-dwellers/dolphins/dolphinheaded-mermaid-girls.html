@@ -257,7 +257,23 @@ strong{
 }
 /* RON CARD SIZING NORMALIZATION END */
 </style>
-</head>
+<style id="ron-bottom-prev-next-center-v1">
+/* Ron catalogue: center bottom Previous / Next navigation as a group. */
+nav.ron-bottom-prev-next-center{
+  display:flex!important;
+  flex-wrap:wrap!important;
+  justify-content:center!important;
+  align-items:center!important;
+  gap:12px!important;
+  text-align:center!important;
+}
+nav.ron-bottom-prev-next-center .sequence-spacer{
+  display:none!important;
+}
+nav.ron-bottom-prev-next-center > a{
+  flex:0 1 auto!important;
+}
+</style></head>
 
 <body>
 <div class="wrap">
@@ -300,7 +316,7 @@ strong{
   </div>
 </section>
 
-<nav class="sequence-nav" aria-label="Previous and next works"><a class="sequence-pill" href="owen-purpose.html">Next: Owen Purpose &rarr;</a></nav>
+<nav class="sequence-nav ron-bottom-prev-next-center" aria-label="Previous and next works"><a class="sequence-pill" href="owen-purpose.html">Next: Owen Purpose &rarr;</a></nav>
 
 <footer>Published via GitHub Pages<br>for long-term public access.</footer>
 

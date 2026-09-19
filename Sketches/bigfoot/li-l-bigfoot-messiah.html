@@ -242,7 +242,23 @@ height:300px
 }
 
 </style>
-</head>
+<style id="ron-bottom-prev-next-center-v1">
+/* Ron catalogue: center bottom Previous / Next navigation as a group. */
+nav.ron-bottom-prev-next-center{
+  display:flex!important;
+  flex-wrap:wrap!important;
+  justify-content:center!important;
+  align-items:center!important;
+  gap:12px!important;
+  text-align:center!important;
+}
+nav.ron-bottom-prev-next-center .sequence-spacer{
+  display:none!important;
+}
+nav.ron-bottom-prev-next-center > a{
+  flex:0 1 auto!important;
+}
+</style></head>
 
 <body>
 <main class="wrap">
@@ -306,7 +322,7 @@ height:300px
 </div>
 </section>
 
-<nav class="sequence-nav" aria-label="Previous and next works">
+<nav class="sequence-nav ron-bottom-prev-next-center" aria-label="Previous and next works">
 <a class="sequence-pill" href="groups/li-l-bigfoot.html">&larr; Previous: Li&#39;l Bigfoot</a><a class="sequence-pill" href="little-bigfoot.html">Next: Little Bigfoot &rarr;</a>
 </nav>
 

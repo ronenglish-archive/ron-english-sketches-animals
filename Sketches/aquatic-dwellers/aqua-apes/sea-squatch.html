@@ -31,7 +31,23 @@ body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Aria
 footer{margin-top:30px;padding-top:16px;border-top:1px solid var(--border);color:var(--muted);font-size:14px;text-align:center}
 @media(max-width:700px){.gallery-item,.index-card{flex-basis:320px;max-width:320px}.gallery-item img,.index-card img{height:280px}[data-role="original"] .gallery-item{max-width:320px}[data-role="original"] .gallery-item img{height:300px}}
 </style>
-</head>
+<style id="ron-bottom-prev-next-center-v1">
+/* Ron catalogue: center bottom Previous / Next navigation as a group. */
+nav.ron-bottom-prev-next-center{
+  display:flex!important;
+  flex-wrap:wrap!important;
+  justify-content:center!important;
+  align-items:center!important;
+  gap:12px!important;
+  text-align:center!important;
+}
+nav.ron-bottom-prev-next-center .sequence-spacer{
+  display:none!important;
+}
+nav.ron-bottom-prev-next-center > a{
+  flex:0 1 auto!important;
+}
+</style></head>
 <body data-page-kind="work">
 <!-- AQUA-APES-SPREADSHEET-20260912 -->
 <div class="wrap">
@@ -45,7 +61,7 @@ footer{margin-top:30px;padding-top:16px;border-top:1px solid var(--border);color
 </section>
 <div class="catalogue-meta-block"><ul class="work-meta"><li><strong>Title:</strong> Sea Squatch</li><li><strong>Medium:</strong> Pencil on paper</li><li><strong>Dimensions:</strong> Sheet: 14 × 17 in.; drawing: 11 × 8 in.</li><li><strong>Work ID:</strong> RE-013876</li><li><strong>Provenance:</strong> Artist’s collection</li></ul></div>
 <section class="section-card" data-role="digital"><h2>Digitized Versions</h2><div class="gallery-grid"><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/Sea%20Squatch%20B%26W%20digital.jpg" target="_blank" rel="noopener"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/Sea%20Squatch%20B%26W%20digital.jpg" alt="Sea Squatch digitized version" loading="lazy"></a><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/Sea%20Squatch%20COLOR%20digital.jpg" target="_blank" rel="noopener"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/Sea%20Squatch%20COLOR%20digital.jpg" alt="Sea Squatch digitized version" loading="lazy"></a></div></section>
-<nav class="sequence-nav"><a class="sequence-pill" href="sea-monkeys-beach-party.html">&larr; Previous: Sea Monkeys Beach Party</a><a class="sequence-pill" href="see-money.html">Next: See Money &rarr;</a></nav>
+<nav class="sequence-nav ron-bottom-prev-next-center"><a class="sequence-pill" href="sea-monkeys-beach-party.html">&larr; Previous: Sea Monkeys Beach Party</a><a class="sequence-pill" href="see-money.html">Next: See Money &rarr;</a></nav>
 <footer>Published via GitHub Pages<br>for long-term public access.</footer>
 </div>
 </body>
