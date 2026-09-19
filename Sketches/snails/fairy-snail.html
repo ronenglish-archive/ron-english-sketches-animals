@@ -76,6 +76,54 @@
   background:#f3f4f6;
   padding:6px;
 }
+</style><style id="ron-aqua-apes-card-standard-v1">
+/* Detail-card sizing matched to the Aqua Apes standard. */
+.gallery-item{
+  display:block!important;
+  flex:0 1 290px!important;
+  max-width:300px!important;
+  width:100%!important;
+}
+.gallery-item img{
+  display:block!important;
+  width:100%!important;
+  height:310px!important;
+  max-height:none!important;
+  object-fit:contain!important;
+  background:#f3f4f6!important;
+  padding:6px!important;
+  margin:0 auto!important;
+}
+.original-gallery .gallery-item,
+[data-role="original"] .gallery-item{
+  flex:0 1 900px!important;
+  max-width:900px!important;
+  width:100%!important;
+}
+.original-gallery .gallery-item img,
+[data-role="original"] .gallery-item img{
+  width:100%!important;
+  height:440px!important;
+  max-height:none!important;
+}
+@media(max-width:700px){
+  .gallery-item{
+    flex-basis:320px!important;
+    max-width:320px!important;
+  }
+  .gallery-item img{
+    height:280px!important;
+  }
+  .original-gallery .gallery-item,
+  [data-role="original"] .gallery-item{
+    flex-basis:320px!important;
+    max-width:320px!important;
+  }
+  .original-gallery .gallery-item img,
+  [data-role="original"] .gallery-item img{
+    height:300px!important;
+  }
+}
 </style></head>
 <body>
   <div class="wrap">
