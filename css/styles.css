@@ -414,3 +414,12 @@ main,
   height: 42px;
   border-radius: 999px;
 }
+/* RON PRIMARY ARTWORK HEADING CENTERING START */
+/* Keep a primary-artwork section heading on its own centered row above the hero image. */
+.primary-artwork > h2 {
+  flex: 0 0 100%;
+  width: 100%;
+  margin: 0 0 14px;
+  text-align: center;
+}
+/* RON PRIMARY ARTWORK HEADING CENTERING END */
