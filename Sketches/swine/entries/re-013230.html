@@ -84,7 +84,112 @@ footer{text-align:center;margin-top:30px;padding-top:16px;border-top:1px solid #
   }
 }
 /* RON CARD SIZING NORMALIZATION END */
-</style></head>
+</style><style id="ron-animal-detail-card-standard-v2">
+/* Catalogue-wide detail-page image-card normalization.
+   This final override intentionally wins over legacy fit-content card CSS. */
+
+.media-section{
+  width:auto!important;
+  max-width:none!important;
+  margin:0 0 24px!important;
+}
+
+.gallery-grid,
+.original-grid,
+.original-gallery,
+.originals-grid{
+  display:flex!important;
+  flex-wrap:wrap!important;
+  justify-content:center!important;
+  align-items:stretch!important;
+  gap:18px!important;
+  width:100%!important;
+  max-width:none!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+}
+
+.gallery-item{
+  display:block!important;
+  flex:0 1 290px!important;
+  width:100%!important;
+  max-width:300px!important;
+  min-width:0!important;
+  border:1px solid #e5e7eb!important;
+  border-radius:16px!important;
+  overflow:hidden!important;
+  background:#fff!important;
+  text-decoration:none!important;
+  color:inherit!important;
+  box-shadow:0 8px 26px rgba(0,0,0,.06)!important;
+}
+
+.gallery-item img{
+  display:block!important;
+  width:100%!important;
+  height:310px!important;
+  max-width:none!important;
+  max-height:none!important;
+  object-fit:contain!important;
+  object-position:center center!important;
+  background:#f3f4f6!important;
+  padding:6px!important;
+  margin:0!important;
+}
+
+/* Original artwork is the large lead image treatment. */
+[data-role="original"] .gallery-item,
+.original-grid .gallery-item,
+.original-gallery .gallery-item,
+.originals-grid .gallery-item{
+  flex:0 1 900px!important;
+  width:100%!important;
+  max-width:900px!important;
+}
+
+[data-role="original"] .gallery-item img,
+.original-grid .gallery-item img,
+.original-gallery .gallery-item img,
+.originals-grid .gallery-item img{
+  width:100%!important;
+  height:460px!important;
+  max-width:none!important;
+  max-height:none!important;
+  object-fit:contain!important;
+}
+
+/* Variant and documentation cards retain standard secondary-card proportions. */
+.variant-card,
+.documentation-grid .ancillary-figure{
+  box-sizing:border-box;
+}
+
+@media(max-width:620px){
+  .gallery-item{
+    flex-basis:min(100%,330px)!important;
+    max-width:330px!important;
+  }
+
+  [data-role="original"] .gallery-item,
+  .original-grid .gallery-item,
+  .original-gallery .gallery-item,
+  .originals-grid .gallery-item{
+    max-width:330px!important;
+  }
+
+  .gallery-item img{
+    height:310px!important;
+  }
+
+  [data-role="original"] .gallery-item img,
+  .original-grid .gallery-item img,
+  .original-gallery .gallery-item img,
+  .originals-grid .gallery-item img{
+    height:340px!important;
+  }
+}
+</style>
+</head>
 <body><main class="wrap"><nav class="nav-pills" aria-label="Site navigation"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="../index.html">Swine</a><a class="nav-pill" href="../sets/pearl-unipig/index.html">&larr; Return to Pearl Unipig</a>  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
 </nav><header class="page-header"><h1 class="page-title">Pearl Unipig</h1></header>
 <section class="section-card"><h2>Original Drawings</h2><div class="gallery-grid original-grid"><a class="gallery-item" href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/New/Scan_20260609%20%2812%29.jpg?v=20260610g" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/New/Scan_20260609%20%2812%29.jpg?v=20260610g" alt="" loading="lazy"></a><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Ungulates/unipigs%20%26%20pigs/Pearl%20Unipig%20ORIGINAL.jpg" target="_blank" rel="noopener"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Ungulates/unipigs%20%26%20pigs/Pearl%20Unipig%20ORIGINAL.jpg" alt="" loading="lazy"></a></div></section><div class="catalogue-meta-block"><ul class="work-meta"><li><strong>Title:</strong> Pearl Unipig</li><li><strong>Medium:</strong> Ink on paper</li><li><strong>Dimensions:</strong> Sheet: 14 × 17 in.; drawings: 11 × 5.5 in., 9 × 3 in.</li><li><strong>Work ID:</strong> RE-013230</li><li><strong>Provenance:</strong> Artist’s private collection</li></ul></div><div class="relationship-note"><strong>Shared original sheet.</strong> This separate drawing appears on the same physical sheet as <a href="https://ronenglish-archive.github.io/ron-english-sketches-animals/Sketches/rabbbits/entries/re-013230.html">Alchemy Rabbbit</a>.</div><section class="section-card"><h2>Digitized Versions</h2><div class="gallery-grid"><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Ungulates/unipigs%20%26%20pigs/Pearl%20Unipig%20B%26W.png" target="_blank" rel="noopener"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Ungulates/unipigs%20%26%20pigs/Pearl%20Unipig%20B%26W.png" alt="" loading="lazy"></a><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Ungulates/unipigs%20%26%20pigs/Pearl%20Unipig%20COLOR.png" target="_blank" rel="noopener"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Ungulates/unipigs%20%26%20pigs/Pearl%20Unipig%20COLOR.png" alt="" loading="lazy"></a></div></section><section class="section-card" data-role="literature"><h2>Literature</h2><div class="literature-entry"><p>Zephyr English, Delusionville High (PoPaganda, 2022), pp. 19, 83. ISBN 978-0-578-39761-0.</p><div class="gallery-grid"><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/delusionville-high/delusionville%20high%20p83d.jpg" target="_blank" rel="noopener"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/delusionville-high/delusionville%20high%20p83d.jpg" alt="" loading="lazy"></a><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/delusionville-high/delusionville%20high%20p19.jpg" target="_blank" rel="noopener"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/delusionville-high/delusionville%20high%20p19.jpg" alt="" loading="lazy"></a></div></div><div class="literature-entry"><p>Ron English, Delusionville Coloring Book: Volume 1 (Out on a Whim Press, 2022), pp. 63, 67. ISBN 978-1735837055.</p><div class="gallery-grid"><a class="gallery-item" href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/literature/delusionville-coloring-book-page67.jpg?cachebust=page67-20260601c" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/literature/delusionville-coloring-book-page67.jpg?cachebust=page67-20260601c" alt="" loading="lazy"></a><a class="gallery-item" href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/literature/delusionville-coloring-book-page63.jpg?cachebust=page63-20260601c" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/literature/delusionville-coloring-book-page63.jpg?cachebust=page63-20260601c" alt="" loading="lazy"></a></div></div></section><section class="section-card"><h2>Cards</h2><div class="gallery-grid"><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Ungulates/unipigs%20%26%20pigs/Pearl%20Unipig%20ORIGINAL%20COLOR.jpg" target="_blank" rel="noopener"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Ungulates/unipigs%20%26%20pigs/Pearl%20Unipig%20ORIGINAL%20COLOR.jpg" alt="" loading="lazy"></a></div></section>

@@ -104,6 +104,111 @@ nav.ron-bottom-prev-next-center .sequence-spacer{
 nav.ron-bottom-prev-next-center > a{
   flex:0 1 auto!important;
 }
-</style></head><body><main class="wrap"><nav class="nav-pills" aria-label="Site navigation"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="../index.html">&larr; Equines &amp; Unicorns</a>  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
+</style><style id="ron-animal-detail-card-standard-v2">
+/* Catalogue-wide detail-page image-card normalization.
+   This final override intentionally wins over legacy fit-content card CSS. */
+
+.media-section{
+  width:auto!important;
+  max-width:none!important;
+  margin:0 0 24px!important;
+}
+
+.gallery-grid,
+.original-grid,
+.original-gallery,
+.originals-grid{
+  display:flex!important;
+  flex-wrap:wrap!important;
+  justify-content:center!important;
+  align-items:stretch!important;
+  gap:18px!important;
+  width:100%!important;
+  max-width:none!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+}
+
+.gallery-item{
+  display:block!important;
+  flex:0 1 290px!important;
+  width:100%!important;
+  max-width:300px!important;
+  min-width:0!important;
+  border:1px solid #e5e7eb!important;
+  border-radius:16px!important;
+  overflow:hidden!important;
+  background:#fff!important;
+  text-decoration:none!important;
+  color:inherit!important;
+  box-shadow:0 8px 26px rgba(0,0,0,.06)!important;
+}
+
+.gallery-item img{
+  display:block!important;
+  width:100%!important;
+  height:310px!important;
+  max-width:none!important;
+  max-height:none!important;
+  object-fit:contain!important;
+  object-position:center center!important;
+  background:#f3f4f6!important;
+  padding:6px!important;
+  margin:0!important;
+}
+
+/* Original artwork is the large lead image treatment. */
+[data-role="original"] .gallery-item,
+.original-grid .gallery-item,
+.original-gallery .gallery-item,
+.originals-grid .gallery-item{
+  flex:0 1 900px!important;
+  width:100%!important;
+  max-width:900px!important;
+}
+
+[data-role="original"] .gallery-item img,
+.original-grid .gallery-item img,
+.original-gallery .gallery-item img,
+.originals-grid .gallery-item img{
+  width:100%!important;
+  height:460px!important;
+  max-width:none!important;
+  max-height:none!important;
+  object-fit:contain!important;
+}
+
+/* Variant and documentation cards retain standard secondary-card proportions. */
+.variant-card,
+.documentation-grid .ancillary-figure{
+  box-sizing:border-box;
+}
+
+@media(max-width:620px){
+  .gallery-item{
+    flex-basis:min(100%,330px)!important;
+    max-width:330px!important;
+  }
+
+  [data-role="original"] .gallery-item,
+  .original-grid .gallery-item,
+  .original-gallery .gallery-item,
+  .originals-grid .gallery-item{
+    max-width:330px!important;
+  }
+
+  .gallery-item img{
+    height:310px!important;
+  }
+
+  [data-role="original"] .gallery-item img,
+  .original-grid .gallery-item img,
+  .original-gallery .gallery-item img,
+  .originals-grid .gallery-item img{
+    height:340px!important;
+  }
+}
+</style>
+</head><body><main class="wrap"><nav class="nav-pills" aria-label="Site navigation"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="../index.html">&larr; Equines &amp; Unicorns</a>  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
 </nav><header class="page-header"><h1 class="page-title">Zebra Head</h1></header><section class="section-card media-section"><h2>Original Drawing</h2><div class="gallery-grid original-gallery"><a class="gallery-item" href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/equis.jpg?v=20260614e" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/equis.jpg?v=20260614e" alt="Zebra Head — image 1" loading="lazy"></a><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Ungulates/Equines/Zebra%20Baby%20ORIGINAL.jpg" target="_blank" rel="noopener"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Ungulates/Equines/Zebra%20Baby%20ORIGINAL.jpg" alt="Zebra Head — image 2" loading="lazy"></a></div></section><div class="catalogue-meta-block"><ul class="work-meta"><li><strong>Title:</strong> Zebra Head</li><li><strong>Medium:</strong> Ink and pencil on paper</li><li><strong>Dimensions:</strong> Sheet 14 × 17 in.; Drawing 8 × 5.5 in.</li><li><strong>Work ID:</strong> RE-013956</li><li><strong>Provenance:</strong> Artist’s private collection</li></ul></div><div class="relationship-note"><strong>Shared original sheet.</strong> This separate drawing appears on the same physical sheet as <a href="../li-l-pony/index.html">Li&#x27;l Pony</a>.</div><section class="section-card media-section"><h2>Digitized Version</h2><div class="gallery-grid"><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Ungulates/Equines/Zebra%20Baby%20COLOR.jpg" target="_blank" rel="noopener"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Ungulates/Equines/Zebra%20Baby%20COLOR.jpg" alt="Zebra Head" loading="lazy"></a></div></section><nav class="sequence-nav ron-bottom-prev-next-center" aria-label="Previous and next works"><a class="nav-pill" href="../unizebra-mounted-head/index.html">&larr; Previous: Unizebra Mounted Head</a></nav>
 <footer>Published via GitHub Pages<br>for long-term public access.</footer></main></body></html>

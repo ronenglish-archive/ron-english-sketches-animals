@@ -7,7 +7,112 @@
 .gallery-grid,.index-grid{display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch;gap:18px}.gallery-item,.index-card{display:block;flex:0 1 290px;max-width:300px;width:100%;border:1px solid #e5e7eb;border-radius:16px;overflow:hidden;background:#fff;text-decoration:none;color:inherit;box-shadow:0 8px 26px rgba(0,0,0,.06)}
 .gallery-item img,.index-card img{display:block;width:100%;height:310px;object-fit:contain;background:#f3f4f6;padding:6px}.original-grid .gallery-item{flex:0 1 900px;max-width:900px}.original-grid .gallery-item img{height:460px}.index-card img{height:250px}
 .card-title{padding:13px 14px 14px;text-align:center;font-weight:650;line-height:1.35}.text-block{max-width:900px;margin:0 auto;line-height:1.65;text-align:center}.text-block p{margin:.55rem 0}.literature-entry{max-width:900px;margin:0 auto 22px}
-footer{text-align:center;margin-top:30px;padding-top:16px;border-top:1px solid #e5e7eb;color:#6b7280;font-size:14px}@media(max-width:620px){.wrap{padding:22px 14px 48px}.gallery-item,.index-card{flex-basis:min(100%,330px);max-width:330px}.original-grid .gallery-item img{height:340px}}</style></head><body><main class="wrap">
+footer{text-align:center;margin-top:30px;padding-top:16px;border-top:1px solid #e5e7eb;color:#6b7280;font-size:14px}@media(max-width:620px){.wrap{padding:22px 14px 48px}.gallery-item,.index-card{flex-basis:min(100%,330px);max-width:330px}.original-grid .gallery-item img{height:340px}}</style><style id="ron-animal-detail-card-standard-v2">
+/* Catalogue-wide detail-page image-card normalization.
+   This final override intentionally wins over legacy fit-content card CSS. */
+
+.media-section{
+  width:auto!important;
+  max-width:none!important;
+  margin:0 0 24px!important;
+}
+
+.gallery-grid,
+.original-grid,
+.original-gallery,
+.originals-grid{
+  display:flex!important;
+  flex-wrap:wrap!important;
+  justify-content:center!important;
+  align-items:stretch!important;
+  gap:18px!important;
+  width:100%!important;
+  max-width:none!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+}
+
+.gallery-item{
+  display:block!important;
+  flex:0 1 290px!important;
+  width:100%!important;
+  max-width:300px!important;
+  min-width:0!important;
+  border:1px solid #e5e7eb!important;
+  border-radius:16px!important;
+  overflow:hidden!important;
+  background:#fff!important;
+  text-decoration:none!important;
+  color:inherit!important;
+  box-shadow:0 8px 26px rgba(0,0,0,.06)!important;
+}
+
+.gallery-item img{
+  display:block!important;
+  width:100%!important;
+  height:310px!important;
+  max-width:none!important;
+  max-height:none!important;
+  object-fit:contain!important;
+  object-position:center center!important;
+  background:#f3f4f6!important;
+  padding:6px!important;
+  margin:0!important;
+}
+
+/* Original artwork is the large lead image treatment. */
+[data-role="original"] .gallery-item,
+.original-grid .gallery-item,
+.original-gallery .gallery-item,
+.originals-grid .gallery-item{
+  flex:0 1 900px!important;
+  width:100%!important;
+  max-width:900px!important;
+}
+
+[data-role="original"] .gallery-item img,
+.original-grid .gallery-item img,
+.original-gallery .gallery-item img,
+.originals-grid .gallery-item img{
+  width:100%!important;
+  height:460px!important;
+  max-width:none!important;
+  max-height:none!important;
+  object-fit:contain!important;
+}
+
+/* Variant and documentation cards retain standard secondary-card proportions. */
+.variant-card,
+.documentation-grid .ancillary-figure{
+  box-sizing:border-box;
+}
+
+@media(max-width:620px){
+  .gallery-item{
+    flex-basis:min(100%,330px)!important;
+    max-width:330px!important;
+  }
+
+  [data-role="original"] .gallery-item,
+  .original-grid .gallery-item,
+  .original-gallery .gallery-item,
+  .originals-grid .gallery-item{
+    max-width:330px!important;
+  }
+
+  .gallery-item img{
+    height:310px!important;
+  }
+
+  [data-role="original"] .gallery-item img,
+  .original-grid .gallery-item img,
+  .original-gallery .gallery-item img,
+  .originals-grid .gallery-item img{
+    height:340px!important;
+  }
+}
+</style>
+</head><body><main class="wrap">
 <nav class="nav-pills" aria-label="Site navigation"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="../index.html">Cattle</a><a class="nav-pill" href="bull-friend.html">&larr; Return to Bull Friend</a>  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
 </nav>
 <header class="page-header"><h1 class="page-title">Bull Friend Side</h1></header><section class="index-grid"><a class="index-card" href="../entries/re-012904.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Ungulates/cattle/Bull%20Friend%20Profile%20ORIGINAL.jpg" alt="Bull Friend Head Side" loading="lazy"><div class="card-title">Bull Friend Head Side</div></a><a class="index-card" href="../entries/re-012905.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/New/cowbody.jpg?v=20260608i" alt="Bull Friend Body Right Side" loading="lazy"><div class="card-title">Bull Friend Body Right Side</div></a></section><section class="section-card" data-role="digital"><h2>Digitized Version</h2><div class="gallery-grid"><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Ungulates/cattle/Benjamin%20Bullfriend%20Cowtune%20side%20ORIGINAL.jpg" target="_blank" rel="noopener"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Ungulates/cattle/Benjamin%20Bullfriend%20Cowtune%20side%20ORIGINAL.jpg" alt="Bull Friend Body digitized version" loading="lazy"></a></div></section><footer>Published via GitHub Pages<br>for long-term public access.</footer></main></body></html>

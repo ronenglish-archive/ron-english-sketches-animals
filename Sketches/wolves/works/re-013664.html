@@ -78,6 +78,111 @@
   margin-right:auto;
 }
 </style>
+<style id="ron-animal-detail-card-standard-v2">
+/* Catalogue-wide detail-page image-card normalization.
+   This final override intentionally wins over legacy fit-content card CSS. */
+
+.media-section{
+  width:auto!important;
+  max-width:none!important;
+  margin:0 0 24px!important;
+}
+
+.gallery-grid,
+.original-grid,
+.original-gallery,
+.originals-grid{
+  display:flex!important;
+  flex-wrap:wrap!important;
+  justify-content:center!important;
+  align-items:stretch!important;
+  gap:18px!important;
+  width:100%!important;
+  max-width:none!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+}
+
+.gallery-item{
+  display:block!important;
+  flex:0 1 290px!important;
+  width:100%!important;
+  max-width:300px!important;
+  min-width:0!important;
+  border:1px solid #e5e7eb!important;
+  border-radius:16px!important;
+  overflow:hidden!important;
+  background:#fff!important;
+  text-decoration:none!important;
+  color:inherit!important;
+  box-shadow:0 8px 26px rgba(0,0,0,.06)!important;
+}
+
+.gallery-item img{
+  display:block!important;
+  width:100%!important;
+  height:310px!important;
+  max-width:none!important;
+  max-height:none!important;
+  object-fit:contain!important;
+  object-position:center center!important;
+  background:#f3f4f6!important;
+  padding:6px!important;
+  margin:0!important;
+}
+
+/* Original artwork is the large lead image treatment. */
+[data-role="original"] .gallery-item,
+.original-grid .gallery-item,
+.original-gallery .gallery-item,
+.originals-grid .gallery-item{
+  flex:0 1 900px!important;
+  width:100%!important;
+  max-width:900px!important;
+}
+
+[data-role="original"] .gallery-item img,
+.original-grid .gallery-item img,
+.original-gallery .gallery-item img,
+.originals-grid .gallery-item img{
+  width:100%!important;
+  height:460px!important;
+  max-width:none!important;
+  max-height:none!important;
+  object-fit:contain!important;
+}
+
+/* Variant and documentation cards retain standard secondary-card proportions. */
+.variant-card,
+.documentation-grid .ancillary-figure{
+  box-sizing:border-box;
+}
+
+@media(max-width:620px){
+  .gallery-item{
+    flex-basis:min(100%,330px)!important;
+    max-width:330px!important;
+  }
+
+  [data-role="original"] .gallery-item,
+  .original-grid .gallery-item,
+  .original-gallery .gallery-item,
+  .originals-grid .gallery-item{
+    max-width:330px!important;
+  }
+
+  .gallery-item img{
+    height:310px!important;
+  }
+
+  [data-role="original"] .gallery-item img,
+  .original-grid .gallery-item img,
+  .original-gallery .gallery-item img,
+  .originals-grid .gallery-item img{
+    height:340px!important;
+  }
+}
+</style>
 </head><body><main class="wrap">
 <nav class="nav-pills" aria-label="Site navigation"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="../index.html">Wolves</a><a class="nav-pill" href="../sets/paws-early-version.html">&larr; Return to Paws Early Version</a>  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
 </nav><header class="page-header"><h1 class="page-title">Paws Early Version Front</h1></header>

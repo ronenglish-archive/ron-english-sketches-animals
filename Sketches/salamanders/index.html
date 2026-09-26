@@ -258,7 +258,112 @@ flex:0 1 min(100%,320px)!important;max-width:320px!important}
     max-width:100%!important;
   }
 }
-</style></head>
+</style><style id="ron-animal-detail-card-standard-v2">
+/* Catalogue-wide detail-page image-card normalization.
+   This final override intentionally wins over legacy fit-content card CSS. */
+
+.media-section{
+  width:auto!important;
+  max-width:none!important;
+  margin:0 0 24px!important;
+}
+
+.gallery-grid,
+.original-grid,
+.original-gallery,
+.originals-grid{
+  display:flex!important;
+  flex-wrap:wrap!important;
+  justify-content:center!important;
+  align-items:stretch!important;
+  gap:18px!important;
+  width:100%!important;
+  max-width:none!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+}
+
+.gallery-item{
+  display:block!important;
+  flex:0 1 290px!important;
+  width:100%!important;
+  max-width:300px!important;
+  min-width:0!important;
+  border:1px solid #e5e7eb!important;
+  border-radius:16px!important;
+  overflow:hidden!important;
+  background:#fff!important;
+  text-decoration:none!important;
+  color:inherit!important;
+  box-shadow:0 8px 26px rgba(0,0,0,.06)!important;
+}
+
+.gallery-item img{
+  display:block!important;
+  width:100%!important;
+  height:310px!important;
+  max-width:none!important;
+  max-height:none!important;
+  object-fit:contain!important;
+  object-position:center center!important;
+  background:#f3f4f6!important;
+  padding:6px!important;
+  margin:0!important;
+}
+
+/* Original artwork is the large lead image treatment. */
+[data-role="original"] .gallery-item,
+.original-grid .gallery-item,
+.original-gallery .gallery-item,
+.originals-grid .gallery-item{
+  flex:0 1 900px!important;
+  width:100%!important;
+  max-width:900px!important;
+}
+
+[data-role="original"] .gallery-item img,
+.original-grid .gallery-item img,
+.original-gallery .gallery-item img,
+.originals-grid .gallery-item img{
+  width:100%!important;
+  height:460px!important;
+  max-width:none!important;
+  max-height:none!important;
+  object-fit:contain!important;
+}
+
+/* Variant and documentation cards retain standard secondary-card proportions. */
+.variant-card,
+.documentation-grid .ancillary-figure{
+  box-sizing:border-box;
+}
+
+@media(max-width:620px){
+  .gallery-item{
+    flex-basis:min(100%,330px)!important;
+    max-width:330px!important;
+  }
+
+  [data-role="original"] .gallery-item,
+  .original-grid .gallery-item,
+  .original-gallery .gallery-item,
+  .originals-grid .gallery-item{
+    max-width:330px!important;
+  }
+
+  .gallery-item img{
+    height:310px!important;
+  }
+
+  [data-role="original"] .gallery-item img,
+  .original-grid .gallery-item img,
+  .original-gallery .gallery-item img,
+  .originals-grid .gallery-item img{
+    height:340px!important;
+  }
+}
+</style>
+</head>
 <body><main class="wrap"><nav class="nav-pills"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a>  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
 </nav><header class="page-header"><h1 class="page-title">Salamanders</h1></header><section class="gallery-grid"><a class="gallery-item" href="blaze-with-salamanders.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/amphibians/salamanders/Blaze%20with%20Salamanders.jpg" alt="Blaze with Salamanders" loading="lazy"><div class="entry-body"><p class="work-title">Blaze with Salamanders</p></div></a><a class="gallery-item" href="groups/dino-heart.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-grins/images/Sketches/grins/Dino%20Heart%20Grin%20COLOR.png" alt="Dino Heart" loading="lazy"><div class="entry-body"><p class="work-title">Dino Heart</p><div class="set-label">Set</div></div></a><a class="gallery-item" href="evolution-of-the-salamander.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260620%20%282%29.jpg?v=20260620b" alt="Evolution of the Salamander" loading="lazy"><div class="entry-body"><p class="work-title">Evolution of the Salamander</p></div></a><a class="gallery-item" href="hickups.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260619%20%2840%29.jpg?v=20260619e" alt="Hickups" loading="lazy"><div class="entry-body"><p class="work-title">Hickups</p></div></a><a class="gallery-item" href="last-supper-salamanders.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/amphibians/salamanders/Last%20Supper%20Salamanders%20COLOR.jpg" alt="Last Supper Salamanders" loading="lazy"><div class="entry-body"><p class="work-title">Last Supper Salamanders</p></div></a><a class="gallery-item" href="let-s-dance.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260619%20%2877%29.jpg?v=20260619h" alt="Let&#x27;s Dance" loading="lazy"><div class="entry-body"><p class="work-title">Let's Dance</p></div></a><a class="gallery-item" href="my-kid-could-do-that.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/images/Sketches/character-groups-and-ensembles/My%20Kid%20Could%20Do%20That%20ORIGINAL.jpg" alt="My Kid Could Do That" loading="lazy"><div class="entry-body"><p class="work-title">My Kid Could Do That</p></div></a><a class="gallery-item" href="re.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260617%20%287%29.jpg?v=20260617a" alt="RE" loading="lazy"><div class="entry-body"><p class="work-title">RE</p></div></a><a class="gallery-item" href="ring-of-salamanders.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260619%20%2865%29.jpg?v=20260619h" alt="Ring of Salamanders" loading="lazy"><div class="entry-body"><p class="work-title">Ring of Salamanders</p></div></a><a class="gallery-item" href="running-salamander.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/amphibians/salamanders/Running%20Salamander%20ORIGINAL.jpg" alt="Running Salamander" loading="lazy"><div class="entry-body"><p class="work-title">Running Salamander</p></div></a><a class="gallery-item" href="groups/salamander-bubbles.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/amphibians/salamanders/Salamander%20Bubbles%202%20COLOR.jpg" alt="Salamander Bubbles" loading="lazy"><div class="entry-body"><p class="work-title">Salamander Bubbles</p><div class="set-label">Set</div></div></a><a class="gallery-item" href="salamander-cop.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/amphibians/salamanders/Salamander%20Cop%20-%20Trace%20Girl%20-%20Colored%20by%20Susan%20-%20png.jpg" alt="Salamander Cop" loading="lazy"><div class="entry-body"><p class="work-title">Salamander Cop</p></div></a><a class="gallery-item" href="groups/salamander-heart.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/amphibians/salamanders/Heart%20Yin%20Yang%20COLOR.jpg" alt="Salamander Heart" loading="lazy"><div class="entry-body"><p class="work-title">Salamander Heart</p><div class="set-label">Set</div></div></a><a class="gallery-item" href="salamander-hula.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/amphibians/salamanders/Salamander%20Hula%20COLOR.jpg" alt="Salamander Hula" loading="lazy"><div class="entry-body"><p class="work-title">Salamander Hula</p></div></a><a class="gallery-item" href="salamander-jack.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260617%20%2858%29.jpg?v=20260617e" alt="Salamander Jack" loading="lazy"><div class="entry-body"><p class="work-title">Salamander Jack</p></div></a><a class="gallery-item" href="groups/salamander-on-ladder.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/amphibians/salamanders/Salamander%20on%20Ladder%201%20COLOR.jpg" alt="Salamander on Ladder" loading="lazy"><div class="entry-body"><p class="work-title">Salamander on Ladder</p><div class="set-label">Set</div></div></a><a class="gallery-item" href="salamander-question-mark.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/amphibians/salamanders/Salamander%20Question%20Mark%20COLOR.jpg" alt="Salamander Question Mark" loading="lazy"><div class="entry-body"><p class="work-title">Salamander Question Mark</p></div></a><a class="gallery-item" href="salamander-tv.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/amphibians/salamanders/Salamander%20TV%20COLOR.jpg" alt="Salamander TV" loading="lazy"><div class="entry-body"><p class="work-title">Salamander TV</p></div></a><a class="gallery-item" href="salamander-van-gogh.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/amphibians/salamanders/Salamander%20Van%20Gogh%20COLOR.jpg" alt="Salamander Van Gogh" loading="lazy"><div class="entry-body"><p class="work-title">Salamander Van Gogh</p></div></a><a class="gallery-item" href="salamander-yinyang.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/amphibians/salamanders/Salamander%20Yinyang%20ORIGINAL.jpg" alt="Salamander Yinyang" loading="lazy"><div class="entry-body"><p class="work-title">Salamander Yinyang</p></div></a><a class="gallery-item" href="sets/salamanders-sketches.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260617%20%28143%29n.jpg?v=20260617r" alt="Salamanders Sketches" loading="lazy"><div class="entry-body"><p class="work-title">Salamanders Sketches</p><div class="set-label">Set</div></div></a><a class="gallery-item" href="that-s-all-folks.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/amphibians/salamanders/That&#39;s%20All%20Folks!%20COLOR.jpg" alt="That&#x27;s All Folks!" loading="lazy"><div class="entry-body"><p class="work-title">That's All Folks!</p></div></a><a class="gallery-item" href="what-did-you-say.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260619%20%2876%29.jpg?v=20260619h" alt="What Did You Say?" loading="lazy"><div class="entry-body"><p class="work-title">What Did You Say?</p></div></a><a class="gallery-item" href="yin-mascot.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/amphibians/salamanders/Yang%20left%20side%20COLOR.jpg" alt="Yin Mascot" loading="lazy"><div class="entry-body"><p class="work-title">Yin Mascot</p></div></a><a class="gallery-item" href="yin-rock.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/amphibians/salamanders/Yin%20Rock%20COLOR.jpg" alt="Yin Rock" loading="lazy"><div class="entry-body"><p class="work-title">Yin Rock</p></div></a><a class="gallery-item" href="yinyangs.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260614%20(96).jpg?v=20260614e" alt="Yinyangs" loading="lazy"><div class="entry-body"><p class="work-title">Yinyangs</p></div></a></section><footer>Published via GitHub Pages<br>for long-term public access.</footer></main></body>
 </html>
