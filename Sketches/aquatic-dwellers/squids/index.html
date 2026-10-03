@@ -81,6 +81,65 @@
     object-fit:contain!important;
   }
 </style>
+<style id="ron-final-review-index-standard-v1">
+.index-grid{
+  display:flex!important;
+  flex-wrap:wrap!important;
+  justify-content:center!important;
+  align-items:stretch!important;
+  gap:18px!important;
+}
+.index-grid > .index-card{
+  box-sizing:border-box!important;
+  display:flex!important;
+  flex-direction:column!important;
+  flex:0 1 300px!important;
+  width:100%!important;
+  max-width:320px!important;
+  min-width:0!important;
+  overflow:hidden!important;
+  border:1px solid #e5e7eb!important;
+  border-radius:18px!important;
+  background:#fff!important;
+  color:#111!important;
+  text-decoration:none!important;
+  box-shadow:0 8px 26px rgba(0,0,0,.06)!important;
+}
+.index-grid > .index-card > img{
+  display:block!important;
+  width:100%!important;
+  height:240px!important;
+  max-height:240px!important;
+  object-fit:contain!important;
+  object-position:center center!important;
+  background:#f3f4f6!important;
+  padding:8px!important;
+  margin:0!important;
+  border-bottom:1px solid #e5e7eb!important;
+}
+.index-grid > .index-card > .index-body{
+  display:flex!important;
+  flex:1 1 auto!important;
+  align-items:center!important;
+  justify-content:center!important;
+  width:100%!important;
+  min-height:64px!important;
+  padding:12px 14px 14px!important;
+  text-align:center!important;
+}
+.index-grid > .index-card .index-title{
+  margin:0!important;
+  text-align:center!important;
+  font-size:16px!important;
+  line-height:1.35!important;
+}
+@media(max-width:680px){
+  .index-grid > .index-card{flex-basis:calc(50% - 12px)!important;}
+}
+@media(max-width:440px){
+  .index-grid > .index-card{flex-basis:100%!important;max-width:330px!important;}
+}
+</style>
 </head><body><main class="wrap">
 <nav class="nav-pills"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a>  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
 </nav>
