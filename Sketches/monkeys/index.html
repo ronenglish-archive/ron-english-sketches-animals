@@ -15,7 +15,74 @@ body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Aria
 .card-title{padding:14px 16px 16px;text-align:center;font-size:18px;font-weight:600}
 .set-label{display:block;margin-top:6px;color:var(--muted);font-size:13px;font-weight:500}
 footer{margin-top:30px;padding-top:16px;border-top:1px solid var(--border);color:var(--muted);font-size:14px;text-align:center}
-</style></head><body><main class="wrap"><nav class="nav-pills"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue Home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a>  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
+</style><style id="ron-catalogue-four-across-standard-v1">
+.index-grid,
+.gallery-grid,
+.category-grid,
+.subcategories-grid,
+.cards-grid{
+  display:flex!important;
+  flex-wrap:wrap!important;
+  justify-content:center!important;
+  align-items:stretch!important;
+  gap:18px!important;
+}
+.index-grid > .index-card,
+.index-grid > .gallery-item,
+.index-grid > .group-card,
+.gallery-grid > .index-card,
+.gallery-grid > .gallery-item,
+.gallery-grid > .group-card,
+.category-grid > .index-card,
+.category-grid > .gallery-item,
+.category-grid > .group-card,
+.subcategories-grid > .index-card,
+.subcategories-grid > .gallery-item,
+.subcategories-grid > .group-card,
+.cards-grid > .index-card,
+.cards-grid > .gallery-item,
+.cards-grid > .group-card{
+  box-sizing:border-box!important;
+  min-width:0!important;
+  flex:0 1 calc((100% - 54px) / 4)!important;
+  width:calc((100% - 54px) / 4)!important;
+  max-width:calc((100% - 54px) / 4)!important;
+}
+@media(max-width:900px){
+  .index-grid > .index-card,.index-grid > .gallery-item,.index-grid > .group-card,
+  .gallery-grid > .index-card,.gallery-grid > .gallery-item,.gallery-grid > .group-card,
+  .category-grid > .index-card,.category-grid > .gallery-item,.category-grid > .group-card,
+  .subcategories-grid > .index-card,.subcategories-grid > .gallery-item,.subcategories-grid > .group-card,
+  .cards-grid > .index-card,.cards-grid > .gallery-item,.cards-grid > .group-card{
+    flex-basis:calc((100% - 36px) / 3)!important;
+    width:calc((100% - 36px) / 3)!important;
+    max-width:calc((100% - 36px) / 3)!important;
+  }
+}
+@media(max-width:680px){
+  .index-grid > .index-card,.index-grid > .gallery-item,.index-grid > .group-card,
+  .gallery-grid > .index-card,.gallery-grid > .gallery-item,.gallery-grid > .group-card,
+  .category-grid > .index-card,.category-grid > .gallery-item,.category-grid > .group-card,
+  .subcategories-grid > .index-card,.subcategories-grid > .gallery-item,.subcategories-grid > .group-card,
+  .cards-grid > .index-card,.cards-grid > .gallery-item,.cards-grid > .group-card{
+    flex-basis:calc((100% - 18px) / 2)!important;
+    width:calc((100% - 18px) / 2)!important;
+    max-width:calc((100% - 18px) / 2)!important;
+  }
+}
+@media(max-width:440px){
+  .index-grid > .index-card,.index-grid > .gallery-item,.index-grid > .group-card,
+  .gallery-grid > .index-card,.gallery-grid > .gallery-item,.gallery-grid > .group-card,
+  .category-grid > .index-card,.category-grid > .gallery-item,.category-grid > .group-card,
+  .subcategories-grid > .index-card,.subcategories-grid > .gallery-item,.subcategories-grid > .group-card,
+  .cards-grid > .index-card,.cards-grid > .gallery-item,.cards-grid > .group-card{
+    flex-basis:100%!important;
+    width:100%!important;
+    max-width:100%!important;
+  }
+}
+</style>
+</head><body><main class="wrap"><nav class="nav-pills"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue Home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a>  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
 </nav><header class="page-header"><h1 class="page-title">Monkeys</h1></header><div class="index-grid"><a class="index-card" href="works/re-013445.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Monkeys/Ate%20Bit%20Monkey%20COLOR.jpg" alt="Ate Bit Monkey" loading="lazy"><div class="card-title">Ate Bit Monkey</div></a>
 <a class="index-card" href="works/re-013550.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/images/Sketches/character-groups-and-ensembles/Centaur%20See%20No%20Evil%20ORIGINAL.jpg" alt="Centaur See No Evil" loading="lazy"><div class="card-title">Centaur See No Evil</div></a>
 <a class="index-card" href="works/re-011723.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Monkeys/Fotograph%2C%20Record%2C%20Report%20More%20Evil%20ORIGINAL%202.jpg" alt="Fotograph, Record, Report More Evil" loading="lazy"><div class="card-title">Fotograph, Record, Report More Evil</div></a>
