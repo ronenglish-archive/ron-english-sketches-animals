@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -424,6 +424,53 @@ flex:0 1 min(100%,320px)!important;max-width:320px!important}
   .category-grid > .index-card,.category-grid > .gallery-item,.category-grid > .group-card,
   .subcategories-grid > .index-card,.subcategories-grid > .gallery-item,.subcategories-grid > .group-card,
   .cards-grid > .index-card,.cards-grid > .gallery-item,.cards-grid > .group-card{
+    flex-basis:100%!important;
+    width:100%!important;
+    max-width:100%!important;
+  }
+}
+</style>
+<style id="ron-salamanders-index-standard-size-v1">
+/* Salamanders landing index: match current Animals main-index card proportions. */
+.gallery-grid{
+  display:flex!important;
+  flex-wrap:wrap!important;
+  justify-content:center!important;
+  align-items:stretch!important;
+  gap:18px!important;
+}
+.gallery-grid > .gallery-item{
+  box-sizing:border-box!important;
+  min-width:0!important;
+  flex:0 1 calc((100% - 54px) / 4)!important;
+  width:calc((100% - 54px) / 4)!important;
+  max-width:calc((100% - 54px) / 4)!important;
+}
+.gallery-grid > .gallery-item img{
+  display:block!important;
+  width:100%!important;
+  height:240px!important;
+  max-height:240px!important;
+  object-fit:contain!important;
+  background:#f3f4f6!important;
+  padding:6px!important;
+}
+@media(max-width:900px){
+  .gallery-grid > .gallery-item{
+    flex-basis:calc((100% - 36px) / 3)!important;
+    width:calc((100% - 36px) / 3)!important;
+    max-width:calc((100% - 36px) / 3)!important;
+  }
+}
+@media(max-width:680px){
+  .gallery-grid > .gallery-item{
+    flex-basis:calc((100% - 18px) / 2)!important;
+    width:calc((100% - 18px) / 2)!important;
+    max-width:calc((100% - 18px) / 2)!important;
+  }
+}
+@media(max-width:440px){
+  .gallery-grid > .gallery-item{
     flex-basis:100%!important;
     width:100%!important;
     max-width:100%!important;
