@@ -546,6 +546,26 @@ main.wrap > section.section-card[data-role="notes"] {
   margin-right: auto !important;
 }
 </style>
+<style id="ron-notes-wip-panel-width-v1">
+/* Owner-approved Sketches & Drawings panel alignment: Notes and Work in Progress. */
+section.ron-unified-notes-wip-panel {
+  box-sizing:border-box!important;
+  display:block!important;
+  width:100%!important;
+  max-width:960px!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+  padding:22px!important;
+  border:1px solid #e5e7eb!important;
+  border-radius:18px!important;
+  background:#fff!important;
+  box-shadow:0 8px 26px rgba(0,0,0,.06)!important;
+}
+section.ron-unified-notes-wip-panel > h2 {text-align:center!important;}
+@media(max-width:600px) {
+  section.ron-unified-notes-wip-panel {padding:14px!important;}
+}
+</style>
 </head>
 
 <body>
@@ -600,7 +620,7 @@ main.wrap > section.section-card[data-role="notes"] {
 
 
 
-<section class="section-card" data-role="notes">
+<section class="section-card ron-unified-notes-wip-panel" data-role="notes">
 <h2>Notes</h2>
 <div class="text-block">
 <p>The work was signed after the catalogue photograph was taken; the signature is therefore not visible in the image.</p>
