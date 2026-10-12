@@ -446,6 +446,31 @@ section.section-card[data-role="videos"] .ancillary-video-card > p {
   section.section-card[data-role="videos"] {padding:14px!important;}
 }
 </style>
+<style id="ron-sketches-videos-unified-v1">
+/* V11 video holders: 960px white panel, compact 300px tiles, grey letterbox. */
+section[data-role="videos"] { box-sizing:border-box!important; width:100%!important; max-width:960px!important; margin:0 auto 24px!important; padding:22px!important; background:#fff!important; border:1px solid #e5e7eb!important; border-radius:18px!important; box-shadow:0 8px 26px rgba(0,0,0,.06)!important; }
+section[data-role="videos"] > h2 { text-align:center!important; margin:0 0 16px!important; }
+section[data-role="videos"] .catalogue-video-grid,
+section[data-role="videos"] .ron-video-grid { display:flex!important; flex-wrap:wrap!important; align-items:stretch!important; justify-content:center!important; gap:18px!important; width:100%!important; max-width:100%!important; margin:0 auto!important; }
+section[data-role="videos"] .ancillary-video-card,
+section[data-role="videos"] .ron-video-tile,
+section[data-role="videos"] .ron-video-entry { box-sizing:border-box!important; flex:0 1 300px!important; width:min(300px,100%)!important; min-width:0!important; max-width:300px!important; margin:0!important; padding:0!important; text-align:center!important; background:#fff!important; border:1px solid #e5e7eb!important; border-radius:16px!important; overflow:hidden!important; box-shadow:0 8px 26px rgba(0,0,0,.06)!important; }
+/* All media have the same compact square grey field, independently of player aspect. */
+section[data-role="videos"] .ancillary-video-card > div:first-child,
+section[data-role="videos"] .ron-video-tile > .video-embed,
+section[data-role="videos"] .ron-video-entry > .video-embed,
+section[data-role="videos"] .ron-video-entry > div:first-child,
+section[data-role="videos"] .ron-video-tile > div:first-child { box-sizing:border-box!important; position:relative!important; inset:auto!important; display:flex!important; align-items:center!important; justify-content:center!important; width:100%!important; max-width:100%!important; height:300px!important; min-height:300px!important; max-height:300px!important; padding:8px!important; margin:0!important; overflow:hidden!important; background:#f3f4f6!important; }
+section[data-role="videos"] iframe { box-sizing:border-box!important; display:block!important; position:relative!important; inset:auto!important; flex:none!important; width:100%!important; max-width:100%!important; height:auto!important; max-height:284px!important; aspect-ratio:16/9!important; border:0!important; margin:0 auto!important; }
+/* 9:16 portrait iframe: fit it inside the SAME grey square without stretching. */
+section[data-role="videos"] iframe[style*="9/16"],
+section[data-role="videos"] iframe[style*="9 / 16"] { aspect-ratio:9/16!important; height:284px!important; width:159.75px!important; max-width:100%!important; }
+section[data-role="videos"] video { box-sizing:border-box!important; position:relative!important; inset:auto!important; display:block!important; width:100%!important; height:284px!important; max-height:284px!important; object-fit:contain!important; background:#f3f4f6!important; }
+section[data-role="videos"] .ancillary-video-card > p,
+section[data-role="videos"] .ron-video-tile > p,
+section[data-role="videos"] .ron-video-entry > p { margin:0!important; padding:12px!important; text-align:center!important; background:#fff!important; }
+@media(max-width:620px) {section[data-role="videos"]{padding:14px!important;}section[data-role="videos"] .ancillary-video-card,section[data-role="videos"] .ron-video-tile,section[data-role="videos"] .ron-video-entry{max-width:100%!important;}}
+</style>
 </head>
 <body><main class="wrap"><nav class="nav-pills" aria-label="Site navigation"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="../index.html">&larr; Rabbbits</a>  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
 </nav><header class="page-header"><h1 class="page-title">Couch Potatoes</h1></header>
