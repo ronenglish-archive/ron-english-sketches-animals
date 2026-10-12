@@ -284,7 +284,7 @@ section[data-role="ancillary-documentation"].ron-ancillary-reference-cards figca
   }
 }
 </style>
-<style id="ron-sketches-detail-media-sections-v2">
+<style id="ron-sketches-detail-media-sections-v3">
 /* Adam Alien reference: uniform WHITE SECTION holders, not equal-size images. */
 section.section-card[data-role="original-drawing"],
 section.section-card[data-role="original"],
@@ -332,42 +332,72 @@ section.section-card[data-role*="trading-card"] .gallery-grid > .gallery-item {
   max-width:300px!important;min-width:0!important;
   margin-left:0!important;margin-right:0!important;
 }
-/* Each captioned ancillary item is its own compact image-over-text card. */
+/* Captioned ancillary documentation: one substantial horizontal item card,
+   image LEFT, established title/details RIGHT. No invented captions. */
 section.section-card[data-role="ancillary-documentation"] .ancillary-gallery,
 section.section-card[data-role="ancillary-documentation"] .documentation-grid {
   display:flex!important;flex-wrap:wrap!important;
-  justify-content:center!important;align-items:stretch!important;
-  gap:18px!important;width:100%!important;
-  max-width:100%!important;margin-left:auto!important;margin-right:auto!important;
+  flex-direction:column!important;align-items:center!important;
+  justify-content:center!important;gap:18px!important;
+  width:100%!important;max-width:100%!important;
+  margin-left:auto!important;margin-right:auto!important;
 }
-section.section-card[data-role="ancillary-documentation"] .ancillary-figure {
+section.section-card[data-role="ancillary-documentation"] .ancillary-figure:has(> figcaption),
+section.section-card[data-role="ancillary-documentation"].ron-ancillary-reference-cards .ancillary-figure:has(> figcaption) {
   box-sizing:border-box!important;
-  display:flex!important;flex-direction:column!important;
-  flex:0 1 320px!important;width:min(320px,100%)!important;
-  max-width:320px!important;min-width:0!important;
-  margin:0!important;overflow:hidden!important;
+  display:grid!important;
+  grid-template-columns:minmax(175px,260px) minmax(0,1fr)!important;
+  align-items:stretch!important;
+  flex:0 0 auto!important;
+  width:100%!important;max-width:820px!important;
+  min-width:0!important;margin:0 auto!important;
+  overflow:hidden!important;
   border:1px solid #e5e7eb!important;border-radius:16px!important;
-  background:#fff!important;
+  background:#fff!important;box-shadow:0 6px 18px rgba(0,0,0,.06)!important;
 }
-section.section-card[data-role="ancillary-documentation"] .ancillary-figure > a:has(> img) {
+section.section-card[data-role="ancillary-documentation"] .ancillary-figure:has(> figcaption) > a,
+section.section-card[data-role="ancillary-documentation"].ron-ancillary-reference-cards .ancillary-figure:has(> figcaption) > a {
   display:flex!important;align-items:center!important;justify-content:center!important;
-  width:100%!important;min-height:0!important;padding:10px!important;
-  border-right:0!important;border-bottom:1px solid #e5e7eb!important;
-  background:#f3f4f6!important;
+  width:100%!important;min-width:0!important;min-height:190px!important;
+  margin:0!important;padding:12px!important;
+  border:0!important;border-right:1px solid #e5e7eb!important;
+  background:#f3f4f6!important;text-decoration:none!important;
 }
-section.section-card[data-role="ancillary-documentation"] .ancillary-figure > a > img {
-  display:block!important;width:100%!important;max-width:100%!important;
-  height:220px!important;max-height:220px!important;
-  object-fit:contain!important;
+section.section-card[data-role="ancillary-documentation"] .ancillary-figure:has(> figcaption) > a > img,
+section.section-card[data-role="ancillary-documentation"].ron-ancillary-reference-cards .ancillary-figure:has(> figcaption) > a > img {
+  display:block!important;width:100%!important;max-width:240px!important;
+  height:195px!important;max-height:195px!important;
+  object-fit:contain!important;margin:0 auto!important;
 }
-section.section-card[data-role="ancillary-documentation"] .ancillary-figure > figcaption {
-  display:block!important;padding:12px 14px!important;
-  text-align:center!important;background:#fff!important;
+section.section-card[data-role="ancillary-documentation"] .ancillary-figure:has(> figcaption) > figcaption,
+section.section-card[data-role="ancillary-documentation"].ron-ancillary-reference-cards .ancillary-figure:has(> figcaption) > figcaption {
+  display:flex!important;flex-direction:column!important;
+  justify-content:center!important;align-items:flex-start!important;
+  margin:0!important;padding:20px 22px!important;
+  background:#fff!important;text-align:left!important;
+  font-size:1rem!important;line-height:1.55!important;
   overflow-wrap:anywhere!important;
 }
-section.section-card[data-role="ancillary-documentation"] .ancillary-figure figcaption a {
+section.section-card[data-role="ancillary-documentation"] .ancillary-figure:has(> figcaption) figcaption a {
   display:inline!important;padding:0!important;border:0!important;
   background:transparent!important;text-decoration:underline!important;
+}
+/* Image-only ancillary records retain compact centered image-only tiles. */
+section.section-card[data-role="ancillary-documentation"] .ancillary-figure:not(:has(> figcaption)) {
+  box-sizing:border-box!important;display:block!important;
+  width:min(300px,100%)!important;max-width:300px!important;
+  margin:0 auto!important;
+}
+@media(max-width:650px) {
+  section.section-card[data-role="ancillary-documentation"] .ancillary-figure:has(> figcaption),
+  section.section-card[data-role="ancillary-documentation"].ron-ancillary-reference-cards .ancillary-figure:has(> figcaption) {
+    grid-template-columns:minmax(0,1fr)!important;max-width:430px!important;
+  }
+  section.section-card[data-role="ancillary-documentation"] .ancillary-figure:has(> figcaption) > a,
+  section.section-card[data-role="ancillary-documentation"].ron-ancillary-reference-cards .ancillary-figure:has(> figcaption) > a {
+    min-height:0!important;border-right:0!important;
+    border-bottom:1px solid #e5e7eb!important;
+  }
 }
 @media(max-width:600px) {
   section.section-card[data-role="original-drawing"],
