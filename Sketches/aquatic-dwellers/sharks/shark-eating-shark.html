@@ -404,18 +404,17 @@ section[data-role="ancillary-documentation"] figure.ron-trump-duck-tile > a > im
 }
 </style>
 <style id="ron-shark-eating-shark-shared-sheet-grey-card-v1">
-/* One standalone light-grey shared-sheet note, below metadata. */
-main .relationship-note {
-  display:block!important;
+/* Match Hamster Veal: standalone grey relationship card below metadata.
+   Shark-Eating Shark uses div.wrap, not main; select the actual container. */
+div.wrap > div.relationship-note {
   box-sizing:border-box!important;
-  width:fit-content!important;
-  max-width:min(100%, 720px)!important;
+  width:100%!important;
+  max-width:900px!important;
   margin:0 auto 24px!important;
   padding:12px 16px!important;
-  background:#f9fafb!important;
   border:1px solid #e5e7eb!important;
   border-radius:14px!important;
-  color:inherit!important;
+  background:#f9fafb!important;
   line-height:1.6!important;
   text-align:center!important;
   box-shadow:none!important;
