@@ -424,6 +424,47 @@ div.wrap > div.relationship-note {
   div.wrap > div.relationship-note {padding:14px!important;}
 }
 </style>
+
+<style id="ron-shark-uniform-920px-outer-panels-v1">
+/* Shark Eating Shark: outer holders only -- preserve internal image/gallery sizing.
+   920px matches the original artwork holder's desktop baseline. */
+div.wrap > section.primary-artwork[data-role="original-drawing"],
+div.wrap > section.section-card[data-role="digital"],
+div.wrap > section.section-card[data-role="ancillary-documentation"],
+div.wrap > div.relationship-note {
+  box-sizing:border-box!important;
+  display:block!important;
+  width:100%!important;
+  max-width:920px!important;
+  min-width:0!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+}
+div.wrap > div.relationship-note {
+  padding:16px 22px!important;
+  background:#f9fafb!important;
+  border:1px solid #e5e7eb!important;
+  border-radius:14px!important;
+  text-align:center!important;
+  line-height:1.6!important;
+}
+/* A prior responsive rule reduced only the Original Drawing holder to
+   460px. Keep all four holder widths synchronized at tablet/mobile widths. */
+@media(max-width:700px) {
+  div.wrap > section.primary-artwork[data-role="original-drawing"],
+  div.wrap > section.section-card[data-role="digital"],
+  div.wrap > section.section-card[data-role="ancillary-documentation"],
+  div.wrap > div.relationship-note {
+    width:100%!important;
+    max-width:920px!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+  }
+}
+@media(max-width:620px) {
+  div.wrap > div.relationship-note {padding:14px!important;}
+}
+</style>
 </head>
 <body><div class="wrap"><nav class="nav-pills" aria-label="Site navigation"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="index.html">&larr; Sharks</a>  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
 </nav>
