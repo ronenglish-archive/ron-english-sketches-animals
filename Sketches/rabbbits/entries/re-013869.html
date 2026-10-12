@@ -383,38 +383,41 @@ section.section-card[data-role="ancillary-documentation"] .ancillary-figure figc
 }
 </style>
 <style id="ron-literature-citations-centered-global-20261012">section[data-role="literature"] .literature-entry,section[data-role="literature"] .literature-entry p,section[data-role="literature"] > p,section[data-role="literature"] .gallery-grid > p{ text-align:center!important; margin-left:auto!important; margin-right:auto!important; }section[data-role="literature"] .literature-entry{max-width:100%;}section[data-role="literature"] .gallery-grid{justify-content:center!important;}</style>
-<style id="ron-re-013869-literature-three-across-v1">
-/* RE-013869: three Literature images per desktop row. */
-@media (min-width: 950px) {
-  section.section-card[data-role="literature"] .literature-entry > .gallery-grid {
-    display: grid !important;
-    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-    justify-items: center !important;
-    align-items: start !important;
-    gap: 18px !important;
-  }
-}
-@media (min-width: 650px) and (max-width: 949px) {
-  section.section-card[data-role="literature"] .literature-entry > .gallery-grid {
-    display: grid !important;
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-    justify-items: center !important;
-    gap: 18px !important;
-  }
-}
-@media (max-width: 649px) {
-  section.section-card[data-role="literature"] .literature-entry > .gallery-grid {
-    display: grid !important;
-    grid-template-columns: minmax(0, 1fr) !important;
-    justify-items: center !important;
-    gap: 18px !important;
-  }
+<style id="ron-literature-centered-flex-three-across-20261012-v1">
+/* Each citation retains its own centered, wrapping image row. */
+section.section-card[data-role="literature"] .literature-entry > .gallery-grid {
+  display:flex!important;
+  flex-direction:row!important;
+  flex-wrap:wrap!important;
+  justify-content:center!important;
+  align-items:stretch!important;
+  gap:18px!important;
+  width:100%!important;
+  max-width:100%!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
 }
 section.section-card[data-role="literature"] .literature-entry > .gallery-grid > .gallery-item {
-  box-sizing: border-box !important;
-  width: 100% !important;
-  min-width: 0 !important;
-  max-width: 300px !important;
+  box-sizing:border-box!important;
+  flex:0 1 290px!important;
+  width:290px!important;
+  max-width:300px!important;
+  min-width:0!important;
+  margin:0!important;
+}
+@media(min-width:650px) and (max-width:949px){
+  section.section-card[data-role="literature"] .literature-entry > .gallery-grid > .gallery-item {
+    flex-basis:calc((100% - 18px)/2)!important;
+    width:calc((100% - 18px)/2)!important;
+    max-width:300px!important;
+  }
+}
+@media(max-width:649px){
+  section.section-card[data-role="literature"] .literature-entry > .gallery-grid > .gallery-item {
+    flex-basis:min(100%,300px)!important;
+    width:min(100%,300px)!important;
+    max-width:300px!important;
+  }
 }
 </style>
 <style id="ron-owner-confirmed-ten-graphics-v1">

@@ -437,6 +437,88 @@ section[data-role="videos"] .ron-video-tile > p,
 section[data-role="videos"] .ron-video-entry > p { margin:0!important; padding:12px!important; text-align:center!important; background:#fff!important; }
 @media(max-width:620px) {section[data-role="videos"]{padding:14px!important;}section[data-role="videos"] .ancillary-video-card,section[data-role="videos"] .ron-video-tile,section[data-role="videos"] .ron-video-entry{max-width:100%!important;}}
 </style>
+
+<style id="ron-sketches-wrapped-video-card-surface-v3">
+/* Only video tiles, NEVER the large white Videos panel. */
+section[data-role="videos"] .ron-video-grid > .ron-video-entry,
+section[data-role="videos"] .catalogue-video-grid > .ron-video-entry,
+section[data-role="videos"] .ron-video-grid > .ron-video-tile,
+section[data-role="videos"] .catalogue-video-grid > .ron-video-tile,
+section[data-role="videos"] .ron-video-grid > .ancillary-video-card,
+section[data-role="videos"] .catalogue-video-grid > .ancillary-video-card {
+  box-sizing:border-box!important;
+  flex:0 1 300px!important;
+  width:300px!important;
+  min-width:0!important;
+  max-width:100%!important;
+  margin:0!important;
+  text-align:center!important;
+  border:1px solid #e5e7eb!important;
+  border-radius:16px!important;
+  overflow:hidden!important;
+  box-shadow:0 8px 26px rgba(0,0,0,.06)!important;
+}
+/* Inner letterbox surface where a wrapper already contains a media div. */
+section[data-role="videos"] .ron-video-entry > div:first-child,
+section[data-role="videos"] .ron-video-tile > div:first-child,
+section[data-role="videos"] .ancillary-video-card > div:first-child {
+  box-sizing:border-box!important;
+  position:relative!important;
+  inset:auto!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  width:100%!important;
+  max-width:100%!important;
+  height:300px!important;
+  min-height:300px!important;
+  max-height:300px!important;
+  padding:8px!important;
+  margin:0!important;
+  overflow:hidden!important;
+  background:#f3f4f6!important;
+}
+/* Direct HTML5 players have no intervening div: add their gray square HERE. */
+section[data-role="videos"] .ron-video-entry > video,
+section[data-role="videos"] .ron-video-tile > video,
+section[data-role="videos"] .ancillary-video-card > video {
+  box-sizing:border-box!important;
+  display:block!important;
+  position:relative!important;
+  inset:auto!important;
+  width:100%!important;
+  max-width:100%!important;
+  height:300px!important;
+  min-height:300px!important;
+  max-height:300px!important;
+  padding:8px!important;
+  margin:0!important;
+  object-fit:contain!important;
+  background:#f3f4f6!important;
+}
+/* For direct iframes, provide the same background, corner clipping, and padding. */
+section[data-role="videos"] .ron-video-entry > iframe,
+section[data-role="videos"] .ron-video-tile > iframe,
+section[data-role="videos"] .ancillary-video-card > iframe {
+  box-sizing:border-box!important;
+  display:block!important;
+  position:relative!important;
+  inset:auto!important;
+  max-width:100%!important;
+  max-height:300px!important;
+  padding:8px!important;
+  margin:0 auto!important;
+  background:#f3f4f6!important;
+}
+section[data-role="videos"] .ron-video-entry > p,
+section[data-role="videos"] .ron-video-tile > p,
+section[data-role="videos"] .ancillary-video-card > p {
+  margin:0!important;
+  padding:12px!important;
+  background:#fff!important;
+  text-align:center!important;
+}
+</style>
 </head>
 <body><main class="wrap"><nav class="nav-pills" aria-label="Site navigation"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="../sets/eunice-unipig/index.html">&larr; Eunice Unipig</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a></nav><header class="page-header"><h1 class="page-title">Eunice Unipig Side</h1></header>
 <h2 class="original-drawing-heading">Original Drawing</h2><section class="section-card" data-role="original-drawing"><div class="gallery-grid original-grid"><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Ungulates/unipigs%20%26%20pigs/Eunice%20Unipig%20side%20ORIGINAL.jpg" target="_blank" rel="noopener"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Ungulates/unipigs%20%26%20pigs/Eunice%20Unipig%20side%20ORIGINAL.jpg" alt="" loading="lazy"></a></div></section><div class="catalogue-meta-block"><ul class="work-meta"><li><strong>Title:</strong> Eunice Unipig Side</li><li><strong>Medium:</strong> Ink on paper</li><li><strong>Dimensions:</strong> Unknown</li><li><strong>Work ID:</strong> RE-015999</li></ul></div><section class="section-card" data-role="digital"><h2>Digitized Versions</h2><div class="gallery-grid"><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Ungulates/unipigs%20%26%20pigs/Eunice%20Unipig%20side%20B%26W.png" target="_blank" rel="noopener"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Ungulates/unipigs%20%26%20pigs/Eunice%20Unipig%20side%20B%26W.png" alt="" loading="lazy"></a><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Ungulates/unipigs%20%26%20pigs/Eunice%20Unipig%20side%20COLOR.png" target="_blank" rel="noopener"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Ungulates/unipigs%20%26%20pigs/Eunice%20Unipig%20side%20COLOR.png" alt="" loading="lazy"></a></div></section>
