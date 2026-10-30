@@ -35,7 +35,41 @@ body{margin:0;background:#fff;color:#111;font-family:system-ui,-apple-system,"Se
 .hub-doc-grid a{display:block;flex:0 1 300px;max-width:315px;border:1px solid #e5e7eb;border-radius:16px;overflow:hidden;background:#fff}
 .hub-doc-grid img{display:block;width:100%;height:315px;object-fit:contain;background:#f3f4f6;padding:6px}
 footer{text-align:center;margin-top:30px;padding-top:16px;border-top:1px solid #e5e7eb;color:#6b7280;font-size:14px}
-@media(max-width:620px){.wrap{padding:22px 14px 48px}.index-grid{grid-template-columns:minmax(0,330px)}.index-grid>.index-card{max-width:330px!important}.index-image{height:300px}.group-card{flex-basis:min(100%,330px);max-width:330px}}.set-label{display:block;width:100%;margin-top:4px;font-size:.88em;font-weight:500;color:#6b7280}.card-title{flex-direction:column}</style>
+@media(max-width:620px){.wrap{padding:22px 14px 48px}.index-grid{grid-template-columns:minmax(0,330px)}.index-grid>.index-card{max-width:330px!important}.index-image{height:300px}.group-card{flex-basis:min(100%,330px);max-width:330px}}.set-label{display:block;width:100%;margin-top:4px;font-size:.88em;font-weight:500;color:#6b7280}.card-title{flex-direction:column}/* RON EQUINES UNIFORM THUMBNAILS 20261030 */
+.index-grid > .index-card > .index-image,
+.index-grid > .index-card > img {
+  display: flex;
+  width: 100%;
+  height: 260px;
+  min-height: 260px;
+  max-height: 260px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #f8fafc;
+}
+.index-grid > .index-card > .index-image img,
+.index-grid > .index-card > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-height: 260px;
+  object-fit: contain;
+  padding: 10px;
+  margin: 0;
+}
+@media (max-width:620px) {
+  .index-grid > .index-card > .index-image,
+  .index-grid > .index-card > img {
+    height: 300px;
+    min-height: 300px;
+    max-height: 300px;
+  }
+  .index-grid > .index-card > .index-image img,
+  .index-grid > .index-card > img {
+    max-height: 300px;
+  }
+}</style>
 <style id="sketches-index-centered-final-row-v2">
   .index-grid{display:flex !important;flex-wrap:wrap !important;justify-content:center !important;align-items:stretch;}
   .index-grid > .index-card,.index-grid > .group-card,.index-grid > .gallery-item{flex:0 1 300px !important;max-width:320px;width:100%;}
@@ -74,6 +108,40 @@ footer{text-align:center;margin-top:30px;padding-top:16px;border-top:1px solid #
     width:100%!important;
     max-width:100%!important;
   }
+}/* RON EQUINES UNIFORM THUMBNAILS 20261030 */
+.index-grid > .index-card > .index-image,
+.index-grid > .index-card > img {
+  display: flex;
+  width: 100%;
+  height: 260px;
+  min-height: 260px;
+  max-height: 260px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #f8fafc;
+}
+.index-grid > .index-card > .index-image img,
+.index-grid > .index-card > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-height: 260px;
+  object-fit: contain;
+  padding: 10px;
+  margin: 0;
+}
+@media (max-width:620px) {
+  .index-grid > .index-card > .index-image,
+  .index-grid > .index-card > img {
+    height: 300px;
+    min-height: 300px;
+    max-height: 300px;
+  }
+  .index-grid > .index-card > .index-image img,
+  .index-grid > .index-card > img {
+    max-height: 300px;
+  }
 }</style>
 
 <style id="global-main-index-standard-size-v1">
@@ -101,7 +169,41 @@ footer{text-align:center;margin-top:30px;padding-top:16px;border-top:1px solid #
     aspect-ratio:auto!important;
     object-fit:contain!important;
   }
-</style>
+/* RON EQUINES UNIFORM THUMBNAILS 20261030 */
+.index-grid > .index-card > .index-image,
+.index-grid > .index-card > img {
+  display: flex;
+  width: 100%;
+  height: 260px;
+  min-height: 260px;
+  max-height: 260px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #f8fafc;
+}
+.index-grid > .index-card > .index-image img,
+.index-grid > .index-card > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-height: 260px;
+  object-fit: contain;
+  padding: 10px;
+  margin: 0;
+}
+@media (max-width:620px) {
+  .index-grid > .index-card > .index-image,
+  .index-grid > .index-card > img {
+    height: 300px;
+    min-height: 300px;
+    max-height: 300px;
+  }
+  .index-grid > .index-card > .index-image img,
+  .index-grid > .index-card > img {
+    max-height: 300px;
+  }
+}</style>
 <style id="ron-catalogue-four-across-standard-v1">
 .index-grid,
 .gallery-grid,
@@ -168,14 +270,82 @@ footer{text-align:center;margin-top:30px;padding-top:16px;border-top:1px solid #
     max-width:100%!important;
   }
 }
-</style>
-<style id="ron-category-sequence-standard-v1">nav.sequence-nav.ron-bottom-prev-next-center{display:flex!important;flex-wrap:wrap!important;justify-content:center!important;align-items:center!important;gap:12px!important;margin:28px auto 18px!important;text-align:center!important}nav.sequence-nav.ron-bottom-prev-next-center>a.nav-pill.sequence-pill{display:inline-block!important;flex:0 1 auto!important;padding:8px 14px!important;border:1px solid #e5e7eb!important;border-radius:999px!important;background:#fff!important;color:#111!important;text-decoration:none!important;font:400 14px/1.4 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important}nav.sequence-nav.ron-bottom-prev-next-center>a.nav-pill.sequence-pill:hover,nav.sequence-nav.ron-bottom-prev-next-center>a.nav-pill.sequence-pill:focus{background:#f9fafb!important}</style><link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
+/* RON EQUINES UNIFORM THUMBNAILS 20261030 */
+.index-grid > .index-card > .index-image,
+.index-grid > .index-card > img {
+  display: flex;
+  width: 100%;
+  height: 260px;
+  min-height: 260px;
+  max-height: 260px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #f8fafc;
+}
+.index-grid > .index-card > .index-image img,
+.index-grid > .index-card > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-height: 260px;
+  object-fit: contain;
+  padding: 10px;
+  margin: 0;
+}
+@media (max-width:620px) {
+  .index-grid > .index-card > .index-image,
+  .index-grid > .index-card > img {
+    height: 300px;
+    min-height: 300px;
+    max-height: 300px;
+  }
+  .index-grid > .index-card > .index-image img,
+  .index-grid > .index-card > img {
+    max-height: 300px;
+  }
+}</style>
+<style id="ron-category-sequence-standard-v1">nav.sequence-nav.ron-bottom-prev-next-center{display:flex!important;flex-wrap:wrap!important;justify-content:center!important;align-items:center!important;gap:12px!important;margin:28px auto 18px!important;text-align:center!important}nav.sequence-nav.ron-bottom-prev-next-center>a.nav-pill.sequence-pill{display:inline-block!important;flex:0 1 auto!important;padding:8px 14px!important;border:1px solid #e5e7eb!important;border-radius:999px!important;background:#fff!important;color:#111!important;text-decoration:none!important;font:400 14px/1.4 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important}nav.sequence-nav.ron-bottom-prev-next-center>a.nav-pill.sequence-pill:hover,nav.sequence-nav.ron-bottom-prev-next-center>a.nav-pill.sequence-pill:focus{background:#f9fafb!important}/* RON EQUINES UNIFORM THUMBNAILS 20261030 */
+.index-grid > .index-card > .index-image,
+.index-grid > .index-card > img {
+  display: flex;
+  width: 100%;
+  height: 260px;
+  min-height: 260px;
+  max-height: 260px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #f8fafc;
+}
+.index-grid > .index-card > .index-image img,
+.index-grid > .index-card > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-height: 260px;
+  object-fit: contain;
+  padding: 10px;
+  margin: 0;
+}
+@media (max-width:620px) {
+  .index-grid > .index-card > .index-image,
+  .index-grid > .index-card > img {
+    height: 300px;
+    min-height: 300px;
+    max-height: 300px;
+  }
+  .index-grid > .index-card > .index-image img,
+  .index-grid > .index-card > img {
+    max-height: 300px;
+  }
+}</style><link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
 </head><body><main class="wrap"><nav class="nav-pills" aria-label="Site navigation"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a>  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
 </nav><header class="page-header"><h1 class="page-title">Equines &amp; Unicorns</h1></header><div class="index-grid"><a class="index-card" href="works/re-017058.html"><div class="index-image"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-4/main/sketches/Scan_20260820.jpg?l=20260915-2015" alt="Bikini-Clad Equines with Swords" loading="lazy"></div><div class="card-title">Bikini-Clad Equines with Swords</div></a>
 <a class="index-card" href="draw-me/index.html"><div class="index-image"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260525.jpg?v=20260614e" alt="Draw Me" loading="lazy"></div><div class="card-title">Draw Me</div></a>
 <a class="index-card" href="equines-family-icon/index.html"><div class="index-image"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Ungulates/Equines/Equines%20Family%20Icon%20COLOR.jpg" alt="Equines Family Icon" loading="lazy"></div><div class="card-title">Equines Family Icon</div></a>
 <a class="index-card" href="floating-unipony-set/index.html"><div class="index-image"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260616.jpg?v=20260616b" alt="Floating Unipony Sketches" loading="lazy"></div><div class="card-title">Floating Unipony Sketches<span class="set-label">Set</span></div></a>
-<a class="index-card" href="works/re-017317.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-6/main/Scan_20260914%20%282%29.jpg" alt="Forlorn" loading="lazy"><div class="card-title">Forlorn</div></a>
+<a class="index-card" href="works/re-017317.html"><div class="index-image"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-6/main/Scan_20260914%20%282%29.jpg" alt="Forlorn" loading="lazy"></div><div class="card-title">Forlorn</div></a>
 <a class="index-card" href="forlorn-angel/index.html"><div class="index-image"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Ungulates/Equines/Forlorn%20Angel%20COLOR.jpg" alt="Forlorn Angel" loading="lazy"></div><div class="card-title">Forlorn Angel</div></a>
 <a class="index-card" href="forlorn-floating/index.html"><div class="index-image"><img src="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/images/Sketches/New/forlorn3.jpg?v=20260606" alt="Forlorn Floating" loading="lazy"></div><div class="card-title">Forlorn Floating</div></a>
 <a class="index-card" href="forlorn-unicorn-stabbing/index.html"><div class="index-image"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260606.jpg?v=20260618b" alt="Forlorn Stab" loading="lazy"></div><div class="card-title">Forlorn Stab<span class="set-label">Set</span></div></a>
