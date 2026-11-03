@@ -37,27 +37,27 @@
     }
 
     .wrap{
-      
-      
-      
+      max-width:1240px;
+      margin:0 auto;
+      padding:28px 18px 60px;
     }
 
     .nav-pills{
       display:flex;
       flex-wrap:wrap;
-      
-      
-      
+      gap:10px;
+      margin-top:22px;
+      margin-bottom:22px;
     }
 
     .nav-pill{
-      
+      padding:8px 14px;
       border-radius:999px;
       border:1px solid var(--border);
       background:var(--pill-bg);
       color:#111;
       text-decoration:none;
-      
+      font-size:14px;
       transition:background .12s ease, border-color .12s ease, transform .12s ease;
     }
 
@@ -68,17 +68,17 @@
     }
 
     .page-header{
-      
-      
-      
+      max-width:1100px;
+      margin:0 0 28px;
+      padding:0;
       text-align:left;
     }
 
     .page-title{
-      
-      
+      margin:0 0 10px;
+      font-size:clamp(2rem,4vw,3rem);
       letter-spacing:-.02em;
-      
+      line-height:1.05;
     }
 
     .intro-text{
@@ -121,15 +121,15 @@
 
     .gallery-grid{
       display:grid;
-      
-      
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:20px;
     }
 
     .index-grid{
-      
+      margin-top:28px;
       display:grid;
-      
-      
+      grid-template-columns:repeat(4,minmax(0,1fr));
+      gap:18px;
     }
 
     .card-grid{
@@ -158,23 +158,23 @@
 
     .gallery-item img{
       display:block;
-      
-      
-      
+      width:100%;
+      height:280px;
+      object-fit:contain;
       background:var(--panel);
-      
+      padding:8px;
       border-bottom:1px solid var(--border);
     }
 
     .index-grid .gallery-item img{
-      
-      
+      height:240px;
+      padding:10px;
     }
 
     .card-grid .gallery-item img{
-      
+      height:520px;
       background:var(--panel);
-      
+      padding:10px;
     }
 
     .entry-body{
@@ -292,13 +292,13 @@
 
     @media (max-width:1100px){
       .index-grid{
-        
+        grid-template-columns:repeat(3,minmax(0,1fr));
       }
     }
 
     @media (max-width:820px){
       .index-grid{
-        
+        grid-template-columns:repeat(2,minmax(0,1fr));
       }
     }
 
@@ -310,33 +310,33 @@
 
     @media (max-width:560px){
       .wrap{
-        
+        padding:22px 14px 50px;
       }
 
       .index-grid{
-        
+        grid-template-columns:1fr;
       }
 
       .gallery-item img,
       .index-grid .gallery-item img{
-        
+        height:260px;
       }
 
       .card-grid .gallery-item img{
-        
+        height:420px;
       }
     }
   
     /* BEGIN SKETCHES CENTERING OVERRIDES */
     .nav-pills{
-      
+      justify-content:center;
       text-align:center;
     }
 
     .page-header{
       text-align:center;
-      
-      
+      margin-left:auto;
+      margin-right:auto;
     }
 
     .page-title,
@@ -382,7 +382,7 @@
     .gallery-item .entry-body .work-subtitle,
     .gallery-item .entry-body .work-note{
       text-align:center;
-      
+      width:100%;
     }
 
     footer{
@@ -397,74 +397,30 @@
       text-align:left;
     }
     /* END SKETCHES CENTERING OVERRIDES */
-  
-/* Aqua Apes clean desktop layout standard, consolidated into the base stylesheet.
-   Index cards and documentary cards use 164x140. Hero artwork remains separate. */
-@media (min-width:701px){
- .wrap{max-width:520px;margin:0 auto;padding:18px 14px 34px}
- .page-header{margin:0 auto 12px;text-align:center}
- .page-title{font-size:24px;line-height:1.1;margin:0 0 8px}
- .nav-pills,.sequence-nav{justify-content:center;gap:8px;margin:12px 0}
- .nav-pill,.sequence-pill{font-size:13px;padding:6px 10px}
- .catalogue-meta-block,.work-meta,.relationship-note,.text-block,.literature-entry{max-width:520px;margin-left:auto;margin-right:auto}
- .work-meta{line-height:1.42}
- .relationship-note{padding:8px 10px;margin-bottom:12px}
- .text-block,.literature-entry{line-height:1.45;margin-bottom:10px}
- .primary-artwork,.original-grid{max-width:520px;margin:0 auto 12px}
- .primary-artwork img,.original-grid .gallery-item img{width:100%;max-width:500px;height:190px;max-height:190px;object-fit:contain}
- .original-grid > .gallery-item{flex:0 1 500px;max-width:500px;width:100%}
- .gallery-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
- .gallery-grid:not(.original-grid) > .gallery-item{flex:0 0 164px;width:164px;min-width:164px;max-width:164px}
- .gallery-grid:not(.original-grid) > .gallery-item img{display:block;width:100%;height:140px;min-height:140px;max-height:140px;object-fit:contain}
- .section-card{padding:13px;margin-bottom:13px}
- .original-drawing-heading{font-size:1.1rem;margin-bottom:9px}
-}
-</style>
+  </style>
 <!-- SKETCH-SWEEP-STYLES START -->
 <style>
-.nav-pills{display:flex!important;flex-wrap:wrap!important;}
-.nav-pill,.back-link a{display:inline-block!important;border-radius:999px!important;border:1px solid #e5e7eb!important;background:#fff!important;color:#111!important;text-decoration:none!important;}
+.nav-pills{display:flex!important;flex-wrap:wrap!important;justify-content:center!important;align-items:center!important;gap:10px!important;margin:22px 0!important}
+.nav-pill,.back-link a{display:inline-block!important;padding:8px 14px!important;border-radius:999px!important;border:1px solid #e5e7eb!important;background:#fff!important;color:#111!important;text-decoration:none!important;font-size:14px!important}
 .page-header,.section-card h2,.text-block,.relationship-note,.back-link,footer{text-align:center!important}
 .meta-grid{display:grid!important;grid-template-columns:1fr!important;justify-items:center!important;text-align:center!important;gap:6px 0!important;max-width:900px!important;margin:0 auto!important;line-height:1.6!important}
 .meta-label{font-weight:700!important}
-.gallery-grid,.category-grid{display:flex!important;flex-wrap:wrap!important;}
-.gallery-grid > *, .category-grid > *{}
-[data-sweep-section="original-drawing"] .gallery-grid > *{}
-[data-sweep-section="original-drawing"] .gallery-item img{}
+.gallery-grid,.category-grid{display:flex!important;flex-wrap:wrap!important;justify-content:center!important;align-items:stretch!important;gap:18px!important}
+.gallery-grid > *, .category-grid > *{flex:0 1 260px!important;max-width:300px!important;width:100%!important}
+[data-sweep-section="original-drawing"] .gallery-grid > *{flex:0 1 920px!important;max-width:920px!important}
+[data-sweep-section="original-drawing"] .gallery-item img{height:420px!important;object-fit:contain!important}
 [data-sweep-section="original-drawing"] .entry-body,
 [data-sweep-section="digitized-versions"] .entry-body{display:none!important}
 [data-sweep-section="original-drawing"] .gallery-grid,
-[data-sweep-section="digitized-versions"] .gallery-grid{}
+[data-sweep-section="digitized-versions"] .gallery-grid{justify-content:center!important}
 [data-sweep-section="literature"] .text-block,
 [data-sweep-section="notes"] .text-block,
 [data-sweep-section="exhibitions"] .text-block,
 [data-sweep-section="cards"] .text-block,
 [data-sweep-section="artist-with-drawing"] .text-block{text-align:center!important}
 @media(max-width:700px){
-  [data-sweep-section="original-drawing"] .gallery-item img{}
-  .gallery-grid > *, .category-grid > *{}
-}
-
-/* Aqua Apes clean desktop layout standard, consolidated into the base stylesheet.
-   Index cards and documentary cards use 164x140. Hero artwork remains separate. */
-@media (min-width:701px){
- .wrap{max-width:520px;margin:0 auto;padding:18px 14px 34px}
- .page-header{margin:0 auto 12px;text-align:center}
- .page-title{font-size:24px;line-height:1.1;margin:0 0 8px}
- .nav-pills,.sequence-nav{justify-content:center;gap:8px;margin:12px 0}
- .nav-pill,.sequence-pill{font-size:13px;padding:6px 10px}
- .catalogue-meta-block,.work-meta,.relationship-note,.text-block,.literature-entry{max-width:520px;margin-left:auto;margin-right:auto}
- .work-meta{line-height:1.42}
- .relationship-note{padding:8px 10px;margin-bottom:12px}
- .text-block,.literature-entry{line-height:1.45;margin-bottom:10px}
- .primary-artwork,.original-grid{max-width:520px;margin:0 auto 12px}
- .primary-artwork img,.original-grid .gallery-item img{width:100%;max-width:500px;height:190px;max-height:190px;object-fit:contain}
- .original-grid > .gallery-item{flex:0 1 500px;max-width:500px;width:100%}
- .gallery-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
- .gallery-grid:not(.original-grid) > .gallery-item{flex:0 0 164px;width:164px;min-width:164px;max-width:164px}
- .gallery-grid:not(.original-grid) > .gallery-item img{display:block;width:100%;height:140px;min-height:140px;max-height:140px;object-fit:contain}
- .section-card{padding:13px;margin-bottom:13px}
- .original-drawing-heading{font-size:1.1rem;margin-bottom:9px}
+  [data-sweep-section="original-drawing"] .gallery-item img{height:300px!important}
+  .gallery-grid > *, .category-grid > *{flex:0 1 min(100%,320px)!important;max-width:320px!important}
 }
 </style>
 <!-- SKETCH-SWEEP-STYLES END -->
@@ -473,21 +429,21 @@
 .nav-pills{
   display:flex!important;
   flex-wrap:wrap!important;
-  
-  
-  
-  
+  justify-content:center!important;
+  align-items:center!important;
+  gap:10px!important;
+  margin:22px 0!important;
   text-align:center!important;
 }
 .nav-pill,.back-link a{
   display:inline-block!important;
-  
+  padding:8px 14px!important;
   border-radius:999px!important;
   border:1px solid #e5e7eb!important;
   background:#fff!important;
   color:#111!important;
   text-decoration:none!important;
-  
+  font-size:14px!important;
 }
 .page-header,.page-title,.intro-text,.intro-text p,
 .section-card h2,.section-card h3,.section-intro,
@@ -506,22 +462,22 @@
 .gallery-grid,.index-grid,.category-grid,.subcategories-grid,.cards-grid{
   display:flex!important;
   flex-wrap:wrap!important;
-  
-  
-  
+  justify-content:center!important;
+  align-items:stretch!important;
+  gap:18px!important;
 }
 .gallery-grid>*,.index-grid>*,.category-grid>*,.subcategories-grid>*,.cards-grid>*{
-  
-  
-  
+  flex:0 1 260px!important;
+  max-width:300px!important;
+  width:100%!important;
 }
 [data-sweep-section="original-drawing"] .gallery-grid>*{
-  
-  
+  flex:0 1 920px!important;
+  max-width:920px!important;
 }
 [data-sweep-section="original-drawing"] .gallery-item img{
-  
-  
+  height:420px!important;
+  object-fit:contain!important;
 }
 [data-sweep-section="original-drawing"] .entry-body,
 [data-sweep-section="digitized-versions"] .entry-body{
@@ -538,220 +494,111 @@ footer a{color:inherit!important;text-decoration:none!important}
 footer a:hover{text-decoration:underline!important}
 @media(max-width:700px){
   .gallery-grid>*,.index-grid>*,.category-grid>*,.subcategories-grid>*,.cards-grid>*{
-    
-    
+    flex:0 1 min(100%,320px)!important;
+    max-width:320px!important;
   }
-  [data-sweep-section="original-drawing"] .gallery-item img{}
-}
-
-/* Aqua Apes clean desktop layout standard, consolidated into the base stylesheet.
-   Index cards and documentary cards use 164x140. Hero artwork remains separate. */
-@media (min-width:701px){
- .wrap{max-width:520px;margin:0 auto;padding:18px 14px 34px}
- .page-header{margin:0 auto 12px;text-align:center}
- .page-title{font-size:24px;line-height:1.1;margin:0 0 8px}
- .nav-pills,.sequence-nav{justify-content:center;gap:8px;margin:12px 0}
- .nav-pill,.sequence-pill{font-size:13px;padding:6px 10px}
- .catalogue-meta-block,.work-meta,.relationship-note,.text-block,.literature-entry{max-width:520px;margin-left:auto;margin-right:auto}
- .work-meta{line-height:1.42}
- .relationship-note{padding:8px 10px;margin-bottom:12px}
- .text-block,.literature-entry{line-height:1.45;margin-bottom:10px}
- .primary-artwork,.original-grid{max-width:520px;margin:0 auto 12px}
- .primary-artwork img,.original-grid .gallery-item img{width:100%;max-width:500px;height:190px;max-height:190px;object-fit:contain}
- .original-grid > .gallery-item{flex:0 1 500px;max-width:500px;width:100%}
- .gallery-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
- .gallery-grid:not(.original-grid) > .gallery-item{flex:0 0 164px;width:164px;min-width:164px;max-width:164px}
- .gallery-grid:not(.original-grid) > .gallery-item img{display:block;width:100%;height:140px;min-height:140px;max-height:140px;object-fit:contain}
- .section-card{padding:13px;margin-bottom:13px}
- .original-drawing-heading{font-size:1.1rem;margin-bottom:9px}
+  [data-sweep-section="original-drawing"] .gallery-item img{height:300px!important}
 }
 </style>
 <!-- GLOBAL-SKETCH-RULES END -->
 <!-- PAINTINGS-STYLE-SWEEP START -->
 <style>
-.nav-pills,.sequence-nav{display:flex!important;flex-wrap:wrap!important;}
-.nav-pill,.sequence-pill{border-radius:999px!important;border:1px solid #e5e7eb!important;background:#fff!important;color:#111!important;text-decoration:none!important;}
-.work-meta{list-style:none!important;text-align:center!important}
-.work-meta li{display:block!important;text-align:center!important}
+.nav-pills,.sequence-nav{display:flex!important;flex-wrap:wrap!important;justify-content:center!important;gap:10px!important;margin:20px 0!important}
+.nav-pill,.sequence-pill{padding:8px 14px!important;border-radius:999px!important;border:1px solid #e5e7eb!important;background:#fff!important;color:#111!important;text-decoration:none!important;font-size:14px!important}
+.work-meta{list-style:none!important;padding:0!important;margin:0 auto 24px!important;max-width:820px!important;line-height:1.7!important;text-align:center!important}
+.work-meta li{display:block!important;width:100%!important;margin:2px 0!important;padding:0!important;text-align:center!important}
 .work-meta li strong{display:inline!important;font-weight:700!important}
 .text-block,.relationship-note,.section-card h2,.page-title,.back-link,footer{text-align:center!important}
-.gallery-grid,.index-grid,.category-grid,.subcategories-grid{display:flex!important;flex-wrap:wrap!important;}
-.gallery-grid>*,.index-grid>*,.category-grid>*,.subcategories-grid>*{}
-[data-role="original"] .gallery-grid>*{}
-[data-role="original"] .gallery-item img{}
+.gallery-grid,.index-grid,.category-grid,.subcategories-grid{display:flex!important;flex-wrap:wrap!important;justify-content:center!important;gap:18px!important}
+.gallery-grid>*,.index-grid>*,.category-grid>*,.subcategories-grid>*{flex:0 1 260px!important;max-width:300px!important;width:100%!important}
+[data-role="original"] .gallery-grid>*{flex:0 1 920px!important;max-width:920px!important}
+[data-role="original"] .gallery-item img{height:420px!important;object-fit:contain!important}
 [data-role="original"] .entry-body,[data-role="digital"] .entry-body{display:none!important}
-.sequence-nav{}
+.sequence-nav{margin:28px 0!important}
 footer{margin-top:30px!important;padding-top:16px!important;border-top:1px solid #e5e7eb!important;color:#6b7280!important;font-size:14px!important}
-
-/* Aqua Apes clean desktop layout standard, consolidated into the base stylesheet.
-   Index cards and documentary cards use 164x140. Hero artwork remains separate. */
-@media (min-width:701px){
- .wrap{max-width:520px;margin:0 auto;padding:18px 14px 34px}
- .page-header{margin:0 auto 12px;text-align:center}
- .page-title{font-size:24px;line-height:1.1;margin:0 0 8px}
- .nav-pills,.sequence-nav{justify-content:center;gap:8px;margin:12px 0}
- .nav-pill,.sequence-pill{font-size:13px;padding:6px 10px}
- .catalogue-meta-block,.work-meta,.relationship-note,.text-block,.literature-entry{max-width:520px;margin-left:auto;margin-right:auto}
- .work-meta{line-height:1.42}
- .relationship-note{padding:8px 10px;margin-bottom:12px}
- .text-block,.literature-entry{line-height:1.45;margin-bottom:10px}
- .primary-artwork,.original-grid{max-width:520px;margin:0 auto 12px}
- .primary-artwork img,.original-grid .gallery-item img{width:100%;max-width:500px;height:190px;max-height:190px;object-fit:contain}
- .original-grid > .gallery-item{flex:0 1 500px;max-width:500px;width:100%}
- .gallery-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
- .gallery-grid:not(.original-grid) > .gallery-item{flex:0 0 164px;width:164px;min-width:164px;max-width:164px}
- .gallery-grid:not(.original-grid) > .gallery-item img{display:block;width:100%;height:140px;min-height:140px;max-height:140px;object-fit:contain}
- .section-card{padding:13px;margin-bottom:13px}
- .original-drawing-heading{font-size:1.1rem;margin-bottom:9px}
-}
 </style>
 <!-- PAINTINGS-STYLE-SWEEP END -->
 <!-- SKETCH-V8-STYLE START -->
 <style>
 .nav-pills,.sequence-nav{
-display:flex!important;flex-wrap:wrap!important;
-text-align:center!important}
+display:flex!important;flex-wrap:wrap!important;justify-content:center!important;align-items:center!important;
+gap:10px!important;margin:20px 0!important;text-align:center!important}
 .nav-pill,.sequence-pill{
-border-radius:999px!important;border:1px solid #e5e7eb!important;
-background:#fff!important;color:#111!important;text-decoration:none!important;}
-.catalogue-meta-block{text-align:center!important}
-.work-meta{list-style:none!important;text-align:center!important;}
-.work-meta li{display:block!important;text-align:center!important}
+padding:8px 14px!important;border-radius:999px!important;border:1px solid #e5e7eb!important;
+background:#fff!important;color:#111!important;text-decoration:none!important;font-size:14px!important}
+.catalogue-meta-block{width:100%!important;max-width:900px!important;margin:0 auto 28px!important;text-align:center!important}
+.work-meta{list-style:none!important;padding:0!important;margin:0 auto!important;width:100%!important;max-width:900px!important;text-align:center!important;line-height:1.7!important}
+.work-meta li{display:block!important;width:100%!important;margin:2px auto!important;padding:0!important;text-align:center!important}
 .work-meta li strong{display:inline!important;font-weight:700!important}
 .page-header,.page-title,.section-card h2,.section-card h3,.text-block,.text-block p,.relationship-note,.back-link,footer{text-align:center!important}
 .gallery-grid,.index-grid,.category-grid,.subcategories-grid,.cards-grid{
-display:flex!important;flex-wrap:wrap!important;}
+display:flex!important;flex-wrap:wrap!important;justify-content:center!important;align-items:stretch!important;gap:18px!important}
 .gallery-grid>*,.index-grid>*,.category-grid>*,.subcategories-grid>*,.cards-grid>*{
-}
-[data-role="original"] .gallery-grid>*{}
-[data-role="original"] .gallery-item img{}
+flex:0 1 260px!important;max-width:300px!important;width:100%!important}
+[data-role="original"] .gallery-grid>*{flex:0 1 920px!important;max-width:920px!important}
+[data-role="original"] .gallery-item img{height:420px!important;object-fit:contain!important}
 [data-role="original"] .entry-body,[data-role="digital"] .entry-body{display:none!important}
-.sequence-nav{}
+.sequence-nav{margin:28px 0!important}
 footer{margin-top:30px!important;padding-top:16px!important;border-top:1px solid #e5e7eb!important;color:#6b7280!important;font-size:14px!important;text-align:center!important}
 @media(max-width:700px){
-.gallery-grid>*,.index-grid>*,.category-grid>*,.subcategories-grid>*,.cards-grid>*{}
-[data-role="original"] .gallery-item img{}}
-
-/* Aqua Apes clean desktop layout standard, consolidated into the base stylesheet.
-   Index cards and documentary cards use 164x140. Hero artwork remains separate. */
-@media (min-width:701px){
- .wrap{max-width:520px;margin:0 auto;padding:18px 14px 34px}
- .page-header{margin:0 auto 12px;text-align:center}
- .page-title{font-size:24px;line-height:1.1;margin:0 0 8px}
- .nav-pills,.sequence-nav{justify-content:center;gap:8px;margin:12px 0}
- .nav-pill,.sequence-pill{font-size:13px;padding:6px 10px}
- .catalogue-meta-block,.work-meta,.relationship-note,.text-block,.literature-entry{max-width:520px;margin-left:auto;margin-right:auto}
- .work-meta{line-height:1.42}
- .relationship-note{padding:8px 10px;margin-bottom:12px}
- .text-block,.literature-entry{line-height:1.45;margin-bottom:10px}
- .primary-artwork,.original-grid{max-width:520px;margin:0 auto 12px}
- .primary-artwork img,.original-grid .gallery-item img{width:100%;max-width:500px;height:190px;max-height:190px;object-fit:contain}
- .original-grid > .gallery-item{flex:0 1 500px;max-width:500px;width:100%}
- .gallery-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
- .gallery-grid:not(.original-grid) > .gallery-item{flex:0 0 164px;width:164px;min-width:164px;max-width:164px}
- .gallery-grid:not(.original-grid) > .gallery-item img{display:block;width:100%;height:140px;min-height:140px;max-height:140px;object-fit:contain}
- .section-card{padding:13px;margin-bottom:13px}
- .original-drawing-heading{font-size:1.1rem;margin-bottom:9px}
-}
+.gallery-grid>*,.index-grid>*,.category-grid>*,.subcategories-grid>*,.cards-grid>*{flex:0 1 min(100%,320px)!important;max-width:320px!important}
+[data-role="original"] .gallery-item img{height:300px!important}}
 </style>
 <!-- SKETCH-V8-STYLE END -->
 
 <!-- SKETCH-V10-STYLE START -->
 <style>
 .nav-pills,.sequence-nav{
-display:flex!important;flex-wrap:wrap!important;
-text-align:center!important}
+display:flex!important;flex-wrap:wrap!important;justify-content:center!important;align-items:center!important;
+gap:10px!important;margin:20px 0!important;text-align:center!important}
 .nav-pill,.sequence-pill{
-border-radius:999px!important;border:1px solid #e5e7eb!important;
-background:#fff!important;color:#111!important;text-decoration:none!important;}
+padding:8px 14px!important;border-radius:999px!important;border:1px solid #e5e7eb!important;
+background:#fff!important;color:#111!important;text-decoration:none!important;font-size:14px!important}
 .catalogue-meta-block{
-text-align:center!important}
+width:100%!important;max-width:900px!important;margin:0 auto 28px!important;text-align:center!important}
 .work-meta{
-list-style:none!important;
-text-align:center!important}
+list-style:none!important;padding:0!important;margin:0 auto!important;width:100%!important;
+max-width:900px!important;line-height:1.7!important;text-align:center!important}
 .work-meta li{
-display:block!important;text-align:center!important}
+display:block!important;width:100%!important;margin:2px auto!important;padding:0!important;text-align:center!important}
 .work-meta li strong{display:inline!important;font-weight:700!important}
 .page-header,.page-title,.section-card h2,.section-card h3,.text-block,.text-block p,.relationship-note,footer{text-align:center!important}
 .gallery-grid,.index-grid,.category-grid,.subcategories-grid,.cards-grid{
-display:flex!important;flex-wrap:wrap!important;}
+display:flex!important;flex-wrap:wrap!important;justify-content:center!important;align-items:stretch!important;gap:18px!important}
 .gallery-grid>*,.index-grid>*,.category-grid>*,.subcategories-grid>*,.cards-grid>*{
-}
-[data-role="original"] .gallery-grid>*{}
-[data-role="original"] .gallery-item img{}
+flex:0 1 260px!important;max-width:300px!important;width:100%!important}
+[data-role="original"] .gallery-grid>*{flex:0 1 920px!important;max-width:920px!important}
+[data-role="original"] .gallery-item img{height:420px!important;object-fit:contain!important}
 [data-role="original"] .entry-body,[data-role="digital"] .entry-body{display:none!important}
-.sequence-nav{}
+.sequence-nav{margin:28px 0 18px!important}
 footer{
 margin-top:30px!important;padding-top:16px!important;border-top:1px solid #e5e7eb!important;
 color:#6b7280!important;font-size:14px!important;text-align:center!important}
 @media(max-width:700px){
 .gallery-grid>*,.index-grid>*,.category-grid>*,.subcategories-grid>*,.cards-grid>*{
-}
-[data-role="original"] .gallery-item img{}}
-
-/* Aqua Apes clean desktop layout standard, consolidated into the base stylesheet.
-   Index cards and documentary cards use 164x140. Hero artwork remains separate. */
-@media (min-width:701px){
- .wrap{max-width:520px;margin:0 auto;padding:18px 14px 34px}
- .page-header{margin:0 auto 12px;text-align:center}
- .page-title{font-size:24px;line-height:1.1;margin:0 0 8px}
- .nav-pills,.sequence-nav{justify-content:center;gap:8px;margin:12px 0}
- .nav-pill,.sequence-pill{font-size:13px;padding:6px 10px}
- .catalogue-meta-block,.work-meta,.relationship-note,.text-block,.literature-entry{max-width:520px;margin-left:auto;margin-right:auto}
- .work-meta{line-height:1.42}
- .relationship-note{padding:8px 10px;margin-bottom:12px}
- .text-block,.literature-entry{line-height:1.45;margin-bottom:10px}
- .primary-artwork,.original-grid{max-width:520px;margin:0 auto 12px}
- .primary-artwork img,.original-grid .gallery-item img{width:100%;max-width:500px;height:190px;max-height:190px;object-fit:contain}
- .original-grid > .gallery-item{flex:0 1 500px;max-width:500px;width:100%}
- .gallery-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
- .gallery-grid:not(.original-grid) > .gallery-item{flex:0 0 164px;width:164px;min-width:164px;max-width:164px}
- .gallery-grid:not(.original-grid) > .gallery-item img{display:block;width:100%;height:140px;min-height:140px;max-height:140px;object-fit:contain}
- .section-card{padding:13px;margin-bottom:13px}
- .original-drawing-heading{font-size:1.1rem;margin-bottom:9px}
-}
+flex:0 1 min(100%,320px)!important;max-width:320px!important}
+[data-role="original"] .gallery-item img{height:300px!important}}
 </style>
 <!-- SKETCH-V10-STYLE END -->
 <style id="aquatic-detail-navigation-fix">
 .sequence-nav{
 display:flex!important;
 flex-wrap:wrap!important;
-
-
-
-
+justify-content:center!important;
+align-items:center!important;
+gap:10px!important;
+margin:28px 0 18px!important;
 text-align:center!important
 }
 .sequence-pill{
 display:inline-block!important;
-
+padding:8px 14px!important;
 border-radius:999px!important;
 border:1px solid #e5e7eb!important;
 background:#fff!important;
 color:#111!important;
 text-decoration:none!important;
-}
-
-/* Aqua Apes clean desktop layout standard, consolidated into the base stylesheet.
-   Index cards and documentary cards use 164x140. Hero artwork remains separate. */
-@media (min-width:701px){
- .wrap{max-width:520px;margin:0 auto;padding:18px 14px 34px}
- .page-header{margin:0 auto 12px;text-align:center}
- .page-title{font-size:24px;line-height:1.1;margin:0 0 8px}
- .nav-pills,.sequence-nav{justify-content:center;gap:8px;margin:12px 0}
- .nav-pill,.sequence-pill{font-size:13px;padding:6px 10px}
- .catalogue-meta-block,.work-meta,.relationship-note,.text-block,.literature-entry{max-width:520px;margin-left:auto;margin-right:auto}
- .work-meta{line-height:1.42}
- .relationship-note{padding:8px 10px;margin-bottom:12px}
- .text-block,.literature-entry{line-height:1.45;margin-bottom:10px}
- .primary-artwork,.original-grid{max-width:520px;margin:0 auto 12px}
- .primary-artwork img,.original-grid .gallery-item img{width:100%;max-width:500px;height:190px;max-height:190px;object-fit:contain}
- .original-grid > .gallery-item{flex:0 1 500px;max-width:500px;width:100%}
- .gallery-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
- .gallery-grid:not(.original-grid) > .gallery-item{flex:0 0 164px;width:164px;min-width:164px;max-width:164px}
- .gallery-grid:not(.original-grid) > .gallery-item img{display:block;width:100%;height:140px;min-height:140px;max-height:140px;object-fit:contain}
- .section-card{padding:13px;margin-bottom:13px}
- .original-drawing-heading{font-size:1.1rem;margin-bottom:9px}
+font-size:14px!important
 }
 </style>
 <style id="ron-bottom-prev-next-center-v1">
@@ -770,35 +617,13 @@ nav.ron-bottom-prev-next-center .sequence-spacer{
 nav.ron-bottom-prev-next-center > a{
   flex:0 1 auto!important;
 }
-
-/* Aqua Apes clean desktop layout standard, consolidated into the base stylesheet.
-   Index cards and documentary cards use 164x140. Hero artwork remains separate. */
-@media (min-width:701px){
- .wrap{max-width:520px;margin:0 auto;padding:18px 14px 34px}
- .page-header{margin:0 auto 12px;text-align:center}
- .page-title{font-size:24px;line-height:1.1;margin:0 0 8px}
- .nav-pills,.sequence-nav{justify-content:center;gap:8px;margin:12px 0}
- .nav-pill,.sequence-pill{font-size:13px;padding:6px 10px}
- .catalogue-meta-block,.work-meta,.relationship-note,.text-block,.literature-entry{max-width:520px;margin-left:auto;margin-right:auto}
- .work-meta{line-height:1.42}
- .relationship-note{padding:8px 10px;margin-bottom:12px}
- .text-block,.literature-entry{line-height:1.45;margin-bottom:10px}
- .primary-artwork,.original-grid{max-width:520px;margin:0 auto 12px}
- .primary-artwork img,.original-grid .gallery-item img{width:100%;max-width:500px;height:190px;max-height:190px;object-fit:contain}
- .original-grid > .gallery-item{flex:0 1 500px;max-width:500px;width:100%}
- .gallery-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
- .gallery-grid:not(.original-grid) > .gallery-item{flex:0 0 164px;width:164px;min-width:164px;max-width:164px}
- .gallery-grid:not(.original-grid) > .gallery-item img{display:block;width:100%;height:140px;min-height:140px;max-height:140px;object-fit:contain}
- .section-card{padding:13px;margin-bottom:13px}
- .original-drawing-heading{font-size:1.1rem;margin-bottom:9px}
-}
 </style><style id="ron-drawings-detail-centering-v1">
 /* Ron catalogue: targeted Drawings detail-page centering. */
 .primary-artwork > h2{
-  
-  
-  
-  
+  flex:0 0 100%;
+  width:100%;
+  margin-left:auto;
+  margin-right:auto;
   text-align:center;
 }
 .ron-notes-center,
@@ -809,30 +634,8 @@ nav.ron-bottom-prev-next-center > a{
 }
 .relationship-note{
   text-align:center;
-  
-  
-}
-
-/* Aqua Apes clean desktop layout standard, consolidated into the base stylesheet.
-   Index cards and documentary cards use 164x140. Hero artwork remains separate. */
-@media (min-width:701px){
- .wrap{max-width:520px;margin:0 auto;padding:18px 14px 34px}
- .page-header{margin:0 auto 12px;text-align:center}
- .page-title{font-size:24px;line-height:1.1;margin:0 0 8px}
- .nav-pills,.sequence-nav{justify-content:center;gap:8px;margin:12px 0}
- .nav-pill,.sequence-pill{font-size:13px;padding:6px 10px}
- .catalogue-meta-block,.work-meta,.relationship-note,.text-block,.literature-entry{max-width:520px;margin-left:auto;margin-right:auto}
- .work-meta{line-height:1.42}
- .relationship-note{padding:8px 10px;margin-bottom:12px}
- .text-block,.literature-entry{line-height:1.45;margin-bottom:10px}
- .primary-artwork,.original-grid{max-width:520px;margin:0 auto 12px}
- .primary-artwork img,.original-grid .gallery-item img{width:100%;max-width:500px;height:190px;max-height:190px;object-fit:contain}
- .original-grid > .gallery-item{flex:0 1 500px;max-width:500px;width:100%}
- .gallery-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
- .gallery-grid:not(.original-grid) > .gallery-item{flex:0 0 164px;width:164px;min-width:164px;max-width:164px}
- .gallery-grid:not(.original-grid) > .gallery-item img{display:block;width:100%;height:140px;min-height:140px;max-height:140px;object-fit:contain}
- .section-card{padding:13px;margin-bottom:13px}
- .original-drawing-heading{font-size:1.1rem;margin-bottom:9px}
+  margin-left:auto;
+  margin-right:auto;
 }
 </style>
 <style id="ron-animal-detail-card-standard-v2">
@@ -851,21 +654,21 @@ nav.ron-bottom-prev-next-center > a{
 .originals-grid{
   display:flex!important;
   flex-wrap:wrap!important;
-  
-  
-  
-  
-  
-  
-  
+  justify-content:center!important;
+  align-items:stretch!important;
+  gap:18px!important;
+  width:100%!important;
+  max-width:none!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
 }
 
 .gallery-item{
   display:block!important;
-  
-  
-  
-  
+  flex:0 1 290px!important;
+  width:100%!important;
+  max-width:300px!important;
+  min-width:0!important;
   border:1px solid #e5e7eb!important;
   border-radius:16px!important;
   overflow:hidden!important;
@@ -877,15 +680,15 @@ nav.ron-bottom-prev-next-center > a{
 
 .gallery-item img{
   display:block!important;
-  
-  
-  
-  
-  
+  width:100%!important;
+  height:310px!important;
+  max-width:none!important;
+  max-height:none!important;
+  object-fit:contain!important;
   object-position:center center!important;
   background:#f3f4f6!important;
-  
-  
+  padding:6px!important;
+  margin:0!important;
 }
 
 /* Original artwork is the large lead image treatment. */
@@ -893,20 +696,20 @@ nav.ron-bottom-prev-next-center > a{
 .original-grid .gallery-item,
 .original-gallery .gallery-item,
 .originals-grid .gallery-item{
-  
-  
-  
+  flex:0 1 900px!important;
+  width:100%!important;
+  max-width:900px!important;
 }
 
 [data-role="original"] .gallery-item img,
 .original-grid .gallery-item img,
 .original-gallery .gallery-item img,
 .originals-grid .gallery-item img{
-  
-  
-  
-  
-  
+  width:100%!important;
+  height:460px!important;
+  max-width:none!important;
+  max-height:none!important;
+  object-fit:contain!important;
 }
 
 /* Variant and documentation cards retain standard secondary-card proportions. */
@@ -917,164 +720,98 @@ nav.ron-bottom-prev-next-center > a{
 
 @media(max-width:620px){
   .gallery-item{
-    
-    
+    flex-basis:min(100%,330px)!important;
+    max-width:330px!important;
   }
 
   [data-role="original"] .gallery-item,
   .original-grid .gallery-item,
   .original-gallery .gallery-item,
   .originals-grid .gallery-item{
-    
+    max-width:330px!important;
   }
 
   .gallery-item img{
-    
+    height:310px!important;
   }
 
   [data-role="original"] .gallery-item img,
   .original-grid .gallery-item img,
   .original-gallery .gallery-item img,
   .originals-grid .gallery-item img{
-    
+    height:340px!important;
   }
 }
-
-/* Aqua Apes clean desktop layout standard, consolidated into the base stylesheet.
-   Index cards and documentary cards use 164x140. Hero artwork remains separate. */
-@media (min-width:701px){
- .wrap{max-width:520px;margin:0 auto;padding:18px 14px 34px}
- .page-header{margin:0 auto 12px;text-align:center}
- .page-title{font-size:24px;line-height:1.1;margin:0 0 8px}
- .nav-pills,.sequence-nav{justify-content:center;gap:8px;margin:12px 0}
- .nav-pill,.sequence-pill{font-size:13px;padding:6px 10px}
- .catalogue-meta-block,.work-meta,.relationship-note,.text-block,.literature-entry{max-width:520px;margin-left:auto;margin-right:auto}
- .work-meta{line-height:1.42}
- .relationship-note{padding:8px 10px;margin-bottom:12px}
- .text-block,.literature-entry{line-height:1.45;margin-bottom:10px}
- .primary-artwork,.original-grid{max-width:520px;margin:0 auto 12px}
- .primary-artwork img,.original-grid .gallery-item img{width:100%;max-width:500px;height:190px;max-height:190px;object-fit:contain}
- .original-grid > .gallery-item{flex:0 1 500px;max-width:500px;width:100%}
- .gallery-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
- .gallery-grid:not(.original-grid) > .gallery-item{flex:0 0 164px;width:164px;min-width:164px;max-width:164px}
- .gallery-grid:not(.original-grid) > .gallery-item img{display:block;width:100%;height:140px;min-height:140px;max-height:140px;object-fit:contain}
- .section-card{padding:13px;margin-bottom:13px}
- .original-drawing-heading{font-size:1.1rem;margin-bottom:9px}
-}
 </style>
-<style id="ron-original-drawing-heading-standard-v1">.original-drawing-heading{text-align:center;}
-/* Aqua Apes clean desktop layout standard, consolidated into the base stylesheet.
-   Index cards and documentary cards use 164x140. Hero artwork remains separate. */
-@media (min-width:701px){
- .wrap{max-width:520px;margin:0 auto;padding:18px 14px 34px}
- .page-header{margin:0 auto 12px;text-align:center}
- .page-title{font-size:24px;line-height:1.1;margin:0 0 8px}
- .nav-pills,.sequence-nav{justify-content:center;gap:8px;margin:12px 0}
- .nav-pill,.sequence-pill{font-size:13px;padding:6px 10px}
- .catalogue-meta-block,.work-meta,.relationship-note,.text-block,.literature-entry{max-width:520px;margin-left:auto;margin-right:auto}
- .work-meta{line-height:1.42}
- .relationship-note{padding:8px 10px;margin-bottom:12px}
- .text-block,.literature-entry{line-height:1.45;margin-bottom:10px}
- .primary-artwork,.original-grid{max-width:520px;margin:0 auto 12px}
- .primary-artwork img,.original-grid .gallery-item img{width:100%;max-width:500px;height:190px;max-height:190px;object-fit:contain}
- .original-grid > .gallery-item{flex:0 1 500px;max-width:500px;width:100%}
- .gallery-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
- .gallery-grid:not(.original-grid) > .gallery-item{flex:0 0 164px;width:164px;min-width:164px;max-width:164px}
- .gallery-grid:not(.original-grid) > .gallery-item img{display:block;width:100%;height:140px;min-height:140px;max-height:140px;object-fit:contain}
- .section-card{padding:13px;margin-bottom:13px}
- .original-drawing-heading{font-size:1.1rem;margin-bottom:9px}
-}
-</style><style id="ron-global-two-original-stack-v1">
+<style id="ron-original-drawing-heading-standard-v1">.original-drawing-heading{text-align:center;margin:0 0 14px;font-size:1.4rem}</style><style id="ron-global-two-original-stack-v1">
 [data-role="original-drawing"] .original-grid,
 [data-role="original-drawing"] .original-gallery,
 [data-role="original-drawing"] .originals-grid{
   display:flex!important;
   flex-direction:column!important;
   flex-wrap:nowrap!important;
-  
+  align-items:center!important;
 }
 [data-role="original-drawing"] .original-grid .gallery-item,
 [data-role="original-drawing"] .original-gallery .gallery-item,
 [data-role="original-drawing"] .originals-grid .gallery-item{
-  
-  
-  
-}
-
-/* Aqua Apes clean desktop layout standard, consolidated into the base stylesheet.
-   Index cards and documentary cards use 164x140. Hero artwork remains separate. */
-@media (min-width:701px){
- .wrap{max-width:520px;margin:0 auto;padding:18px 14px 34px}
- .page-header{margin:0 auto 12px;text-align:center}
- .page-title{font-size:24px;line-height:1.1;margin:0 0 8px}
- .nav-pills,.sequence-nav{justify-content:center;gap:8px;margin:12px 0}
- .nav-pill,.sequence-pill{font-size:13px;padding:6px 10px}
- .catalogue-meta-block,.work-meta,.relationship-note,.text-block,.literature-entry{max-width:520px;margin-left:auto;margin-right:auto}
- .work-meta{line-height:1.42}
- .relationship-note{padding:8px 10px;margin-bottom:12px}
- .text-block,.literature-entry{line-height:1.45;margin-bottom:10px}
- .primary-artwork,.original-grid{max-width:520px;margin:0 auto 12px}
- .primary-artwork img,.original-grid .gallery-item img{width:100%;max-width:500px;height:190px;max-height:190px;object-fit:contain}
- .original-grid > .gallery-item{flex:0 1 500px;max-width:500px;width:100%}
- .gallery-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
- .gallery-grid:not(.original-grid) > .gallery-item{flex:0 0 164px;width:164px;min-width:164px;max-width:164px}
- .gallery-grid:not(.original-grid) > .gallery-item img{display:block;width:100%;height:140px;min-height:140px;max-height:140px;object-fit:contain}
- .section-card{padding:13px;margin-bottom:13px}
- .original-drawing-heading{font-size:1.1rem;margin-bottom:9px}
+  flex:0 0 auto!important;
+  width:100%!important;
+  max-width:900px!important;
 }
 </style><style id="ron-detail-hero-notes-standard-v1">
 /* Ordinary detail-page Original Drawing hero standard */
 section.primary-artwork[data-role="original"]{
-  
-  
-  
-  
+  width:100%!important;
+  max-width:920px!important;
+  margin:0 auto 24px!important;
+  padding:22px!important;
   display:flex!important;
   flex-direction:column!important;
   flex-wrap:nowrap!important;
-  
-  
-  
+  justify-content:center!important;
+  align-items:center!important;
+  gap:18px!important;
 }
 section.primary-artwork[data-role="original"] .primary-artwork-link{
   display:block!important;
-  
-  
-  
-  
+  flex:0 0 auto!important;
+  width:100%!important;
+  max-width:900px!important;
+  margin:0 auto!important;
 }
 section.primary-artwork[data-role="original"] .primary-artwork-link img{
   display:block!important;
-  
-  
-  
-  
+  width:100%!important;
+  max-width:none!important;
+  height:440px!important;
+  object-fit:contain!important;
   object-position:center center!important;
-  
+  margin:0!important;
 }
 
 section[data-role="original-drawing"] .gallery-grid.original-grid{
   display:flex!important;
   flex-direction:column!important;
   flex-wrap:nowrap!important;
-  
-  
-  
+  justify-content:center!important;
+  align-items:center!important;
+  gap:18px!important;
 }
 section[data-role="original-drawing"] .gallery-grid.original-grid > .gallery-item{
-  
-  
-  
-  
+  flex:0 0 auto!important;
+  width:100%!important;
+  max-width:900px!important;
+  margin:0 auto!important;
 }
 section[data-role="original-drawing"] .gallery-grid.original-grid > .gallery-item img{
   display:block!important;
-  
-  
-  
-  
+  width:100%!important;
+  max-width:none!important;
+  height:440px!important;
+  object-fit:contain!important;
   object-position:center center!important;
-  
+  margin:0!important;
 }
 
 /* Notes on individual detail pages are centered. */
@@ -1090,35 +827,13 @@ section[data-role="notes"] p{
 
 @media(max-width:700px){
   section.primary-artwork[data-role="original"]{
-    
-    
+    max-width:920px!important;
+    padding:18px!important;
   }
   section.primary-artwork[data-role="original"] .primary-artwork-link img,
   section[data-role="original-drawing"] .gallery-grid.original-grid > .gallery-item img{
-    
+    height:300px!important;
   }
-}
-
-/* Aqua Apes clean desktop layout standard, consolidated into the base stylesheet.
-   Index cards and documentary cards use 164x140. Hero artwork remains separate. */
-@media (min-width:701px){
- .wrap{max-width:520px;margin:0 auto;padding:18px 14px 34px}
- .page-header{margin:0 auto 12px;text-align:center}
- .page-title{font-size:24px;line-height:1.1;margin:0 0 8px}
- .nav-pills,.sequence-nav{justify-content:center;gap:8px;margin:12px 0}
- .nav-pill,.sequence-pill{font-size:13px;padding:6px 10px}
- .catalogue-meta-block,.work-meta,.relationship-note,.text-block,.literature-entry{max-width:520px;margin-left:auto;margin-right:auto}
- .work-meta{line-height:1.42}
- .relationship-note{padding:8px 10px;margin-bottom:12px}
- .text-block,.literature-entry{line-height:1.45;margin-bottom:10px}
- .primary-artwork,.original-grid{max-width:520px;margin:0 auto 12px}
- .primary-artwork img,.original-grid .gallery-item img{width:100%;max-width:500px;height:190px;max-height:190px;object-fit:contain}
- .original-grid > .gallery-item{flex:0 1 500px;max-width:500px;width:100%}
- .gallery-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
- .gallery-grid:not(.original-grid) > .gallery-item{flex:0 0 164px;width:164px;min-width:164px;max-width:164px}
- .gallery-grid:not(.original-grid) > .gallery-item img{display:block;width:100%;height:140px;min-height:140px;max-height:140px;object-fit:contain}
- .section-card{padding:13px;margin-bottom:13px}
- .original-drawing-heading{font-size:1.1rem;margin-bottom:9px}
 }
 </style>
 <style id="ron-sketches-detail-media-sections-v2">
@@ -1135,9 +850,9 @@ section.section-card[data-role*="trading-card"],
 section.primary-artwork[data-role="original"] {
   box-sizing:border-box!important;
   display:block;
-  
-  
-  
+  width:100%!important;max-width:960px!important;
+  margin-left:auto!important;margin-right:auto!important;
+  padding:22px!important;
   border:1px solid #e5e7eb!important;
   border-radius:18px!important;
   background:#fff!important;
@@ -1146,7 +861,7 @@ section.primary-artwork[data-role="original"] {
 /* Original images remain prominent, with legacy original-view ordering retained. */
 section.section-card[data-role="original-drawing"] .gallery-item img,
 section.primary-artwork[data-role="original"] .primary-artwork-link img {
-  
+  object-fit:contain!important;
 }
 /* Secondary media images remain compact, not stretched to fill the holder. */
 section.section-card[data-role="digital"] .gallery-grid,
@@ -1156,7 +871,7 @@ section.section-card[data-role="ancillary"] .gallery-grid,
 section.section-card[data-role="cards"] .gallery-grid,
 section.section-card[data-role*="trading-card"] .gallery-grid {
   display:flex!important;flex-wrap:wrap!important;
-  
+  justify-content:center!important;gap:18px!important;
 }
 section.section-card[data-role="digital"] .gallery-grid > .gallery-item,
 section.section-card[data-role="literature"] .gallery-grid > .gallery-item,
@@ -1165,9 +880,9 @@ section.section-card[data-role="ancillary"] .gallery-grid > .gallery-item,
 section.section-card[data-role="cards"] .gallery-grid > .gallery-item,
 section.section-card[data-role*="trading-card"] .gallery-grid > .gallery-item {
   box-sizing:border-box!important;
-  
-  
-  
+  flex:0 1 300px!important;width:min(300px,100%)!important;
+  max-width:300px!important;min-width:0!important;
+  margin-left:0!important;margin-right:0!important;
 }
 /* Each captioned ancillary item is its own compact image-over-text card. */
 section.section-card[data-role="ancillary-documentation"] .ancillary-gallery,
@@ -1211,32 +926,10 @@ section.section-card[data-role="ancillary-documentation"] .ancillary-figure figc
   section.section-card[data-role="digital"],
   section.section-card[data-role="literature"],
   section.section-card[data-role="ancillary-documentation"],
-  section.primary-artwork[data-role="original"] {}
+  section.primary-artwork[data-role="original"] {padding:14px!important;}
   section.section-card[data-role="ancillary-documentation"] .ancillary-figure {
     width:min(320px,100%)!important;max-width:100%!important;
   }
-}
-
-/* Aqua Apes clean desktop layout standard, consolidated into the base stylesheet.
-   Index cards and documentary cards use 164x140. Hero artwork remains separate. */
-@media (min-width:701px){
- .wrap{max-width:520px;margin:0 auto;padding:18px 14px 34px}
- .page-header{margin:0 auto 12px;text-align:center}
- .page-title{font-size:24px;line-height:1.1;margin:0 0 8px}
- .nav-pills,.sequence-nav{justify-content:center;gap:8px;margin:12px 0}
- .nav-pill,.sequence-pill{font-size:13px;padding:6px 10px}
- .catalogue-meta-block,.work-meta,.relationship-note,.text-block,.literature-entry{max-width:520px;margin-left:auto;margin-right:auto}
- .work-meta{line-height:1.42}
- .relationship-note{padding:8px 10px;margin-bottom:12px}
- .text-block,.literature-entry{line-height:1.45;margin-bottom:10px}
- .primary-artwork,.original-grid{max-width:520px;margin:0 auto 12px}
- .primary-artwork img,.original-grid .gallery-item img{width:100%;max-width:500px;height:190px;max-height:190px;object-fit:contain}
- .original-grid > .gallery-item{flex:0 1 500px;max-width:500px;width:100%}
- .gallery-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
- .gallery-grid:not(.original-grid) > .gallery-item{flex:0 0 164px;width:164px;min-width:164px;max-width:164px}
- .gallery-grid:not(.original-grid) > .gallery-item img{display:block;width:100%;height:140px;min-height:140px;max-height:140px;object-fit:contain}
- .section-card{padding:13px;margin-bottom:13px}
- .original-drawing-heading{font-size:1.1rem;margin-bottom:9px}
 }
 </style>
 <style id="ron-original-image-panel-global-parity-20261026-v1">
@@ -1252,47 +945,25 @@ section.section-card[data-role="original-drawing"]{
 }
 section.section-card[data-role="original-drawing"] > .gallery-grid.original-grid{
   display:flex!important;flex-direction:column!important;flex-wrap:nowrap!important;
-  
-  
-  
+  justify-content:center!important;align-items:center!important;
+  width:100%!important;max-width:100%!important;gap:18px!important;
+  margin-left:auto!important;margin-right:auto!important;
 }
 section.section-card[data-role="original-drawing"] > .gallery-grid.original-grid > a.gallery-item{
-  box-sizing:border-box!important;display:block!important;
-  
-  
+  box-sizing:border-box!important;display:block!important;flex:0 0 auto!important;
+  width:100%!important;max-width:900px!important;
+  margin-left:auto!important;margin-right:auto!important;
 }
 section.section-card[data-role="original-drawing"] > .gallery-grid.original-grid > a.gallery-item > img{
   display:block!important;box-sizing:border-box!important;
-  
-  
-  object-position:center center!important;
-  
+  width:100%!important;max-width:none!important;
+  height:440px!important;max-height:none!important;
+  object-fit:contain!important;object-position:center center!important;
+  margin:0!important;
 }
 @media(max-width:700px){
   section.section-card[data-role="original-drawing"]{padding:14px!important;}
-  section.section-card[data-role="original-drawing"] > .gallery-grid.original-grid > a.gallery-item > img{}
-}
-
-/* Aqua Apes clean desktop layout standard, consolidated into the base stylesheet.
-   Index cards and documentary cards use 164x140. Hero artwork remains separate. */
-@media (min-width:701px){
- .wrap{max-width:520px;margin:0 auto;padding:18px 14px 34px}
- .page-header{margin:0 auto 12px;text-align:center}
- .page-title{font-size:24px;line-height:1.1;margin:0 0 8px}
- .nav-pills,.sequence-nav{justify-content:center;gap:8px;margin:12px 0}
- .nav-pill,.sequence-pill{font-size:13px;padding:6px 10px}
- .catalogue-meta-block,.work-meta,.relationship-note,.text-block,.literature-entry{max-width:520px;margin-left:auto;margin-right:auto}
- .work-meta{line-height:1.42}
- .relationship-note{padding:8px 10px;margin-bottom:12px}
- .text-block,.literature-entry{line-height:1.45;margin-bottom:10px}
- .primary-artwork,.original-grid{max-width:520px;margin:0 auto 12px}
- .primary-artwork img,.original-grid .gallery-item img{width:100%;max-width:500px;height:190px;max-height:190px;object-fit:contain}
- .original-grid > .gallery-item{flex:0 1 500px;max-width:500px;width:100%}
- .gallery-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
- .gallery-grid:not(.original-grid) > .gallery-item{flex:0 0 164px;width:164px;min-width:164px;max-width:164px}
- .gallery-grid:not(.original-grid) > .gallery-item img{display:block;width:100%;height:140px;min-height:140px;max-height:140px;object-fit:contain}
- .section-card{padding:13px;margin-bottom:13px}
- .original-drawing-heading{font-size:1.1rem;margin-bottom:9px}
+  section.section-card[data-role="original-drawing"] > .gallery-grid.original-grid > a.gallery-item > img{height:300px!important;}
 }
 </style>
 <style id="ron-aqua-shared-sheet-note-standard-v1">
@@ -1300,43 +971,19 @@ section.section-card[data-role="original-drawing"] > .gallery-grid.original-grid
 main.wrap > .relationship-note {
   box-sizing:border-box;
   display:block;
-  
-  
-  
-  
+  width:100%;
+  max-width:900px;
+  margin:0 auto 24px;
+  padding:12px 16px;
   border:1px solid #e5e7eb;
   border-radius:14px;
   background:#f9fafb;
-  
+  line-height:1.6;
   text-align:center;
 }
 main.wrap > .relationship-note a { color:inherit; }
-
-/* Aqua Apes clean desktop layout standard, consolidated into the base stylesheet.
-   Index cards and documentary cards use 164x140. Hero artwork remains separate. */
-@media (min-width:701px){
- .wrap{max-width:520px;margin:0 auto;padding:18px 14px 34px}
- .page-header{margin:0 auto 12px;text-align:center}
- .page-title{font-size:24px;line-height:1.1;margin:0 0 8px}
- .nav-pills,.sequence-nav{justify-content:center;gap:8px;margin:12px 0}
- .nav-pill,.sequence-pill{font-size:13px;padding:6px 10px}
- .catalogue-meta-block,.work-meta,.relationship-note,.text-block,.literature-entry{max-width:520px;margin-left:auto;margin-right:auto}
- .work-meta{line-height:1.42}
- .relationship-note{padding:8px 10px;margin-bottom:12px}
- .text-block,.literature-entry{line-height:1.45;margin-bottom:10px}
- .primary-artwork,.original-grid{max-width:520px;margin:0 auto 12px}
- .primary-artwork img,.original-grid .gallery-item img{width:100%;max-width:500px;height:190px;max-height:190px;object-fit:contain}
- .original-grid > .gallery-item{flex:0 1 500px;max-width:500px;width:100%}
- .gallery-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
- .gallery-grid:not(.original-grid) > .gallery-item{flex:0 0 164px;width:164px;min-width:164px;max-width:164px}
- .gallery-grid:not(.original-grid) > .gallery-item img{display:block;width:100%;height:140px;min-height:140px;max-height:140px;object-fit:contain}
- .section-card{padding:13px;margin-bottom:13px}
- .original-drawing-heading{font-size:1.1rem;margin-bottom:9px}
-}
 </style>
 <link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
-
-
 </head>
 
 <body>
