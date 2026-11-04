@@ -1,0 +1,43 @@
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fff;color:#111;font:13px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center}.wrap{width:100%;margin:0 auto;padding:18px 12px 30px;min-width:0}.nav-pills,.sequence-nav{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:8px;margin:12px auto}.nav-pill,.sequence-pill{display:inline-flex;align-items:center;justify-content:center;max-width:100%;padding:6px 10px;border:1px solid #111;border-radius:999px;background:#fff;color:#111;text-decoration:none;font-size:11px;font-weight:700;line-height:1.35;white-space:normal}.nav-pill:hover,.sequence-pill:hover{background:#f3f4f6}.nav-pill:focus-visible,.sequence-pill:focus-visible,a:focus-visible{outline:2px solid #2463c5;outline-offset:3px}.page-header{text-align:center;margin:8px auto 14px}.page-title{font-size:clamp(23px,4vw,27px);line-height:1.2;margin:0;font-weight:650}footer{border-top:1px solid #e1e4e8;margin:15px auto 0;padding:9px 0;color:#687080;font-size:11px;line-height:1.5}img{max-width:100%;object-fit:contain}a{color:inherit} .sequence-nav{margin:20px auto 8px} @media(max-width:480px){.wrap{padding:12px 8px 24px}.nav-pills,.sequence-nav{gap:6px}.nav-pill,.sequence-pill{font-size:11px;padding:6px 8px}}
+ .wrap{max-width:560px;padding:14px 9px 28px}.page-title{font-size:clamp(16px,4vw,24px)}.nav-pills,.sequence-nav{gap:5px;margin:10px auto}.nav-pill,.sequence-pill{font-size:9px;padding:5px 8px}.section-card{max-width:100%;padding:11px;margin:12px auto;background:#fff;border:1px solid #e1e4e8;border-radius:9px;box-shadow:0 2px 9px #00000008}.section-card h2{font-size:12px;margin:0 0 10px}.index-grid,.gallery-grid{display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch;gap:9px;max-width:100%}.index-card{display:flex;flex-direction:column;flex:0 0 130px;width:130px;max-width:130px;min-width:0;text-decoration:none;background:#fff;border:1px solid #e1e4e8;border-radius:8px;overflow:hidden}.index-card>img,.index-card .index-image img{display:block;width:100%;height:120px;max-height:120px;object-fit:contain;padding:4px;background:#f6f6f6}.index-card .index-image{height:120px;padding:0}.card-title,.index-title{font-size:9px;font-weight:650;line-height:1.35;padding:6px 6px 8px;overflow-wrap:anywhere}.set-label{display:block;color:#6b7280;font-size:9px}.text-block{line-height:1.5}.section-card figure{max-width:100%}footer{font-size:9px}@media(max-width:420px){.nav-pill,.sequence-pill{font-size:10px}}
+
+/* Cattle V5 — approved compact set page 2026-11-03, section 14 */
+.nav-pills,.sequence-nav{gap:5px;margin:10px auto}
+.nav-pill,.sequence-pill{font-size:8px;font-weight:700;padding:4px 7px;border:1px solid #111;border-radius:999px;background:#fff;color:#111}
+.section-card h2{font-size:11.2px}
+.card-title,.index-title{font-size:8.65px;font-weight:650;padding:6.5px 6px 7.5px}
+footer{font-size:7px}
+/* Documents are distinct from 130px set-member thumbnails; one 190px frame per image. */
+.section-card .gallery-grid{display:flex;justify-content:center;align-items:stretch;flex-wrap:wrap;gap:12px;width:100%;max-width:100%;min-width:0}
+.section-card .gallery-grid>.gallery-item{display:flex;flex:0 0 190px;width:190px;max-width:100%;min-width:0;align-items:center;justify-content:center;padding:6px;border:1px solid #e1e4e8;border-radius:8px;background:#fff;overflow:hidden;text-decoration:none}
+.section-card .gallery-grid>.gallery-item img{display:block;width:auto;height:auto;max-width:100%;max-height:158px;object-fit:contain;margin:auto}
+.section-card[data-role="full-character"] .ron-full-character-note{max-width:100%;margin:12px auto 0;text-align:center;font-size:12px;line-height:1.4}
+.section-card[data-role="literature"] .literature-entry{max-width:100%;font-size:12px;line-height:1.45}
+.section-card[data-role="literature"] .literature-entry p{margin:5px auto 10px;overflow-wrap:anywhere}
+/* Canonical Alien Cherub mechanism, adapted only to the existing Cattle class names. */
+.carousel-shell{position:relative;padding:0 26px;max-width:100%;min-width:0}
+.group-grid{display:flex;flex-wrap:nowrap;justify-content:flex-start;align-items:stretch;gap:9px;width:100%;max-width:100%;margin:0;overflow-x:auto;scroll-behavior:smooth;scrollbar-width:none;-ms-overflow-style:none;scroll-snap-type:x mandatory;padding:3px 2px 6px}
+.group-grid::-webkit-scrollbar{display:none;width:0;height:0}
+.group-grid>.index-card{flex:0 0 130px;width:130px;max-width:130px;min-width:130px;scroll-snap-align:start}
+.carousel-arrow{position:absolute;z-index:2;top:50%;transform:translateY(-50%);width:20px;height:20px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:#111;border:0;color:#fff;font-size:15px;line-height:1;cursor:pointer;padding:0}
+.carousel-arrow.prev{left:0}.carousel-arrow.next{right:0}
+.carousel-arrow[hidden],.carousel-arrow:disabled{display:none!important}
+.carousel-arrow:focus-visible{outline:2px solid #111;outline-offset:2px}
+
+/* V8: genuine nested Bull Friend subgroups, modelled as separate MC-style sections.
+   The subgroup page is simultaneously a set landing and a member of Bull Friend. */
+.bull-friend-subset-panel .nested-set-cards{display:flex;justify-content:center;align-items:flex-start;gap:9px;max-width:100%}
+.bull-friend-subset-panel .index-card{flex:0 0 130px;width:130px;max-width:130px}
+.ron-nested-set-close{display:flex;justify-content:flex-end;max-width:100%;margin:0 0 3px}
+.ron-nested-set-close a{display:inline-flex;justify-content:center;align-items:center;flex:0 0 24px;width:24px;height:24px;border:1px solid #111;border-radius:50%;background:#fff;color:#111;text-decoration:none;font:bold 19px/1 Arial,sans-serif}
+.ron-nested-set-close a:hover{background:#f3f4f6}
+.ron-nested-set-close a:focus-visible{outline:2px solid #2463c5;outline-offset:3px}
+
+
+/* V9 Bull Friend nested-set panel layout */
+.set-panel{max-width:100%;padding:11px;margin:12px auto;background:#fff;border:1px solid #e1e4e8;border-radius:9px;box-shadow:0 2px 9px #00000008}
+.set-panel h2{font-size:11.2px;margin:0 0 10px}
+.set-panel .grid{display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch;gap:9px;max-width:100%}
+.set-panel .art-card{display:flex;flex-direction:column;flex:0 0 130px;width:130px;max-width:130px;min-width:0;text-decoration:none;background:#fff;border:1px solid #e1e4e8;border-radius:8px;overflow:hidden}
+.set-panel .art-card img{display:block;width:100%;height:120px;max-height:120px;object-fit:contain;padding:4px;background:#f6f6f6}
+.set-panel .card-title{text-align:center;padding:6px 6px 8px;font-size:8.65px;font-weight:650;line-height:1.35;overflow-wrap:anywhere}
