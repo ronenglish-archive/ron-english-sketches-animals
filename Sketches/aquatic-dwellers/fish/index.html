@@ -1,64 +1,393 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Fish | Sketches &amp; Drawings | Ron English Catalogue Raisonn&eacute;</title>
-<link rel="stylesheet" href="../../../css/styles.css">
-<style>
-/* Compact drawing category index - consolidated preview */
-*{box-sizing:border-box}
-body{margin:0;background:#fff;color:#171717;font-family:Arial,Helvetica,sans-serif;line-height:1.5}
-.wrap{max-width:1100px;width:calc(100% - 36px);margin:auto;padding:24px 0 42px}
-.nav-pills{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:10px;margin:20px 0 28px;text-align:center}
-.nav-pill{display:inline-block;padding:8px 14px;border:1px solid #e5e7eb;border-radius:999px;background:#fff;color:#111;text-decoration:none;font:14px/1.25 system-ui,-apple-system,"Segoe UI",sans-serif}
-.nav-pill:hover,.nav-pill:focus{background:#f3f4f6}
-.top-nav{display:flex;justify-content:center;flex-wrap:wrap;gap:10px 18px;margin:4px 0 34px;font-size:14px}
-.top-nav a{color:inherit;text-decoration:none}.top-nav a:hover{text-decoration:underline}
-.catalogue-pill-nav{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:18px;margin:28px auto 42px}
-.catalogue-pill-nav a{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:10px 28px;border:1px solid #d9dde2;border-radius:999px;color:inherit;text-decoration:none;font-size:18px}
-.page-header{text-align:center;margin:0 0 26px}.page-title{margin:0;font:500 clamp(30px,4vw,46px) Georgia,'Times New Roman',serif}
-.index-grid,.group-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:16px;align-items:stretch;margin:0 auto}
-.index-grid>.index-card,.group-grid>.group-card{flex:0 0 200px;max-width:200px;width:100%}
-.index-card,.group-card{display:flex;flex-direction:column;min-width:0;text-decoration:none;color:inherit;text-align:center;background:#fff;border:1px solid #e5e7eb;border-radius:12px;overflow:hidden;box-shadow:0 3px 12px #0000000b}
-.index-card:hover,.group-card:hover{border-color:#c9ced5;box-shadow:0 5px 16px #00000014}
-.index-image{height:158px;width:100%;padding:8px;background:#f8fafc;display:flex;align-items:center;justify-content:center;overflow:hidden;border-bottom:1px solid #e5e7eb}
-.index-image img{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain}
-.index-title,.group-card .label{font:500 14px/1.35 Georgia,'Times New Roman',serif;padding:10px 8px 12px;margin:0;overflow-wrap:anywhere;text-align:center}
-.set-label{display:block;font:400 12px/1.35 Arial,Helvetica,sans-serif;color:#666;margin-top:4px}
-.group-card img{display:block;width:100%;height:158px;object-fit:contain;padding:8px;background:#f8fafc;border-bottom:1px solid #e5e7eb}
-footer{text-align:center;margin-top:35px;padding-top:18px;border-top:1px solid #d8d8d8;color:#666;font-size:13px}footer a{color:inherit}
-@media(max-width:480px){.wrap{width:calc(100% - 24px)}.index-grid,.group-grid{gap:12px}.index-grid>.index-card,.group-grid>.group-card{flex:0 1 145px;max-width:145px}.index-image,.group-card img{height:140px}.index-title,.group-card .label{font-size:13px}}
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Fish | Sketches &amp; Drawings | Ron English Catalogue Raisonn&eacute;
+  </title>
+  <style>
+   /* Fish category index: standard compact catalogue card grid. */
+:root {
+  --border: #e5e7eb;
+  --image-background: #f8fafc;
+}
 
-/* Existing catalogue relationship note, retained in consolidated style. */
-.project-note{max-width:900px;margin:0 auto 26px;padding:12px 16px;border:1px solid #e5e7eb;border-radius:12px;background:#f9fafb;text-align:center;line-height:1.6}
-.project-note a{color:inherit}
+*, *::before, *::after { box-sizing: border-box; }
 
-</style>
+body {
+  margin: 0;
+  background: #fff;
+  color: #171717;
+  font: 16px/1.5 Arial, Helvetica, sans-serif;
+}
 
+.wrap {
+  width: calc(100% - 36px);
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 0 42px;
+}
 
+/* Site navigation and catalogue sequence */
+.nav-pills, .sequence-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px auto 28px;
+  text-align: center;
+}
 
-<link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
-</head><body><main class="wrap">
-<nav class="nav-pills"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a>  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
-</nav>
-<header class="page-header"><h1 class="page-title">Fish</h1></header>
-<div class="index-grid"><a class="index-card" href="culture-catch.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/fish/Culture%20Catch%20COLOR%20digital.jpg" alt="Culture Catch" loading="lazy"><div class="index-body"><h2 class="index-title">Culture Catch</h2></div></a>
-<a class="index-card" href="dna-fish.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/fish/DNA%20fish%20ORIGINAL.jpg" alt="DNA Fish" loading="lazy"><div class="index-body"><h2 class="index-title">DNA Fish</h2></div></a>
-<a class="index-card" href="evofish.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260206.jpg?v=20260614e" alt="Evofish" loading="lazy"><div class="index-body"><h2 class="index-title">Evofish</h2></div></a>
-<a class="index-card" href="fat-goldfish.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/fish/Fat%20GoldFish%20color%20%20digital.jpg" alt="Fat Goldfish" loading="lazy"><div class="index-body"><h2 class="index-title">Fat Goldfish</h2></div></a>
-<a class="index-card" href="groups/fin-evolution.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/fish/Fin%20Evolution%20COLOR%20digital.png" alt="Fin Evolution" loading="lazy"><div class="index-body"><h2 class="index-title">Fin Evolution</h2><div class="set-label">Set</div></div></a>
-<a class="index-card" href="finflyer-finley.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/fish/FinFlyer%20Finley%20COLOR%20digital.png" alt="FinFlyer Finley" loading="lazy"><div class="index-body"><h2 class="index-title">FinFlyer Finley</h2></div></a>
-<a class="index-card" href="fish.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/fish/Fish%20COLOR%20digital.png" alt="Fish" loading="lazy"><div class="index-body"><h2 class="index-title">Fish</h2></div></a>
-<a class="index-card" href="fish-in-bikini.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-4/main/sketches/Scan_20260625%20%284%29.jpg?j=20260915-2015" alt="Fish in bikini" loading="lazy"><div class="index-body"><h2 class="index-title">Fish in bikini</h2></div></a>
-<a class="index-card" href="fish-in-bowl.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/fish/Fish%20in%20Bowl%20COLOR%20digital.jpg" alt="Fish in Bowl" loading="lazy"><div class="index-body"><h2 class="index-title">Fish in Bowl</h2></div></a>
-<a class="index-card" href="fish-in-cowboy-hat.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/fish/Fish%20in%20Cowboy%20Hat%20COLORED%20digital.png" alt="Fish in Hat" loading="lazy"><div class="index-body"><h2 class="index-title">Fish in Hat</h2></div></a>
-<a class="index-card" href="fish-soup.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/fish/goldfish%20leaping%20ORIGINAL.jpg" alt="Fish out of Water" loading="lazy"><div class="index-body"><h2 class="index-title">Fish out of Water</h2></div></a>
-<a class="index-card" href="fisherman.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-6/main/Scan_20260922.jpg" alt="Fisherman" loading="lazy"><div class="index-body"><h2 class="index-title">Fisherman</h2></div></a>
-<a class="index-card" href="fishy-business.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-4/main/sketches/Scan_20260626%20%2849%29.jpg?v=20260915-2015" alt="Fishy business" loading="lazy"><div class="index-body"><h2 class="index-title">Fishy business</h2></div></a>
-<a class="index-card" href="fishy-yang.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/fish/fishy%20yang%20ORIGINAL.jpg" alt="Fishy Yang" loading="lazy"><div class="index-body"><h2 class="index-title">Fishy Yang</h2></div></a>
-<a class="index-card" href="flying-fish-sketch.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/New/flying-fish-sketch.jpg?v=20260609b" alt="Flying Fish Sketch" loading="lazy"><div class="index-body"><h2 class="index-title">Flying Fish Sketch</h2></div></a>
-<a class="index-card" href="goldfish-caviar.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/fish/Goldfish%20Caviar%201color%20ORIGINAL.png" alt="Goldfish Caviar" loading="lazy"><div class="index-body"><h2 class="index-title">Goldfish Caviar</h2></div></a>
-<a class="index-card" href="monarch-fish.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/fish/Monarch%20Fish%20COLOR%20digital.png" alt="Monarch Fish" loading="lazy"><div class="index-body"><h2 class="index-title">Monarch Fish</h2></div></a>
-<a class="index-card" href="mystifeye-finley.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/fish/Mystifeye%20Finley%20COLOR%20digital.png" alt="Mystifeye Finley" loading="lazy"><div class="index-body"><h2 class="index-title">Mystifeye Finley</h2></div></a>
-<a class="index-card" href="swish-evolve.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/fish/Swish%20Evolve%20COLOR%20digital.png" alt="Swish Evolve" loading="lazy"><div class="index-body"><h2 class="index-title">Swish Evolve</h2></div></a>
-<a class="index-card" href="what-a-catch.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-4/main/sketches/Scan_20260913%20(3).jpg?v=20260915-2015" alt="What a Catch" loading="lazy"><div class="index-body"><h2 class="index-title">What a Catch</h2></div></a></div>
-<nav class="sequence-nav ron-bottom-prev-next-center" aria-label="Catalogue sequence"><a class="nav-pill sequence-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/ferrets-groundhogs/index.html">&larr; Previous: Ferrets &amp; Groundhogs</a><a class="nav-pill sequence-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-animals/Sketches/foxes/index.html">Next: Foxes &rarr;</a></nav><footer>Published via GitHub Pages<br>for long-term public access.</footer>
-</main></body></html>
+.nav-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 14px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: #fff;
+  color: #111;
+  text-decoration: none;
+  font: 14px/1.25 system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.nav-pill:hover, .nav-pill:focus-visible { background: #f3f4f6; }
+
+/* Page heading */
+.page-header { margin: 0 0 26px; text-align: center; }
+.page-title {
+  margin: 0;
+  font: 500 clamp(30px, 4vw, 46px) Georgia, "Times New Roman", serif;
+}
+
+/* Artwork grid: 200px cards on desktop; incomplete rows centered. */
+.index-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 16px;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.index-card {
+  display: flex;
+  flex: 0 0 200px;
+  flex-direction: column;
+  min-width: 0;
+  max-width: 200px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #fff;
+  color: inherit;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 3px 12px #0000000b;
+}
+
+.index-card:hover {
+  border-color: #c9ced5;
+  box-shadow: 0 5px 16px #00000014;
+}
+
+.index-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  height: 158px;
+  padding: 8px;
+  border-bottom: 1px solid var(--border);
+  background: var(--image-background);
+}
+
+.index-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.index-body { flex: 1; }
+.index-title {
+  margin: 0;
+  padding: 10px 8px 12px;
+  font: 500 14px/1.35 Georgia, "Times New Roman", serif;
+  overflow-wrap: anywhere;
+}
+
+.set-label {
+  display: block;
+  margin-top: 4px;
+  color: #666;
+  font: 400 12px/1.35 Arial, Helvetica, sans-serif;
+}
+
+/* Publishing footer */
+footer {
+  margin-top: 35px;
+  padding-top: 18px;
+  border-top: 1px solid #d8d8d8;
+  color: #666;
+  font-size: 13px;
+  text-align: center;
+}
+
+/* Compact two-column mobile cards, with centered single-column fallback. */
+@media (max-width: 480px) {
+  .wrap { width: calc(100% - 24px); }
+  .index-grid { gap: 12px; }
+  .index-card { flex: 0 1 145px; max-width: 145px; }
+  .index-image { height: 140px; }
+  .index-title { font-size: 13px; }
+}
+  </style>
+  <link href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png" rel="icon" type="image/png"/>
+ </head>
+ <body>
+  <main class="wrap">
+   <nav class="nav-pills">
+    <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">
+     Catalogue home
+    </a>
+    <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">
+     Sketches &amp; Drawings
+    </a>
+    <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">
+     Search Catalogue
+    </a>
+   </nav>
+   <header class="page-header">
+    <h1 class="page-title">
+     Fish
+    </h1>
+   </header>
+   <div class="index-grid">
+    <a class="index-card" href="culture-catch.html">
+     <div class="index-image">
+      <img alt="Culture Catch" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/fish/Culture%20Catch%20COLOR%20digital.jpg"/>
+     </div>
+     <div class="index-body">
+      <h2 class="index-title">
+       Culture Catch
+      </h2>
+     </div>
+    </a>
+    <a class="index-card" href="dna-fish.html">
+     <div class="index-image">
+      <img alt="DNA Fish" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/fish/DNA%20fish%20ORIGINAL.jpg"/>
+     </div>
+     <div class="index-body">
+      <h2 class="index-title">
+       DNA Fish
+      </h2>
+     </div>
+    </a>
+    <a class="index-card" href="evofish.html">
+     <div class="index-image">
+      <img alt="Evofish" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260206.jpg?v=20260614e"/>
+     </div>
+     <div class="index-body">
+      <h2 class="index-title">
+       Evofish
+      </h2>
+     </div>
+    </a>
+    <a class="index-card" href="fat-goldfish.html">
+     <div class="index-image">
+      <img alt="Fat Goldfish" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/fish/Fat%20GoldFish%20color%20%20digital.jpg"/>
+     </div>
+     <div class="index-body">
+      <h2 class="index-title">
+       Fat Goldfish
+      </h2>
+     </div>
+    </a>
+    <a class="index-card" href="groups/fin-evolution.html">
+     <div class="index-image">
+      <img alt="Fin Evolution" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/fish/Fin%20Evolution%20COLOR%20digital.png"/>
+     </div>
+     <div class="index-body">
+      <h2 class="index-title">
+       Fin Evolution
+      </h2>
+      <div class="set-label">
+       Set
+      </div>
+     </div>
+    </a>
+    <a class="index-card" href="finflyer-finley.html">
+     <div class="index-image">
+      <img alt="FinFlyer Finley" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/fish/FinFlyer%20Finley%20COLOR%20digital.png"/>
+     </div>
+     <div class="index-body">
+      <h2 class="index-title">
+       FinFlyer Finley
+      </h2>
+     </div>
+    </a>
+    <a class="index-card" href="fish.html">
+     <div class="index-image">
+      <img alt="Fish" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/fish/Fish%20COLOR%20digital.png"/>
+     </div>
+     <div class="index-body">
+      <h2 class="index-title">
+       Fish
+      </h2>
+     </div>
+    </a>
+    <a class="index-card" href="fish-in-bikini.html">
+     <div class="index-image">
+      <img alt="Fish in bikini" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-4/main/sketches/Scan_20260625%20%284%29.jpg?j=20260915-2015"/>
+     </div>
+     <div class="index-body">
+      <h2 class="index-title">
+       Fish in bikini
+      </h2>
+     </div>
+    </a>
+    <a class="index-card" href="fish-in-bowl.html">
+     <div class="index-image">
+      <img alt="Fish in Bowl" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/fish/Fish%20in%20Bowl%20COLOR%20digital.jpg"/>
+     </div>
+     <div class="index-body">
+      <h2 class="index-title">
+       Fish in Bowl
+      </h2>
+     </div>
+    </a>
+    <a class="index-card" href="fish-in-cowboy-hat.html">
+     <div class="index-image">
+      <img alt="Fish in Hat" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/fish/Fish%20in%20Cowboy%20Hat%20COLORED%20digital.png"/>
+     </div>
+     <div class="index-body">
+      <h2 class="index-title">
+       Fish in Hat
+      </h2>
+     </div>
+    </a>
+    <a class="index-card" href="fish-soup.html">
+     <div class="index-image">
+      <img alt="Fish out of Water" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/fish/goldfish%20leaping%20ORIGINAL.jpg"/>
+     </div>
+     <div class="index-body">
+      <h2 class="index-title">
+       Fish out of Water
+      </h2>
+     </div>
+    </a>
+    <a class="index-card" href="fisherman.html">
+     <div class="index-image">
+      <img alt="Fisherman" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-6/main/Scan_20260922.jpg"/>
+     </div>
+     <div class="index-body">
+      <h2 class="index-title">
+       Fisherman
+      </h2>
+     </div>
+    </a>
+    <a class="index-card" href="fishy-business.html">
+     <div class="index-image">
+      <img alt="Fishy business" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-4/main/sketches/Scan_20260626%20%2849%29.jpg?v=20260915-2015"/>
+     </div>
+     <div class="index-body">
+      <h2 class="index-title">
+       Fishy business
+      </h2>
+     </div>
+    </a>
+    <a class="index-card" href="fishy-yang.html">
+     <div class="index-image">
+      <img alt="Fishy Yang" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/fish/fishy%20yang%20ORIGINAL.jpg"/>
+     </div>
+     <div class="index-body">
+      <h2 class="index-title">
+       Fishy Yang
+      </h2>
+     </div>
+    </a>
+    <a class="index-card" href="flying-fish-sketch.html">
+     <div class="index-image">
+      <img alt="Flying Fish Sketch" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/New/flying-fish-sketch.jpg?v=20260609b"/>
+     </div>
+     <div class="index-body">
+      <h2 class="index-title">
+       Flying Fish Sketch
+      </h2>
+     </div>
+    </a>
+    <a class="index-card" href="goldfish-caviar.html">
+     <div class="index-image">
+      <img alt="Goldfish Caviar" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/fish/Goldfish%20Caviar%201color%20ORIGINAL.png"/>
+     </div>
+     <div class="index-body">
+      <h2 class="index-title">
+       Goldfish Caviar
+      </h2>
+     </div>
+    </a>
+    <a class="index-card" href="monarch-fish.html">
+     <div class="index-image">
+      <img alt="Monarch Fish" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/fish/Monarch%20Fish%20COLOR%20digital.png"/>
+     </div>
+     <div class="index-body">
+      <h2 class="index-title">
+       Monarch Fish
+      </h2>
+     </div>
+    </a>
+    <a class="index-card" href="mystifeye-finley.html">
+     <div class="index-image">
+      <img alt="Mystifeye Finley" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/fish/Mystifeye%20Finley%20COLOR%20digital.png"/>
+     </div>
+     <div class="index-body">
+      <h2 class="index-title">
+       Mystifeye Finley
+      </h2>
+     </div>
+    </a>
+    <a class="index-card" href="swish-evolve.html">
+     <div class="index-image">
+      <img alt="Swish Evolve" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/fish/Swish%20Evolve%20COLOR%20digital.png"/>
+     </div>
+     <div class="index-body">
+      <h2 class="index-title">
+       Swish Evolve
+      </h2>
+     </div>
+    </a>
+    <a class="index-card" href="what-a-catch.html">
+     <div class="index-image">
+      <img alt="What a Catch" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-4/main/sketches/Scan_20260913%20(3).jpg?v=20260915-2015"/>
+     </div>
+     <div class="index-body">
+      <h2 class="index-title">
+       What a Catch
+      </h2>
+     </div>
+    </a>
+   </div>
+   <nav aria-label="Catalogue sequence" class="sequence-nav ron-bottom-prev-next-center">
+    <a class="nav-pill sequence-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/ferrets-groundhogs/index.html">
+     &larr; Previous: Ferrets &amp; Groundhogs
+    </a>
+    <a class="nav-pill sequence-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-animals/Sketches/foxes/index.html">
+     Next: Foxes &rarr;
+    </a>
+   </nav>
+   <footer>
+    Published via GitHub Pages
+    <br/>
+    for long-term public access.
+   </footer>
+  </main>
+ </body>
+</html>

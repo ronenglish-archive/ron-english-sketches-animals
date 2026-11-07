@@ -1,87 +1,439 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Aqua Apes | Aqua Apes | Ron English Catalogue Raisonn&eacute;</title>
-<link rel="stylesheet" href="../../../css/styles.css">
-
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Aqua Apes | Ron English Catalogue Raisonné</title>
+<link href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png" rel="icon" type="image/png"/>
 <style>
-/* Compact drawing category index - consolidated preview */
-*{box-sizing:border-box}
-body{margin:0;background:#fff;color:#171717;font-family:Arial,Helvetica,sans-serif;line-height:1.5}
-.wrap{max-width:1100px;width:calc(100% - 36px);margin:auto;padding:24px 0 42px}
-.nav-pills{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:10px;margin:20px 0 28px;text-align:center}
-.nav-pill{display:inline-block;padding:8px 14px;border:1px solid #e5e7eb;border-radius:999px;background:#fff;color:#111;text-decoration:none;font:14px/1.25 system-ui,-apple-system,"Segoe UI",sans-serif}
-.nav-pill:hover,.nav-pill:focus{background:#f3f4f6}
-.top-nav{display:flex;justify-content:center;flex-wrap:wrap;gap:10px 18px;margin:4px 0 34px;font-size:14px}
-.top-nav a{color:inherit;text-decoration:none}.top-nav a:hover{text-decoration:underline}
-.catalogue-pill-nav{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:18px;margin:28px auto 42px}
-.catalogue-pill-nav a{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:10px 28px;border:1px solid #d9dde2;border-radius:999px;color:inherit;text-decoration:none;font-size:18px}
-.page-header{text-align:center;margin:0 0 26px}.page-title{margin:0;font:500 clamp(30px,4vw,46px) Georgia,'Times New Roman',serif}
-.index-grid,.group-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:16px;align-items:stretch;margin:0 auto}
-.index-grid>.index-card,.group-grid>.group-card{flex:0 0 200px;max-width:200px;width:100%}
-.index-card,.group-card{display:flex;flex-direction:column;min-width:0;text-decoration:none;color:inherit;text-align:center;background:#fff;border:1px solid #e5e7eb;border-radius:12px;overflow:hidden;box-shadow:0 3px 12px #0000000b}
-.index-card:hover,.group-card:hover{border-color:#c9ced5;box-shadow:0 5px 16px #00000014}
-.index-image{height:158px;width:100%;padding:8px;background:#f8fafc;display:flex;align-items:center;justify-content:center;overflow:hidden;border-bottom:1px solid #e5e7eb}
-.index-image img{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain}
-.index-title,.group-card .label{font:500 14px/1.35 Georgia,'Times New Roman',serif;padding:10px 8px 12px;margin:0;overflow-wrap:anywhere;text-align:center}
-.set-label{display:block;font:400 12px/1.35 Arial,Helvetica,sans-serif;color:#666;margin-top:4px}
-.group-card img{display:block;width:100%;height:158px;object-fit:contain;padding:8px;background:#f8fafc;border-bottom:1px solid #e5e7eb}
-footer{text-align:center;margin-top:35px;padding-top:18px;border-top:1px solid #d8d8d8;color:#666;font-size:13px}footer a{color:inherit}
-@media(max-width:480px){.wrap{width:calc(100% - 24px)}.index-grid,.group-grid{gap:12px}.index-grid>.index-card,.group-grid>.group-card{flex:0 1 145px;max-width:145px}.index-image,.group-card img{height:140px}.index-title,.group-card .label{font-size:13px}}
 
-/* Existing catalogue relationship note, retained in consolidated style. */
-.project-note{max-width:900px;margin:0 auto 26px;padding:12px 16px;border:1px solid #e5e7eb;border-radius:12px;background:#f9fafb;text-align:center;line-height:1.6}
-.project-note a{color:inherit}
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      background: #fff;
+      color: #171717;
+      font-family: Arial,Helvetica,sans-serif;
+      line-height: 1.5;
+    }
+    .wrap {
+      max-width: 1100px;
+      width: calc(100% - 36px);
+      margin: auto;
+      padding: 24px 0 42px;
+    }
+    .nav-pills {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 20px 0 28px;
+      text-align: center;
+    }
+    .nav-pill {
+      display: inline-block;
+      padding: 8px 14px;
+      border: 1px solid #e5e7eb;
+      border-radius: 999px;
+      background: #fff;
+      color: #111;
+      text-decoration: none;
+      font: 14px/1.25 system-ui,-apple-system,"Segoe UI",sans-serif;
+    }
+    .nav-pill:hover,.nav-pill:focus {
+      background: #f3f4f6;
+    }
+    .page-header {
+      text-align: center;
+      margin: 0 0 26px;
+    }
+    .page-title {
+      margin: 0;
+      font: 500 clamp(30px,4vw,46px) Georgia,"Times New Roman",serif;
+    }
+    .index-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+      align-items: stretch;
+      margin: 0 auto;
+    }
+    .index-grid>.index-card {
+      flex: 0 0 200px;
+      max-width: 200px;
+      width: 100%;
+    }
+    .index-card {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      text-decoration: none;
+      color: inherit;
+      text-align: center;
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 3px 12px #0000000b;
+    }
+    .index-card:hover {
+      border-color: #c9ced5;
+      box-shadow: 0 5px 16px #00000014;
+    }
+    .index-image {
+      flex: 0 0 158px;
+      min-height: 158px;
+      height: 158px;
+      width: 100%;
+      padding: 8px;
+      background: #f8fafc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .index-image img {
+      display: block;
+      flex: 0 0 auto;
+      width: 100%;
+      height: 100%;
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+    .index-title {
+      font: 500 14px/1.35 Georgia,"Times New Roman",serif;
+      padding: 10px 8px 12px;
+      margin: 0;
+      overflow-wrap: anywhere;
+      text-align: center;
+    }
+    .set-label {
+      display: block;
+      font: 400 12px/1.35 Arial,Helvetica,sans-serif;
+      color: #666;
+      margin-top: 4px;
+    }
+    footer {
+      text-align: center;
+      margin-top: 35px;
+      padding-top: 18px;
+      border-top: 1px solid #d8d8d8;
+      color: #666;
+      font-size: 13px;
+    }
+    @media (max-width:480px) {
+      .wrap {
+        width: calc(100% - 24px);
+      }
+      .index-grid {
+        gap: 12px;
+      }
+      .index-grid>.index-card {
+        flex: 0 1 145px;
+        max-width: 145px;
+      }
+      .index-image {
+        flex-basis: 140px;
+        min-height: 140px;
+        height: 140px;
+      }
+      .index-title {
+        font-size: 13px;
+      }
+    }
 
+    .sequence-nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 38px auto 12px;
+      text-align: center;
+      width: 100%;
+    }
+    @media (max-width:480px) {
+      .sequence-nav {
+        margin-top: 30px;
+      }
+    }
 </style>
-
-
-
-<link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
 </head>
 <body data-page-kind="category-index">
 <!-- AQUA-APES-SPREADSHEET-20260912 -->
 <div class="wrap">
-<nav class="nav-pills">
+<nav aria-label="Catalogue navigation" class="nav-pills">
 <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
 <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a>
-  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
+<a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
 </nav>
-<header class="page-header"><h1 class="page-title">Aqua Apes</h1></header>
-<main class="index-grid"><a class="index-card" data-parent-card href="abe-waters.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/Abe%20Waters%20COLOR%20digital.jpg" alt="Abe Waters" loading="lazy"><div class="index-title">Abe Waters</div></a>
-<a class="index-card" data-parent-card href="groups/angel-cake.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/Angel%20Cake%20COLOR%20digital.jpg" alt="Angel Cake" loading="lazy"><div class="index-title">Angel Cake<div class="set-label">Set</div></div></a>
-<a class="index-card" data-parent-card href="angie-waters.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/Angie%20Waters%20digital.jpg" alt="Angie Waters" loading="lazy"><div class="index-title">Angie Waters</div></a>
-<a class="index-card" data-parent-card href="apette-waters.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/Apette%20Waters%20COLOR%20digital.jpg" alt="Apette Waters" loading="lazy"><div class="index-title">Apette Waters</div></a>
-<a class="index-card" data-parent-card href="aqua-ape-surfer.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/aqua%20ape%20surfer%20ORIGINAL.jpg" alt="Aqua Ape Surfer" loading="lazy"><div class="index-title">Aqua Ape Surfer</div></a>
-<a class="index-card" data-parent-card href="aqua-apes-family-icon.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/Aqua%20Apes%20Family%20Icon%20COLOR%20%20digital.jpg" alt="Aqua Apes Family Icon" loading="lazy"><div class="index-title">Aqua Apes Family Icon</div></a>
-<a class="index-card" data-parent-card href="aqua-apes-gang.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/images/Sketches/character-groups-and-ensembles/Aqua%20Apes%20Gang%20COLOR.jpg" alt="Aqua Apes Gang" loading="lazy"><div class="index-title">Aqua Apes Gang</div></a>
-<a class="index-card" data-parent-card href="aqua-apes-icon.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/Aqua%20Apes%20Icon%20ORIGINAL.jpg" alt="Aqua Apes Logo" loading="lazy"><div class="index-title">Aqua Apes Logo</div></a>
-<a class="index-card" data-parent-card href="groups/aqua-apes-sketches.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/starr.jpg?v=20260617r" alt="Aqua Apes Sketches" loading="lazy"><div class="index-title">Aqua Apes Sketches<div class="set-label">Set</div></div></a>
-<a class="index-card" data-parent-card href="aqua-ape-child.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/New/aqua%20ape%20child.jpg" alt="Aqua Apes Toddler" loading="lazy"><div class="index-title">Aqua Apes Toddler</div></a>
-<a class="index-card" data-parent-card href="aqua-dude.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260619%20%2820%29.jpg?v=20260619d" alt="Aqua Dude" loading="lazy"><div class="index-title">Aqua Dude</div></a>
-<a class="index-card" data-parent-card href="aqua-joy.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/New/aqua%20Joy.jpg" alt="Aqua Joy" loading="lazy"><div class="index-title">Aqua Joy</div></a>
-<a class="index-card" data-parent-card href="aqua-surfer.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/b39e0047-51ba-40f1-82db-f5baceaa5a8b.png?v=20260614e" alt="Aqua Surfer" loading="lazy"><div class="index-title">Aqua Surfer</div></a>
-<a class="index-card" data-parent-card href="aqua-velver.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260421%20(2)%20aqua%20ape%20sketch.jpg?v=20260614e" alt="Aqua Velver" loading="lazy"><div class="index-title">Aqua Velver</div></a>
-<a class="index-card" data-parent-card href="brooke-waters.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/Brooke%20Waters%20COLOR%20digital.jpg" alt="Brooke Waters" loading="lazy"><div class="index-title">Brooke Waters</div></a>
-<a class="index-card" data-parent-card href="couch-surfing.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/images/Sketches/character-groups-and-ensembles/Couch%20Surfing%20COLOR.jpg" alt="Couch Surfing" loading="lazy"><div class="index-title">Couch Surfing</div></a>
-<a class="index-card" data-parent-card href="creaturette.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/kaiju/creaturette%20ORIGINAL.jpg" alt="Creaturette" loading="lazy"><div class="index-title">Creaturette</div></a>
-<a class="index-card" data-parent-card href="infant-aqua-ape.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/Infant%20Aqua%20Ape%20COLOR%20copy%20digital.jpg" alt="Infant Aqua Ape" loading="lazy"><div class="index-title">Infant Aqua Ape</div></a>
-<a class="index-card" data-parent-card href="lucky-little-sperm-also-known-as-tad.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-animals/main/images/Sketches/aquatic-dwellers/aqua-apes/Lucky%20Little%20Sperm%20COLOR.jpg" alt="Lucky Little Sperm" loading="lazy"><div class="index-title">Lucky Little Sperm</div></a>
-<a class="index-card" data-parent-card href="newt-wave.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/Newt%20Wave%20COLOR%20digital.jpg" alt="Newt Wave" loading="lazy"><div class="index-title">Newt Wave</div></a>
-<a class="index-card" data-parent-card href="sea-monkeys-beach-party.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/Sea%20Monkeys%20Beach%20Party%20ORIGINAL.jpg" alt="Sea Monkeys Beach Party" loading="lazy"><div class="index-title">Sea Monkeys Beach Party</div></a>
-<a class="index-card" data-parent-card href="sea-squatch.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/Sea%20Squatch%20COLOR%20digital.jpg" alt="Sea Squatch" loading="lazy"><div class="index-title">Sea Squatch</div></a>
-<a class="index-card" data-parent-card href="see-money.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/See%20Money%20COLOR%20digital.jpg" alt="See Money" loading="lazy"><div class="index-title">See Money</div></a>
-<a class="index-card" data-parent-card href="shellsea-waters.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/Shellsea%20Waters%20COLOR%20digital.jpg" alt="Shellsea Waters" loading="lazy"><div class="index-title">Shellsea Waters</div></a>
-<a class="index-card" data-parent-card href="groups/aqua-ape-for-snow-globe.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/Aqua%20Ape%20for%20Snow%20Globe%201%20COLOR%20digital.jpg" alt="Snow Globe Aqua Ape" loading="lazy"><div class="index-title">Snow Globe Aqua Ape<div class="set-label">Set</div></div></a>
-<a class="index-card" data-parent-card href="this-wide.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-4/main/sketches/Scan_20260905.jpg?v=20260915-2015" alt="This Wide" loading="lazy"><div class="index-title">This Wide</div></a>
-<a class="index-card" data-parent-card href="walter-w.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-6/main/Scan_20260929%20%2811%29.jpg" alt="Walter W." loading="lazy"><div class="index-title">Walter W.</div></a>
-<a class="index-card" data-parent-card href="groups/walter-waters.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/Walter%20Waters%20COLOR%20digital.jpg" alt="Walter Waters" loading="lazy"><div class="index-title">Walter Waters<div class="set-label">Set</div></div></a>
-<a class="index-card" data-parent-card href="water-walker.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/Water%20Walker%20COLOR%20digital.jpg" alt="Water Walker" loading="lazy"><div class="index-title">Water Walker</div></a>
-<a class="index-card" data-parent-card href="young-aqua-ape.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/Young%20Aqua%20Ape%20COLOR%20digital.jpg" alt="Young Aqua Ape" loading="lazy"><div class="index-title">Young Aqua Ape</div></a>
-<a class="index-card" data-parent-card href="younger-waters.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/Younger%20Waters%20COLOR%20digital.png" alt="Younger Waters" loading="lazy"><div class="index-title">Younger Waters</div></a></main>
-<nav class="sequence-nav ron-bottom-prev-next-center" aria-label="Catalogue sequence"><a class="nav-pill sequence-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-aliens/Sketches/aliens/index.html">&larr; Previous: Aliens</a><a class="nav-pill sequence-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-animals/Sketches/bats/index.html">Next: Bats &rarr;</a></nav><footer>Published via GitHub Pages<br>for long-term public access.</footer>
+<header class="page-header">
+<h1 class="page-title">Aqua Apes</h1>
+</header>
+<main class="index-grid">
+<a class="index-card" data-parent-card="" href="abe-waters.html">
+<div class="index-image">
+<img alt="Abe Waters" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/Abe%20Waters%20COLOR%20digital.jpg"/>
+</div>
+<div class="index-title">
+          Abe Waters
+        </div>
+</a>
+<a class="index-card" data-parent-card="" href="groups/angel-cake.html">
+<div class="index-image">
+<img alt="Angel Cake" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/Angel%20Cake%20COLOR%20digital.jpg"/>
+</div>
+<div class="index-title">
+          Angel Cake
+          <span class="set-label">Set</span>
+</div>
+</a>
+<a class="index-card" data-parent-card="" href="angie-waters.html">
+<div class="index-image">
+<img alt="Angie Waters" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/Angie%20Waters%20digital.jpg"/>
+</div>
+<div class="index-title">
+          Angie Waters
+        </div>
+</a>
+<a class="index-card" data-parent-card="" href="apette-waters.html">
+<div class="index-image">
+<img alt="Apette Waters" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/Apette%20Waters%20COLOR%20digital.jpg"/>
+</div>
+<div class="index-title">
+          Apette Waters
+        </div>
+</a>
+<a class="index-card" data-parent-card="" href="aqua-ape-surfer.html">
+<div class="index-image">
+<img alt="Aqua Ape Surfer" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/aqua%20ape%20surfer%20ORIGINAL.jpg"/>
+</div>
+<div class="index-title">
+          Aqua Ape Surfer
+        </div>
+</a>
+<a class="index-card" data-parent-card="" href="aqua-apes-family-icon.html">
+<div class="index-image">
+<img alt="Aqua Apes Family Icon" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/Aqua%20Apes%20Family%20Icon%20COLOR%20%20digital.jpg"/>
+</div>
+<div class="index-title">
+          Aqua Apes Family Icon
+        </div>
+</a>
+<a class="index-card" data-parent-card="" href="aqua-apes-gang.html">
+<div class="index-image">
+<img alt="Aqua Apes Gang" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/images/Sketches/character-groups-and-ensembles/Aqua%20Apes%20Gang%20COLOR.jpg"/>
+</div>
+<div class="index-title">
+          Aqua Apes Gang
+        </div>
+</a>
+<a class="index-card" data-parent-card="" href="aqua-apes-icon.html">
+<div class="index-image">
+<img alt="Aqua Apes Logo" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/Aqua%20Apes%20Icon%20ORIGINAL.jpg"/>
+</div>
+<div class="index-title">
+          Aqua Apes Logo
+        </div>
+</a>
+<a class="index-card" data-parent-card="" href="groups/aqua-apes-sketches.html">
+<div class="index-image">
+<img alt="Aqua Apes Sketches" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/starr.jpg?v=20260617r"/>
+</div>
+<div class="index-title">
+          Aqua Apes Sketches
+          <span class="set-label">Set</span>
+</div>
+</a>
+<a class="index-card" data-parent-card="" href="aqua-ape-child.html">
+<div class="index-image">
+<img alt="Aqua Apes Toddler" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/New/aqua%20ape%20child.jpg"/>
+</div>
+<div class="index-title">
+          Aqua Apes Toddler
+        </div>
+</a>
+<a class="index-card" data-parent-card="" href="aqua-dude.html">
+<div class="index-image">
+<img alt="Aqua Dude" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260619%20%2820%29.jpg?v=20260619d"/>
+</div>
+<div class="index-title">
+          Aqua Dude
+        </div>
+</a>
+<a class="index-card" data-parent-card="" href="aqua-joy.html">
+<div class="index-image">
+<img alt="Aqua Joy" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/New/aqua%20Joy.jpg"/>
+</div>
+<div class="index-title">
+          Aqua Joy
+        </div>
+</a>
+<a class="index-card" data-parent-card="" href="aqua-surfer.html">
+<div class="index-image">
+<img alt="Aqua Surfer" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/b39e0047-51ba-40f1-82db-f5baceaa5a8b.png?v=20260614e"/>
+</div>
+<div class="index-title">
+          Aqua Surfer
+        </div>
+</a>
+<a class="index-card" data-parent-card="" href="aqua-velver.html">
+<div class="index-image">
+<img alt="Aqua Velver" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260421%20(2)%20aqua%20ape%20sketch.jpg?v=20260614e"/>
+</div>
+<div class="index-title">
+          Aqua Velver
+        </div>
+</a>
+<a class="index-card" data-parent-card="" href="brooke-waters.html">
+<div class="index-image">
+<img alt="Brooke Waters" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/Brooke%20Waters%20COLOR%20digital.jpg"/>
+</div>
+<div class="index-title">
+          Brooke Waters
+        </div>
+</a>
+<a class="index-card" data-parent-card="" href="couch-surfing.html">
+<div class="index-image">
+<img alt="Couch Surfing" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/images/Sketches/character-groups-and-ensembles/Couch%20Surfing%20COLOR.jpg"/>
+</div>
+<div class="index-title">
+          Couch Surfing
+        </div>
+</a>
+<a class="index-card" data-parent-card="" href="creaturette.html">
+<div class="index-image">
+<img alt="Creaturette" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/kaiju/creaturette%20ORIGINAL.jpg"/>
+</div>
+<div class="index-title">
+          Creaturette
+        </div>
+</a>
+<a class="index-card" data-parent-card="" href="infant-aqua-ape.html">
+<div class="index-image">
+<img alt="Infant Aqua Ape" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/Infant%20Aqua%20Ape%20COLOR%20copy%20digital.jpg"/>
+</div>
+<div class="index-title">
+          Infant Aqua Ape
+        </div>
+</a>
+<a class="index-card" data-parent-card="" href="lucky-little-sperm-also-known-as-tad.html">
+<div class="index-image">
+<img alt="Lucky Little Sperm" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-animals/main/images/Sketches/aquatic-dwellers/aqua-apes/Lucky%20Little%20Sperm%20COLOR.jpg"/>
+</div>
+<div class="index-title">
+          Lucky Little Sperm
+        </div>
+</a>
+<a class="index-card" data-parent-card="" href="newt-wave.html">
+<div class="index-image">
+<img alt="Newt Wave" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/Newt%20Wave%20COLOR%20digital.jpg"/>
+</div>
+<div class="index-title">
+          Newt Wave
+        </div>
+</a>
+<a class="index-card" data-parent-card="" href="sea-monkeys-beach-party.html">
+<div class="index-image">
+<img alt="Sea Monkeys Beach Party" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/Sea%20Monkeys%20Beach%20Party%20ORIGINAL.jpg"/>
+</div>
+<div class="index-title">
+          Sea Monkeys Beach Party
+        </div>
+</a>
+<a class="index-card" data-parent-card="" href="sea-squatch.html">
+<div class="index-image">
+<img alt="Sea Squatch" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/Sea%20Squatch%20COLOR%20digital.jpg"/>
+</div>
+<div class="index-title">
+          Sea Squatch
+        </div>
+</a>
+<a class="index-card" data-parent-card="" href="see-money.html">
+<div class="index-image">
+<img alt="See Money" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/See%20Money%20COLOR%20digital.jpg"/>
+</div>
+<div class="index-title">
+          See Money
+        </div>
+</a>
+<a class="index-card" data-parent-card="" href="shellsea-waters.html">
+<div class="index-image">
+<img alt="Shellsea Waters" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/Shellsea%20Waters%20COLOR%20digital.jpg"/>
+</div>
+<div class="index-title">
+          Shellsea Waters
+        </div>
+</a>
+<a class="index-card" data-parent-card="" href="groups/aqua-ape-for-snow-globe.html">
+<div class="index-image">
+<img alt="Snow Globe Aqua Ape" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/Aqua%20Ape%20for%20Snow%20Globe%201%20COLOR%20digital.jpg"/>
+</div>
+<div class="index-title">
+          Snow Globe Aqua Ape
+          <span class="set-label">Set</span>
+</div>
+</a>
+<a class="index-card" data-parent-card="" href="this-wide.html">
+<div class="index-image">
+<img alt="This Wide" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-4/main/sketches/Scan_20260905.jpg?v=20260915-2015"/>
+</div>
+<div class="index-title">
+          This Wide
+        </div>
+</a>
+<a class="index-card" data-parent-card="" href="walter-w.html">
+<div class="index-image">
+<img alt="Walter W." loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-6/main/Scan_20260929%20%2811%29.jpg"/>
+</div>
+<div class="index-title">
+          Walter W.
+        </div>
+</a>
+<a class="index-card" data-parent-card="" href="groups/walter-waters.html">
+<div class="index-image">
+<img alt="Walter Waters" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/Walter%20Waters%20COLOR%20digital.jpg"/>
+</div>
+<div class="index-title">
+          Walter Waters
+          <span class="set-label">Set</span>
+</div>
+</a>
+<a class="index-card" data-parent-card="" href="water-walker.html">
+<div class="index-image">
+<img alt="Water Walker" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/Water%20Walker%20COLOR%20digital.jpg"/>
+</div>
+<div class="index-title">
+          Water Walker
+        </div>
+</a>
+<a class="index-card" data-parent-card="" href="young-aqua-ape.html">
+<div class="index-image">
+<img alt="Young Aqua Ape" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/Young%20Aqua%20Ape%20COLOR%20digital.jpg"/>
+</div>
+<div class="index-title">
+          Young Aqua Ape
+        </div>
+</a>
+<a class="index-card" data-parent-card="" href="younger-waters.html">
+<div class="index-image">
+<img alt="Younger Waters" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/Younger%20Waters%20COLOR%20digital.png"/>
+</div>
+<div class="index-title">
+          Younger Waters
+        </div>
+</a>
+</main>
+<nav aria-label="Catalogue sequence" class="sequence-nav">
+<a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-aliens/Sketches/aliens/index.html">← Previous: Aliens</a>
+<a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-animals/Sketches/bats/index.html">Next: Bats →</a>
+</nav>
+<footer>Published via GitHub Pages<br/>for long-term public access.</footer>
 </div>
 </body>
 </html>
