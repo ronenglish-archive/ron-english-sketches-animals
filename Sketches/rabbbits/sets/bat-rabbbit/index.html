@@ -1,91 +1,34 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Bat Rabbbit | Ron English Catalogue Raisonn&eacute;</title><style>*{box-sizing:border-box}body{margin:0;background:#fff;color:#111;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}.wrap{max-width:1120px;margin:0 auto;padding:28px 18px 56px}.nav-pills,.sequence-nav{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px;margin:20px 0;text-align:center}.nav-pill{display:inline-block;padding:8px 14px;border:1px solid #e5e7eb;border-radius:999px;background:#fff;color:#111;text-decoration:none;font-size:14px}.page-header{text-align:center;margin:0 auto 24px}.page-title{margin:0;font-size:clamp(2rem,4vw,3rem);line-height:1.05}.section-card{background:#fff;border:1px solid #e5e7eb;border-radius:18px;box-shadow:0 8px 26px rgba(0,0,0,.06);padding:22px;margin:0 0 24px}.index-grid{display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch;gap:18px}.index-card{display:block;flex:0 1 280px;max-width:300px;width:100%;border:1px solid #e5e7eb;border-radius:16px;overflow:hidden;background:#fff;text-decoration:none;color:inherit}.index-card img{display:block;width:100%;height:250px;object-fit:contain;background:#f3f4f6;padding:8px}.card-title{padding:13px 14px 14px;text-align:center;font-weight:650;line-height:1.35}.catalogue-meta-block{width:100%;max-width:900px;margin:0 auto 28px;text-align:center}.work-meta{list-style:none;padding:0;margin:0 auto;line-height:1.7;text-align:center}.gallery-grid{display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch;gap:18px}.gallery-item{display:block;flex:0 1 900px;max-width:900px;width:100%;border:1px solid #e5e7eb;border-radius:16px;overflow:hidden;background:#fff}.gallery-item img{display:block;width:100%;height:460px;object-fit:contain;background:#f3f4f6;padding:8px}footer{text-align:center;margin-top:30px;padding-top:16px;border-top:1px solid #e5e7eb;color:#6b7280;font-size:14px}@media(max-width:620px){.wrap{padding:22px 14px 48px}.index-card{flex-basis:min(100%,330px);max-width:330px}.gallery-item img{height:340px}}</style><style id="ron-bottom-prev-next-center-v1">
-/* Ron catalogue: center bottom Previous / Next navigation as a group. */
-nav.ron-bottom-prev-next-center{
-  display:flex!important;
-  flex-wrap:wrap!important;
-  justify-content:center!important;
-  align-items:center!important;
-  gap:12px!important;
-  text-align:center!important;
-}
-nav.ron-bottom-prev-next-center .sequence-spacer{
-  display:none!important;
-}
-nav.ron-bottom-prev-next-center > a{
-  flex:0 1 auto!important;
-}
-</style><style id="ron-catalogue-four-across-standard-v1">
-.index-grid,
-.gallery-grid,
-.category-grid,
-.subcategories-grid,
-.cards-grid{
-  display:flex!important;
-  flex-wrap:wrap!important;
-  justify-content:center!important;
-  align-items:stretch!important;
-  gap:18px!important;
-}
-.index-grid > .index-card,
-.index-grid > .gallery-item,
-.index-grid > .group-card,
-.gallery-grid > .index-card,
-.gallery-grid > .gallery-item,
-.gallery-grid > .group-card,
-.category-grid > .index-card,
-.category-grid > .gallery-item,
-.category-grid > .group-card,
-.subcategories-grid > .index-card,
-.subcategories-grid > .gallery-item,
-.subcategories-grid > .group-card,
-.cards-grid > .index-card,
-.cards-grid > .gallery-item,
-.cards-grid > .group-card{
-  box-sizing:border-box!important;
-  min-width:0!important;
-  flex:0 1 calc((100% - 54px) / 4)!important;
-  width:calc((100% - 54px) / 4)!important;
-  max-width:calc((100% - 54px) / 4)!important;
-}
-@media(max-width:900px){
-  .index-grid > .index-card,.index-grid > .gallery-item,.index-grid > .group-card,
-  .gallery-grid > .index-card,.gallery-grid > .gallery-item,.gallery-grid > .group-card,
-  .category-grid > .index-card,.category-grid > .gallery-item,.category-grid > .group-card,
-  .subcategories-grid > .index-card,.subcategories-grid > .gallery-item,.subcategories-grid > .group-card,
-  .cards-grid > .index-card,.cards-grid > .gallery-item,.cards-grid > .group-card{
-    flex-basis:calc((100% - 36px) / 3)!important;
-    width:calc((100% - 36px) / 3)!important;
-    max-width:calc((100% - 36px) / 3)!important;
-  }
-}
-@media(max-width:680px){
-  .index-grid > .index-card,.index-grid > .gallery-item,.index-grid > .group-card,
-  .gallery-grid > .index-card,.gallery-grid > .gallery-item,.gallery-grid > .group-card,
-  .category-grid > .index-card,.category-grid > .gallery-item,.category-grid > .group-card,
-  .subcategories-grid > .index-card,.subcategories-grid > .gallery-item,.subcategories-grid > .group-card,
-  .cards-grid > .index-card,.cards-grid > .gallery-item,.cards-grid > .group-card{
-    flex-basis:calc((100% - 18px) / 2)!important;
-    width:calc((100% - 18px) / 2)!important;
-    max-width:calc((100% - 18px) / 2)!important;
-  }
-}
-@media(max-width:440px){
-  .index-grid > .index-card,.index-grid > .gallery-item,.index-grid > .group-card,
-  .gallery-grid > .index-card,.gallery-grid > .gallery-item,.gallery-grid > .group-card,
-  .category-grid > .index-card,.category-grid > .gallery-item,.category-grid > .group-card,
-  .subcategories-grid > .index-card,.subcategories-grid > .gallery-item,.subcategories-grid > .group-card,
-  .cards-grid > .index-card,.cards-grid > .gallery-item,.cards-grid > .group-card{
-    flex-basis:100%!important;
-    width:100%!important;
-    max-width:100%!important;
-  }
-}
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Bat Rabbbit | Ron English Catalogue Raisonn&eacute;</title><style>
+/* Compact drawing category index - consolidated preview */
+*{box-sizing:border-box}
+body{margin:0;background:#fff;color:#171717;font-family:Arial,Helvetica,sans-serif;line-height:1.5}
+.wrap{max-width:1100px;width:calc(100% - 36px);margin:auto;padding:24px 0 42px}
+.nav-pills{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:10px;margin:20px 0 28px;text-align:center}
+.nav-pill{display:inline-block;padding:8px 14px;border:1px solid #e5e7eb;border-radius:999px;background:#fff;color:#111;text-decoration:none;font:14px/1.25 system-ui,-apple-system,"Segoe UI",sans-serif}
+.nav-pill:hover,.nav-pill:focus{background:#f3f4f6}
+.top-nav{display:flex;justify-content:center;flex-wrap:wrap;gap:10px 18px;margin:4px 0 34px;font-size:14px}
+.top-nav a{color:inherit;text-decoration:none}.top-nav a:hover{text-decoration:underline}
+.catalogue-pill-nav{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:18px;margin:28px auto 42px}
+.catalogue-pill-nav a{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:10px 28px;border:1px solid #d9dde2;border-radius:999px;color:inherit;text-decoration:none;font-size:18px}
+.page-header{text-align:center;margin:0 0 26px}.page-title{margin:0;font:500 clamp(30px,4vw,46px) Georgia,'Times New Roman',serif}
+.index-grid,.group-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:16px;align-items:stretch;margin:0 auto}
+.index-grid>.index-card,.group-grid>.group-card{flex:0 0 200px;max-width:200px;width:100%}
+.index-card,.group-card{display:flex;flex-direction:column;min-width:0;text-decoration:none;color:inherit;text-align:center;background:#fff;border:1px solid #e5e7eb;border-radius:12px;overflow:hidden;box-shadow:0 3px 12px #0000000b}
+.index-card:hover,.group-card:hover{border-color:#c9ced5;box-shadow:0 5px 16px #00000014}
+.index-image{height:158px;width:100%;padding:8px;background:#f8fafc;display:flex;align-items:center;justify-content:center;overflow:hidden;border-bottom:1px solid #e5e7eb}
+.index-image img{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain}
+.index-title,.group-card .label{font:500 14px/1.35 Georgia,'Times New Roman',serif;padding:10px 8px 12px;margin:0;overflow-wrap:anywhere;text-align:center}
+.set-label{display:block;font:400 12px/1.35 Arial,Helvetica,sans-serif;color:#666;margin-top:4px}
+.group-card img{display:block;width:100%;height:158px;object-fit:contain;padding:8px;background:#f8fafc;border-bottom:1px solid #e5e7eb}
+footer{text-align:center;margin-top:35px;padding-top:18px;border-top:1px solid #d8d8d8;color:#666;font-size:13px}footer a{color:inherit}
+@media(max-width:480px){.wrap{width:calc(100% - 24px)}.index-grid,.group-grid{gap:12px}.index-grid>.index-card,.group-grid>.group-card{flex:0 1 145px;max-width:145px}.index-image,.group-card img{height:140px}.index-title,.group-card .label{font-size:13px}}
+
+/* Existing catalogue relationship note, retained in consolidated style. */
+.project-note{max-width:900px;margin:0 auto 26px;padding:12px 16px;border:1px solid #e5e7eb;border-radius:12px;background:#f9fafb;text-align:center;line-height:1.6}
+.project-note a{color:inherit}
+
 </style>
-<style id="ron-panel-width-audit-batch01-v2-20261026">
-/* Set index holder: 960px standard without changing index-card sizes. */
-main.wrap > section.section-card:not([data-role]){box-sizing:border-box!important;display:block!important;width:100%!important;max-width:960px!important;margin-left:auto!important;margin-right:auto!important;padding:22px!important;border:1px solid #e5e7eb!important;border-radius:18px!important;background:#fff!important;box-shadow:0 8px 26px rgba(0,0,0,.06)!important;}
-@media(max-width:600px){main.wrap > section.section-card:not([data-role]){padding:14px!important;}}
-</style>
+
 <link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
 </head><body><main class="wrap"><nav class="nav-pills" aria-label="Site navigation"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="../../index.html">&larr; Rabbbits</a>  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
 </nav><header class="page-header"><h1 class="page-title">Bat Rabbbit</h1></header><section class="section-card"><div class="index-grid"><a class="index-card" href="../../entries/re-012760.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Small%20Mammals/rabbbits/Bat%20Rabbbit%20COLOR.jpg" alt="Bat Rabbbit" loading="lazy"><div class="card-title">Bat Rabbbit</div></a><a class="index-card" href="../../entries/re-017118.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-4/main/sketches/Scan_20260816%20(2).jpg?v=20260915-2015" alt="Bat Rabbbit 2" loading="lazy"><div class="card-title">Bat Rabbbit 2</div></a></div></section><nav class="sequence-nav ron-bottom-prev-next-center" aria-label="Catalogue sequence"><a class="nav-pill" href="../baby-ronnnie-and-mama-rabbbit/index.html">&larr; Previous: Baby Ronnnie and Mama Rabbbit</a><a class="nav-pill" href="../bikini-bunnny/index.html">Next: Bikini Bunnny &rarr;</a></nav><footer>Published via GitHub Pages<br>for long-term public access.</footer></main></body></html>
