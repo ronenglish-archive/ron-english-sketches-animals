@@ -1,146 +1,30 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Ducks | Ron English Catalogue Raisonn&eacute;</title><style>
-*{box-sizing:border-box}body{margin:0;background:#fff;color:#111;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
-.wrap{max-width:1120px;margin:0 auto;padding:28px 18px 56px}.nav-pills,.sequence-nav{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px;margin:20px 0;text-align:center}
-.nav-pill{display:inline-block;padding:8px 14px;border:1px solid #e5e7eb;border-radius:999px;background:#fff;color:#111;text-decoration:none;font-size:14px}
+/* Compact drawing category index - consolidated preview */
+*{box-sizing:border-box}
+body{margin:0;background:#fff;color:#111;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.wrap{max-width:1100px;width:100%;margin:auto;padding:26px 18px 48px}
+.nav-pills,.sequence-nav{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px;margin:20px 0;text-align:center}
+.nav-pill{display:inline-block;padding:8px 14px;border:1px solid #e5e7eb;border-radius:999px;background:#fff;color:#111;text-decoration:none;font-size:14px;line-height:1.4}.nav-pill:hover{background:#f9fafb}
 .page-header{text-align:center;margin:0 auto 24px}.page-title{margin:0;font-size:clamp(2rem,4vw,3rem);line-height:1.05}
 .catalogue-meta-block{width:100%;max-width:900px;margin:0 auto 28px;text-align:center}.work-meta{list-style:none;padding:0;margin:0 auto;line-height:1.7;text-align:center}.work-meta li{display:block;margin:2px auto}
 .relationship-note{max-width:900px;margin:0 auto 24px;padding:12px 16px;border:1px solid #e5e7eb;border-radius:14px;background:#f9fafb;line-height:1.6;text-align:center}.relationship-note a{color:inherit}
-.section-card{background:#fff;border:1px solid #e5e7eb;border-radius:18px;box-shadow:0 8px 26px rgba(0,0,0,.06);padding:22px;margin:0 0 24px}.section-card h2{text-align:center;margin:0 0 16px;font-size:1.4rem}
-.gallery-grid,.index-grid{display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch;gap:18px}.gallery-item,.index-card{display:block;flex:0 1 280px;max-width:300px;width:100%;border:1px solid #e5e7eb;border-radius:16px;overflow:hidden;background:#fff;text-decoration:none;color:inherit}
-.gallery-item img,.index-card img{display:block;width:100%;height:300px;object-fit:contain;background:#f3f4f6;padding:8px}.original-grid .gallery-item{flex:0 1 900px;max-width:900px}.original-grid .gallery-item img{height:460px}.index-card img{height:250px}
-.card-title{padding:13px 14px 14px;text-align:center;font-weight:650;line-height:1.35}.set-label{display:block;margin-top:4px;font-size:.88em;font-weight:500;color:#6b7280}.text-block{max-width:900px;margin:0 auto;line-height:1.65;text-align:center}.text-block p{margin:.55rem 0}.literature-entry{max-width:900px;margin:0 auto 22px}
+.section-card{background:#fff;border:1px solid #e5e7eb;border-radius:18px;box-shadow:0 8px 26px #0000000f;padding:22px;margin:0 0 24px}.section-card h2{text-align:center;margin:0 0 16px;font-size:1.4rem}
+.index-grid{display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch;gap:16px}
+.index-grid>.index-card{flex:0 0 200px;max-width:200px;width:100%}
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),200px));justify-content:center;align-items:stretch;gap:16px}
+.index-card,.gallery-item{display:flex;flex-direction:column;min-width:0;border:1px solid #e5e7eb;border-radius:12px;overflow:hidden;background:#fff;text-decoration:none;color:inherit}
+.index-card img,.gallery-item img{display:block;width:100%;height:158px;object-fit:contain;background:#f3f4f6;padding:8px}
+.card-title{padding:10px 8px 12px;text-align:center;font-weight:650;font-size:13px;line-height:1.35;overflow-wrap:anywhere}.set-label{display:block;margin-top:4px;font-size:12px;font-weight:500;color:#6b7280}
+/* Preserve full-sized originals when a group page includes them. */
+.original-grid{grid-template-columns:minmax(0,min(100%,900px))}.original-grid .gallery-item{width:100%;max-width:900px}.original-grid .gallery-item img{height:auto;max-height:460px;object-fit:contain}
+.text-block{max-width:900px;margin:0 auto;line-height:1.65;text-align:center}.text-block p{margin:.55rem 0}.literature-entry{max-width:900px;margin:0 auto 22px}
 footer{text-align:center;margin-top:30px;padding-top:16px;border-top:1px solid #e5e7eb;color:#6b7280;font-size:14px}
-@media(max-width:620px){.wrap{padding:22px 14px 48px}.gallery-item,.index-card{flex-basis:min(100%,330px);max-width:330px}.original-grid .gallery-item img{height:340px}}
+@media(max-width:480px){.wrap{padding:22px 12px 48px}.index-grid{gap:12px}.index-grid>.index-card{flex:0 1 145px;max-width:145px}.gallery-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,145px),1fr));gap:12px}.index-card img,.gallery-item img{height:140px}.original-grid .gallery-item img{height:auto;max-height:340px}}
 
-/* ron-four-across-v3 */
-.index-grid{
-  display:flex!important;
-  flex-wrap:wrap!important;
-  justify-content:center!important;
-  align-items:stretch!important;
-}
-.index-grid > .index-card{
-  box-sizing:border-box!important;
-  min-width:0!important;
-  flex:0 1 calc(25% - 28px)!important;
-  width:calc(25% - 28px)!important;
-  max-width:calc(25% - 28px)!important;
-}
-@media(max-width:900px){
-  .index-grid > .index-card{
-    flex-basis:calc(33.333% - 24px)!important;
-    width:calc(33.333% - 24px)!important;
-    max-width:calc(33.333% - 24px)!important;
-  }
-}
-@media(max-width:680px){
-  .index-grid > .index-card{
-    flex-basis:calc(50% - 18px)!important;
-    width:calc(50% - 18px)!important;
-    max-width:calc(50% - 18px)!important;
-  }
-}
-@media(max-width:440px){
-  .index-grid > .index-card{
-    flex-basis:100%!important;
-    width:100%!important;
-    max-width:100%!important;
-  }
-}</style>
-<style id="global-main-index-standard-size-v1">
-  .index-grid{
-    display:flex!important;
-    flex-wrap:wrap!important;
-    justify-content:center!important;
-    align-items:stretch!important;
-    gap:18px!important;
-  }
-  .index-grid > .index-card,
-  .index-grid > .gallery-item,
-  .index-grid > .group-card{
-    flex:0 1 300px!important;
-    width:100%!important;
-    max-width:320px!important;
-    min-width:0!important;
-  }
-  .index-grid > .index-card .index-image,
-  .index-grid > .gallery-item img,
-  .index-grid > .group-card img{
-    width:100%!important;
-    height:240px!important;
-    max-height:240px!important;
-    aspect-ratio:auto!important;
-    object-fit:contain!important;
-  }
 </style>
-<style id="ron-catalogue-four-across-standard-v1">
-.index-grid,
-.gallery-grid,
-.category-grid,
-.subcategories-grid,
-.cards-grid{
-  display:flex!important;
-  flex-wrap:wrap!important;
-  justify-content:center!important;
-  align-items:stretch!important;
-  gap:18px!important;
-}
-.index-grid > .index-card,
-.index-grid > .gallery-item,
-.index-grid > .group-card,
-.gallery-grid > .index-card,
-.gallery-grid > .gallery-item,
-.gallery-grid > .group-card,
-.category-grid > .index-card,
-.category-grid > .gallery-item,
-.category-grid > .group-card,
-.subcategories-grid > .index-card,
-.subcategories-grid > .gallery-item,
-.subcategories-grid > .group-card,
-.cards-grid > .index-card,
-.cards-grid > .gallery-item,
-.cards-grid > .group-card{
-  box-sizing:border-box!important;
-  min-width:0!important;
-  flex:0 1 calc((100% - 54px) / 4)!important;
-  width:calc((100% - 54px) / 4)!important;
-  max-width:calc((100% - 54px) / 4)!important;
-}
-@media(max-width:900px){
-  .index-grid > .index-card,.index-grid > .gallery-item,.index-grid > .group-card,
-  .gallery-grid > .index-card,.gallery-grid > .gallery-item,.gallery-grid > .group-card,
-  .category-grid > .index-card,.category-grid > .gallery-item,.category-grid > .group-card,
-  .subcategories-grid > .index-card,.subcategories-grid > .gallery-item,.subcategories-grid > .group-card,
-  .cards-grid > .index-card,.cards-grid > .gallery-item,.cards-grid > .group-card{
-    flex-basis:calc((100% - 36px) / 3)!important;
-    width:calc((100% - 36px) / 3)!important;
-    max-width:calc((100% - 36px) / 3)!important;
-  }
-}
-@media(max-width:680px){
-  .index-grid > .index-card,.index-grid > .gallery-item,.index-grid > .group-card,
-  .gallery-grid > .index-card,.gallery-grid > .gallery-item,.gallery-grid > .group-card,
-  .category-grid > .index-card,.category-grid > .gallery-item,.category-grid > .group-card,
-  .subcategories-grid > .index-card,.subcategories-grid > .gallery-item,.subcategories-grid > .group-card,
-  .cards-grid > .index-card,.cards-grid > .gallery-item,.cards-grid > .group-card{
-    flex-basis:calc((100% - 18px) / 2)!important;
-    width:calc((100% - 18px) / 2)!important;
-    max-width:calc((100% - 18px) / 2)!important;
-  }
-}
-@media(max-width:440px){
-  .index-grid > .index-card,.index-grid > .gallery-item,.index-grid > .group-card,
-  .gallery-grid > .index-card,.gallery-grid > .gallery-item,.gallery-grid > .group-card,
-  .category-grid > .index-card,.category-grid > .gallery-item,.category-grid > .group-card,
-  .subcategories-grid > .index-card,.subcategories-grid > .gallery-item,.subcategories-grid > .group-card,
-  .cards-grid > .index-card,.cards-grid > .gallery-item,.cards-grid > .group-card{
-    flex-basis:100%!important;
-    width:100%!important;
-    max-width:100%!important;
-  }
-}
-</style>
-<style id="ron-category-sequence-standard-v1">nav.sequence-nav.ron-bottom-prev-next-center{display:flex!important;flex-wrap:wrap!important;justify-content:center!important;align-items:center!important;gap:12px!important;margin:28px auto 18px!important;text-align:center!important}nav.sequence-nav.ron-bottom-prev-next-center>a.nav-pill.sequence-pill{display:inline-block!important;flex:0 1 auto!important;padding:8px 14px!important;border:1px solid #e5e7eb!important;border-radius:999px!important;background:#fff!important;color:#111!important;text-decoration:none!important;font:400 14px/1.4 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important}nav.sequence-nav.ron-bottom-prev-next-center>a.nav-pill.sequence-pill:hover,nav.sequence-nav.ron-bottom-prev-next-center>a.nav-pill.sequence-pill:focus{background:#f9fafb!important}</style><link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
+
+
+<link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
 </head><body><main class="wrap"><nav class="nav-pills"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="../../../ron-english-sketches-and-drawings/Sketches/index.html">Sketches &amp; Drawings</a>  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
 </nav><header class="page-header"><h1 class="page-title">Ducks</h1></header><div class="index-grid"><a class="index-card" href="entries/re-012606.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/avians/ducks/86%20Cracked%20ink%2014x17%20ORIGINAL.jpg" alt="86 Cracked" loading="lazy"><div class="card-title">86 Cracked</div></a>
 <a class="index-card" href="entries/re-015808.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/avians/ducks/Alien%20Quack%20Crown%20COLOR.png" alt="Alien Quack Crown" loading="lazy"><div class="card-title">Alien Quack Crown</div></a>
