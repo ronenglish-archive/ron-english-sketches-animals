@@ -579,6 +579,112 @@ section.section-card.ron-delusionville-section-holder > div.gallery-grid > a.gal
   }
 }
 
+
+/* Angie Waters: book-by-book literature. Never put separate publication entries side by side. */
+section.section-card[data-role="literature"] {
+  display:block !important;
+  flex-direction:column !important;
+  flex-wrap:nowrap !important;
+}
+section.section-card[data-role="literature"] > h2 {
+  display:block !important;
+  width:auto !important;
+  margin:0 0 12px !important;
+}
+section.section-card[data-role="literature"] > .literature-entry {
+  display:block !important;
+  box-sizing:border-box !important;
+  width:100% !important;
+  max-width:100% !important;
+  margin:0 0 20px !important;
+  padding:0 !important;
+  flex:none !important;
+  float:none !important;
+}
+/* In each book entry: citation occupies its own full line above image(s). */
+section.section-card[data-role="literature"] > .literature-entry > .gallery-grid {
+  display:flex !important;
+  flex-direction:row !important;
+  flex-wrap:wrap !important;
+  justify-content:center !important;
+  align-items:flex-start !important;
+  align-content:flex-start !important;
+  gap:10px !important;
+  box-sizing:border-box !important;
+  width:100% !important;
+  max-width:100% !important;
+  grid-template-columns:none !important;
+}
+section.section-card[data-role="literature"] > .literature-entry > .gallery-grid > p {
+  box-sizing:border-box !important;
+  display:block !important;
+  flex:0 0 100% !important;
+  width:100% !important;
+  max-width:100% !important;
+  margin:0 0 5px !important;
+  text-align:center !important;
+  float:none !important;
+}
+section.section-card[data-role="literature"] > .literature-entry > .gallery-grid > a.gallery-item {
+  display:block !important;
+  box-sizing:border-box !important;
+  flex:0 1 155px !important;
+  width:155px !important;
+  max-width:155px !important;
+  min-width:0 !important;
+  margin:0 !important;
+  float:none !important;
+}
+section.section-card[data-role="literature"] > .literature-entry > .gallery-grid > a.gallery-item > img {
+  display:block !important;
+  box-sizing:border-box !important;
+  width:auto !important;
+  max-width:100% !important;
+  height:auto !important;
+  max-height:155px !important;
+  object-fit:contain !important;
+  margin:0 auto !important;
+}
+@media (max-width:420px) {
+  section.section-card[data-role="literature"] > .literature-entry > .gallery-grid > a.gallery-item {
+    flex:0 1 130px !important;
+    width:130px !important;
+    max-width:130px !important;
+  }
+}
+
+/* ron-angie-single-card-compact-v1: only standalone Card tile; preserve outer section/panel. */
+section.section-card[data-role="cards"]:not(.ron-delusionville-section-holder) > h2 + div.gallery-grid {
+  display:flex !important;
+  flex-direction:row !important;
+  flex-wrap:wrap !important;
+  justify-content:center !important;
+  align-items:flex-start !important;
+  gap:10px !important;
+  width:100% !important;
+  max-width:100% !important;
+  grid-template-columns:none !important;
+}
+section.section-card[data-role="cards"]:not(.ron-delusionville-section-holder) > h2 + div.gallery-grid > a.gallery-item {
+  display:block !important;
+  box-sizing:border-box !important;
+  flex:0 0 155px !important;
+  width:155px !important;
+  max-width:155px !important;
+  min-width:0 !important;
+  margin:0 !important;
+  float:none !important;
+}
+section.section-card[data-role="cards"]:not(.ron-delusionville-section-holder) > h2 + div.gallery-grid > a.gallery-item > img {
+  display:block !important;
+  box-sizing:border-box !important;
+  width:auto !important;
+  max-width:100% !important;
+  height:auto !important;
+  max-height:155px !important;
+  object-fit:contain !important;
+  margin:0 auto !important;
+}
 </style>
 </head>
 <body data-page-kind="work">
