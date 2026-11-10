@@ -22,6 +22,27 @@ body{margin:0;background:#fff;color:#171717;font-family:Arial,Helvetica,sans-ser
 footer{text-align:center;margin-top:35px;padding-top:18px;border-top:1px solid #d8d8d8;color:#666;font-size:13px}footer a{color:inherit}
 @media(max-width:480px){.wrap{width:calc(100% - 24px)}.index-grid,.group-grid{gap:12px}.index-grid>.index-card,.group-grid>.group-card{flex:0 1 145px;max-width:145px}.index-grid > .index-card > img,.group-card img{height:140px;max-height:140px}.index-card > .card-title,.group-card .label{font-size:13px}}
 
+/* Bombadeer set page: centered bottom sequence with card clearance. */
+main.wrap > nav.sequence-nav.ron-bottom-prev-next-center {
+  display:flex;
+  width:100%;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:10px;
+  margin:40px auto 20px;
+  padding:0;
+  text-align:center;
+}
+main.wrap > nav.sequence-nav.ron-bottom-prev-next-center > a.nav-pill {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  float:none;
+  margin:0;
+  text-align:center;
+}
+
 /* Existing catalogue relationship note, retained in consolidated style. */
 .project-note{max-width:900px;margin:0 auto 26px;padding:12px 16px;border:1px solid #e5e7eb;border-radius:12px;background:#f9fafb;text-align:center;line-height:1.6}
 .project-note a{color:inherit}
