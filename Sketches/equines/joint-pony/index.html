@@ -21,6 +21,20 @@ body{margin:0;background:#fff;color:#111;font-family:system-ui,-apple-system,"Se
 footer{text-align:center;margin-top:30px;padding-top:16px;border-top:1px solid #e5e7eb;color:#6b7280;font-size:14px}
 @media(max-width:480px){.wrap{width:calc(100% - 24px)}.section-card.ron-group-index-panel-20261027{padding:14px}.group-grid{gap:12px}.group-grid>.group-card{flex:0 1 145px;max-width:145px}.group-card img{height:140px}.group-card .label{font-size:13px}}
 
+
+/* Joint Pony: framed, compact full-character and digitized galleries. */
+.section-card[data-role="index-listing"]{width:100%;max-width:1100px;margin:0 auto 24px;padding:22px;border:1px solid #e5e7eb;border-radius:18px;background:#fff;box-shadow:0 8px 26px #0000000f}
+.section-card[data-role="index-listing"] .group-grid{margin:0 auto;justify-content:center}
+.section-card[data-role="ancillary"],.section-card[data-role="digital"]{max-width:900px;margin:0 auto 24px;padding:22px;border:1px solid #e5e7eb;border-radius:18px;background:#fff;box-shadow:0 8px 26px #0000000f;text-align:center}
+.section-card[data-role="ancillary"] h2,.section-card[data-role="digital"] h2{font:500 24px/1.25 Georgia,'Times New Roman',serif;margin:0 0 20px}
+.section-card[data-role="ancillary"] .gallery-grid,.section-card[data-role="digital"] .gallery-grid{display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:14px;margin:0 auto}
+.section-card[data-role="ancillary"] .gallery-item,.section-card[data-role="digital"] .gallery-item{display:flex;align-items:center;justify-content:center;width:155px;height:165px;padding:8px;border:1px solid #e5e7eb;border-radius:12px;background:#fff;overflow:hidden}
+.section-card[data-role="ancillary"] .gallery-item img,.section-card[data-role="digital"] .gallery-item img{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain}
+.section-card[data-role="ancillary"] .relationship-note{max-width:720px;margin:18px auto 0;padding:12px 16px;background:#f9fafb;border:1px solid #e5e7eb;border-radius:12px;text-align:center}
+.section-card[data-role="ancillary"] .relationship-note p{margin:0}
+.sequence-nav.ron-bottom-prev-next-center{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;margin:40px auto 30px;text-align:center}
+@media(max-width:480px){.section-card[data-role="ancillary"],.section-card[data-role="digital"],.section-card[data-role="index-listing"]{padding:14px}.section-card[data-role="ancillary"] .gallery-item,.section-card[data-role="digital"] .gallery-item{width:145px;height:155px}}
+
 </style>
 
 
