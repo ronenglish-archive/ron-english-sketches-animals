@@ -34,13 +34,13 @@ body {
   display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch;gap:16px;margin:0 auto
 }
 .index-grid>.index-card {
-  display:flex;flex:0 0 155px;width:155px;max-width:155px;min-width:0;flex-direction:column;align-items:stretch;overflow:hidden;background:#fff;color:inherit;text-decoration:none;text-align:center;border:1px solid var(--border);border-radius:12px;box-shadow:0 3px 12px #0000000b
+  display:flex;flex:0 1 200px;width:200px;max-width:200px;min-width:0;aspect-ratio:1/1;flex-direction:column;align-items:stretch;overflow:hidden;background:#fff;color:inherit;text-decoration:none;text-align:center;border:1px solid var(--border);border-radius:12px;box-shadow:0 3px 12px #0000000b
 }
 .index-grid>.index-card:hover {
   border-color:#c9ced5;box-shadow:0 5px 16px #00000014
 }
 .index-grid>.index-card>img {
-  display:block;width:100%;height:180px;max-width:100%;object-fit:contain;padding:8px;background:var(--panel);border-bottom:1px solid var(--border)
+  display:block;width:100%;height:0;flex:1 1 auto;min-height:0;max-width:100%;object-fit:contain;padding:8px;background:var(--panel);border-bottom:1px solid var(--border)
 }
 .index-grid .card-title {
   display:block;margin:0;padding:10px 8px 12px;text-align:center;font-size:14px;font-weight:600;line-height:1.35;overflow-wrap:anywhere
@@ -59,10 +59,10 @@ footer {
   gap:12px
 }
 .index-grid>.index-card {
-  flex:0 1 145px;max-width:145px;width:145px
+  flex:0 1 200px;max-width:200px;width:200px
 }
 .index-grid>.index-card>img {
-  height:140px
+  height:0
 }
 .index-grid .card-title {
   font-size:13px
