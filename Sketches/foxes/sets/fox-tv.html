@@ -37,6 +37,25 @@ footer{text-align:center;margin-top:35px;padding-top:18px;border-top:1px solid #
 .sequence-nav.ron-bottom-prev-next-center{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:10px;margin:40px auto 20px;text-align:center}
 .sequence-nav.ron-bottom-prev-next-center .nav-pill{display:inline-block}
 @media(max-width:480px){.section-card[data-role="set-index"]{padding:14px}.section-card[data-role="set-index"] .index-grid>.index-card{flex:0 1 145px;width:145px;max-width:145px}.section-card[data-role="set-index"] .index-grid>.index-card>img{height:140px}.section-card[data-role="set-index"] .index-grid>.index-card>.index-title{font-size:13px}}
+
+/* Owner-approved 200px square ARTWORK CARDS for this set page; preserves other galleries. */
+section.section-card:not([data-role]) {box-sizing:border-box!important;width:100%!important;max-width:560px!important;margin-left:auto!important;margin-right:auto!important;}
+section.section-card > .index-grid,
+section.section-card > .gallery-grid {display:flex!important;flex-wrap:wrap!important;justify-content:center!important;align-items:stretch!important;gap:16px!important;}
+section.section-card > .index-grid > .index-card,
+section.section-card:not([data-role]) > .gallery-grid > .gallery-item {box-sizing:border-box!important;display:flex!important;flex:0 1 200px!important;width:200px!important;max-width:200px!important;min-width:0!important;height:200px!important;max-height:200px!important;aspect-ratio:1/1!important;flex-direction:column!important;align-items:stretch!important;overflow:hidden!important;margin:0!important;}
+section.section-card > .index-grid > .index-card > img,
+section.section-card:not([data-role]) > .gallery-grid > .gallery-item > img,
+section.section-card > .index-grid > .index-card > .index-image {box-sizing:border-box!important;display:block!important;flex:1 1 auto!important;min-height:0!important;width:100%!important;max-width:100%!important;height:100%!important;max-height:100%!important;object-fit:contain!important;object-position:center!important;}
+section.section-card > .index-grid > .index-card > .index-image {display:flex!important;justify-content:center!important;align-items:center!important;}
+section.section-card > .index-grid > .index-card > .index-image > img {display:block!important;width:100%!important;height:100%!important;max-width:100%!important;max-height:100%!important;object-fit:contain!important;}
+section.section-card > .index-grid > .index-card > .card-title,
+section.section-card > .index-grid > .index-card > .index-title,
+section.section-card > .index-grid > .index-card > .entry-body {box-sizing:border-box!important;flex:0 0 auto!important;margin:0!important;padding:6px 6px 8px!important;line-height:1.25!important;}
+@media(max-width:480px){
+section.section-card > .index-grid > .index-card,
+section.section-card:not([data-role]) > .gallery-grid > .gallery-item {flex:0 1 200px!important;max-width:min(200px,100%)!important;width:min(200px,100%)!important;}
+}
 </style>
 <link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
 </head><body><main class="wrap">
