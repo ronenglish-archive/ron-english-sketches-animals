@@ -96,6 +96,31 @@ footer{text-align:center;margin:28px auto 0;padding-top:16px;border-top:1px soli
 [data-role="ancillary-documentation"][data-category="artist-created-graphic-designs"] .ron-doc-category-item img{height:170px!important;width:100%!important;max-height:170px!important;object-fit:contain!important}
 @media(max-width:380px){[data-role="digitized-versions"] .image-grid>a{flex-basis:130px;width:130px;max-width:130px}}
 
+
+/* Original Drawing only: remove redundant image-level inner framing; preserve outer section panel and all other galleries. */
+section[data-role="original-drawing"] .gallery-grid > a,
+section[data-role="original-drawings"] .gallery-grid > a,
+section[data-role="original"] .gallery-grid > a,
+section[data-role="original-drawing"] .original-grid > a,
+section[data-role="original-drawings"] .original-grid > a,
+section[data-role="original-drawing"] .originals-grid > a,
+section[data-role="original-drawing"] .original-gallery > a,
+.primary-artwork > a.primary-artwork-link {
+  border:0 !important; padding:0 !important; border-radius:0 !important;
+  box-shadow:none !important; overflow:visible !important; outline:none !important;
+  background:transparent !important;
+}
+section[data-role="original-drawing"] .gallery-grid > a > img,
+section[data-role="original-drawings"] .gallery-grid > a > img,
+section[data-role="original"] .gallery-grid > a > img,
+section[data-role="original-drawing"] .original-grid > a > img,
+section[data-role="original-drawings"] .original-grid > a > img,
+section[data-role="original-drawing"] .originals-grid > a > img,
+section[data-role="original-drawing"] .original-gallery > a > img,
+.primary-artwork > a.primary-artwork-link > img {
+  border:0 !important; padding:0 !important; border-radius:0 !important;
+  box-shadow:none !important; outline:none !important;
+}
 </style>
 </head>
 <body><div class="wrap"><nav class="nav-pills" aria-label="Site navigation"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="index.html">&larr; Sharks</a>  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>

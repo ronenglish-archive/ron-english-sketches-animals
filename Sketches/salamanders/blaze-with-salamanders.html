@@ -80,6 +80,31 @@ section[data-role="artist-created-graphic-designs"] .gallery-item img,section[da
 .notes-block h2{font:400 20px/1.3 Georgia,serif}
 .missing-original{width:100%;max-width:560px;margin:12px auto;padding:19px 16px;background:#fff;border:1px solid #e5e7eb;border-radius:12px;text-align:center}
 @media(max-width:390px){section[data-role="digitized"] .gallery-item{flex-basis:130px;width:130px;max-width:130px;height:165px}}
+
+/* Original Drawing only: remove redundant image-level inner framing; preserve outer section panel and all other galleries. */
+section[data-role="original-drawing"] .gallery-grid > a,
+section[data-role="original-drawings"] .gallery-grid > a,
+section[data-role="original"] .gallery-grid > a,
+section[data-role="original-drawing"] .original-grid > a,
+section[data-role="original-drawings"] .original-grid > a,
+section[data-role="original-drawing"] .originals-grid > a,
+section[data-role="original-drawing"] .original-gallery > a,
+.primary-artwork > a.primary-artwork-link {
+  border:0 !important; padding:0 !important; border-radius:0 !important;
+  box-shadow:none !important; overflow:visible !important; outline:none !important;
+  background:transparent !important;
+}
+section[data-role="original-drawing"] .gallery-grid > a > img,
+section[data-role="original-drawings"] .gallery-grid > a > img,
+section[data-role="original"] .gallery-grid > a > img,
+section[data-role="original-drawing"] .original-grid > a > img,
+section[data-role="original-drawings"] .original-grid > a > img,
+section[data-role="original-drawing"] .originals-grid > a > img,
+section[data-role="original-drawing"] .original-gallery > a > img,
+.primary-artwork > a.primary-artwork-link > img {
+  border:0 !important; padding:0 !important; border-radius:0 !important;
+  box-shadow:none !important; outline:none !important;
+}
 </style></head>
 <body>
 <div class="wrap">

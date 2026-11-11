@@ -80,4 +80,29 @@ section[data-role="artist-created-graphic-designs"] .gallery-item img,section[da
 .notes-block h2{font:400 20px/1.3 Georgia,serif}
 .missing-original{width:100%;max-width:560px;margin:12px auto;padding:19px 16px;background:#fff;border:1px solid #e5e7eb;border-radius:12px;text-align:center}
 @media(max-width:390px){section[data-role="digitized"] .gallery-item{flex-basis:130px;width:130px;max-width:130px;height:165px}}
+
+/* Original Drawing only: remove redundant image-level inner framing; preserve outer section panel and all other galleries. */
+section[data-role="original-drawing"] .gallery-grid > a,
+section[data-role="original-drawings"] .gallery-grid > a,
+section[data-role="original"] .gallery-grid > a,
+section[data-role="original-drawing"] .original-grid > a,
+section[data-role="original-drawings"] .original-grid > a,
+section[data-role="original-drawing"] .originals-grid > a,
+section[data-role="original-drawing"] .original-gallery > a,
+.primary-artwork > a.primary-artwork-link {
+  border:0 !important; padding:0 !important; border-radius:0 !important;
+  box-shadow:none !important; overflow:visible !important; outline:none !important;
+  background:transparent !important;
+}
+section[data-role="original-drawing"] .gallery-grid > a > img,
+section[data-role="original-drawings"] .gallery-grid > a > img,
+section[data-role="original"] .gallery-grid > a > img,
+section[data-role="original-drawing"] .original-grid > a > img,
+section[data-role="original-drawings"] .original-grid > a > img,
+section[data-role="original-drawing"] .originals-grid > a > img,
+section[data-role="original-drawing"] .original-gallery > a > img,
+.primary-artwork > a.primary-artwork-link > img {
+  border:0 !important; padding:0 !important; border-radius:0 !important;
+  box-shadow:none !important; outline:none !important;
+}
 </style></head><body><div class="wrap"><nav class="nav-pills" aria-label="Site navigation"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="index.html">&larr; Salamanders</a>  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a></nav><header class="page-header"><h1 class="page-title">Dino Heart</h1></header><h2 class="original-drawing-heading">Original Drawing</h2><section class="section-card" data-role="original-drawing"><div class="gallery-grid original-grid"><a class="gallery-item" href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260618%20%2860%29.jpg?v=20260618a" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260618%20%2860%29.jpg?v=20260618a" alt="Original Drawing" loading="lazy"></a></div></section><div class="catalogue-meta-block"><ul class="work-meta"><li><strong>Title:</strong> Dino Heart</li><li><strong>Medium:</strong> Ink and pencil on paper</li><li><strong>Dimensions:</strong> sheet 11 &#215; 14 in.; drawing 9 &#215; 8 in.</li><li><strong>Work ID:</strong> RE-014411</li><li><strong>Provenance:</strong> Artist's Personal Collection</li></ul></div><section class="section-card" data-role="digital"><h2>Digitized Versions</h2><div class="gallery-grid"><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-grins/images/Sketches/grins/Dino%20Heart%20Grin%20B%26W.png" target="_blank" rel="noopener"><img src="https://ronenglish-archive.github.io/ron-english-sketches-grins/images/Sketches/grins/Dino%20Heart%20Grin%20B%26W.png" alt="Digitized Versions" loading="lazy"></a><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-grins/images/Sketches/grins/Dino%20Heart%20Grin%20COLOR.png" target="_blank" rel="noopener"><img src="https://ronenglish-archive.github.io/ron-english-sketches-grins/images/Sketches/grins/Dino%20Heart%20Grin%20COLOR.png" alt="Digitized Versions" loading="lazy"></a></div></section><section class="section-card ron-notes-center ron-unified-notes-wip-panel"><h2>Notes</h2><div class="text-block"><p><a href="https://ronenglish-archive.github.io/ron-english-sketches-grins/Sketches/grins/works/re-012888--dino-heart-grin.html">Dino Heart Grin</a> is drawn on the reverse of a photocopy of this work.</p></div></section><nav class="sequence-nav ron-bottom-prev-next-center" aria-label="Catalogue sequence"><a class="nav-pill sequence-pill" href="blaze-with-salamanders.html">&larr; Previous: Blaze with Salamanders</a><a class="nav-pill sequence-pill" href="evolution-of-the-salamander.html">Next: Evolution of the Salamander &rarr;</a></nav><footer>Published via GitHub Pages<br>for long-term public access.</footer></div></body></html>

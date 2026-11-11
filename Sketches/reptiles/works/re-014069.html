@@ -62,6 +62,31 @@ section[data-role="ancillary-documentation"]:not([data-category="artist-created-
 .video-tile figcaption{border-top:1px solid #e5e7eb;padding:10px 8px 12px;text-align:center;font-size:13px;line-height:1.4}
 video,iframe{max-width:100%}
 @media(max-width:390px){.wrap{padding:12px 10px 20px}section[data-role="digital"] .gallery-item{flex-basis:130px;width:130px;max-width:130px;height:165px}}
+
+/* Original Drawing only: remove redundant image-level inner framing; preserve outer section panel and all other galleries. */
+section[data-role="original-drawing"] .gallery-grid > a,
+section[data-role="original-drawings"] .gallery-grid > a,
+section[data-role="original"] .gallery-grid > a,
+section[data-role="original-drawing"] .original-grid > a,
+section[data-role="original-drawings"] .original-grid > a,
+section[data-role="original-drawing"] .originals-grid > a,
+section[data-role="original-drawing"] .original-gallery > a,
+.primary-artwork > a.primary-artwork-link {
+  border:0 !important; padding:0 !important; border-radius:0 !important;
+  box-shadow:none !important; overflow:visible !important; outline:none !important;
+  background:transparent !important;
+}
+section[data-role="original-drawing"] .gallery-grid > a > img,
+section[data-role="original-drawings"] .gallery-grid > a > img,
+section[data-role="original"] .gallery-grid > a > img,
+section[data-role="original-drawing"] .original-grid > a > img,
+section[data-role="original-drawings"] .original-grid > a > img,
+section[data-role="original-drawing"] .originals-grid > a > img,
+section[data-role="original-drawing"] .original-gallery > a > img,
+.primary-artwork > a.primary-artwork-link > img {
+  border:0 !important; padding:0 !important; border-radius:0 !important;
+  box-shadow:none !important; outline:none !important;
+}
 </style></head>
 <body><main class="wrap"><nav class="nav-pills" aria-label="Site navigation"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="../index.html">&larr; Reptiles</a>  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
 </nav>
