@@ -104,6 +104,14 @@ section.ron-unified-notes-wip-panel > h2 {text-align:center!important;}
 @media(max-width:600px) {
   section.ron-unified-notes-wip-panel {padding:14px!important;}
 }
+
+/* Approved group-card geometry V1: CSS only; all body content unchanged. */
+section.section-card[data-role="set-index"], section.section-card[data-role="ancillary"]{box-sizing:border-box;max-width:560px;width:100%;margin-left:auto;margin-right:auto;}
+section.section-card[data-role="set-index"] > .index-grid, section.section-card[data-role="ancillary"] > .gallery-grid{display:flex!important;flex-wrap:wrap!important;justify-content:center!important;align-items:stretch!important;gap:12px!important;}
+section.section-card[data-role="set-index"] .index-grid > .index-card, section.section-card[data-role="ancillary"] .gallery-grid > .gallery-item{box-sizing:border-box!important;display:flex!important;flex-direction:column!important;flex:0 1 200px!important;width:200px!important;max-width:200px!important;height:200px!important;min-width:0!important;min-height:0!important;overflow:hidden!important;}
+section.section-card[data-role="set-index"] .index-grid > .index-card > img, section.section-card[data-role="ancillary"] .gallery-grid > .gallery-item > img{box-sizing:border-box!important;display:block!important;flex:1 1 0!important;width:100%!important;height:0!important;max-width:100%!important;max-height:none!important;min-height:0!important;object-fit:contain!important;object-position:center!important;}
+section.section-card[data-role="set-index"] .index-grid > .index-card > .index-title{flex:0 0 auto!important;}
+@media(max-width:240px){section.section-card[data-role="set-index"] .index-grid > .index-card, section.section-card[data-role="ancillary"] .gallery-grid > .gallery-item{flex-basis:100%!important;width:100%!important;max-width:100%!important;height:auto!important;min-height:0!important;aspect-ratio:1/1;}}
 </style>
 <link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
 </head><body><main class="wrap">

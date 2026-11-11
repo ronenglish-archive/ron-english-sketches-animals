@@ -33,6 +33,14 @@ footer{text-align:center;margin-top:35px;padding-top:18px;border-top:1px solid #
 .wrap > .section-card .index-grid{margin:0 auto}
 .wrap > .sequence-nav{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:10px;margin:40px auto 10px;text-align:center}
 @media(max-width:480px){.wrap > .section-card{padding:14px}}
+
+/* Approved group-card geometry V1: CSS only; all body content unchanged. */
+section.section-card{box-sizing:border-box;max-width:560px;width:100%;margin-left:auto;margin-right:auto;}
+section.section-card > .index-grid{display:flex!important;flex-wrap:wrap!important;justify-content:center!important;align-items:stretch!important;gap:12px!important;}
+section.section-card > .index-grid > .index-card{box-sizing:border-box!important;display:flex!important;flex-direction:column!important;flex:0 1 200px!important;width:200px!important;max-width:200px!important;height:200px!important;min-width:0!important;min-height:0!important;overflow:hidden!important;}
+section.section-card > .index-grid > .index-card > img{box-sizing:border-box!important;display:block!important;flex:1 1 0!important;width:100%!important;height:0!important;max-width:100%!important;max-height:none!important;min-height:0!important;object-fit:contain!important;object-position:center!important;}
+section.section-card > .index-grid > .index-card > .index-title, section.section-card > .index-grid > .index-card > .card-title{flex:0 0 auto!important;}
+@media(max-width:240px){section.section-card > .index-grid > .index-card{flex-basis:100%!important;width:100%!important;max-width:100%!important;height:auto!important;min-height:0!important;aspect-ratio:1/1;}}
 </style>
 <link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
 </head><body><main class="wrap">
