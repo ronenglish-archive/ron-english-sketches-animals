@@ -46,6 +46,9 @@ body{font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;font-size:1
 .work-meta li{list-style:none;display:block;margin:2px auto;padding:0}
 .work-meta li::marker{content:""}
 .section-card .text-block p{margin:.4rem auto}
+
+/* Related media tiles: 200 x 200 pixels. */
+.section-card[data-role="full-character"] .gallery-item,.section-card[data-role="work-in-progress"] .gallery-item,.section-card[data-role="photo-gallery"] .gallery-item{flex:0 0 200px;width:200px;max-width:200px;height:200px;max-height:200px}
 /* Digitized Versions: exact outer 155x165px bordered frames. */
 [data-role="digital"] .gallery-grid,[data-role="digitized-versions"] .gallery-grid{gap:12px;justify-content:center;align-items:flex-start}
 [data-role="digital"] .gallery-grid>a,[data-role="digitized-versions"] .gallery-grid>a{box-sizing:border-box;display:block;flex:0 0 155px;width:155px;max-width:155px;height:165px;min-height:165px;max-height:165px;padding:0;border:1px solid var(--border);border-radius:12px;box-shadow:none;overflow:hidden;background:#fff}
