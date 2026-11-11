@@ -21,6 +21,15 @@ body{margin:0;background:#fff;color:#111;font-family:system-ui,-apple-system,"Se
 footer{text-align:center;margin-top:30px;padding-top:16px;border-top:1px solid #e5e7eb;color:#6b7280;font-size:14px}
 @media(max-width:480px){.wrap{width:calc(100% - 24px)}.section-card.ron-eight-equines-liberty-panel-20261027{padding:14px}.group-grid{gap:12px}.group-grid>.group-card{flex:0 1 145px;max-width:145px}.group-card img{height:140px}.group-card .label{font-size:13px}}
 
+
+/* Owner-approved 200x200 group artwork cards; scope limited to set index grids. */
+section.section-card > .index-grid, section.section-card > .group-grid, section.section-card > main.group-grid {display:flex!important;flex-wrap:wrap!important;justify-content:center!important;align-items:stretch!important;gap:12px!important;}
+section.section-card > .index-grid > .index-card, section.section-card > .group-grid > .group-card, section.section-card > main.group-grid > .group-card {box-sizing:border-box!important;display:flex!important;flex-direction:column!important;flex:0 0 200px!important;width:200px!important;max-width:200px!important;height:200px!important;min-width:0!important;min-height:0!important;overflow:hidden!important;}
+section.section-card > .index-grid > .index-card > img, section.section-card > .group-grid > .group-card > img, section.section-card > main.group-grid > .group-card > img {box-sizing:border-box!important;display:block!important;flex:1 1 0!important;width:100%!important;height:0!important;max-width:100%!important;max-height:none!important;min-height:0!important;object-fit:contain!important;object-position:center!important;}
+section.section-card > .index-grid > .index-card > .index-image {box-sizing:border-box!important;display:flex!important;flex:1 1 0!important;width:100%!important;height:0!important;min-height:0!important;align-items:center!important;justify-content:center!important;}
+section.section-card > .index-grid > .index-card > .index-image > img {display:block!important;width:100%!important;height:100%!important;max-width:100%!important;max-height:100%!important;object-fit:contain!important;}
+section.section-card > .index-grid > .index-card > .index-title,section.section-card > .index-grid > .index-card > .card-title,section.section-card > .group-grid > .group-card > .label, section.section-card > main.group-grid > .group-card > .label {flex:0 0 auto!important;}
+@media(max-width:240px){section.section-card > .index-grid > .index-card,section.section-card > .group-grid > .group-card,section.section-card > main.group-grid > .group-card{flex-basis:100%!important;width:100%!important;max-width:100%!important;height:auto!important;aspect-ratio:1/1;}}
 </style>
 
 
