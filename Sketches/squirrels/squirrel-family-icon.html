@@ -53,6 +53,20 @@ a{color:inherit}
 footer,.footer{margin:15px auto 5px;padding:12px 0 0;border-top:1px solid #e5e7eb;color:#6b7280;font-size:12px;text-align:center}
 @media(max-width:600px){.wrap{padding:12px 10px 20px}.section-card{padding:15px 11px}}
 @media(max-width:390px){[data-role="digital"] .gallery-item{flex-basis:130px;width:130px;height:165px}}
+
+/* Batch 11: remove image-level inner frames ONLY in Original Drawing sections; outer white panels retained. */
+.primary-artwork[data-role="original"] > a:has(img),
+.primary-artwork[data-role="original-drawing"] > a:has(img),
+.primary-artwork[data-role="original-drawings"] > a:has(img),
+[data-role="original-drawing"] .gallery-grid a:has(img),
+[data-role="original-drawing"] .original-grid a:has(img),
+[data-role="original"] .gallery-grid a:has(img),
+[data-role="original"] .original-grid a:has(img),
+section.primary-artwork[aria-label="Original Drawing"] > a:has(img),
+section.primary-artwork[aria-label="Original Drawings"] > a:has(img) {
+  border:0 !important; border-radius:0 !important; padding:0 !important;
+  box-shadow:none !important; overflow:visible !important;
+}
 </style>
 </head><body><main class="wrap"><nav class="nav-pills" aria-label="Site navigation"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="index.html">&larr; Squirrels</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a></nav><header class="page-header"><h1 class="page-title">Squirrel Family Icon</h1></header><h2 class="original-drawing-heading">Original Drawings</h2><section class="section-card" data-role="original-drawing"><div class="gallery-grid original-gallery original-grid"><a class="gallery-item" href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/New/Scan_20260609%20%2891%29.jpg?v=20260610g" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/New/Scan_20260609%20%2891%29.jpg?v=20260610g" alt="Squirrel Family Icon — image 1" loading="lazy"></a><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Small%20Mammals/Squirrels/Squirrel%20Family%20Icon%20ORIGINAL.jpg" target="_blank" rel="noopener"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Small%20Mammals/Squirrels/Squirrel%20Family%20Icon%20ORIGINAL.jpg" alt="Squirrel Family Icon — image 2" loading="lazy"></a></div></section><div class="catalogue-meta-block"><ul class="work-meta"><li><strong>Title:</strong> Squirrel Family Icon</li><li><strong>Medium:</strong> Ink and pencil on paper</li><li><strong>Dimensions:</strong> Sheet 11 × 14 in.; Drawing 9 × 6 in.</li><li><strong>Work ID:</strong> RE-013207</li><li><strong>Provenance:</strong> Artist's Personal Collection</li></ul></div>
 <div class="relationship-note"><strong>Shared original sheet.</strong> This separate drawing appears on the same physical sheet as <a href="https://ronenglish-archive.github.io/ron-english-sketches-animals/Sketches/equines/equines-family-icon/index.html"><em>Equines Family Icon</em></a>.</div>

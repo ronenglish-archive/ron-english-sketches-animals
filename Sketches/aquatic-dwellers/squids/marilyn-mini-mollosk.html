@@ -112,6 +112,20 @@ footer{font-size:12px;color:#6b7280;text-align:center;margin:15px auto 5px;paddi
 /* Original drawing distinct from compact documentary cards. */
 [data-role="original-drawing"] img,[data-role="original"] img{object-fit:contain}
 @media(max-width:390px){[data-role="digital"] .gallery-grid>figure,[data-role="digitized-versions"] .gallery-grid>figure{margin:0}}
+
+/* Batch 11: remove image-level inner frames ONLY in Original Drawing sections; outer white panels retained. */
+.primary-artwork[data-role="original"] > a:has(img),
+.primary-artwork[data-role="original-drawing"] > a:has(img),
+.primary-artwork[data-role="original-drawings"] > a:has(img),
+[data-role="original-drawing"] .gallery-grid a:has(img),
+[data-role="original-drawing"] .original-grid a:has(img),
+[data-role="original"] .gallery-grid a:has(img),
+[data-role="original"] .original-grid a:has(img),
+section.primary-artwork[aria-label="Original Drawing"] > a:has(img),
+section.primary-artwork[aria-label="Original Drawings"] > a:has(img) {
+  border:0 !important; border-radius:0 !important; padding:0 !important;
+  box-shadow:none !important; overflow:visible !important;
+}
 </style>
 </head><body><main class="wrap">
 <nav class="nav-pills" aria-label="Site navigation"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="index.html">&larr; Squids</a>  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
