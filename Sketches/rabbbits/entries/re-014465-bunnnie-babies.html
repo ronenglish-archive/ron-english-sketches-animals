@@ -40,6 +40,16 @@
 .sequence-nav .sequence-pill{display:inline-block;padding:6px 11px;border:1px solid #e5e7eb;border-radius:999px;text-decoration:none;font-size:12px}
 @media(max-width:390px){.section-card[data-role="digital"] .gallery-item{width:130px;flex-basis:130px;height:165px}}
 
+
+/* Original Drawing image-link inner frame removal: preserve the outer section, dimensions and other media. */
+.primary-artwork[data-role="original"] > a.primary-artwork-link,
+.primary-artwork[data-role="original-drawing"] > a.primary-artwork-link,
+.section-card[data-role="original-drawing"] .gallery-grid > a.gallery-item,
+.section-card[data-role="original-drawing"] .image-grid > a.gallery-item,
+.section-card[data-role="original-drawing"] .gallery-grid > a:has(> img),
+.section-card[data-role="original-drawing"] .image-grid > a:has(> img) {
+  border:0; border-radius:0; padding:0; box-shadow:none; overflow:visible;
+}
 </style>
 </head>
 <body><main class="wrap"><nav class="nav-pills" aria-label="Site navigation"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="../index.html">Rabbbits</a><a class="nav-pill" href="../sets/rabbbits-sketches.html">&larr; Rabbbits Sketches</a>  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>

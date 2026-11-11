@@ -107,6 +107,16 @@ footer{text-align:center;margin:28px auto 0;padding-top:16px;border-top:1px soli
 [data-role="ancillary-documentation"][data-category="artist-created-graphic-designs"] .ron-doc-category-item img{height:170px!important;width:100%!important;max-height:170px!important;object-fit:contain!important}
 @media(max-width:380px){[data-role="digitized-versions"] .image-grid>a{flex-basis:130px;width:130px;max-width:130px}}
 
+
+/* Original Drawing image-link inner frame removal: preserve the outer section, dimensions and other media. */
+.primary-artwork[data-role="original"] > a.primary-artwork-link,
+.primary-artwork[data-role="original-drawing"] > a.primary-artwork-link,
+.section-card[data-role="original-drawing"] .gallery-grid > a.gallery-item,
+.section-card[data-role="original-drawing"] .image-grid > a.gallery-item,
+.section-card[data-role="original-drawing"] .gallery-grid > a:has(> img),
+.section-card[data-role="original-drawing"] .image-grid > a:has(> img) {
+  border:0; border-radius:0; padding:0; box-shadow:none; overflow:visible;
+}
 </style>
 </head>
 <body><main class="wrap"><nav class="nav-pills" aria-label="Site navigation"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="../index.html">&larr; Raccoons</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a></nav>
