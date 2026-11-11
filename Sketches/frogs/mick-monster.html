@@ -769,6 +769,10 @@ section.section-card[data-role="ancillary-documentation"] .ancillary-figure figc
     width:min(320px,100%)!important;max-width:100%!important;
   }
 }
+
+/* Original Drawing ONLY: remove inherited inner image tile frame; outer panel and other galleries unchanged. */
+section[data-role="original-drawing"] .gallery-grid > a.gallery-item, section:has(> .sketch-hero-grid) .sketch-hero-grid > a.gallery-item{border:0!important;border-radius:0!important;box-shadow:none!important;overflow:visible!important;padding:0!important}
+section:has(> .sketch-hero-grid) .sketch-hero-grid > a.gallery-item img{border-bottom:0!important;padding:0!important}
 </style>
 <link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
 </head>
