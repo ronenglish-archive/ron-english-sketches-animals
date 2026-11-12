@@ -61,6 +61,8 @@ body {
   flex: 0 0 200px;
   flex-direction: column;
   width: 200px;
+  height: 200px;
+  max-height: 200px;
   max-width: 200px;
   min-width: 0;
   overflow: hidden;
@@ -75,7 +77,8 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 158px;
+  height: 140px;
+  flex: 0 0 140px;
   padding: 8px;
   background: #f3f4f6;
   overflow: hidden;
@@ -89,7 +92,8 @@ body {
   object-fit: contain;
 }
 .index-title {
-  padding: 10px 8px 12px;
+  padding: 8px 8px 10px;
+  flex: 1 1 auto;
   text-align: center;
   font-size: 13px;
   font-weight: 650;
@@ -114,8 +118,8 @@ footer {
 @media (max-width: 480px) {
   .wrap { padding: 22px 12px 48px; }
   .index-grid { gap: 12px; }
-  .index-card { flex: 0 1 145px; width: 145px; max-width: 145px; }
-  .index-image { height: 140px; }
+  .index-card { flex: 0 0 200px; width: 200px; max-width: 200px; height: 200px; }
+  .index-image { height: 140px; flex-basis: 140px; }
 }
   </style>
   <link href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png" rel="icon" type="image/png"/>
