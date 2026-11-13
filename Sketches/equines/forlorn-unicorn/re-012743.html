@@ -10,102 +10,67 @@
 
 
 <style>
-/* FIVE COLLECTIONS — approved November 8 drawing-detail media + V3 typography. */
+
+/* Sketches & Drawings approved detail-page layout — consolidated pilot */
+:root{--border:#e1e3e6;--ink:#222}
 *{box-sizing:border-box}
-:root{--border:#e5e7eb;--muted:#6b7280}
-html,body{margin:0;background:#fff;color:#111}
-body{font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;font-size:14px;line-height:1.6}
-.wrap{width:100%;max-width:620px;margin:0 auto;padding:22px 15px 48px}
-.nav-pills,.sequence-nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;margin:18px auto;text-align:center}
-.nav-pill{display:inline-block;padding:8px 13px;background:#fff;color:#111;text-decoration:none;font-size:13px;border:1px solid var(--border);border-radius:999px}
-.nav-pill:hover{background:#f8fafc}
-.page-header,.page-header h1,.wrap>header h1,.wrap>h1,.page-title{text-align:center}
-.page-header{margin:12px auto 20px}
-.page-title,.page-header h1,.wrap>header h1,.wrap>h1{margin:0;font-family:Georgia,serif;font-size:28px;line-height:1.2}
+html,body{margin:0;background:#fff;color:var(--ink)}
+body{font:400 14px/1.6 system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+a{color:#164f9e;text-decoration:underline}
+a:focus-visible{outline:3px solid #2463bc;outline-offset:3px}
+img{display:block;max-width:100%;height:auto;object-fit:contain}
+.wrap,main.wrap{width:100%;max-width:620px;margin:0 auto;padding:16px 14px 26px}
+.page-header{text-align:center}
+.page-title,.page-header h1,h1.page-title{font:400 28px/1.2 Georgia,serif;text-align:center;overflow-wrap:anywhere;margin:12px auto 16px}
+h2,.original-drawing-heading{font:400 20px/1.3 Georgia,serif;text-align:center;margin:0 0 14px}
+h2.original-drawing-heading{margin:18px 0 14px}
+.nav-pills,.sequence-nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:9px;margin:8px auto 14px;text-align:center}
+.nav-pill,.sequence-pill{display:inline-block;padding:6px 11px;border:1px solid #e5e7eb;border-radius:999px;color:#333;text-decoration:none;font-size:12px}
 .section-card{width:100%;max-width:560px;margin:0 auto 18px;padding:19px 16px;background:#fff;border:1px solid var(--border);border-radius:12px;box-shadow:none}
-.section-card h2,.original-drawing-heading{font-family:Georgia,serif;font-size:20px;text-align:center;line-height:1.3;margin:0 auto 14px}
-.original-drawing-heading{margin:0 auto 11px}
-.gallery-grid,.index-grid{display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:12px}
-.gallery-item,.index-card{display:block;min-width:0;color:inherit;text-decoration:none;border:1px solid var(--border);background:#fff;border-radius:12px;overflow:hidden}
-.gallery-item img,.index-card img{display:block;width:100%;object-fit:contain;object-position:center;background:#fff}
-[data-role="original-drawing"] .gallery-grid>a{display:block;min-width:0;width:100%;max-width:410px;flex:0 1 410px;margin-left:auto;margin-right:auto}
-[data-role="original-drawing"] .gallery-grid>a img{display:block;width:100%;height:auto;max-height:380px;object-fit:contain;object-position:center}
-.catalogue-meta-block,.relationship-note,.notes-block,.text-block{max-width:520px;margin-left:auto;margin-right:auto;text-align:center;line-height:1.6}
-.catalogue-meta-block{margin-bottom:18px}
-.relationship-note{width:100%;max-width:520px;margin:14px auto 18px;padding:14px 16px;background:#f3f4f6;border:1px solid #d1d5db;border-radius:10px;text-align:center}
-.work-meta{margin:0 auto;padding:0;list-style:none;line-height:1.65;text-align:center}
-.work-meta li{list-style:none;display:block;margin:2px auto;padding:0}
-.work-meta li::marker{content:""}
-.section-card .text-block p{margin:.4rem auto}
-/* Digitized Versions: exact outer 155x165px bordered frames. */
-[data-role="digital"] .gallery-grid,[data-role="digitized-versions"] .gallery-grid{gap:12px;justify-content:center;align-items:flex-start}
-[data-role="digital"] .gallery-grid>a,[data-role="digitized-versions"] .gallery-grid>a{box-sizing:border-box;display:block;flex:0 0 155px;width:155px;max-width:155px;height:165px;min-height:165px;max-height:165px;padding:0;border:1px solid var(--border);border-radius:12px;box-shadow:none;overflow:hidden;background:#fff}
-[data-role="digital"] .gallery-grid>a img,[data-role="digitized-versions"] .gallery-grid>a img{display:block;width:100%;height:100%;max-height:none;object-fit:contain;object-position:center;background:#fff;padding:0}
-/* Independent documentary/card categories (not interchangeable). */
-[data-role="area54-cards"] .gallery-grid,[data-role="delusionville-trading-cards"] .gallery-grid,[data-role="delusionville-cards"] .gallery-grid,[data-role="cards"] .gallery-grid,[data-role="graphic-designs"] .gallery-grid,[data-role="graphic-design"] .gallery-grid,[data-role="work-in-progress"] .gallery-grid,[data-role="photo-gallery"] .gallery-grid{justify-content:center;gap:12px}
-[data-role="area54-cards"] .gallery-grid>a,[data-role="delusionville-trading-cards"] .gallery-grid>a,[data-role="delusionville-cards"] .gallery-grid>a,[data-role="cards"] .gallery-grid>a,[data-role="graphic-designs"] .gallery-grid>a,[data-role="graphic-design"] .gallery-grid>a,[data-role="work-in-progress"] .gallery-grid>a,[data-role="photo-gallery"] .gallery-grid>a{display:block;width:130px;max-width:130px;flex:0 0 130px}
-[data-role="area54-cards"] .gallery-grid>a img,[data-role="delusionville-trading-cards"] .gallery-grid>a img,[data-role="delusionville-cards"] .gallery-grid>a img,[data-role="cards"] .gallery-grid>a img,[data-role="graphic-designs"] .gallery-grid>a img,[data-role="graphic-design"] .gallery-grid>a img,[data-role="work-in-progress"] .gallery-grid>a img,[data-role="photo-gallery"] .gallery-grid>a img{display:block;width:100%;height:170px;max-height:170px;object-fit:contain;object-position:center;background:#fff}
-[data-role="ancillary-documentation"][data-category="artist-created-graphic-designs"] .ron-doc-category-items{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:center;gap:12px}
-[data-role="ancillary-documentation"][data-category="artist-created-graphic-designs"] .ron-doc-category-item{display:block;flex:0 0 130px;width:130px;max-width:130px;margin:0;text-align:center}
-[data-role="ancillary-documentation"][data-category="artist-created-graphic-designs"] .ron-doc-category-item .gallery-item{display:block;width:130px;max-width:130px}
-[data-role="ancillary-documentation"][data-category="artist-created-graphic-designs"] .ron-doc-category-item .gallery-item img{display:block!important;width:100%!important;height:170px!important;max-height:170px!important;object-fit:contain!important;object-position:center!important;background:#fff!important;margin:0!important}
-.section-card.ron-unified-notes-wip-panel .gallery-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
-.section-card.ron-unified-notes-wip-panel .gallery-grid>a{display:block;width:130px;max-width:130px;flex:0 0 130px}
-.section-card.ron-unified-notes-wip-panel .gallery-grid>a img{display:block;width:100%;height:170px;object-fit:contain;object-position:center;background:#fff}
-[data-role="literature"] .gallery-grid{gap:12px;justify-content:center}
-[data-role="literature"] .literature-entry{max-width:520px;margin:0 auto 16px;text-align:center;line-height:1.65}
-[data-role="literature"] .gallery-grid>a{width:155px;max-width:155px;flex:0 0 155px;padding:6px}
-[data-role="literature"] .gallery-grid>a img{width:100%;height:auto;max-height:155px;object-fit:contain;background:#fff}
-/* Verified YouTube poster cards only; native video elements remain native. */
-[data-role="videos"] .ron-yt-clean-grid{display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:12px}
-[data-role="videos"] .ron-yt-clean-tile{display:block;position:relative;flex:0 0 200px;width:200px;max-width:200px;margin:0;text-align:center}
-[data-role="videos"] .ron-video-poster{position:relative!important;display:flex!important;align-items:center!important;justify-content:center!important;width:100%!important;height:125px!important;min-height:125px!important;max-height:125px!important;overflow:hidden!important;background:#fff!important;border:1px solid var(--border);border-radius:10px!important}
-[data-role="videos"] .ron-video-poster img{display:block!important;width:100%!important;max-width:100%!important;height:100%!important;object-fit:contain!important;background:#fff!important}
-[data-role="videos"] .ron-video-poster span[aria-hidden="true"]{position:absolute!important;top:50%!important;left:50%!important;transform:translate(-50%,-50%)!important;display:flex!important;align-items:center!important;justify-content:center!important;width:44px!important;height:44px!important;padding:0!important;border-radius:50%!important;font-size:22px!important;line-height:1!important;background:rgba(0,0,0,.8)!important;color:white!important}
-[data-role="videos"] .ron-yt-clean-tile figcaption{margin-top:7px;font-size:12px;line-height:1.4}
-[data-role="videos"] .ron-yt-clean-tile figcaption a{color:#111}
-[data-role="videos"] video,[data-role="videos"] iframe{max-width:100%;height:auto}
-.section-card.ron-notes-center,.section-card.ron-notes-center p,.section-card.ron-notes-center .text-block,[data-role="notes"],[data-role="notes"] p,.notes-text{text-align:center}
-.gallery-caption,.image-caption,.media-caption,figcaption{font-size:12px}
-footer{text-align:center;margin:28px auto 0;padding-top:16px;border-top:1px solid var(--border);color:var(--muted);font-size:13px}
-@media(max-width:380px){.wrap{padding:18px 10px 42px}.section-card{padding:14px 10px}[data-role="digital"] .gallery-grid>a,[data-role="digitized-versions"] .gallery-grid>a{width:130px;max-width:130px;flex-basis:130px}}
-
-/* FIVE COLLECTIONS: source markup for body-parts and characters. Preserve the owner-approved visible hero frames. */
-.primary-artwork[data-role="original"]{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:center;gap:12px;width:100%;max-width:560px;margin:0 auto 18px;padding:19px 16px;background:#fff;border:1px solid var(--border);border-radius:12px}
-.primary-artwork[data-role="original"]>a.primary-artwork-link{display:block;flex:0 1 410px;width:100%;max-width:410px;margin:0 auto;text-align:center;border:1px solid var(--border);border-radius:12px;overflow:hidden;background:#fff}
-.primary-artwork[data-role="original"]>a.primary-artwork-link img{display:block;width:100%;height:auto;max-height:380px;object-fit:contain;object-position:center;background:#fff;margin:auto}
-.image-grid{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:center;gap:12px}
-[data-role="original-drawing"] .image-grid>a{display:block;flex:0 1 410px;width:100%;max-width:410px;border:1px solid var(--border);border-radius:12px;overflow:hidden}
-[data-role="original-drawing"] .image-grid>a img{display:block;width:100%;height:auto;max-height:380px;object-fit:contain}
-[data-role="digital"] .image-grid>a{display:block;box-sizing:border-box;flex:0 0 155px;width:155px;max-width:155px;height:165px;min-height:165px;max-height:165px;border:1px solid var(--border);border-radius:12px;overflow:hidden;background:#fff}
-[data-role="digital"] .image-grid>a img{display:block;width:100%;height:100%;max-height:none;object-fit:contain;object-position:center;background:#fff}
-.section-card h2,.section-title{font-family:Georgia,serif;font-size:20px;line-height:1.3;text-align:center;margin:0 auto 14px}
-.metadata,.missing-original{max-width:520px;margin:12px auto 20px;text-align:center;line-height:1.65}
-.section-card[data-role="original-drawing"]{text-align:center}
-@media(max-width:380px){[data-role="digital"] .image-grid>a{flex-basis:130px;width:130px;max-width:130px}}
-
-/* Match source page role variations without changing markup. */
-[data-role="digitized-versions"] .image-grid>a{display:block;flex:0 0 155px;width:155px;max-width:155px;height:165px;border:1px solid var(--border);border-radius:12px;overflow:hidden;background:#fff}
-[data-role="digitized-versions"] .image-grid>a img{display:block;width:100%;height:100%;object-fit:contain;background:#fff}
-[data-role="original-drawing"] .primary-artwork-link{display:block;max-width:410px;width:100%;margin:0 auto;border:1px solid var(--border);border-radius:12px;overflow:hidden}
-[data-role="original-drawing"] .primary-artwork-link img{display:block;width:100%;height:auto;max-height:380px;object-fit:contain}
-[data-role="cards"] .image-grid>a,[data-role="graphic-designs"] .image-grid>a,[data-role="graphic-design"] .image-grid>a,[data-role="work-in-progress"] .image-grid>a,[data-role="photo-gallery"] .image-grid>a,[data-role="area54-cards"] .image-grid>a,[data-role="delusionville-cards"] .image-grid>a,[data-role="delusionville-trading-cards"] .image-grid>a{display:block;flex:0 0 130px;width:130px;max-width:130px;border:1px solid var(--border);border-radius:12px;overflow:hidden}
-[data-role="cards"] .image-grid>a img,[data-role="graphic-designs"] .image-grid>a img,[data-role="graphic-design"] .image-grid>a img,[data-role="work-in-progress"] .image-grid>a img,[data-role="photo-gallery"] .image-grid>a img,[data-role="area54-cards"] .image-grid>a img,[data-role="delusionville-cards"] .image-grid>a img,[data-role="delusionville-trading-cards"] .image-grid>a img{display:block;width:100%;height:170px;max-height:170px;object-fit:contain}
-[data-role="ancillary-documentation"][data-category="work-in-progress"] .ron-doc-category-items,[data-role="ancillary-documentation"][data-category="photo-gallery"] .ron-doc-category-items{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
-[data-role="ancillary-documentation"][data-category="work-in-progress"] .ron-doc-category-item,[data-role="ancillary-documentation"][data-category="photo-gallery"] .ron-doc-category-item{display:block;flex:0 0 130px;width:130px;max-width:130px;margin:0}
-[data-role="ancillary-documentation"][data-category="work-in-progress"] .ron-doc-category-item img,[data-role="ancillary-documentation"][data-category="photo-gallery"] .ron-doc-category-item img{display:block!important;width:100%!important;height:170px!important;object-fit:contain!important}
-[data-role="ancillary-documentation"][data-category="artist-created-graphic-designs"] .ron-doc-category-item img{height:170px!important;width:100%!important;max-height:170px!important;object-fit:contain!important}
-@media(max-width:380px){[data-role="digitized-versions"] .image-grid>a{flex-basis:130px;width:130px;max-width:130px}}
+.section-card p{margin:0 0 8px}.section-card p:last-child{margin-bottom:0}
+.gallery-grid,.ron-doc-category-items,.ron-yt-clean-grid,.ron-approved-ancillary-grid{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:center;gap:12px}
+.gallery-item,.ron-doc-category-item>a{display:flex;align-items:center;justify-content:center;overflow:hidden;background:#fff;border:1px solid var(--border);border-radius:10px;padding:6px;text-decoration:none;box-shadow:none}
+.gallery-item img,.ron-doc-category-item img{max-width:100%;max-height:100%;object-fit:contain}
+figure,.ron-doc-category-item,.ron-yt-clean-tile,.ron-approved-ancillary-tile{margin:0}
+.section-card[data-role="original-drawing"] .gallery-item,.section-card[data-role="original"] .gallery-item,.section-card[data-role="original-drawing"] .gallery-grid>a,.section-card[data-role="original"] .gallery-grid>a{width:auto;max-width:410px;height:auto;min-height:0;border:0;border-radius:0;padding:0;background:transparent;box-shadow:none}
+.section-card[data-role="original-drawing"] img,.section-card[data-role="original"] img{width:auto;height:auto;max-height:380px}
+.section-card[data-role="original-drawing"] .text-block,.section-card[data-role="original"] .text-block{text-align:center}
+.section-card[data-role="digital"] .gallery-item,.section-card[data-role="photo-gallery"] .gallery-item,.section-card[data-role="artist-colored-copy"] .gallery-item{width:200px;height:200px;flex:0 0 200px}
+.section-card[data-role="digital"] .gallery-item img,.section-card[data-role="photo-gallery"] .gallery-item img{max-width:100%;max-height:100%;object-fit:contain}
+.section-card[data-role="photo-gallery"] figcaption,.section-card[data-role="photo-gallery"] .card-title{display:none}
+.section-card[data-role="work-in-progress"] .gallery-item,.section-card[data-role="cards"] .gallery-item,.section-card[data-role="delusionville-trading-cards"] .gallery-item{width:130px;height:170px;flex:0 0 130px}
+.section-card[data-role="literature"] .literature-entry,.section-card[data-role="literature"] .literature-entry p{text-align:center}
+.literature-entry{max-width:520px;margin:0 auto 12px}
+.section-card[data-role="literature"] .gallery-item{width:auto;max-width:155px;height:auto;min-height:0}
+.section-card[data-role="literature"] .gallery-item img{max-height:155px;width:auto;height:auto}
+.section-card[data-role="literature"] .gallery-grid{margin:0 auto 18px}
+.section-card[data-role="literature"] .gallery-grid:last-child{margin-bottom:0}
+.section-card[data-role="ancillary-documentation"] .ron-doc-category-item{width:auto;max-width:200px}
+.section-card[data-role="ancillary-documentation"] .ron-doc-category-item>a{width:auto;max-width:200px;max-height:200px;height:auto;min-height:0;padding:6px}
+.section-card[data-role="ancillary-documentation"] .ron-doc-category-item img{width:auto;max-width:100%;max-height:186px;height:auto}
+.section-card[data-role="ancillary-documentation"] figcaption{display:none}
+.ron-yt-clean-tile{width:200px;max-width:100%;padding:6px;border:1px solid var(--border);border-radius:10px;background:#fff}
+.ron-video-poster{position:relative;display:block;width:100%;height:auto;text-decoration:none}
+.ron-video-poster img{width:100%;max-height:200px;object-fit:contain}
+.ron-video-poster span[aria-hidden]{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:rgba(0,0,0,.4);color:white;font:13px/1 system-ui,sans-serif}
+.section-card[data-role="videos"] figcaption{display:none}
+.catalogue-meta-block,.metadata,.work-meta,.meta{max-width:560px;margin:0 auto 18px;text-align:center}
+.catalogue-meta-block p,.metadata p,.work-meta p,.meta p{margin:3px 0;text-align:center}
+.catalogue-meta-block ul,.catalogue-meta-block ol,.work-meta{margin:0;padding:0;list-style:none;text-align:center}
+.catalogue-meta-block li,.work-meta li{display:block;margin:3px 0;padding:0;list-style:none;text-align:center}
+.section-card[data-role="notes"],.section-card[data-role="notes"] p,.section-card[data-role="notes"] .text-block,.section-card[data-role="literature"] p{text-align:center}
+.shared-original-sheet{max-width:560px;margin:0 auto 18px;padding:19px 16px;text-align:center;border:1px solid var(--border);border-radius:12px;background:#f3f4f5;box-shadow:none}
+.shared-original-sheet p{margin:0 0 8px}.shared-original-sheet p:last-child{margin-bottom:0}
+.footer-divider{max-width:560px;border:0;border-top:1px solid #d8dadd;margin:18px auto 16px}
+footer{text-align:center;margin:0 auto 16px}
+@media(max-width:440px){main.wrap,.wrap{padding:12px 10px 22px}.section-card{padding:19px 12px}.section-card[data-role="digital"] .gallery-item,.section-card[data-role="photo-gallery"] .gallery-item{flex:0 1 200px;max-width:100%}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto;transition:none}}
 
 
-/* Original Drawing artwork links: frameless; outer section panels and other galleries unchanged. */
-.section-card[data-role="original-drawing"] .gallery-item,
-.section-card[data-role="original-drawing"] .primary-artwork-link,
-.section-card[data-role="original-drawing"] .image-grid > a,
-.primary-artwork[data-role="original"] .primary-artwork-link,
-.primary-artwork[data-role="original-drawing"] .primary-artwork-link {
-  border:0;border-radius:0;overflow:visible;box-shadow:none;padding:0;
-}
+.primary-artwork[data-role="original"],.primary-artwork[data-role="original-drawing"]{max-width:560px;margin:0 auto 18px;padding:19px 16px;background:#fff;border:1px solid var(--border);border-radius:12px;box-shadow:none;display:flex;justify-content:center;flex-wrap:wrap;gap:12px}
+.primary-artwork[data-role="original"] a,.primary-artwork[data-role="original-drawing"] a{max-width:410px;border:0;padding:0;box-shadow:none}
+.primary-artwork[data-role="original"] img,.primary-artwork[data-role="original-drawing"] img{max-height:380px}
+.section-card[data-role="graphic-designs"] .gallery-item{width:auto;max-width:200px;max-height:200px;height:auto;min-height:0}.section-card[data-role="graphic-designs"] .gallery-item img{width:auto;height:auto;max-height:186px}
 </style>
 </head><body><main class="wrap"><nav class="nav-pills" aria-label="Site navigation"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="index.html">&larr; Forlorn Unicorn</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a></nav><header class="page-header"><h1 class="page-title">Forlorn Unicorn Left Side</h1></header><h2 class="original-drawing-heading">Original Drawing</h2><section class="section-card media-section" data-role="original-drawing"><div class="gallery-grid original-gallery"><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Ungulates/Equines/Forlorn%20Unicorn%20side%202%20ORIGINAL.jpg" target="_blank" rel="noopener"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Ungulates/Equines/Forlorn%20Unicorn%20side%202%20ORIGINAL.jpg" alt="Forlorn Unicorn Left Side" loading="lazy"></a></div></section><div class="catalogue-meta-block"><ul class="work-meta"><li><strong>Title:</strong> Forlorn Unicorn Left Side</li><li><strong>Medium:</strong> Ink on paper</li><li><strong>Dimensions:</strong> Sheet 14 × 17 in.; Drawing 14 × 6 in.</li><li><strong>Work ID:</strong> RE-012743</li><li><strong>Provenance:</strong> Artist's Personal Collection</li></ul></div><section class="section-card media-section" data-role="digital"><h2>Digitized Versions</h2><div class="gallery-grid"><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Ungulates/Equines/Forlorn%20Unicorn%20side%202%20B%26W.jpg" target="_blank" rel="noopener"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Ungulates/Equines/Forlorn%20Unicorn%20side%202%20B%26W.jpg" alt="Forlorn Unicorn Left Side — image 1" loading="lazy"></a><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Ungulates/Equines/Forlorn%20Unicorn%20side%202%20COLOR.jpg" target="_blank" rel="noopener"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Ungulates/Equines/Forlorn%20Unicorn%20side%202%20COLOR.jpg" alt="Forlorn Unicorn Left Side — image 2" loading="lazy"></a></div></section>
 <nav class="sequence-nav ron-bottom-prev-next-center" aria-label="Catalogue sequence"><a class="nav-pill sequence-pill" href="re-012809.html">&larr; Previous: Forlorn Unicorn Front and Back</a><a class="nav-pill sequence-pill" href="re-012741.html">Next: Forlorn Unicorn Right Side &rarr;</a></nav>
