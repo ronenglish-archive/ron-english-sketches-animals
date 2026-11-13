@@ -52,16 +52,22 @@ body{font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;font-size:1
 .section-card .text-block p{margin:.4rem auto}
 /* Digitized Versions: distinct bordered 155x165px frames (mobile 130x165px). */
 [data-role="digital"] .gallery-grid,[data-role="digitized-versions"] .gallery-grid{gap:12px;justify-content:center;align-items:flex-start}
-[data-role="digital"] .gallery-item,[data-role="digitized-versions"] .gallery-item{box-sizing:border-box;width:155px;max-width:155px;height:165px;flex:0 0 155px;border:1px solid var(--border);border-radius:12px;box-shadow:none;background:#fff}
+[data-role="digital"] .gallery-item,[data-role="digitized-versions"] .gallery-item{box-sizing:border-box;width:200px;max-width:200px;height:200px;flex:0 0 200px;border:1px solid var(--border);border-radius:12px;box-shadow:none;background:#fff}
 [data-role="digital"] .gallery-item img,[data-role="digitized-versions"] .gallery-item img{display:block;width:100%;height:100%;object-fit:contain;object-position:center;background:#fff}
 /* Distinct compact media families and role aliases. */
 [data-role="area54-cards"] .gallery-grid,[data-role="delusionville-trading-cards"] .gallery-grid,[data-role="delusionville-cards"] .gallery-grid,[data-role="cards"] .gallery-grid,[data-role="graphic-designs"] .gallery-grid,[data-role="graphic-design"] .gallery-grid,[data-role="work-in-progress"] .gallery-grid,[data-role="photo-gallery"] .gallery-grid{justify-content:center;gap:12px}
-[data-role="area54-cards"] .gallery-item,[data-role="delusionville-trading-cards"] .gallery-item,[data-role="delusionville-cards"] .gallery-item,[data-role="cards"] .gallery-item,[data-role="graphic-designs"] .gallery-item,[data-role="graphic-design"] .gallery-item,[data-role="work-in-progress"] .gallery-item,[data-role="photo-gallery"] .gallery-item{width:130px;max-width:130px;flex:0 0 130px}
-[data-role="area54-cards"] .gallery-item img,[data-role="delusionville-trading-cards"] .gallery-item img,[data-role="delusionville-cards"] .gallery-item img,[data-role="cards"] .gallery-item img,[data-role="graphic-designs"] .gallery-item img,[data-role="graphic-design"] .gallery-item img,[data-role="work-in-progress"] .gallery-item img,[data-role="photo-gallery"] .gallery-item img{display:block;width:100%;height:170px;object-fit:contain;object-position:center;background:#fff}
+[data-role="area54-cards"] .gallery-item,[data-role="delusionville-trading-cards"] .gallery-item,[data-role="delusionville-cards"] .gallery-item,[data-role="cards"] .gallery-item,[data-role="work-in-progress"] .gallery-item{width:130px;max-width:130px;flex:0 0 130px}
+[data-role="graphic-designs"] .gallery-item{width:auto;max-width:200px;height:auto;max-height:200px;flex:0 1 auto}
+[data-role="graphic-design"] .gallery-item{width:auto;max-width:200px;height:auto;max-height:200px;flex:0 1 auto}
+[data-role="photo-gallery"] .gallery-item{width:200px;max-width:200px;height:200px;flex:0 0 200px}
+[data-role="area54-cards"] .gallery-item img,[data-role="delusionville-trading-cards"] .gallery-item img,[data-role="delusionville-cards"] .gallery-item img,[data-role="cards"] .gallery-item img,[data-role="work-in-progress"] .gallery-item img{display:block;width:100%;height:170px;object-fit:contain;object-position:center;background:#fff}
+[data-role="graphic-designs"] .gallery-item img{display:block;width:100%;height:100%;max-height:200px;object-fit:contain;object-position:center;background:#fff}
+[data-role="graphic-design"] .gallery-item img{display:block;width:100%;height:100%;max-height:200px;object-fit:contain;object-position:center;background:#fff}
+[data-role="photo-gallery"] .gallery-item img{display:block;width:100%;height:100%;max-height:200px;object-fit:contain;object-position:center;background:#fff}
 [data-role="ancillary-documentation"][data-category="artist-created-graphic-designs"] .ron-doc-category-items{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:center;gap:12px}
-[data-role="ancillary-documentation"][data-category="artist-created-graphic-designs"] .ron-doc-category-item{box-sizing:border-box;display:block;flex:0 0 130px;width:130px;max-width:130px;margin:0;text-align:center}
-[data-role="ancillary-documentation"][data-category="artist-created-graphic-designs"] .ron-doc-category-item .gallery-item{display:block;width:130px;max-width:130px}
-[data-role="ancillary-documentation"][data-category="artist-created-graphic-designs"] .ron-doc-category-item .gallery-item img{display:block;width:100%;height:170px;object-fit:contain;object-position:center;background:#fff}
+[data-role="ancillary-documentation"][data-category="artist-created-graphic-designs"] .ron-doc-category-item{box-sizing:border-box;display:block;flex:0 1 auto;width:auto;max-width:200px;margin:0;text-align:center}
+[data-role="ancillary-documentation"][data-category="artist-created-graphic-designs"] .ron-doc-category-item .gallery-item{display:block;width:auto;max-width:200px}
+[data-role="ancillary-documentation"][data-category="artist-created-graphic-designs"] .ron-doc-category-item .gallery-item img{display:block;width:auto;max-width:200px;height:auto;max-height:200px;object-fit:contain;object-position:center;background:#fff}
 /* Work in Progress gallery on old source pages without data-role: existing DOM retained. */
 .section-card.ron-unified-notes-wip-panel .gallery-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
 .section-card.ron-unified-notes-wip-panel .gallery-grid .gallery-item{width:130px;max-width:130px;flex:0 0 130px}
@@ -86,7 +92,7 @@ body{font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;font-size:1
 .section-card[data-role="notes"]{max-width:560px!important}
 .gallery-caption,.image-caption,.media-caption,figcaption{font-size:12px}
 footer{text-align:center;margin:28px auto 0;padding-top:16px;border-top:1px solid var(--border);color:var(--muted);font-size:13px}
-@media(max-width:380px){.wrap{padding:18px 10px 42px}.section-card{padding:14px 10px}[data-role="digital"] .gallery-item,[data-role="digitized-versions"] .gallery-item{width:130px;max-width:130px;flex-basis:130px}}
+@media(max-width:380px){.wrap{padding:18px 10px 42px}.section-card{padding:14px 10px}[data-role="digital"] .gallery-item,[data-role="digitized-versions"] .gallery-item{width:min(200px,100%);max-width:200px;flex-basis:200px}}
 
 /* Legacy Photo Gallery presentation, preserving its title and caption below the image. */
 [data-role="artist-with-drawing"] .ron-approved-ancillary-grid{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:center;gap:12px}
@@ -109,10 +115,9 @@ section.section-card[data-role="full-character"]{max-width:560px!important}
 [data-role="full-character"] .gallery-grid>a img{display:block;max-width:100%;height:auto;object-fit:contain}
 
 /* Page-specific source aliases: actual anchored cards, irrespective of gallery-item class. */
-[data-role="digital"] .gallery-grid>a:not(.gallery-item){box-sizing:border-box;display:block;flex:0 0 155px;width:155px;height:165px;border:1px solid var(--border);border-radius:12px;overflow:hidden;background:#fff}
+[data-role="digital"] .gallery-grid>a:not(.gallery-item){box-sizing:border-box;display:block;flex:0 0 200px;width:200px;height:200px;border:1px solid var(--border);border-radius:12px;overflow:hidden;background:#fff}
 [data-role="digital"] .gallery-grid>a:not(.gallery-item) img{display:block;width:100%;height:100%;object-fit:contain}
-@media(max-width:380px){[data-role="digital"] .gallery-grid>a:not(.gallery-item){flex-basis:130px;width:130px}}
-
+@media(max-width:380px){[data-role="digital"] .gallery-grid>a:not(.gallery-item){flex-basis:200px;width:min(200px,100%)}}
 </style>
 </head><body><main class="wrap">
 <nav class="nav-pills" aria-label="Site navigation"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="../index.html">&larr; Cattle</a>  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
