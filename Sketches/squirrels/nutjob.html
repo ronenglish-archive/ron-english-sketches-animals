@@ -12,60 +12,79 @@
 
 
 
-<style>
-/* Ron English Sketches & Drawings — compact owner-approved self-contained detail-page layout. */
+
+<style id="ron-approved-drawing-detail">
+
 *{box-sizing:border-box}
 html,body{margin:0;background:#fff;color:#222}
-body{font:14px/1.6 system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
-a{color:inherit}
-.wrap{width:100%;max-width:620px;margin:0 auto;padding:16px 14px 22px}
-.nav-pills,.sequence-nav{display:flex;flex-wrap:wrap;justify-content:center;gap:9px;margin:8px auto 14px;text-align:center}
-.nav-pill{display:inline-block;padding:6px 11px;border:1px solid #e5e7eb;border-radius:999px;background:#fff;text-decoration:none;font-size:12px}
-.page-header{text-align:center}
-.page-title,h1{font:400 28px/1.17 Georgia,serif;text-align:center;margin:12px auto 16px}
-.original-drawing-heading,.section-card h2,.section-card h3{font:400 20px/1.3 Georgia,serif;text-align:center;margin:0 0 12px}
-.original-drawing-heading{margin-top:12px}
-.section-card{width:100%;max-width:560px;margin:12px auto;padding:19px 16px;background:#fff;border:1px solid #e5e7eb;border-radius:12px;box-shadow:none;text-align:center}
-.gallery-grid,.ron-doc-category-items{display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:12px;margin:0 auto}
-.gallery-item{display:flex;align-items:center;justify-content:center;min-width:0;max-width:100%;background:#fff;border:1px solid #e5e7eb;border-radius:6px;overflow:hidden;text-decoration:none;box-shadow:none}
-.gallery-item img{display:block;max-width:100%;max-height:100%;object-fit:contain;object-position:center;background:#fff;box-shadow:none}
-[data-role="original-drawing"] .gallery-grid{flex-direction:column;align-items:center;gap:12px}
-[data-role="original-drawing"] .gallery-item{width:auto;max-width:410px;height:auto;max-height:none}
-[data-role="original-drawing"] .gallery-item img{width:auto;height:auto;max-width:100%;max-height:380px;object-fit:contain}
-[data-role="digital"] .gallery-grid{align-items:flex-start;gap:12px}
-[data-role="digital"] .gallery-item{flex:0 0 155px;width:155px;height:165px;padding:0;border:1px solid #e5e7eb;background:#fff}
-[data-role="digital"] .gallery-item img{width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain}
-.catalogue-meta-block{max-width:540px;margin:10px auto 15px;text-align:center}
-.work-meta{list-style:none;padding:0;margin:0 auto;line-height:1.65}
-.work-meta li{margin:2px auto}
-.notes-text,[data-role="notes"],.section-card p{max-width:520px;margin:8px auto;text-align:center;line-height:1.65}
-.relationship-note{width:calc(100% - 28px);max-width:440px;margin:12px auto;padding:12px 15px;border:1px solid #d5d8de;border-radius:9px;background:#f3f4f6;text-align:center;line-height:1.6;overflow-wrap:anywhere;box-shadow:none}
-[data-role="literature"] .literature-entry{max-width:520px;margin:0 auto 16px;text-align:center}
-[data-role="literature"] .literature-entry p{max-width:520px;margin:8px auto;line-height:1.65}
-[data-role="literature"] .gallery-grid{gap:12px;justify-content:center}
-[data-role="literature"] .gallery-item{max-width:155px;width:auto;padding:6px;border-radius:12px}
-[data-role="literature"] .gallery-item img{width:auto;height:auto;max-width:141px;max-height:155px;object-fit:contain}
-[data-category="artist-created-graphic-designs"] .ron-doc-category-item{width:130px;min-width:0;margin:0;display:flex;flex-direction:column;align-items:center}
-[data-category="artist-created-graphic-designs"] .gallery-item{width:130px;max-width:130px;height:170px}
-[data-category="artist-created-graphic-designs"] .gallery-item img{width:100%;height:100%;object-fit:contain}
-.ron-doc-category-item figcaption{max-width:130px;font-size:12px;text-align:center;overflow-wrap:anywhere}
-.sequence-nav{margin:23px auto 12px}
-footer,.footer{margin:15px auto 5px;padding:12px 0 0;border-top:1px solid #e5e7eb;color:#6b7280;font-size:12px;text-align:center}
-@media(max-width:600px){.wrap{padding:12px 10px 20px}.section-card{padding:15px 11px}}
-@media(max-width:390px){[data-role="digital"] .gallery-item{flex-basis:130px;width:130px;height:165px}}
+body{font:14px/1.6 system-ui,-apple-system,"Segoe UI",Arial,sans-serif;text-align:center}
+a{color:inherit}a:focus-visible{outline:2px solid #2563eb;outline-offset:3px}
+.wrap{width:100%;max-width:620px;padding:16px 14px 22px;margin:0 auto}
+.nav-pills,.sequence-nav,.ron-bottom-prev-next-center{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:9px;margin:8px auto 14px;text-align:center}
+.nav-pill,.sequence-pill,.sequence-nav>a{display:inline-block;padding:6px 11px;border:1px solid #e5e7eb;border-radius:999px;text-decoration:none;font-size:12px;background:#fff;color:#222}
+.sequence-spacer{display:none}
+.page-header{margin:12px auto 16px;text-align:center}
+h1,.page-title,.page-header h1{font:400 28px/1.17 Georgia,serif;text-align:center;margin:12px auto 16px}
+h2,h3,.original-drawing-heading,.section-card h2,.section-block h2{font:400 20px/1.3 Georgia,serif;text-align:center;margin:0 0 12px}
+.wrap>h2,.wrap>main>h2{margin:10px auto 12px}
+.catalogue-meta-block,.meta,.metadata{width:100%;max-width:540px;margin:10px auto 15px;text-align:center}
+.metadata p,.meta p{margin:4px auto;text-align:center}.work-meta{list-style:none;padding:0;margin:0 auto;line-height:1.65}.work-meta li{display:block;margin:2px auto;text-align:center}
+.relationship-note,.shared-sheet-note,.fused-original-note{width:100%;max-width:560px;margin:16px auto;padding:19px 16px;background:#f3f4f6;border:1px solid #e5e7eb;border-radius:12px;box-shadow:none;text-align:center}
+.section-card,.section-block,.primary-artwork{display:block;width:100%;max-width:560px;margin:18px auto;padding:19px 16px;background:#fff;border:1px solid #e5e7eb;border-radius:12px;box-shadow:none;text-align:center}
+.section-card h2,.section-block h2{margin:0 0 12px}
+.gallery-grid,.image-grid,.original-grid,.kaiju-gallery{display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:12px;margin:0 auto}
+.gallery-grid>a,.image-grid>a,.original-grid>a,.kaiju-gallery>a,.gallery-item{display:flex;align-items:center;justify-content:center;max-width:100%;min-width:0;margin:0;text-decoration:none;border:1px solid #e5e7eb;border-radius:10px;background:#fff;overflow:hidden}
+.gallery-grid img,.image-grid img,.original-grid img,.kaiju-gallery img{display:block;max-width:100%;height:auto;object-fit:contain;object-position:center}
+/* Center original artwork within its existing white outer panel */
+.primary-artwork{display:flex;flex-direction:column;align-items:center;justify-content:center}
+.primary-artwork>a,.primary-artwork-link{display:flex;align-items:center;justify-content:center;margin-left:auto;margin-right:auto}
+/* Physical original: one large outer panel, no image-level frame */
+[data-role="original-drawing"] .image-grid,[data-role="original-drawings"] .image-grid,[data-role="original"] .image-grid{align-items:center}
+[data-role="original-drawing"] .image-grid>a,[data-role="original-drawing"] .original-grid>a,[data-role="original-drawings"] .image-grid>a,[data-role="original"] .gallery-grid>a,.primary-artwork>a,.primary-artwork-link{border:0;border-radius:0;padding:0;box-shadow:none;overflow:visible;max-width:410px;height:auto;background:transparent}
+[data-role="original-drawing"] img,[data-role="original-drawings"] img,[data-role="original"] img,.primary-artwork img{display:block;max-height:380px;max-width:100%;width:auto;height:auto;object-fit:contain}
+/* Digitized Versions are fixed square cards, including singular headings */
+[data-role="digitized"] .image-grid>a,[data-role="digitized"] .gallery-grid>a,[data-role="digital"] .image-grid>a,[data-role="digitized-versions"] .gallery-grid>a{flex:0 0 200px;width:200px;max-width:200px;height:200px;padding:0}
+[data-role="digitized"] .image-grid>a img,[data-role="digitized"] .gallery-grid>a img,[data-role="digital"] .image-grid>a img,[data-role="digitized-versions"] .gallery-grid>a img{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain}
+/* Photo gallery square media with no displayed photo captions */
+[data-role="photo-gallery"] .gallery-grid>a,[data-role="photo-gallery"] .image-grid>a{width:200px;height:200px;flex:0 0 200px;padding:0}
+[data-role="photo-gallery"] .gallery-grid img,[data-role="photo-gallery"] .image-grid img{width:100%;height:100%;object-fit:contain}
+[data-role="photo-gallery"] figcaption,.photo-gallery figcaption{display:none}
+/* Graphic designs: natural ratio, bounded, never cropped */
+[data-role="ancillary-documentation"][data-category="artist-created-graphic-designs"] .ron-doc-category-items{display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:12px;margin:0 auto}
+[data-role="ancillary-documentation"][data-category="artist-created-graphic-designs"] .ron-doc-category-item{display:flex;flex-direction:column;align-items:center;flex:0 1 auto;width:auto;max-width:200px;margin:0;text-align:center}
+[data-role="ancillary-documentation"][data-category="artist-created-graphic-designs"] .ron-doc-category-item>a{display:flex;align-items:center;justify-content:center;width:auto;height:auto;max-width:200px;max-height:200px;min-width:0;padding:0;border:1px solid #e5e7eb;border-radius:10px;overflow:hidden}
+[data-role="ancillary-documentation"][data-category="artist-created-graphic-designs"] .ron-doc-category-item img{display:block;width:auto;height:auto;max-width:200px;max-height:200px;object-fit:contain}
+[data-role="ancillary-documentation"][data-category="artist-created-graphic-designs"] figcaption{font-size:12px;line-height:1.4;margin:5px auto 0;overflow-wrap:anywhere}
+/* Work in Progress and documentary cards retain distinct source proportions */
+[data-role="wip"] .image-grid>a,[data-role="work-in-progress"] .image-grid>a,[data-role="card"] .image-grid>a,[data-role="card"] .gallery-grid>a,[data-role="cards"] .gallery-grid>a,[data-role="delusionville-trading-cards"] .gallery-grid>a{flex:0 0 130px;width:130px;max-width:130px;height:170px;min-height:170px;padding:0}
+[data-role="wip"] .image-grid>a img,[data-role="work-in-progress"] .image-grid>a img,[data-role="card"] .image-grid>a img,[data-role="card"] .gallery-grid>a img,[data-role="cards"] .gallery-grid>a img,[data-role="delusionville-trading-cards"] .gallery-grid>a img{width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain}
+/* Literature: citation and its associated media remain sequential */
+[data-role="literature"] .literature-entry,[data-role="literature"] .literature-entry p{max-width:520px;text-align:center;margin:8px auto 12px}
+[data-role="literature"] .gallery-grid,[data-role="literature"] .image-grid{margin:10px auto 18px;justify-content:center}
+[data-role="literature"] .gallery-grid>a,[data-role="literature"] .image-grid>a{flex:0 1 auto;width:auto;max-width:200px;height:auto;padding:6px}
+[data-role="literature"] .gallery-grid img,[data-role="literature"] .image-grid img{width:auto;height:auto;max-width:100%;max-height:190px;object-fit:contain}
+[data-role="notes"] p,.text-block p{margin:8px auto;text-align:center}
+[data-role="videos"] .gallery-grid>a,[data-role="videos"] .image-grid>a{max-width:200px;height:auto}
+[data-role="videos"] img,[data-role="videos"] video,[data-role="videos"] iframe{max-width:200px;height:auto;object-fit:contain}
+footer{font-size:12px;color:#6b7280;text-align:center;margin:15px auto 5px;padding:12px 0 0;border-top:1px solid #e5e7eb}
+@media(max-width:600px){.wrap{padding:12px 10px 20px}.section-card,.section-block,.primary-artwork{padding:15px 11px}}
+@media(max-width:440px){.gallery-grid,.image-grid,.original-grid{gap:9px}}
 
-/* Batch 11: remove image-level inner frames ONLY in Original Drawing sections; outer white panels retained. */
-.primary-artwork[data-role="original"] > a:has(img),
-.primary-artwork[data-role="original-drawing"] > a:has(img),
-.primary-artwork[data-role="original-drawings"] > a:has(img),
-[data-role="original-drawing"] .gallery-grid a:has(img),
-[data-role="original-drawing"] .original-grid a:has(img),
-[data-role="original"] .gallery-grid a:has(img),
-[data-role="original"] .original-grid a:has(img),
-section.primary-artwork[aria-label="Original Drawing"] > a:has(img),
-section.primary-artwork[aria-label="Original Drawings"] > a:has(img) {
-  border:0 !important; border-radius:0 !important; padding:0 !important;
-  box-shadow:none !important; overflow:visible !important;
-}
+
+/* Verified source variants: Sheep and Snails */
+[data-role="original-drawing"] .gallery-grid>a,[data-role="original-drawing"] .gallery-item,[data-role="original-drawings"] .gallery-grid>a{border:0;border-radius:0;box-shadow:none;padding:0;background:transparent;overflow:visible;max-width:410px;height:auto}
+[data-role="digital"] .gallery-grid>a,[data-role="digital"] .gallery-item,[data-role="digitized"] .gallery-grid>a{flex:0 0 200px;width:200px;max-width:200px;height:200px;padding:0}
+[data-role="digital"] .gallery-grid img,[data-role="digitized"] .gallery-grid img{width:100%;height:100%;max-height:100%;object-fit:contain}
+[data-role="literature"] .literature-entry .gallery-grid{margin:12px auto 18px}
+[data-role="literature"] .literature-entry p{margin:6px auto 10px;text-align:center}
+[data-role="literature"] .gallery-grid>a{max-height:220px}
+[data-role="graphic-designs"] .gallery-grid,[data-role="graphic-design"] .gallery-grid{justify-content:center}
+[data-role="graphic-designs"] .gallery-grid>a,[data-role="graphic-design"] .gallery-grid>a{width:auto;height:auto;max-width:200px;max-height:200px}
+[data-role="graphic-designs"] img,[data-role="graphic-design"] img{width:auto;height:auto;max-width:200px;max-height:200px;object-fit:contain}
+[data-role="work-in-progress"] .gallery-grid>a{flex:0 0 200px;width:200px;height:200px}
+[data-role="work-in-progress"] .gallery-grid img{width:100%;height:100%;object-fit:contain}
+[data-role="videos"] video,[data-role="videos"] iframe{max-width:200px}
+.relationship-note,.shared-sheet-note,.fused-original-note{display:block;max-width:560px;background:#f3f4f6;text-align:center}
+
 </style>
 </head><body><main class="wrap"><nav class="nav-pills" aria-label="Site navigation"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="index.html">&larr; Squirrels</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a></nav><header class="page-header"><h1 class="page-title">Nutjob</h1></header><h2 class="original-drawing-heading">Original Drawing</h2><section class="section-card" data-role="original-drawing"><div class="gallery-grid original-gallery"><a class="gallery-item" href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260617%20%28139%29.jpg?v=20260617r" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260617%20%28139%29.jpg?v=20260617r" alt="Nutjob — image 1" loading="lazy"></a></div></section><div class="catalogue-meta-block"><ul class="work-meta"><li><strong>Title:</strong> Nutjob</li><li><strong>Medium:</strong> Ink on paper</li><li><strong>Dimensions:</strong> Sheet 11 × 14 in.</li><li><strong>Work ID:</strong> RE-014260</li><li><strong>Provenance:</strong> Artist's Personal Collection</li></ul></div><section class="section-card" data-role="digital"><h2>Digitized Versions</h2><div class="gallery-grid"><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Small%20Mammals/Squirrels/Nutjob%20B%26W.jpg" target="_blank" rel="noopener"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Small%20Mammals/Squirrels/Nutjob%20B%26W.jpg" alt="Nutjob — image 1" loading="lazy"></a><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Small%20Mammals/Squirrels/Nutjob%20COLOR-2.jpg" target="_blank" rel="noopener"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Small%20Mammals/Squirrels/Nutjob%20COLOR-2.jpg" alt="Nutjob — image 2" loading="lazy"></a></div></section><section class="section-card" data-role="literature"><h2>Literature</h2><div class="literature-entry"><p>Zephyr English, <em>Delusionville High</em> (PoPaganda, 2022), p. 32.<br><span style="white-space:nowrap">ISBN 978-0-578-39761-0</span>.</p><div class="gallery-grid"><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/delusionville-high/delusionville%20high%20p32.jpg" target="_blank" rel="noopener"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/delusionville-high/delusionville%20high%20p32.jpg" alt="Nutjob literature" loading="lazy"></a></div></div></section><nav class="sequence-nav ron-bottom-prev-next-center" aria-label="Catalogue sequence"><a class="nav-pill sequence-pill" href="katzenjammer-squirrel.html">&larr; Previous: Katzenjammer Squirrel</a><a class="nav-pill sequence-pill" href="squirrel-family-icon.html">Next: Squirrel Family Icon &rarr;</a></nav><footer>Published via GitHub Pages<br>for long-term public access.</footer></main></body></html>

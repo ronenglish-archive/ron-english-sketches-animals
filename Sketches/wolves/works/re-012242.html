@@ -1,89 +1,67 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Riff Riff Three Quarters | Sketches &amp; Drawings | Ron English Catalogue Raisonn&eacute;</title>
-
-
-
-
-<link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
-
-
-
-
-
-
-
-
-
-
-<style id="ron-clean-drawing-detail-v1">
-/* Ron English / Sketches & Drawings / approved compact detail presentation */
-*{box-sizing:border-box}html{background:#fff}body{margin:0;background:#fff;color:#222;font:14px/1.6 system-ui,-apple-system,"Segoe UI",Arial,sans-serif}a{color:inherit}
-.wrap{width:100%;max-width:620px;margin:0 auto;padding:16px 14px 22px}
-.nav-pills,.sequence-nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:9px;margin:8px auto 14px;text-align:center}
-.nav-pill,.sequence-pill{display:inline-block;padding:6px 11px;border:1px solid #e5e7eb;border-radius:999px;background:#fff;text-decoration:none;color:#222;font-size:12px}
-.sequence-spacer{display:none}
-.page-header{text-align:center;margin:12px auto 16px}.page-title,h1{font:400 28px/1.17 Georgia,serif;text-align:center;margin:12px auto 16px}
-h2,h3,.original-drawing-heading{font:400 20px/1.3 Georgia,serif;text-align:center;margin:0 0 12px}
-.section-card,.primary-artwork{width:100%;max-width:560px;margin:12px auto;padding:19px 16px;background:#fff;border:1px solid #e5e7eb;border-radius:12px;box-shadow:none;text-align:center}
-.section-card[data-role="notes"],.ron-unified-notes-wip-panel{width:100%;max-width:560px}
-.section-card h2,.primary-artwork h2{font:400 20px/1.3 Georgia,serif;text-align:center;margin:0 0 12px}
-/* The Original Drawing heading is deliberately outside the image/status panel. */
-.original-drawing-heading,.ron-outside-original-heading{display:block;text-align:center;margin:15px auto 10px;font:400 20px/1.3 Georgia,serif}
-.gallery-grid,.index-grid,.original-grid,.originals-grid,.original-gallery,.ron-doc-category-items{display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:12px;width:100%;max-width:100%;margin:0 auto}
-.gallery-item,.primary-artwork-link{display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:0;margin:0;border:1px solid #e5e7eb;border-radius:6px;overflow:hidden;text-decoration:none;background:#fff;color:inherit;box-shadow:none}
-.gallery-item img,.primary-artwork-link img{display:block;width:100%;height:100%;min-width:0;object-fit:contain;object-position:center;background:#fff;padding:6px;margin:0;box-shadow:none}
-/* Original Drawing: distinct 410px maximum tile and 380px image height. */
-section[data-role="original-drawing"] .gallery-grid .gallery-item,section[data-role="original-drawing"] .original-grid .gallery-item,
-section[data-role="original"] .gallery-item,.primary-artwork .primary-artwork-link,.original-grid .gallery-item,.original-gallery .gallery-item,.originals-grid .gallery-item{flex:0 1 auto;width:auto;max-width:410px;height:auto;max-height:none}
-section[data-role="original-drawing"] .gallery-grid .gallery-item img,section[data-role="original"] .gallery-item img,.primary-artwork .primary-artwork-link img,.original-grid .gallery-item img,.original-gallery .gallery-item img,.originals-grid .gallery-item img{display:block;width:auto;max-width:100%;height:auto;max-height:380px;object-fit:contain}
-.primary-artwork{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0}
-/* Digitized Versions: actual outer border-box 155 by 165 pixels. */
-section[data-role="digital"] .gallery-item,section[data-role="digitized-versions"] .gallery-item{flex:0 0 155px;width:155px;max-width:155px;height:165px;max-height:165px;box-sizing:border-box;display:flex;align-items:center;justify-content:center}
-section[data-role="digital"] .gallery-item img,section[data-role="digitized-versions"] .gallery-item img{width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain}
-/* Framed documentary cards: 130px wide, 170px image area; captions below. */
-section[data-role="cards"] .gallery-item,section[data-role="area54-cards"] .gallery-item,section[data-role="delusionville-trading-cards"] .gallery-item,section[data-role="delusionville-cards"] .gallery-item,section[data-role="graphic-designs"] .gallery-item,section[data-role="work-in-progress"] .gallery-item,section[data-role="photo-gallery"] .gallery-item,section[data-category="artist-created-graphic-designs"] .gallery-item{flex:0 0 130px;width:130px;max-width:130px;height:auto;display:flex;flex-direction:column;align-items:center;justify-content:flex-start}
-section[data-role="cards"] .gallery-item img,section[data-role="area54-cards"] .gallery-item img,section[data-role="delusionville-trading-cards"] .gallery-item img,section[data-role="delusionville-cards"] .gallery-item img,section[data-role="graphic-designs"] .gallery-item img,section[data-role="work-in-progress"] .gallery-item img,section[data-role="photo-gallery"] .gallery-item img,section[data-category="artist-created-graphic-designs"] .gallery-item img{height:170px;max-height:170px;flex-shrink:0;object-fit:contain}
-.ron-doc-category-item{margin:0;display:flex;flex-direction:column;align-items:center;width:130px;max-width:130px}.ron-doc-category-item figcaption,.gallery-item figcaption,.card-title{width:100%;font-size:12px;line-height:1.35;text-align:center;padding:5px;overflow-wrap:anywhere;background:#fff}
-/* Literature images follow citation groups rather than documentary-card sizing. */
-section[data-role="literature"] .gallery-item{width:155px;max-width:155px;flex:0 0 155px;height:auto;max-height:none;border-radius:12px}
-section[data-role="literature"] .gallery-item img{width:100%;height:auto;max-height:155px;object-fit:contain;padding:6px}
-.literature-entry{max-width:520px;margin:0 auto 16px;text-align:center;line-height:1.65}.literature-entry p{margin:8px auto}
-.catalogue-meta-block{width:100%;max-width:540px;margin:10px auto 15px;text-align:center}.work-meta{max-width:540px;list-style:none;margin:0 auto;padding:0;text-align:center;line-height:1.65}.work-meta li{margin:2px auto}
-.relationship-note{width:100%;max-width:440px;margin:12px auto;padding:12px 16px;border:1px solid #d5d9df;border-radius:10px;background:#f3f4f6;text-align:center;line-height:1.6}
-.text-block,.notes-text,section[data-role="notes"] p,section[data-role="notes"] div{max-width:520px;margin-left:auto;margin-right:auto;text-align:center;line-height:1.65}
-.text-block p,.notes-text p{margin:8px auto}
-section[data-role="original-status"] .text-block{max-width:100%}
-footer{margin:15px auto 5px;padding:12px 0 0;border-top:1px solid #e5e7eb;font-size:12px;color:#6b7280;text-align:center}
-/* Restrained formatting for unclassified archival images: no invented universal size. */
-section[data-role="ancillary-documentation"]:not([data-category="artist-created-graphic-designs"]) img{max-width:100%;height:auto;object-fit:contain}
-/* Compact verified video posters, when present. */
-.video-gallery{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
-.video-tile{width:200px;max-width:200px;margin:0;border:1px solid #e5e7eb;background:#fff;border-radius:8px;overflow:hidden}
-.video-poster{display:flex;position:relative;align-items:center;justify-content:center;width:100%;height:125px;background:#fff}
-.video-poster img{width:100%;height:100%;object-fit:contain}.video-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#222c;color:white}
-.video-tile figcaption{border-top:1px solid #e5e7eb;padding:10px 8px 12px;text-align:center;font-size:13px;line-height:1.4}
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>Riff Riff Three Quarters | Sketches &amp; Drawings | Ron English Catalogue Raisonné</title>
+<link href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png" rel="icon" type="image/png"/>
+<style id="ron-clean-drawing-detail-v1">/* Wolves detail page pilot — consolidated approved Sketches & Drawings layout. */
+*{box-sizing:border-box}
+html,body{margin:0;background:#fff;color:#222}
+body{font:400 14px/1.6 system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+a{color:#164f9e;text-decoration:underline}
+a:focus-visible{outline:3px solid #2463bc;outline-offset:3px}
+img{max-width:100%;height:auto;object-fit:contain}
+.wrap{width:100%;max-width:620px;margin:0 auto;padding:16px 14px 26px}
+.nav-pills,.sequence-nav{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:9px;margin:8px auto 14px}
+.nav-pill,.sequence-pill{display:inline-block;padding:6px 11px;border:1px solid #e5e7eb;border-radius:999px;text-decoration:none;color:#333;font-size:12px}
+.page-header{text-align:center}
+.page-title{font:400 28px/1.2 Georgia,serif;text-align:center;overflow-wrap:anywhere;margin:12px auto 16px}
+.original-drawing-heading,.ron-outside-original-heading{font:400 20px/1.3 Georgia,serif;text-align:center;margin:18px auto 14px}
+.section-card{width:100%;max-width:560px;margin:0 auto 18px;padding:19px 16px;background:#fff;border:1px solid #e1e3e6;border-radius:12px;box-shadow:none;text-align:center}
+.section-card h2{font:400 20px/1.3 Georgia,serif;text-align:center;margin:0 0 14px}
+.section-card p{margin:0 0 8px}
+.section-card p:last-child{margin-bottom:0}
+.gallery-grid,.original-grid,.originals-grid,.original-gallery,.ron-doc-category-items{display:flex;justify-content:center;align-items:flex-start;flex-wrap:wrap;gap:12px;width:100%;margin:0 auto}
+.gallery-item{display:flex;align-items:center;justify-content:center;min-width:0;max-width:100%;padding:6px;overflow:hidden;border:1px solid #e1e3e6;border-radius:10px;background:#fff;text-decoration:none;box-shadow:none}
+.gallery-item img{display:block;max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
+section.primary-artwork[data-role="original"]{width:100%;max-width:560px;margin:0 auto 18px;padding:19px 16px;background:#fff;border:1px solid #e1e3e6;border-radius:12px;text-align:center;box-shadow:none}
+section.primary-artwork[data-role="original"] .primary-artwork-link{display:inline-block;max-width:410px;text-decoration:none;border:0;box-shadow:none}
+section.primary-artwork[data-role="original"] .primary-artwork-link img{display:block;width:auto;height:auto;max-width:100%;max-height:380px;object-fit:contain}
+.section-card[data-role="original-drawing"] .gallery-item{max-width:410px;padding:0;border:0;border-radius:0}
+.section-card[data-role="original-drawing"] .gallery-item img{max-height:380px}
+.section-card[data-role="digital"] .gallery-item,.section-card[data-role="digitized-versions"] .gallery-item{flex:0 0 200px;width:200px;height:200px}
+.section-card[data-role="digital"] .gallery-item img,.section-card[data-role="digitized-versions"] .gallery-item img{max-height:100%}
+.section-card[data-role="literature"] .gallery-item{width:auto;max-width:155px;height:auto}
+.section-card[data-role="literature"] .gallery-item img{max-height:155px}
+.literature-entry{max-width:520px;margin:0 auto 12px;text-align:center}
+.literature-entry p{margin:0 0 12px}
+.section-card[data-role="literature"] .gallery-grid{margin-bottom:18px}
+.section-card[data-role="literature"] .gallery-grid:last-child{margin-bottom:0}
+.section-card[data-role="cards"] .gallery-item,.section-card[data-role="area54-cards"] .gallery-item,.section-card[data-role="delusionville-trading-cards"] .gallery-item,.section-card[data-role="delusionville-cards"] .gallery-item{flex:0 0 130px;width:130px;height:170px}
+.section-card[data-role="work-in-progress"] .gallery-item{max-width:200px;max-height:200px}
+.section-card[data-role="photo-gallery"] .gallery-item{flex:0 0 200px;width:200px;height:200px}
+.section-card[data-role="graphic-designs"] .gallery-item,.section-card[data-category="artist-created-graphic-designs"] .gallery-item{width:auto;height:auto;max-width:200px;max-height:200px}
+.section-card[data-role="graphic-designs"] .gallery-item img,.section-card[data-category="artist-created-graphic-designs"] .gallery-item img{max-width:100%;max-height:186px}
+.ron-doc-category-item{display:flex;flex-direction:column;align-items:center;max-width:200px;margin:0}
+.ron-doc-category-item figcaption{font-size:12px;text-align:center}
+.catalogue-meta-block{width:100%;max-width:560px;margin:0 auto 18px;text-align:center}
+.work-meta{margin:0;padding:0;text-align:center}
+.work-meta p{margin:3px 0}
+.relationship-note,.shared-original-sheet{width:100%;max-width:560px;margin:0 auto 18px;padding:19px 16px;border:1px solid #e1e3e6;border-radius:12px;background:#f3f4f5;text-align:center;box-shadow:none}
+.text-block,.notes-text{max-width:520px;margin:0 auto;text-align:center}
+footer{text-align:center;margin:0 auto 16px;font-size:12px;color:#6b7280}
+.footer-divider{max-width:560px;border:0;border-top:1px solid #d8dadd;margin:18px auto 16px}
+.video-gallery{display:flex;justify-content:center;flex-wrap:wrap;gap:12px}
+.video-tile{max-width:200px;margin:0}
+.video-poster{position:relative;display:block;max-width:200px}
+.video-poster img{max-width:100%;height:auto}
+.video-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:#0006;color:#fff;font-size:13px}
 video,iframe{max-width:100%}
-@media(max-width:390px){.wrap{padding:12px 10px 20px}section[data-role="digital"] .gallery-item{flex-basis:130px;width:130px;max-width:130px;height:165px}}
-
-/* Batch 11: remove image-level inner frames ONLY in Original Drawing sections; outer white panels retained. */
-.primary-artwork[data-role="original"] > a:has(img),
-.primary-artwork[data-role="original-drawing"] > a:has(img),
-.primary-artwork[data-role="original-drawings"] > a:has(img),
-[data-role="original-drawing"] .gallery-grid a:has(img),
-[data-role="original-drawing"] .original-grid a:has(img),
-[data-role="original"] .gallery-grid a:has(img),
-[data-role="original"] .original-grid a:has(img),
-section.primary-artwork[aria-label="Original Drawing"] > a:has(img),
-section.primary-artwork[aria-label="Original Drawings"] > a:has(img) {
-  border:0 !important; border-radius:0 !important; padding:0 !important;
-  box-shadow:none !important; overflow:visible !important;
-}
+@media(max-width:440px){.wrap{padding:12px 10px 22px}.section-card{padding:19px 12px}.section-card[data-role="digital"] .gallery-item{flex:0 1 200px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto;transition:none}}
 </style></head><body><main class="wrap">
-<nav class="nav-pills" aria-label="Site navigation"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="../sets/riff-riff.html">&larr; Riff Riff</a>  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
+<nav aria-label="Site navigation" class="nav-pills"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="../sets/riff-riff.html">← Riff Riff</a> <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
 </nav><header class="page-header"><h1 class="page-title">Riff Riff Three Quarters</h1></header>
-<h2 class="ron-outside-original-heading">Original Drawing</h2><section class="primary-artwork" data-role="original"><a class="primary-artwork-link" href="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Canines%20and%20felines/Wolves/Riff%20Riff%20ORIGINAL.jpg" target="_blank" rel="noopener"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Canines%20and%20felines/Wolves/Riff%20Riff%20ORIGINAL.jpg" alt="Riff Riff Three Quarters" loading="lazy"></a></section>
-<div class="catalogue-meta-block"><ul class="work-meta"><li><strong>Title:</strong> Riff Riff Three Quarters</li><li><strong>Dimensions:</strong> Sheet: 14 &#215; 17 in.; Drawing: approx. 6 &#215; 13.5 in.</li><li><strong>Work ID:</strong> RE-012242</li><li><strong>Provenance:</strong> Artist's Personal Collection</li></ul></div>
-<section class="section-card" data-role="digital"><h2>Digitized Versions</h2><div class="gallery-grid"><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Canines%20and%20felines/Wolves/Riff%20Riff%20B%26W.jpg" target="_blank" rel="noopener"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Canines%20and%20felines/Wolves/Riff%20Riff%20B%26W.jpg" alt="Riff Riff Three Quarters digitized versions 1" loading="lazy"></a><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Canines%20and%20felines/Wolves/Riff%20Riff%20COLOR.jpg" target="_blank" rel="noopener"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Canines%20and%20felines/Wolves/Riff%20Riff%20COLOR.jpg" alt="Riff Riff Three Quarters digitized versions 2" loading="lazy"></a></div></section>
-<section class="section-card" data-role="literature"><h2>Literature</h2><div class="literature-entry"><p>Zephyr English, <em>Delusionville High</em> (PoPaganda, 2022), pp. 22, 85.<br><span style="white-space:nowrap">ISBN 978-0-578-39761-0</span>.</p></div><div class="gallery-grid"><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/delusionville-high/delusionville%20high%20p85a.jpg" target="_blank" rel="noopener"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/delusionville-high/delusionville%20high%20p85a.jpg" alt="Riff Riff Three Quarters literature image 1" loading="lazy"></a><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/delusionville-high/delusionville%20high%20p22.jpg" target="_blank" rel="noopener"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/delusionville-high/delusionville%20high%20p22.jpg" alt="Riff Riff Three Quarters literature image 2" loading="lazy"></a></div></section>
-<nav class="sequence-nav ron-bottom-prev-next-center" aria-label="Catalogue sequence"><a class="nav-pill sequence-pill" href="re-012755.html">&larr; Previous: Riff Riff Side</a></nav><footer>Published via GitHub Pages<br>for long-term public access.</footer>
+<h2 class="ron-outside-original-heading">Original Drawing</h2><section class="primary-artwork" data-role="original"><a class="primary-artwork-link" href="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Canines%20and%20felines/Wolves/Riff%20Riff%20ORIGINAL.jpg" rel="noopener noreferrer" target="_blank"><img alt="Riff Riff Three Quarters" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Canines%20and%20felines/Wolves/Riff%20Riff%20ORIGINAL.jpg"/></a></section>
+<div class="catalogue-meta-block"><div class="work-meta"><p><strong>Title:</strong> Riff Riff Three Quarters</p><p><strong>Dimensions:</strong> Sheet: 14 × 17 in.; Drawing: approx. 6 × 13.5 in.</p><p><strong>Work ID:</strong> RE-012242</p><p><strong>Provenance:</strong> Artist's Personal Collection</p></div></div>
+<section class="section-card" data-role="digital"><h2>Digitized Versions</h2><div class="gallery-grid"><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Canines%20and%20felines/Wolves/Riff%20Riff%20B%26W.jpg" rel="noopener noreferrer" target="_blank"><img alt="Riff Riff Three Quarters digitized versions 1" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Canines%20and%20felines/Wolves/Riff%20Riff%20B%26W.jpg"/></a><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Canines%20and%20felines/Wolves/Riff%20Riff%20COLOR.jpg" rel="noopener noreferrer" target="_blank"><img alt="Riff Riff Three Quarters digitized versions 2" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Canines%20and%20felines/Wolves/Riff%20Riff%20COLOR.jpg"/></a></div></section>
+<section class="section-card" data-role="literature"><h2>Literature</h2><div class="literature-entry"><p>Zephyr English, <em>Delusionville High</em> (PoPaganda, 2022), pp. 22, 85.<br/><span style="white-space:nowrap">ISBN 978-0-578-39761-0</span>.</p></div><div class="gallery-grid"><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/delusionville-high/delusionville%20high%20p85a.jpg" rel="noopener noreferrer" target="_blank"><img alt="Riff Riff Three Quarters literature image 1" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/delusionville-high/delusionville%20high%20p85a.jpg"/></a><a class="gallery-item" href="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/delusionville-high/delusionville%20high%20p22.jpg" rel="noopener noreferrer" target="_blank"><img alt="Riff Riff Three Quarters literature image 2" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/delusionville-high/delusionville%20high%20p22.jpg"/></a></div></section>
+<nav aria-label="Catalogue sequence" class="sequence-nav ron-bottom-prev-next-center"><a class="nav-pill sequence-pill" href="re-012755.html">← Previous: Riff Riff Side</a></nav><hr class="footer-divider"/><footer>Published via GitHub Pages<br/>for long-term public access.</footer>
 </main></body></html>
