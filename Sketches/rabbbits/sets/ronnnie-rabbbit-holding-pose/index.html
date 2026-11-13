@@ -1,74 +1,40 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Ronnnie Rabbbit Holding Pose | Ron English Catalogue Raisonn&eacute;</title>
+<!DOCTYPE html>
 
-
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Ronnnie Rabbbit Holding Pose | Ron English Catalogue Raisonné</title>
 <style>
-/* Approved compact drawing index and set-member grid: single clean stylesheet. */
+/* Consolidated Sets & Groups layout — 36-page corrected review V2. */
 :root{--border:#e5e7eb;--muted:#6b7280;--panel:#f8fafc}
 *{box-sizing:border-box}
 body{margin:0;background:#fff;color:#111;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.5}
-.wrap{width:calc(100% - 36px);max-width:1100px;margin:0 auto;padding:26px 0 48px}
-.page-narrow{max-width:1100px}
+.wrap{width:calc(100% - 24px);max-width:1100px;margin:0 auto;padding:26px 0 48px}
 .nav-pills,.sequence-nav{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px;margin:20px auto;text-align:center}
 .nav-pill,.sequence-pill{display:inline-block;padding:8px 14px;border:1px solid var(--border);border-radius:999px;background:#fff;color:#111;text-decoration:none;font-size:14px;line-height:1.4}
 .nav-pill:hover,.sequence-pill:hover{background:#f9fafb}
 .sequence-nav .sequence-spacer{display:none}
 .page-header{text-align:center;margin:0 auto 24px}
-.page-title{margin:0;font-size:clamp(2rem,4vw,3rem);line-height:1.1}
-.section-card{width:100%;max-width:560px;margin:0 auto 24px;padding:22px;border:1px solid var(--border);border-radius:18px;background:#fff;box-shadow:0 8px 26px #0000000f}
+.page-title{margin:0;font:500 28px/1.2 Georgia,"Times New Roman",serif}
+.section-card{width:100%;max-width:680px;margin:0 auto 24px;padding:18px;border:1px solid var(--border);border-radius:12px;background:#fff;box-shadow:none}
 .section-card h2{text-align:center;margin:0 0 16px;font-size:1.35rem}
 .catalogue-meta-block,.relationship-note{max-width:900px;margin:0 auto 24px;text-align:center}
 .work-meta{list-style:none;padding:0;margin:0 auto;line-height:1.7}
 .relationship-note{padding:12px 16px;border:1px solid var(--border);border-radius:14px;background:#f9fafb}
-.index-grid,.group-grid{display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch;gap:16px;margin:0 auto}
-.index-grid>.index-card,.group-grid>.group-card{display:flex;flex:0 0 155px;width:155px;max-width:155px;min-width:0;flex-direction:column;align-items:stretch;overflow:hidden;background:#fff;color:inherit;text-decoration:none;text-align:center;border:1px solid var(--border);border-radius:12px;box-shadow:0 3px 12px #0000000b}
+.index-grid,.group-grid{display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch;gap:12px;margin:0 auto}
+.index-grid>.index-card,.group-grid>.group-card{box-sizing:border-box;display:flex;flex:0 0 200px;width:200px;max-width:200px;min-width:0;height:204px;flex-direction:column;overflow:hidden;background:#fff;color:inherit;text-decoration:none;text-align:center;border:1px solid var(--border);border-radius:12px;box-shadow:0 3px 12px #0000000b}
 .index-grid>.index-card:hover,.group-grid>.group-card:hover{border-color:#c9ced5;box-shadow:0 5px 16px #00000014}
-.index-grid>.index-card>img,.group-grid>.group-card>img{display:block;width:100%;height:180px;max-width:100%;object-fit:contain;padding:8px;background:var(--panel);border-bottom:1px solid var(--border)}
-.index-grid .index-image{display:flex;align-items:center;justify-content:center;width:100%;height:180px;padding:8px;background:var(--panel);border-bottom:1px solid var(--border)}
+.index-grid>.index-card>img,.group-grid>.group-card>img{display:block;flex:0 0 158px;width:100%;height:158px;min-height:158px;max-height:158px;object-fit:contain;object-position:center;padding:8px;background:var(--panel);border-bottom:1px solid var(--border)}
+.index-grid .index-image{display:flex;flex:0 0 158px;align-items:center;justify-content:center;width:100%;height:158px;padding:8px;background:var(--panel);border-bottom:1px solid var(--border)}
 .index-grid .index-image img{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain}
-.index-grid .card-title,.index-grid .index-title,.group-grid .label,.group-grid .card-title{display:block;margin:0;padding:10px 8px 12px;text-align:center;font-size:14px;font-weight:600;line-height:1.35;overflow-wrap:anywhere}
-.card-subtitle,.set-label{display:block;font-size:12px;font-weight:400;line-height:1.35;color:var(--muted);margin-top:4px}
+.index-grid .card-title,.index-grid .index-title,.group-grid .label,.group-grid .card-title{display:flex;flex:1 1 auto;min-height:0;align-items:center;justify-content:center;margin:0;padding:2px 6px;text-align:center;font:500 14px/1.3 Georgia,\'Times New Roman\',serif;overflow-wrap:anywhere}
+.card-subtitle,.set-label{display:block;width:100%;font:400 11px/1.2 Arial,Helvetica,sans-serif;color:var(--muted);margin-top:2px}
 footer{text-align:center;margin:30px auto 0;padding-top:16px;border-top:1px solid var(--border);color:var(--muted);font-size:14px}
 footer a{color:inherit}
-@media(max-width:480px){.wrap{width:calc(100% - 24px)}.section-card{padding:14px}.index-grid,.group-grid{gap:12px}.index-grid>.index-card,.group-grid>.group-card{flex:0 1 145px;max-width:145px;width:145px}.index-grid>.index-card>img,.group-grid>.group-card>img,.index-grid .index-image{height:140px}.index-grid .card-title,.index-grid .index-title,.group-grid .label,.group-grid .card-title{font-size:13px}}
+@media(max-width:480px){.section-card{padding:12px}.index-grid,.group-grid{gap:12px}}
 </style>
+<link href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png" rel="icon" type="image/png"/>
 
-
-<link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
-<style id="ron-30-warhol-rabbbits-reptiles-salamanders-sharks-200x200-v1">
-/* Scoped artwork-card and artwork-panel geometry. No changes to navigation or content. */
-.section-card {box-sizing:border-box!important;width:100%!important;max-width:560px!important;margin-left:auto!important;margin-right:auto!important;}
-.section-card > .index-grid, .section-card > .group-grid,
-.index-grid, .group-grid {display:flex!important;flex-wrap:wrap!important;justify-content:center!important;align-items:stretch!important;gap:16px!important;max-width:100%!important;}
-.index-grid > .index-card, .group-grid > .group-card {
- box-sizing:border-box!important;display:flex!important;flex-direction:column!important;
- flex:0 0 200px!important;width:200px!important;min-width:0!important;max-width:200px!important;
- height:200px!important;max-height:200px!important;overflow:hidden!important;
-}
-.index-grid > .index-card > img, .group-grid > .group-card > img,
-.index-grid > .index-card > .index-image {
- box-sizing:border-box!important;display:block!important;width:100%!important;height:158px!important;
- min-height:0!important;max-height:158px!important;flex:0 0 158px!important;
- object-fit:contain!important;object-position:center!important;
-}
-.index-grid > .index-card > .index-image {display:flex!important;justify-content:center!important;align-items:center!important;}
-.index-grid > .index-card > .index-image > img {
- box-sizing:border-box!important;display:block!important;width:100%!important;height:100%!important;
- max-width:100%!important;max-height:100%!important;object-fit:contain!important;object-position:center!important;
-}
-.index-grid > .index-card > .card-title, .index-grid > .index-card > .index-title,
-.group-grid > .group-card > .label, .group-grid > .group-card > .card-title {
- box-sizing:border-box!important;display:flex!important;flex:1 1 auto!important;min-height:0!important;
- align-items:center!important;justify-content:center!important;margin:0!important;padding:4px 7px!important;
- font-size:12px!important;line-height:1.2!important;text-align:center!important;overflow-wrap:anywhere!important;
-}
-@media(max-width:440px){
- .index-grid > .index-card,.group-grid > .group-card {flex:0 0 200px!important;width:200px!important;max-width:200px!important;}
-}
-</style>
 </head>
-<body><main class="wrap"><nav class="nav-pills" aria-label="Site navigation"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="../ronnnie-rabbbit/index.html">&larr; Ronnnie Rabbbit</a>  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
+<body><main class="wrap"><nav aria-label="Site navigation" class="nav-pills"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="../ronnnie-rabbbit/index.html">← Ronnnie Rabbbit</a> <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
 </nav><header class="page-header"><h1 class="page-title">Ronnnie Rabbbit Holding Pose</h1></header>
-<section class="section-card"><div class="index-grid"><a class="index-card" href="../../entries/re-013492.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Small%20Mammals/rabbbits/Ronnie%20Rabbbit%20back%20ORIGINAL%20COLOR.jpg" alt="Ronnnie Rabbbit Holding Pose Back" loading="lazy"><div class="card-title">Ronnnie Rabbbit Holding Pose Back</div></a><a class="index-card" href="../../entries/re-013023.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Small%20Mammals/rabbbits/Ronnnie%20Holding%20Record%20front%20COLOR.jpg" alt="Ronnnie Rabbbit Holding Pose Front" loading="lazy"><div class="card-title">Ronnnie Rabbbit Holding Pose Front</div></a><a class="index-card" href="../../entries/re-013491.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Small%20Mammals/rabbbits/Ronnnie%20Hundreds%20ORIGINAL%20COLOR.jpg" alt="Ronnnie Rabbbit Holding Pose Three Quarters" loading="lazy"><div class="card-title">Ronnnie Rabbbit Holding Pose Three Quarters</div></a><a class="index-card" href="../../entries/re-013493.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Small%20Mammals/rabbbits/Ronnie%20Rabbit%20side%20ORIGINAL%20COLOR.jpg" alt="Ronnnie Rabbit Holding Pose Left Side" loading="lazy"><div class="card-title">Ronnnie Rabbit Holding Pose Left Side</div></a></div></section>
-<nav class="sequence-nav ron-bottom-prev-next-center" aria-label="Catalogue sequence"><a class="nav-pill" href="../../entries/re-013672.html">&larr; Previous: Ronnnie Rabbbit</a><a class="nav-pill" href="../../entries/re-013006.html">Next: Ronnnie Rabbbit Running &rarr;</a></nav><footer>Published via GitHub Pages<br>for long-term public access.</footer></main></body></html>
+<section class="section-card"><div class="index-grid"><a class="index-card" href="../../entries/re-013492.html"><img alt="Ronnnie Rabbbit Holding Pose Back" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Small%20Mammals/rabbbits/Ronnie%20Rabbbit%20back%20ORIGINAL%20COLOR.jpg"/><div class="card-title">Ronnnie Rabbbit Holding Pose Back</div></a><a class="index-card" href="../../entries/re-013023.html"><img alt="Ronnnie Rabbbit Holding Pose Front" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Small%20Mammals/rabbbits/Ronnnie%20Holding%20Record%20front%20COLOR.jpg"/><div class="card-title">Ronnnie Rabbbit Holding Pose Front</div></a><a class="index-card" href="../../entries/re-013491.html"><img alt="Ronnnie Rabbbit Holding Pose Three Quarters" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Small%20Mammals/rabbbits/Ronnnie%20Hundreds%20ORIGINAL%20COLOR.jpg"/><div class="card-title">Ronnnie Rabbbit Holding Pose Three Quarters</div></a><a class="index-card" href="../../entries/re-013493.html"><img alt="Ronnnie Rabbit Holding Pose Left Side" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Small%20Mammals/rabbbits/Ronnie%20Rabbit%20side%20ORIGINAL%20COLOR.jpg"/><div class="card-title">Ronnnie Rabbit Holding Pose Left Side</div></a></div></section>
+<nav aria-label="Catalogue sequence" class="sequence-nav ron-bottom-prev-next-center"><a class="nav-pill" href="../../entries/re-013672.html">← Previous: Ronnnie Rabbbit</a><a class="nav-pill" href="../../entries/re-013006.html">Next: Ronnnie Rabbbit Running →</a></nav><footer>Published via GitHub Pages<br/>for long-term public access.</footer></main></body></html>
