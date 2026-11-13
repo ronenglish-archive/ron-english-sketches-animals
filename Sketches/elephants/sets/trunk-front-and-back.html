@@ -1,21 +1,38 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
 <title>Trunk Front and Back | Elephants | Ron English Catalogue Raisonné</title>
 <style>
-:root{--border:#e5e7eb;--muted:#6b7280;--shadow:0 8px 26px rgba(0,0,0,.06);--panel:#f3f4f6}
-*{box-sizing:border-box}body{margin:0;background:#fff;color:#111;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
-.wrap{max-width:1180px;margin:0 auto;padding:28px 18px 56px}.nav-pills{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px;margin:20px 0;text-align:center}
-.nav-pill{display:inline-block;padding:8px 14px;border:1px solid var(--border);border-radius:999px;background:#fff;color:#111;text-decoration:none;font-size:14px}
-.page-header{text-align:center;margin:0 auto 24px}.page-title{margin:0;font-size:clamp(2rem,4vw,3rem);line-height:1.05}
-.catalogue-meta-block{width:100%;max-width:900px;margin:0 auto 24px;text-align:center}.work-meta{list-style:none;padding:0;margin:0 auto;line-height:1.7;text-align:center}
-.section-card{background:#fff;border:1px solid var(--border);border-radius:18px;box-shadow:var(--shadow);padding:22px;margin:0 0 24px}.section-card h2{text-align:center;margin:0 0 16px;font-size:1.4rem}
-.index-grid,.gallery-grid{display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch;gap:18px}
-.index-card,.gallery-item{display:block;flex:0 1 270px;max-width:290px;width:100%;border:1px solid var(--border);border-radius:16px;overflow:hidden;background:#fff;text-decoration:none;color:inherit}
-.index-card img,.gallery-item img{display:block;width:100%;height:270px;object-fit:contain;background:var(--panel);padding:8px}
-.original-grid .gallery-item{flex:0 1 900px;max-width:900px}.original-grid .gallery-item img{height:460px}
-.card-title{padding:13px 14px 14px;text-align:center;font-weight:650;line-height:1.35}.card-subtitle{display:block;margin-top:4px;color:var(--muted);font-size:13px;font-weight:400}
-.text-block{max-width:900px;margin:0 auto;line-height:1.65;text-align:center}.text-block p{margin:8px 0}
-footer{text-align:center;margin-top:30px;padding-top:16px;border-top:1px solid var(--border);color:var(--muted);font-size:14px}
-</style><style id="elephants-sequence-nav-centering">
+/* Ron English Sets & Groups approved consolidated layout — consolidated V3 */
+
+:root{--border:#e5e7eb;--muted:#6b7280;--panel:#f8fafc}
+*{box-sizing:border-box}
+body{margin:0;background:#fff;color:#111;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.5}
+.wrap,.page-narrow{width:calc(100% - 28px);max-width:700px;margin:0 auto;padding:26px 0 48px}
+.nav-pills,.sequence-nav{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px;margin:20px auto;text-align:center}
+.nav-pill,.sequence-pill{display:inline-block;padding:8px 14px;border:1px solid var(--border);border-radius:999px;background:#fff;color:#111;text-decoration:none;font-size:14px;line-height:1.4}
+.nav-pill:hover,.sequence-pill:hover{background:#f9fafb}.sequence-nav .sequence-spacer{display:none}
+.page-header{text-align:center;margin:0 auto 24px}.page-title,h1{font-family:Georgia,"Times New Roman",serif;font-size:28px;font-weight:500;line-height:1.2;text-align:center}
+.page-title{margin:0}.section-card{width:100%;max-width:680px;margin:0 auto 24px;padding:18px;border:1px solid var(--border);border-radius:12px;background:#fff;box-shadow:none}
+.section-card h2{text-align:center;margin:0 0 16px;font-size:1.35rem}
+.catalogue-meta-block,.relationship-note{max-width:680px;margin:0 auto 24px;text-align:center}
+.work-meta{list-style:none;padding:0;margin:0 auto;line-height:1.7}
+.relationship-note{padding:12px 16px;border:1px solid var(--border);border-radius:12px;background:#f9fafb}
+.index-grid,.group-grid,.gallery-grid{display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch;gap:12px;margin:0 auto}
+.index-grid>.index-card,.group-grid>.group-card,.gallery-grid>.gallery-item{display:flex;flex:0 0 200px;width:200px;max-width:200px;min-width:0;height:204px;flex-direction:column;align-items:stretch;overflow:hidden;background:#fff;color:inherit;text-decoration:none;text-align:center;border:1px solid var(--border);border-radius:12px;box-shadow:0 3px 12px #0000000b}
+.index-grid>.index-card:hover,.group-grid>.group-card:hover,.gallery-grid>.gallery-item:hover{border-color:#c9ced5;box-shadow:0 5px 16px #00000014}
+.index-grid>.index-card>img,.group-grid>.group-card>img,.gallery-grid>.gallery-item>img{display:block;width:100%;height:158px;flex:0 0 158px;max-width:100%;object-fit:contain;padding:8px;background:var(--panel);border-bottom:1px solid var(--border)}
+.index-grid .index-image,.group-grid .index-image{display:flex;align-items:center;justify-content:center;width:100%;height:158px;flex:0 0 158px;padding:8px;background:var(--panel);border-bottom:1px solid var(--border)}
+.index-grid .index-image img,.group-grid .index-image img{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain}
+.index-grid .card-title,.index-grid .index-title,.group-grid .label,.group-grid .card-title,.gallery-grid .entry-body{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:44px;max-height:44px;flex:0 0 44px;margin:0;padding:2px 6px;text-align:center;font-family:Georgia,"Times New Roman",serif;font-size:14px;font-weight:500;line-height:1.2;overflow-wrap:anywhere;overflow:hidden}
+.gallery-grid .work-title{margin:0;font:inherit}.card-subtitle,.set-label{display:block;font-size:12px;font-weight:400;line-height:1.2;color:var(--muted);margin-top:2px}
+footer{text-align:center;margin:30px auto 0;padding-top:16px;border-top:1px solid var(--border);color:var(--muted);font-size:14px}footer a{color:inherit}
+@media(max-width:480px){.wrap,.page-narrow{width:calc(100% - 24px)}.section-card{padding:12px}}
+
+/* Retained page-specific presentation */
+
+
+/* Page-specific documentary and navigation presentation */
 .sequence-nav{
   display:flex!important;
   flex-wrap:wrap!important;
@@ -25,7 +42,7 @@ footer{text-align:center;margin-top:30px;padding-top:16px;border-top:1px solid v
   margin:20px 0!important;
   text-align:center!important;
 }
-</style><style id="ron-bottom-prev-next-center-v1">
+
 /* Ron catalogue: center bottom Previous / Next navigation as a group. */
 nav.ron-bottom-prev-next-center{
   display:flex!important;
@@ -41,82 +58,14 @@ nav.ron-bottom-prev-next-center .sequence-spacer{
 nav.ron-bottom-prev-next-center > a{
   flex:0 1 auto!important;
 }
-</style><style id="ron-catalogue-four-across-standard-v1">
-.index-grid,
-.gallery-grid,
-.category-grid,
-.subcategories-grid,
-.cards-grid{
-  display:flex!important;
-  flex-wrap:wrap!important;
-  justify-content:center!important;
-  align-items:stretch!important;
-  gap:18px!important;
-}
-.index-grid > .index-card,
-.index-grid > .gallery-item,
-.index-grid > .group-card,
-.gallery-grid > .index-card,
-.gallery-grid > .gallery-item,
-.gallery-grid > .group-card,
-.category-grid > .index-card,
-.category-grid > .gallery-item,
-.category-grid > .group-card,
-.subcategories-grid > .index-card,
-.subcategories-grid > .gallery-item,
-.subcategories-grid > .group-card,
-.cards-grid > .index-card,
-.cards-grid > .gallery-item,
-.cards-grid > .group-card{
-  box-sizing:border-box!important;
-  min-width:0!important;
-  flex:0 1 calc((100% - 54px) / 4)!important;
-  width:calc((100% - 54px) / 4)!important;
-  max-width:calc((100% - 54px) / 4)!important;
-}
-@media(max-width:900px){
-  .index-grid > .index-card,.index-grid > .gallery-item,.index-grid > .group-card,
-  .gallery-grid > .index-card,.gallery-grid > .gallery-item,.gallery-grid > .group-card,
-  .category-grid > .index-card,.category-grid > .gallery-item,.category-grid > .group-card,
-  .subcategories-grid > .index-card,.subcategories-grid > .gallery-item,.subcategories-grid > .group-card,
-  .cards-grid > .index-card,.cards-grid > .gallery-item,.cards-grid > .group-card{
-    flex-basis:calc((100% - 36px) / 3)!important;
-    width:calc((100% - 36px) / 3)!important;
-    max-width:calc((100% - 36px) / 3)!important;
-  }
-}
-@media(max-width:680px){
-  .index-grid > .index-card,.index-grid > .gallery-item,.index-grid > .group-card,
-  .gallery-grid > .index-card,.gallery-grid > .gallery-item,.gallery-grid > .group-card,
-  .category-grid > .index-card,.category-grid > .gallery-item,.category-grid > .group-card,
-  .subcategories-grid > .index-card,.subcategories-grid > .gallery-item,.subcategories-grid > .group-card,
-  .cards-grid > .index-card,.cards-grid > .gallery-item,.cards-grid > .group-card{
-    flex-basis:calc((100% - 18px) / 2)!important;
-    width:calc((100% - 18px) / 2)!important;
-    max-width:calc((100% - 18px) / 2)!important;
-  }
-}
-@media(max-width:440px){
-  .index-grid > .index-card,.index-grid > .gallery-item,.index-grid > .group-card,
-  .gallery-grid > .index-card,.gallery-grid > .gallery-item,.gallery-grid > .group-card,
-  .category-grid > .index-card,.category-grid > .gallery-item,.category-grid > .group-card,
-  .subcategories-grid > .index-card,.subcategories-grid > .gallery-item,.subcategories-grid > .group-card,
-  .cards-grid > .index-card,.cards-grid > .gallery-item,.cards-grid > .group-card{
-    flex-basis:100%!important;
-    width:100%!important;
-    max-width:100%!important;
-  }
-}
-</style>
-<style id="ron-owner-graphic-design-complete-grey-tile-20261012-v1">
+
 /* Owner-confirmed graphic design: image and caption inside ONE grey tile. */
 section.section-card[data-role="ancillary-documentation"] .ron-approved-ancillary-grid {display:flex!important;flex-wrap:wrap!important;justify-content:center!important;align-items:stretch!important;gap:18px!important;width:100%!important;}
 section.section-card[data-role="ancillary-documentation"] figure.ron-approved-ancillary-tile {box-sizing:border-box!important;display:flex!important;flex-direction:column!important;flex:0 1 300px!important;width:300px!important;max-width:100%!important;margin:0!important;padding:10px!important;background:#f3f4f6!important;border:1px solid #e5e7eb!important;border-radius:16px!important;box-shadow:0 8px 26px rgba(0,0,0,.06)!important;text-align:center!important;overflow:hidden!important;}
 section.section-card[data-role="ancillary-documentation"] figure.ron-approved-ancillary-tile > a.gallery-item {box-sizing:border-box!important;display:flex!important;align-items:center!important;justify-content:center!important;flex:0 0 auto!important;width:100%!important;max-width:100%!important;height:280px!important;margin:0!important;padding:0!important;background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important;overflow:hidden!important;}
 section.section-card[data-role="ancillary-documentation"] figure.ron-approved-ancillary-tile > a.gallery-item > img {display:block!important;box-sizing:border-box!important;width:100%!important;max-width:100%!important;height:100%!important;max-height:100%!important;padding:0!important;object-fit:contain!important;background:transparent!important;}
 section.section-card[data-role="ancillary-documentation"] figure.ron-approved-ancillary-tile > figcaption {display:block!important;flex:0 0 auto!important;margin:10px auto 0!important;padding:0 3px!important;line-height:1.45!important;text-align:center!important;color:#374151!important;}
-</style>
-<style id="ron-drawings-documentary-category-panels-v1">
+
 /* Category panels are distinct; each supporting item has its own compact card. */
 section.ron-drawing-documentation-category { box-sizing:border-box!important;display:block!important;width:100%!important;max-width:960px!important;margin:0 auto 24px!important;padding:22px!important;background:#fff!important;border:1px solid #e5e7eb!important;border-radius:18px!important;box-shadow:0 8px 26px rgba(0,0,0,.06)!important; }
 section.ron-drawing-documentation-category > h2 { text-align:center!important;margin:0 0 18px!important; }
@@ -128,7 +77,7 @@ section.ron-drawing-documentation-category figure.ron-doc-category-item > figcap
 section.ron-drawing-documentation-category figure.ron-doc-category-item > figcaption a { display:inline!important;padding:0!important;border:0!important;background:none!important;text-decoration:underline!important; }
 section.ron-drawing-documentation-category .ron-doc-category-note {text-align:center!important;margin:12px auto 0!important;max-width:780px!important;}
 @media(max-width:580px) {section.ron-drawing-documentation-category{padding:14px!important}section.ron-drawing-documentation-category figure.ron-doc-category-item{flex-basis:min(220px,100%)!important}}
-</style><style id="ron-trunk-set-index-panel-960-v1">section.section-card.ron-trunk-set-index-panel-960-v1{box-sizing:border-box!important;width:100%!important;max-width:960px!important;margin-left:auto!important;margin-right:auto!important}</style><style>
+
 /* RON-CATALOGUE-NOTES-COMPACT-V1: Notes only; other panels unchanged. */
 section.section-card.ron-notes-center.ron-unified-notes-wip-panel {
   box-sizing: border-box !important;
@@ -149,12 +98,24 @@ section.section-card.ron-notes-center.ron-unified-notes-wip-panel p {
     padding: 16px !important;
   }
 }
+
+/* Trunk Front and Back: index and Graphic Designs only; Notes and navigation unchanged. */
+
+
+
+
+
+section.section-card.ron-drawing-documentation-category[data-category="artist-created-graphic-designs"] {box-sizing:border-box!important;width:100%!important;max-width:560px!important;margin-left:auto!important;margin-right:auto!important;}
+section.section-card.ron-drawing-documentation-category[data-category="artist-created-graphic-designs"] > .ron-doc-category-items {display:flex!important;flex-wrap:wrap!important;justify-content:center!important;align-items:stretch!important;gap:12px!important;max-width:100%!important;}
+section.section-card.ron-drawing-documentation-category[data-category="artist-created-graphic-designs"] figure.ron-doc-category-item {box-sizing:border-box!important;display:flex!important;flex-direction:column!important;flex:0 0 200px!important;width:200px!important;max-width:200px!important;height:200px!important;min-width:0!important;min-height:0!important;margin:0!important;overflow:hidden!important;}
+section.section-card.ron-drawing-documentation-category[data-category="artist-created-graphic-designs"] figure.ron-doc-category-item > a.gallery-item {box-sizing:border-box!important;display:flex!important;flex:1 1 0!important;width:100%!important;min-height:0!important;height:0!important;max-width:100%!important;align-items:center!important;justify-content:center!important;}
+section.section-card.ron-drawing-documentation-category[data-category="artist-created-graphic-designs"] figure.ron-doc-category-item > a.gallery-item > img {box-sizing:border-box!important;display:block!important;width:100%!important;height:100%!important;max-width:100%!important;max-height:100%!important;object-fit:contain!important;object-position:center!important;}
 </style>
-<link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
+
+
+<link href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png" rel="icon" type="image/png"/>
 </head>
-<body><main class="wrap"><nav class="nav-pills" aria-label="Site navigation"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="../index.html">&larr; Elephants</a>  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
+<body><main class="wrap"><nav aria-label="Site navigation" class="nav-pills"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="../index.html">← Elephants</a> <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
 </nav>
-<header class="page-header"><h1 class="page-title">Trunk Front and Back</h1></header><section class="section-card ron-trunk-set-index-panel-960-v1"><div class="index-grid"><a class="index-card" href="../works/re-013441.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Ungulates/Elephants/Trunk%20the%20Orange%20Elephant%20back%20ORIGINAL.jpg" alt="Trunk Back" loading="lazy"><div class="card-title">Trunk Back</div></a><a class="index-card" href="../works/re-011715.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Ungulates/Elephants/Trunk%20the%20Orange%20Elephant%20B%26W.jpg" alt="Trunk Front" loading="lazy"><div class="card-title">Trunk Front</div></a></div></section>
-<section class="section-card ron-drawing-documentation-category" data-role="ancillary-documentation" data-category="artist-created-graphic-designs" data-revision="ron-drawing-documentary-rebuilt-v1"><h2>Artist-Created Graphic Designs</h2><div class="ron-doc-category-items"><figure class="ron-doc-category-item"><a class="gallery-item" href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-4/main/sketches/elephant%20ad.jpg" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-4/main/sketches/elephant%20ad.jpg" alt="Trunk Front and Back ancillary documentation" loading="lazy"></a></figure>
-<figure class="ron-doc-category-item"><a class="gallery-item" href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-4/main/sketches/TRUNKSIGN.jpg" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-4/main/sketches/TRUNKSIGN.jpg" alt="Trunk Front and Back ancillary documentation" loading="lazy"></a></figure></div></section><section class="section-card ron-notes-center ron-unified-notes-wip-panel" data-role="notes"><h2>Notes</h2><div class="text-block"><p>The drawings in this set are sketches for the painting <a href="https://ronenglish-archive.github.io/ron-english-paintings-2010s/detail/paintings/2010s/2018/elefanka-collage.html"><em>Elefanka</em></a>.</p></div></section>
-<nav class="sequence-nav ron-bottom-prev-next-center" aria-label="Catalogue sequence"><a class="nav-pill" href="trunk-animation.html">&larr; Previous: Trunk Animation</a><a class="nav-pill" href="../works/re-014156.html">Next: Trunk Head &rarr;</a></nav><footer>Published via GitHub Pages<br>for long-term public access.</footer></main></body></html>
+<header class="page-header"><h1 class="page-title">Trunk Front and Back</h1></header><section class="section-card ron-trunk-set-index-panel-960-v1"><div class="index-grid"><a class="index-card" href="../works/re-013441.html"><img alt="Trunk Back" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Ungulates/Elephants/Trunk%20the%20Orange%20Elephant%20back%20ORIGINAL.jpg"/><div class="card-title">Trunk Back</div></a><a class="index-card" href="../works/re-011715.html"><img alt="Trunk Front" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Ungulates/Elephants/Trunk%20the%20Orange%20Elephant%20B%26W.jpg"/><div class="card-title">Trunk Front</div></a></div></section>
+<nav aria-label="Catalogue sequence" class="sequence-nav ron-bottom-prev-next-center"><a class="nav-pill" href="trunk-animation.html">← Previous: Trunk Animation</a><a class="nav-pill" href="../works/re-014156.html">Next: Trunk Head →</a></nav><footer>Published via GitHub Pages<br/>for long-term public access.</footer></main></body></html>
