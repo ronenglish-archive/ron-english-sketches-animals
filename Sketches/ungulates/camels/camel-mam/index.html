@@ -1,16 +1,22 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Camel Mam | Ron English Catalogue Raisonn&eacute;</title><style>
+/* Revision 2: audited and consolidated within existing selectors; no appended patch stylesheet. */
+
 /* Ron English drawing detail-page compact standard — November 8, 2026.
    Consolidated stylesheet for this selected, source-verified batch.
    All source body markup, metadata, image URLs and links remain unchanged. */
 * { box-sizing: border-box; }
+
 html { scroll-behavior: smooth; }
+
 body {
   margin: 0;
   color: #222;
   background: #fff;
   font: 14px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
+
 a { color: inherit; }
+
 .wrap, main.wrap {
   display: block;
   width: 100%;
@@ -19,16 +25,19 @@ a { color: inherit; }
   padding: 16px 14px 24px;
 }
 
+
 /* Header and existing navigation treatment. */
 .page-header { margin: 8px auto 14px; text-align: center; }
+
 .page-title {
   margin: 0;
   color: #222;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family:Georgia, serif;
   font-size: 28px;
-  font-weight: 400;
+  font-weight:700;
   line-height: 1.2;
 }
+
 .nav-pills, .sequence-nav {
   display: flex;
   flex-wrap: wrap;
@@ -36,8 +45,11 @@ a { color: inherit; }
   justify-content: center;
   text-align: center;
 }
+
 .nav-pills { gap: 7px; margin: 7px 0 12px; }
+
 .sequence-nav { gap: 12px; margin: 20px 0 8px; }
+
 .nav-pill, .sequence-pill {
   display: inline-block;
   padding: 6px 11px;
@@ -49,7 +61,9 @@ a { color: inherit; }
   line-height: 19.2px;
   text-decoration: none;
 }
+
 .nav-pill:hover, .sequence-pill:hover { background: #f9fafb; }
+
 
 /* Main artwork heading and catalogue metadata. */
 .original-drawing-heading {
@@ -60,12 +74,14 @@ a { color: inherit; }
   font-weight: 400;
   text-align: center;
 }
+
 .catalogue-meta-block {
   width: 100%;
   max-width: 560px;
   margin: 12px auto 18px;
   text-align: center;
 }
+
 .work-meta {
   margin: 0 auto;
   padding: 0;
@@ -73,12 +89,12 @@ a { color: inherit; }
   line-height: 1.65;
   text-align: center;
 }
+
 .work-meta li { display: block; margin: 2px auto; }
 
+
 /* White section holders. */
-section.section-card,
-section.primary-artwork,
-section.ron-drawing-documentation-category {
+section.section-card, section.primary-artwork, section.ron-drawing-documentation-category {
   display: block;
   box-sizing: border-box;
   width: 100% !important;
@@ -90,9 +106,8 @@ section.ron-drawing-documentation-category {
   background: #fff;
   box-shadow: none;
 }
-.section-card h2,
-.ron-drawing-documentation-category h2,
-.primary-artwork > h2 {
+
+.section-card h2, .ron-drawing-documentation-category h2, .primary-artwork > h2 {
   margin: 0 0 14px;
   color: #222;
   font-family: Georgia, "Times New Roman", serif;
@@ -101,7 +116,9 @@ section.ron-drawing-documentation-category {
   line-height: 1.25;
   text-align: center;
 }
+
 .media-section { width: 100%; }
+
 
 /* Shared gallery base; section-specific rules below control actual tile geometry. */
 .gallery-grid {
@@ -114,6 +131,7 @@ section.ron-drawing-documentation-category {
   max-width: 100%;
   margin: 0 auto;
 }
+
 .gallery-item {
   display: flex;
   align-items: center;
@@ -129,6 +147,7 @@ section.ron-drawing-documentation-category {
   text-decoration: none;
   overflow: hidden;
 }
+
 .gallery-item img {
   display: block;
   width: auto;
@@ -137,6 +156,7 @@ section.ron-drawing-documentation-category {
   object-fit: contain;
   object-position: center;
 }
+
 
 /* Original Drawing: distinct, uncropped lead image; multiple originals stack vertically. */
 section.section-card[data-role="original-drawing"] > .gallery-grid {
@@ -147,9 +167,8 @@ section.section-card[data-role="original-drawing"] > .gallery-grid {
   justify-content: flex-start;
   gap: 14px;
 }
-section.section-card[data-role="original-drawing"] > .gallery-grid > .gallery-item,
-section.section-card[data-role="original-drawing"] .original-grid > .gallery-item,
-section.section-card[data-role="original-drawing"] .original-gallery > .gallery-item {
+
+section.section-card[data-role="original-drawing"] > .gallery-grid > .gallery-item, section.section-card[data-role="original-drawing"] .original-grid > .gallery-item, section.section-card[data-role="original-drawing"] .original-gallery > .gallery-item {
   display: flex;
   flex: 0 1 auto;
   width: auto;
@@ -160,9 +179,8 @@ section.section-card[data-role="original-drawing"] .original-gallery > .gallery-
   border-radius: 0;
   overflow: visible;
 }
-section.section-card[data-role="original-drawing"] > .gallery-grid > .gallery-item img,
-section.section-card[data-role="original-drawing"] .original-grid > .gallery-item img,
-section.section-card[data-role="original-drawing"] .original-gallery > .gallery-item img {
+
+section.section-card[data-role="original-drawing"] > .gallery-grid > .gallery-item img, section.section-card[data-role="original-drawing"] .original-grid > .gallery-item img, section.section-card[data-role="original-drawing"] .original-gallery > .gallery-item img {
   display: block;
   width: auto;
   height: auto;
@@ -170,6 +188,7 @@ section.section-card[data-role="original-drawing"] .original-gallery > .gallery-
   max-height: 380px;
   object-fit: contain;
 }
+
 
 /* Original-not-located explanation remains inside its Original Drawing panel. */
 section.section-card[data-role="original-drawing"] .text-block {
@@ -179,9 +198,9 @@ section.section-card[data-role="original-drawing"] .text-block {
   text-align: center;
 }
 
+
 /* Digitized Versions: equal outer frame and image box, separate from all other media. */
-section.section-card[data-role="digital"] > .gallery-grid,
-section.section-card[data-role="digitized-versions"] > .gallery-grid {
+section.section-card[data-role="digital"] > .gallery-grid, section.section-card[data-role="digitized-versions"] > .gallery-grid {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -189,8 +208,8 @@ section.section-card[data-role="digitized-versions"] > .gallery-grid {
   justify-content: center;
   gap: 12px;
 }
-section.section-card[data-role="digital"] > .gallery-grid > .gallery-item,
-section.section-card[data-role="digitized-versions"] > .gallery-grid > .gallery-item {
+
+section.section-card[data-role="digital"] > .gallery-grid > .gallery-item, section.section-card[data-role="digitized-versions"] > .gallery-grid > .gallery-item {
   display: flex;
   flex: 0 0 200px;
   width: 200px;
@@ -203,9 +222,9 @@ section.section-card[data-role="digitized-versions"] > .gallery-grid > .gallery-
   border-radius: 5px;
   background: #fff;
   overflow: hidden;
-}
-section.section-card[data-role="digital"] > .gallery-grid > .gallery-item > img,
-section.section-card[data-role="digitized-versions"] > .gallery-grid > .gallery-item > img {
+max-height:200px;}
+
+section.section-card[data-role="digital"] > .gallery-grid > .gallery-item > img, section.section-card[data-role="digitized-versions"] > .gallery-grid > .gallery-item > img {
   display: block;
   box-sizing: border-box;
   width: 100%;
@@ -217,6 +236,7 @@ section.section-card[data-role="digitized-versions"] > .gallery-grid > .gallery-
   margin: 0;
   padding: 0;
 }
+
 @media (max-width: 390px) {
   section.section-card[data-role="digital"] > .gallery-grid > .gallery-item,
   section.section-card[data-role="digitized-versions"] > .gallery-grid > .gallery-item {
@@ -231,6 +251,7 @@ section.section-card[data-role="literature"] {
   max-width: 560px;
   padding: 19px 16px;
 }
+
 section.section-card[data-role="literature"] > .literature-entry {
   display: block;
   width: 100%;
@@ -239,12 +260,13 @@ section.section-card[data-role="literature"] > .literature-entry {
   text-align: center;
   line-height: 1.65;
 }
-section.section-card[data-role="literature"] > .literature-entry p,
-section.section-card[data-role="literature"] > p {
+
+section.section-card[data-role="literature"] > .literature-entry p, section.section-card[data-role="literature"] > p {
   max-width: 520px;
   margin: 8px auto;
   text-align: center;
 }
+
 section.section-card[data-role="literature"] > .gallery-grid {
   display: flex;
   flex-wrap: wrap;
@@ -255,79 +277,86 @@ section.section-card[data-role="literature"] > .gallery-grid {
   max-width: 520px;
   margin: 0 auto;
 }
+
 section.section-card[data-role="literature"] > .gallery-grid > .gallery-item {
   display: flex;
-  flex: 0 1 155px;
-  width: 155px;
-  max-width: 155px;
+  flex:0 0 130px;
+  width:130px;
+  max-width:130px;
   min-width: 0;
-  height: auto;
+  height:170px;
   margin: 0;
-  padding: 6px;
+  padding:0;
   border: 1px solid #e5e7eb;
   border-radius: 12px;
   background: #fff;
-}
+max-height:170px;}
+
 section.section-card[data-role="literature"] > .gallery-grid > .gallery-item > img {
   display: block;
   width: 100%;
-  height: auto;
+  height:100%;
   max-width: 100%;
-  max-height: 155px;
+  max-height:100%;
   object-fit: contain;
   object-position: center;
 }
 
+
 /* Card families: plain Cards and Delusionville Trading Cards retain their identity. */
-section.section-card[data-role="cards"] > .gallery-grid,
-section.section-card[data-role="card"] > .gallery-grid,
-section.section-card[data-role="area54-cards"] > .gallery-grid,
-section.section-card[data-role="delusionville-trading-cards"] > .gallery-grid {
+section.section-card[data-role="cards"] > .gallery-grid, section.section-card[data-role="card"] > .gallery-grid, section.section-card[data-role="area54-cards"] > .gallery-grid, section.section-card[data-role="delusionville-trading-cards"] > .gallery-grid {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
   gap: 12px;
 }
-section.section-card[data-role="cards"] > .gallery-grid > .gallery-item,
-section.section-card[data-role="card"] > .gallery-grid > .gallery-item,
-section.section-card[data-role="area54-cards"] > .gallery-grid > .gallery-item,
-section.section-card[data-role="delusionville-trading-cards"] > .gallery-grid > .gallery-item {
+
+section.section-card[data-role="cards"] > .gallery-grid > .gallery-item, section.section-card[data-role="card"] > .gallery-grid > .gallery-item, section.section-card[data-role="area54-cards"] > .gallery-grid > .gallery-item, section.section-card[data-role="delusionville-trading-cards"] > .gallery-grid > .gallery-item {
   display: flex;
   flex: 0 0 130px;
   width: 130px;
   max-width: 130px;
   min-width: 0;
-  height: 172px;
+  height:170px;
   margin: 0;
   padding: 0;
   background: #fff;
   overflow: hidden;
-}
-section.section-card[data-role="cards"] > .gallery-grid > .gallery-item > img,
-section.section-card[data-role="card"] > .gallery-grid > .gallery-item > img,
-section.section-card[data-role="area54-cards"] > .gallery-grid > .gallery-item > img,
-section.section-card[data-role="delusionville-trading-cards"] > .gallery-grid > .gallery-item > img {
+max-height:170px;}
+
+section.section-card[data-role="cards"] > .gallery-grid > .gallery-item > img, section.section-card[data-role="card"] > .gallery-grid > .gallery-item > img, section.section-card[data-role="area54-cards"] > .gallery-grid > .gallery-item > img, section.section-card[data-role="delusionville-trading-cards"] > .gallery-grid > .gallery-item > img {
   display: block;
   box-sizing: border-box;
   width: 100%;
-  height: 170px;
+  height:100%;
   max-width: 100%;
-  max-height: 170px;
+  max-height:100%;
   object-fit: contain;
   object-position: center;
 }
 
+
 /* Artist-Created Graphic Designs: flexible, naturally proportioned, centered within 200px bounds. */
-section.ron-drawing-documentation-category[data-category="artist-created-graphic-designs"] .ron-doc-category-items { display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:center;gap:12px; }
-section.ron-drawing-documentation-category[data-category="artist-created-graphic-designs"] figure.ron-doc-category-item { display:flex;flex-direction:column;align-items:center;flex:0 1 auto;width:auto;max-width:200px;margin:0; }
+section.ron-drawing-documentation-category[data-category="artist-created-graphic-designs"] .ron-doc-category-items { display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:center;gap:12px; max-width:200px;max-height:200px;}
+
+section.ron-drawing-documentation-category[data-category="artist-created-graphic-designs"] figure.ron-doc-category-item { display:flex;flex-direction:column;align-items:center;flex:0 1 auto;width:auto;max-width:200px;margin:0; max-height:200px;}
+
 section.ron-drawing-documentation-category[data-category="artist-created-graphic-designs"] figure.ron-doc-category-item > a.gallery-item { display:flex;align-items:center;justify-content:center;flex:0 1 auto;width:fit-content;height:fit-content;max-width:200px;max-height:200px;margin:0 auto;padding:6px;border:1px solid #e2e4e7;border-radius:10px;overflow:hidden; }
-section.ron-drawing-documentation-category[data-category="artist-created-graphic-designs"] figure.ron-doc-category-item > a.gallery-item > img { display:block;width:auto;height:auto;max-width:186px;max-height:186px;object-fit:contain;margin:auto; }
+
+section.ron-drawing-documentation-category[data-category="artist-created-graphic-designs"] figure.ron-doc-category-item > a.gallery-item > img { display:block;width:auto;height:auto;max-width:200px;max-height:200px;object-fit:contain;margin:auto; }
+
 section.ron-drawing-documentation-category[data-category="artist-created-graphic-designs"] figcaption { text-align:center;line-height:1.5; }
 
+
 /* Notes remain centered and readable, without changing their factual content. */
-section.section-card[data-role="notes"] .text-block,
-section.section-card[data-role="notes"] .notes-text,
+section.section-card[data-role="notes"] .text-block, section.section-card[data-role="notes"] .notes-text {
+  width: 100%;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
 section.section-card.ron-unified-notes-wip-panel .text-block {
   width: 100%;
   max-width: 520px;
@@ -335,8 +364,9 @@ section.section-card.ron-unified-notes-wip-panel .text-block {
   margin-right: auto;
   text-align: center;
 }
-section.section-card[data-role="notes"] .text-block p,
-section.section-card[data-role="notes"] p { margin: 7px auto; }
+
+section.section-card[data-role="notes"] .text-block p, section.section-card[data-role="notes"] p { margin: 7px auto; }
+
 .relationship-note {
   box-sizing: border-box;
   width: 100%;
@@ -351,16 +381,18 @@ section.section-card[data-role="notes"] p { margin: 7px auto; }
   text-align: center;
 }
 
+
 /* Footer remains the established simple catalogue footer. */
 footer {
   margin: 24px auto 0;
   padding: 16px 0 4px;
-  border-top: 1px solid #e3e5e8;
+  border-top:1px solid #e2e5e8;
   color: #777;
   font-size: 12px;
   line-height: 1.5;
   text-align: center;
 }
+
 
 @media (max-width: 580px) {
   .wrap, main.wrap { padding: 14px 10px 20px; }
